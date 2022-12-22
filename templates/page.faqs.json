@@ -1,14 +1,18 @@
 {
-    "sections": {
-        "banner" :{
-            "type": "page-banner"
-        },
-        "main" : {
-            "type": "faq-content"
-        }
+  "sections": {
+    "banner": {
+      "type": "page-banner",
+      "settings": {
+      }
     },
-    "order": [
-        "banner",
-        "main"
-    ]
+    "main": {
+      "type": "faq-content",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main"
+  ]
 }
