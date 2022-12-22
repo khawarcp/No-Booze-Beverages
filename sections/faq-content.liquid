@@ -1,36 +1,65 @@
-<div class="col-sm-6">
-  <h3>Left Tabs</h3>
-  <hr/>
-  <div class="col-xs-3">
-    <!-- required for floating -->
-    <!-- Nav tabs -->
-      <ul class="nav nav-tabs tabs-left sideways"> <li class="active">
-        <a href="#home-v" data-toggle="tab">Home</a>
-      </li>
-      <li>
-        <a href="#profile-v" data-toggle="tab">Profile</a>
-      </li>
-      <li>
-        <a href="#messages-v" data-toggle="tab">Messages</a>
-      </li>
-      <li>
-        <a href="#settings-v" data-toggle="tab">Settings</a>
-      </li>
-    </ul>
-  </div>
+{{ 'section-faq-content.css' | asset_url | stylesheet_tag }}
 
-  <div class="col-xs-9">
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div class="tab-pane active" id="home-v">Home Tab.</div>
-      <div class="tab-pane" id="profile-v">Profile Tab.</div>
-      <div class="tab-pane" id="messages-v">Messages Tab.</div>
-      <div class="tab-pane" id="settings-v">Settings Tab.</div>
+
+
+<h2>
+  Vertical tabs with border
+</h2>
+<div class="vertical-tabs">
+  <ul class="tabs vertical" data-tab="">
+    <li class="tab-title active">
+      <a
+        href="#panela1"
+        aria-selected="true"
+        tabindex="0">Tab 1</a>
+    </li>
+    <li class="tab-title">
+      <a
+        href="#panelb1"
+        aria-selected="false"
+        tabindex="-1">Tab 2</a>
+    </li>
+    <li class="tab-title">
+      <a
+        href="#panelc1"
+        aria-selected="false"
+        tabindex="-1">Tab 3</a>
+    </li>
+    <li class="tab-title">
+      <a
+        href="#paneld1"
+        aria-selected="false"
+        tabindex="-1">Tab 4</a>
+    </li>
+  </ul>
+  <div class="tabs-content">
+    <div
+      class="content active"
+      id="panela1"
+      aria-hidden="false">
+      <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.
+      </p>
+    </div>
+    <div
+      class="content"
+      id="panelb1"
+      aria-hidden="true"
+      tabindex="-1">
+      <p>This is the second panel of the basic tab example. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, nesciunt. Aperiam sed expedita quo. Ipsam iusto sapiente animi? Voluptatem ut facilis maxime minima. Aperiam, at non sequi molestias tempora. Enim.</p>
+    </div>
+    <div
+      class="content"
+      id="panelc1"
+      aria-hidden="true"
+      tabindex="-1">
+      <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+    </div>
+    <div
+      class="content"
+      id="paneld1"
+      aria-hidden="true"
+      tabindex="-1">
+      <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
     </div>
   </div>
-
-  <div class="clearfix"></div>
-
 </div>
-
-{{ 'section-faq-content.css' | asset_url | stylesheet_tag }}

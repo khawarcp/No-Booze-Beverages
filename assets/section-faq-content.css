@@ -1,37 +1,71 @@
-.tabs-left {
-    border-bottom: none;
-    border-right: 1px solid #ddd;
+* {
+    box-sizing:border-box;
   }
-  
-  .tabs-left>li {
-    float: none;
-   margin:0px;
-    
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: table;
   }
-  
-  .tabs-left>li.active>a,
-  .tabs-left>li.active>a:hover,
-  .tabs-left>li.active>a:focus {
-    border-bottom-color: #ddd;
-    border-right-color: transparent;
-    background:#f90;
-    border:none;
-    border-radius:0px;
-    margin:0px;
+  .clearfix:after {
+    clear: both;
   }
-  .nav-tabs>li>a:hover {
-      /* margin-right: 2px; */
-      line-height: 1.42857143;
-      border: 1px solid transparent;
-      /* border-radius: 4px 4px 0 0; */
+  .vertical-tabs:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -1px;
+    z-index: 1;
+    border: 1px solid black;
   }
-  .tabs-left>li.active>a::after{content: "";
-      position: absolute;
-      top: 10px;
-      right: -10px;
-      border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    
-    border-left: 10px solid #f90;
-      display: block;
-      width: 0;}
+  .vertical-tabs:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .vertical-tabs {
+    position: relative;
+    margin-left: 200px;
+  }
+  .tabs {
+    position: relative;
+    float: left;
+    width: 200px;
+    padding-left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -200px;
+  }
+  .tabs li {
+    position: relative;
+    list-style: none;
+  }
+  .tabs li:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .tabs li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fbfbfb;
+    border: 1px solid #ddd;
+    border-right: 1px  solid black;
+  }
+  .tabs li.active a {
+    z-index: 2;
+    border: 1px solid black;
+    border-right: 1px solid white;
+  }
+  .tabs-content .content {
+    display: none;
+    padding: 10px;
+  }
+  .tabs-content .content.active {
+    display: block;
+  }
