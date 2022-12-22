@@ -1,0 +1,14 @@
+{
+    "sections": {
+        "banner" :{
+            "type": "page-banner"
+        },
+        "main" : {
+            "type": "faq-content"
+        }
+    },
+    "order": [
+        "banner",
+        "main"
+    ]
+}
