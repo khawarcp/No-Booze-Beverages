@@ -3,17 +3,30 @@
     "name": "Testimonials",
     "settings": [
       {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      }, {
-        "type": "textarea",
-        "id": "comment",
-        "label": "comment"
-      }, {
         "type": "text",
-        "id": "name",
-        "label": "Name"
+        "id": "heading",
+        "label": "Heading"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Testimonial",
+        "type": "testimonial",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "textarea",
+            "id": "comment",
+            "label": "comment"
+          }, {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+          }
+        ]
       }
     ],
     "presets": [
