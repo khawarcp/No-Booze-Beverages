@@ -172,7 +172,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Info",
-              "menu": "footer"
+              "menu": "about-us"
             }
           },
           "footer-2": {
