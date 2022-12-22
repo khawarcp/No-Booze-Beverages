@@ -490,24 +490,25 @@
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
-      // Acc
-      $().ready(function() {
-        $('.tab-title>a').click(function(e) {
-          e.preventDefault();
-          var index = $(this).parent().index();
-          $(this)
-            .parent()
-            .addClass('active')
-            .siblings()
-            .removeClass('active')
-            .parent('ul.tabs')
-            .siblings('.tabs-content')
-            .children('.content')
-            .removeClass('active')
-            .eq(index)
-            .addClass('active');
-        });
-      })
+      $(function() {
+        $().ready(function() {
+          $('.tab-title>a').click(function(e) {
+            e.preventDefault();
+            var index = $(this).parent().index();
+            $(this)
+              .parent()
+              .addClass('active')
+              .siblings()
+              .removeClass('active')
+              .parent('ul.tabs')
+              .siblings('.tabs-content')
+              .children('.content')
+              .removeClass('active')
+              .eq(index)
+              .addClass('active');
+          });
+        })
+      })(jQuery);
     </script>
   </body>
 </html>
