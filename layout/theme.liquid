@@ -488,27 +488,26 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     <script>
-      $(function() {
-        $(document).ready(function() {
-          $('.tab-title>a').click(function(e) {
-            e.preventDefault();
-            var index = $(this).parent().index();
-            $(this)
-              .parent()
-              .addClass('active')
-              .siblings()
-              .removeClass('active')
-              .parent('ul.tabs')
-              .siblings('.tabs-content')
-              .children('.content')
-              .removeClass('active')
-              .eq(index)
-              .addClass('active');
-          });
-        })
-      })(jQuery);
+      function openCity(evt, cityName) {
+        var i,
+          tabcontent,
+          tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+// Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
     </script>
   </body>
 </html>
