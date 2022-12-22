@@ -54,25 +54,10 @@
         "text": ""
       }
     },
-    "fc25c49f-73f6-4f6e-a9ba-7027e1b6fb13": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h0",
-        "cover_image": "shopify:\/\/shop_images\/Video_Thumbnail.png",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "3f2d9634-a386-4d41-8d9e-d0239d10cd04": {
       "type": "index-testimonials",
       "settings": {
-        "comment": "",
-        "name": ""
+        "heading": ""
       }
     },
     "b176a6eb-f1ff-49b1-ace2-10c3632b5bc1": {
@@ -95,7 +80,6 @@
     "c45ee2ea-eca9-461d-b496-137125793a4e",
     "04e40212-18e7-4fae-bee3-961ad79ab2ac",
     "e17db60e-3c68-421b-b1c6-baf659a2f654",
-    "fc25c49f-73f6-4f6e-a9ba-7027e1b6fb13",
     "3f2d9634-a386-4d41-8d9e-d0239d10cd04",
     "b176a6eb-f1ff-49b1-ace2-10c3632b5bc1",
     "24309219-d9ef-4854-92c0-683640e2f97b"
