@@ -1,0 +1,72 @@
+{% schema %}
+  {
+    "name": "Subscriptions",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "main_img",
+        "label": "Main Image"
+      }, {
+        "type": "image_picker",
+        "id": "small_img",
+        "label": "Secondary Image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "marquee",
+        "name": "Marquee Text",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "marquee_text",
+            "label": "Marquee Text"
+          }
+        ]
+      }, {
+        "type": "heading",
+        "name": "Heading",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          }
+        ]
+      }, {
+        "type": "text",
+        "name": "Text",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "inline_richtext",
+            "id": "info",
+            "label": "Text"
+          }
+        ]
+      }, {
+        "type": "button",
+        "name": "Button",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text"
+          }, {
+            "type": "url",
+            "id": "button_url",
+            "label": "Button URL"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Subscriptions"
+      }
+    ]
+  }
+{% endschema %}
