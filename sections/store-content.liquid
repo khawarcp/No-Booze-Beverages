@@ -14,6 +14,7 @@
   "stores" : [
   {%- for block in section.blocks -%}
     {
+    "state_id" : {{ block.id | json }},
     "state_name" : {{ block.settings.state_name | json }},
     "store_name" : {{ block.settings.store_name | json }},
     "store_image" : {{ block.settings.store_image | json }},
