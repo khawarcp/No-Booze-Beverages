@@ -30,23 +30,21 @@
   }
 </script>
 <script>/*let store_list = JSON.parse(document.getElementById('store-list').textContent);
-  let storeSelect = document.getElementById('stores');
-  storeSelect.onchange = () => {
-    let selectedStores = [];
-    let optionVal = storeSelect.value;
-    store_list.stores.forEach((options) => {
-      if (optionVal == options.state_name) {
-        selectedStores.push(options);
-        console.log(selectedStores)
-        selectedStores.map((item) => {
-          let list_item = `<li> ${
-            item.state_name
-          } </li>`
-          document.getElementById('stores-embed').append(list_item);
-        })
-      }
-    })
-  }*/
+    let storeSelect = document.getElementById('stores');
+    storeSelect.onchange = () => {
+      let selectedStores = [];
+      let optionVal = storeSelect.value;
+      store_list.stores.forEach((options) => {
+        if (optionVal == options.state_name) {
+          selectedStores.push(options);
+          console.log(selectedStores)
+          selectedStores.map((item) => {
+            let list_item = `<li> ${ item.state_name } </li>`
+            console.log(list_item)
+          })          
+        }
+      })
+    }*/
 </script>{% schema %}
 {
   "name": "store",
