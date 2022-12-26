@@ -40,8 +40,10 @@
         selectedStores.push(options);
         console.log(selectedStores)
         selectedStores.map((item) => {
-
-          document.getElementById('stores-embed').append(item.state_name)
+          let list_item = `<li> ${
+            item.state_name
+          } </li>`
+          document.getElementById('stores-embed').append(list_item);
         })
       }
     })
