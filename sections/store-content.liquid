@@ -1,7 +1,7 @@
 <section class="stores">
   <select name="stores" id="stores">
     {% for block in section.blocks %}
-      <option value="{{ block.settings.state_name | uniq }}">
+      <option data-storeid="{{ block.id }}" value="{{ block.settings.state_name | uniq }}">
         {{ block.settings.state_name | uniq }}
       </option>
     {% endfor %}
