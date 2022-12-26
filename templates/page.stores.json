@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "store-content",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
