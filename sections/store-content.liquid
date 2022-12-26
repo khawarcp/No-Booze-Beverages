@@ -13,17 +13,17 @@
   {
   "stores" : [
   {%- for block in section.blocks -%}
-    "state_name" : {{ block.settings.state_name }},
-    "store_name" : {{ block.settings.store_name }},
-    "store_image" : {{ block.settings.store_image }},
-    "store_address" : {{ block.settings.store_address }},
-    "store_opens" : {{ block.settings.store_opens }},
-    "store_closes" : {{ block.settings.store_closes }},
-    "store_working" : {{ block.settings.store_working }},
+    "state_name" : {{ block.settings.state_name | json }},
+    "store_name" : {{ block.settings.store_name | json }},
+    "store_image" : {{ block.settings.store_image | json }},
+    "store_address" : {{ block.settings.store_address | json }},
+    "store_opens" : {{ block.settings.store_opens | json }},
+    "store_closes" : {{ block.settings.store_closes | json }},
+    "store_working" : {{ block.settings.store_working | json }}
   {%- endfor -%}
   }
   ]
-        }</script>
+          }</script>
 {% schema %}
   {
     "name": "store",
