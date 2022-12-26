@@ -1,3 +1,13 @@
+<section class="stores">
+  <select name="stores" id="stores">
+    {% for block in section.blocks %}
+      <option value="{{ block.settings.state_name }}">
+        {{ block.settings.state_name }}
+      </option>
+    {% endfor %}
+  </select>
+</section>
+
 {% schema %}
   {
     "name": "store",
