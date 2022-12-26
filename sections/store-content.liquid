@@ -1,13 +1,29 @@
 <section class="stores">
   <select name="stores" id="stores">
     {% for block in section.blocks %}
-      <option value="{{ block.settings.state_name }}">
-        {{ block.settings.state_name }}
+      <option value="{{ block.settings.state_name | uniq }}">
+        {{ block.settings.state_name | uniq }}
       </option>
     {% endfor %}
   </select>
 </section>
 
+
+<script type="application/json" id="store-list">
+  {
+  "stores" : [
+  {%- for block in section.blocks -%}
+    "state_name" : {{ block.settings.state_name }},
+    "store_name" : {{ block.settings.store_name }},
+    "store_image" : {{ block.settings.store_image }},
+    "store_address" : {{ block.settings.store_address }},
+    "store_opens" : {{ block.settings.store_opens }},
+    "store_closes" : {{ block.settings.store_closes }},
+    "store_working" : {{ block.settings.store_working }},
+  {%- endfor -%}
+  }
+  ]
+        }</script>
 {% schema %}
   {
     "name": "store",
