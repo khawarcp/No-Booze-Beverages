@@ -3,6 +3,8 @@
     {% for block in section.blocks %}
       <option data-stateid="{{ block.id }}" value="{{ block.settings.state_name | uniq }}">
         {% if block.settings.state_name == block.settings.state_name %}
+          {% continue %}
+        {% else %}
           {{ block.settings.state_name }}
         {% endif %}
       </option>
