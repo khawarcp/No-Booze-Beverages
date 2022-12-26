@@ -14,10 +14,23 @@
             "store_closes": "08:00 - 11:00",
             "store_working": "Monday till Sunday"
           }
+        },
+        "b7b80f82-af58-4920-8a85-0ac2cf917eae": {
+          "type": "store",
+          "settings": {
+            "state_name": "New York",
+            "store_name": "Magnum Ditch Store",
+            "store_image": "shopify:\/\/shop_images\/Rectangle_9638_1.png",
+            "store_address": "Van Woustraat 151\n1074 AJ Amsterdam\nNederland",
+            "store_opens": "OPENS AT 09:00",
+            "store_closes": "08:00 - 11:00",
+            "store_working": "Monday till Friday"
+          }
         }
       },
       "block_order": [
-        "3e1f97bb-a8ef-4e93-a4dc-3eff7f256929"
+        "3e1f97bb-a8ef-4e93-a4dc-3eff7f256929",
+        "b7b80f82-af58-4920-8a85-0ac2cf917eae"
       ],
       "settings": {
       }
