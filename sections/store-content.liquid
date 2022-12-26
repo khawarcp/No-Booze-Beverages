@@ -34,6 +34,7 @@
   let storeSelect = document.getElementById('stores');
   storeSelect.onchange = () => {
     let selectedStores = [];
+    selectedStores.pop();
     let optionVal = storeSelect.value;
     store_list.stores.forEach((options) => {
       if (optionVal == options.state_name) {
