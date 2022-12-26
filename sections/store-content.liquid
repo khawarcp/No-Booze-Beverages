@@ -13,6 +13,7 @@
   {
   "stores" : [
   {%- for block in section.blocks -%}
+    {
     "state_name" : {{ block.settings.state_name | json }},
     "store_name" : {{ block.settings.store_name | json }},
     "store_image" : {{ block.settings.store_image | json }},
@@ -20,10 +21,10 @@
     "store_opens" : {{ block.settings.store_opens | json }},
     "store_closes" : {{ block.settings.store_closes | json }},
     "store_working" : {{ block.settings.store_working | json }}
+    }{% unless forloop.last %},{% endunless %}
   {%- endfor -%}
-  }
   ]
-          }</script>
+  }</script>
 {% schema %}
   {
     "name": "store",
