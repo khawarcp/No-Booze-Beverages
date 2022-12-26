@@ -2,6 +2,20 @@
   "sections": {
     "main": {
       "type": "store-content",
+      "blocks": {
+        "3e1f97bb-a8ef-4e93-a4dc-3eff7f256929": {
+          "type": "store",
+          "settings": {
+            "state_name": "New York",
+            "store_name": "Centrum Store",
+            "store_image": "shopify:\/\/shop_images\/Rectangle_9638.png",
+            "store_address": "Van Woustraat 151\n1074 AJ Amsterdam\nNederland"
+          }
+        }
+      },
+      "block_order": [
+        "3e1f97bb-a8ef-4e93-a4dc-3eff7f256929"
+      ],
       "settings": {
       }
     }
