@@ -1,0 +1,112 @@
+<section class="stores">
+  {%- capture states -%}
+    {%- for state in section.blocks -%}
+      {{- state.settings.state_name -}}{%- unless forloop.last %},{% endunless -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+
+  {%- assign stateNames = states | split: ',' | uniq -%}
+
+  <select name="stores" id="stores">
+    {%- for stateName in stateNames -%}
+      <option value="{{- stateName -}}">
+        {{- stateName -}}
+      </option>
+    {%- endfor -%}
+  </select>
+
+  <ul id="stores-embed"></ul>
+</section>
+
+
+<script type="application/json" id="store-list">
+  {
+  "stores" : [
+  {%- for block in section.blocks -%}
+    {
+    "state_id" : {{ block.id | json }},
+    "state_name" : {{ block.settings.state_name | json }},
+    "store_name" : {{ block.settings.store_name | json }},
+    "store_image" : {{ block.settings.store_image | json }},
+    "store_address" : {{ block.settings.store_address | json }},
+    "store_opens" : {{ block.settings.store_opens | json }},
+    "store_closes" : {{ block.settings.store_closes | json }},
+    "store_working" : {{ block.settings.store_working | json }}
+    }{% unless forloop.last %},{% endunless %}
+  {%- endfor -%}
+  ]
+  }
+</script>
+<script>
+  let store_list = JSON.parse(document.getElementById('store-list').textContent);
+  let storeSelect = document.getElementById('stores');
+  let storeUl = document.querySelector("#stores-embed");
+
+  storeSelect.onchange = () => {
+    let selectedStores = [];
+    let optionVal = storeSelect.value;
+    console.log(optionVal)
+    store_list.stores.forEach((options) => {
+      if (optionVal == options.state_name) {
+        selectedStores.push(options);
+      }
+    })
+
+    let list_item;
+    storeUl.innerHTML = '';
+    selectedStores.map((item) => {
+      list_item = `<li> <h2>${
+        item.store_name
+      }</h2> <img src="${
+        item.store_image
+      }"/> </li>`;
+      storeUl.innerHTML += list_item;
+    })
+  }
+</script>
+{% schema %}
+  {
+    "name": "store",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "store",
+        "type": "store",
+        "settings": [
+          {
+            "type": "text",
+            "id": "state_name",
+            "label": "State Name"
+          },
+          {
+            "type": "text",
+            "id": "store_name",
+            "label": "Store Name"
+          },
+          {
+            "type": "image_picker",
+            "id": "store_image",
+            "label": "Store Image"
+          },
+          {
+            "type": "textarea",
+            "id": "store_address",
+            "label": "Store Address"
+          }, {
+            "type": "text",
+            "id": "store_opens",
+            "label": "Store Opens"
+          }, {
+            "type": "text",
+            "id": "store_closes",
+            "label": "Store Closes"
+          }, {
+            "type": "text",
+            "id": "store_working",
+            "label": "Store Working Days"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
