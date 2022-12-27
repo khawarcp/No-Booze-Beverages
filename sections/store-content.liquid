@@ -1,7 +1,7 @@
 <section class="stores">
   {% capture states %}
     {% for state in section.blocks %}
-      {{ state.state_name }}{% unless forloop.last %},{% endunless %}
+      {{ state.settings.state_name }}{% unless forloop.last %},{% endunless %}
     {% endfor %}
   {% endcapture %}
   <h2>
