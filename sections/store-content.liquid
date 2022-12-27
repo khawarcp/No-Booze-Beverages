@@ -5,7 +5,7 @@
     {%- endfor -%}
   {% endcapture %}
 
-  {%- assign stateNames = states | split: ',' | uniq -%}
+  {% assign stateNames = states | split: ',' | uniq -%}
 
   <ul>
     {%- for stateName in stateNames -%}
