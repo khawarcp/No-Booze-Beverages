@@ -8,6 +8,12 @@
     {{ states }}
   </h2>
 
+  {% assign items = states | split: ',' | uniq %}
+
+  {% for item in items %}
+    <option value="{{ item }}">{{ item }}</option>
+  {% endfor %}
+
   <select name="stores" id="stores">
     {% for block in section.blocks %}
       <option data-stateid="{{ block.id }}" value="{{ block.settings.state_name | uniq }}">
