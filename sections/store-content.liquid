@@ -42,7 +42,13 @@
   let storeSelect = document.getElementById('stores');
   let storeUl = document.querySelector("#stores-embed");
 
+
+
   storeSelect.onchange = () => {
+    storeFunc();
+  }
+
+  let storeFunc = () => {
     let selectedStores = [];
     let optionVal = storeSelect.value;
     console.log(optionVal)
@@ -63,6 +69,9 @@
       storeUl.innerHTML += list_item;
     })
   }
+</script>
+<script>
+  storeFunc();
 </script>
 {% schema %}
   {
