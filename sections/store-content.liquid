@@ -8,11 +8,11 @@
   {% assign statNames = states | split: ',' | uniq %}
 
   <select name="stores" id="stores">
-    {% for stateName in statNames %}
-      <option value="{{ stateName }}">
-        {{ stateName }}
+    {%- for stateName in statNames -%}
+      <option value="{{- stateName -}}">
+        {{- stateName -}}
       </option>
-    {% endfor %}
+    {%- endfor -%}
   </select>
 
   <ul id="stores-embed"></ul>
