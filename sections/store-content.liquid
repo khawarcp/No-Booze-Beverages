@@ -1,5 +1,13 @@
 <section class="stores">
   <select name="stores" id="stores">
+    {% capture states %}
+      {% for state in section.blocks %}
+        {{ state.state_name }}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% endcapture %}
+    <h2>
+      {{ states }}
+    </h2>
     {% for block in section.blocks %}
       <option data-stateid="{{ block.id }}" value="{{ block.settings.state_name | uniq }}">
         {{ block.settings.state_name | uniq }}
