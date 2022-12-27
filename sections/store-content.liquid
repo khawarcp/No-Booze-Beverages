@@ -7,13 +7,6 @@
 
   {%- assign stateNames = states | split: ',' | uniq -%}
 
-  <ul>
-    {%- for stateName in stateNames -%}
-      <li value="{{- stateName -}}">
-        {{- stateName -}}
-      </li>
-    {%- endfor -%}
-  </ul>
   <select name="stores" id="stores">
     {%- for stateName in stateNames -%}
       <option value="{{- stateName -}}">
@@ -44,69 +37,73 @@
   ]
   }
 </script>
-<script>/*let store_list = JSON.parse(document.getElementById('store-list').textContent);
+<script>
+  let store_list = JSON.parse(document.getElementById('store-list').textContent);
   let storeSelect = document.getElementById('stores');
-let storeUl = document.querySelector("#stores-embed");
+  let storeUl = document.querySelector("#stores-embed");
 
   storeSelect.onchange = () => {
     let selectedStores = [];
     let optionVal = storeSelect.value;
     store_list.stores.forEach((options) => {
-      if (optionVal == options.state_name) {    
-          selectedStores.push(options);                  
+      if (optionVal == options.state_name) {
+        selectedStores.push(options);
       }
     })
-    
+
     let list_item;
     storeUl.innerHTML = '';
     selectedStores.map((item) => {
-        list_item = `<li> ${ item.store_name} </li>`;                       
-        storeUl.innerHTML += list_item;
-    })    
-  }*/
-</script>{% schema %}
-{
-  "name": "store",
-  "settings": [],
-  "blocks": [
-    {
-      "name": "store",
-      "type": "store",
-      "settings": [
-        {
-          "type": "text",
-          "id": "state_name",
-          "label": "State Name"
-        },
-        {
-          "type": "text",
-          "id": "store_name",
-          "label": "Store Name"
-        },
-        {
-          "type": "image_picker",
-          "id": "store_image",
-          "label": "Store Image"
-        },
-        {
-          "type": "textarea",
-          "id": "store_address",
-          "label": "Store Address"
-        }, {
-          "type": "text",
-          "id": "store_opens",
-          "label": "Store Opens"
-        }, {
-          "type": "text",
-          "id": "store_closes",
-          "label": "Store Closes"
-        }, {
-          "type": "text",
-          "id": "store_working",
-          "label": "Store Working Days"
-        }
-      ]
-    }
-  ]
-}
+      list_item = `<li> ${
+        item.store_name
+      } </li>`;
+      storeUl.innerHTML += list_item;
+    })
+  }
+</script>
+{% schema %}
+  {
+    "name": "store",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "store",
+        "type": "store",
+        "settings": [
+          {
+            "type": "text",
+            "id": "state_name",
+            "label": "State Name"
+          },
+          {
+            "type": "text",
+            "id": "store_name",
+            "label": "Store Name"
+          },
+          {
+            "type": "image_picker",
+            "id": "store_image",
+            "label": "Store Image"
+          },
+          {
+            "type": "textarea",
+            "id": "store_address",
+            "label": "Store Address"
+          }, {
+            "type": "text",
+            "id": "store_opens",
+            "label": "Store Opens"
+          }, {
+            "type": "text",
+            "id": "store_closes",
+            "label": "Store Closes"
+          }, {
+            "type": "text",
+            "id": "store_working",
+            "label": "Store Working Days"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}
