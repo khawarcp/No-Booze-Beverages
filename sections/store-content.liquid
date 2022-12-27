@@ -8,11 +8,11 @@
   {%- assign stateNames = states | split: ',' | uniq -%}
 
   <ul>
-    {% for stateName in stateNames %}
-      <li value="{{ stateName }}">
-        {{ stateName }}
+    {%- for stateName in stateNames -%}
+      <li value="{{- stateName -}}">
+        {{- stateName -}}
       </li>
-    {% endfor %}
+    {%- endfor -%}
   </ul>
   <select name="stores" id="stores">
     {%- for stateName in stateNames -%}
