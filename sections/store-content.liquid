@@ -1,11 +1,11 @@
 <section class="stores">
   {% capture states %}
-    {% for state in section.blocks %}
-      {{ state.settings.state_name }}{% unless forloop.last %},{% endunless %}
-    {% endfor %}
+    {%- for state in section.blocks -%}
+      {{- state.settings.state_name -}}{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
   {% endcapture %}
 
-  {% assign statNames = states | split: ',' | uniq %}
+  {%- assign statNames = states | split: ',' | uniq -%}
 
   <select name="stores" id="stores">
     {%- for stateName in statNames -%}
