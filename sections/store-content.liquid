@@ -51,10 +51,9 @@
       }
     })
 
-    let list_item;
     storeUl.innerHTML = '';
     selectedStores.map((item) => {
-      list_item = `<li> ${
+      let list_item = `<li> ${
         item.store_name
       } </li>`;
       storeUl.innerHTML += list_item;
