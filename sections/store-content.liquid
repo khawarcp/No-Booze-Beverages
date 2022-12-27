@@ -45,17 +45,21 @@
   storeSelect.onchange = () => {
     let selectedStores = [];
     let optionVal = storeSelect.value;
+    console.log(optionVal)
     store_list.stores.forEach((options) => {
       if (optionVal == options.state_name) {
         selectedStores.push(options);
       }
     })
 
+    let list_item;
     storeUl.innerHTML = '';
     selectedStores.map((item) => {
-      let list_item = `<li> ${
+      list_item = `<li> <h2>${
         item.store_name
-      } </li>`;
+      }</h2> <img src="${
+        item.store_image
+      }"/> </li>`;
       storeUl.innerHTML += list_item;
     })
   }
