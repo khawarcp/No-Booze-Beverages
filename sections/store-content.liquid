@@ -5,10 +5,10 @@
     {%- endfor -%}
   {% endcapture %}
 
-  {%- assign statNames = states | split: ',' | uniq -%}
+  {%- assign stateNames = states | split: ',' | uniq -%}
 
   <select name="stores" id="stores">
-    {%- for stateName in statNames -%}
+    {%- for stateName in stateNames -%}
       <option value="{{- stateName -}}">
         {{- stateName -}}
       </option>
