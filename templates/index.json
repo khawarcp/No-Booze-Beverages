@@ -209,6 +209,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "86a494dc-0e89-416e-881d-ab06bc32a81f": {
+      "type": "index-slider-banner",
+      "settings": {
+        "json": ""
+      }
     }
   },
   "order": [
@@ -217,6 +223,7 @@
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "86a494dc-0e89-416e-881d-ab06bc32a81f"
   ]
 }
