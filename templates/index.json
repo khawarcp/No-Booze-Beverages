@@ -212,6 +212,70 @@
     },
     "77fe881e-9bad-4924-bf06-f5e9f95977d4": {
       "type": "index-slider-banner",
+      "blocks": {
+        "f199d23e-166e-4ff1-a27a-1c688982bfb0": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "Alabama",
+            "city": "Alabaster Shelby",
+            "age": "21",
+            "zipcode": "45343"
+          }
+        },
+        "597d9284-08e9-410f-b91c-f032fdf41db8": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "Alabama",
+            "city": "Adamsville Jefferson",
+            "age": "21",
+            "zipcode": "354534"
+          }
+        },
+        "da2717f9-cbac-4bf6-a052-7a2f8a918542": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "Alabama",
+            "city": "Moody Saint Clair",
+            "age": "18",
+            "zipcode": "cavsd"
+          }
+        },
+        "b8716ede-9e2a-4e8a-b4ff-5f96d7297c1a": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "California",
+            "city": "Adger Jefferson",
+            "age": "21",
+            "zipcode": "43232"
+          }
+        },
+        "07fbf412-bfbe-4bb7-9f76-0ea8d6f5134d": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "New York",
+            "city": "Downtown",
+            "age": "16",
+            "zipcode": "00501"
+          }
+        },
+        "bba81ac7-5a78-40db-9d42-51ce9c485200": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "Washingtin DC",
+            "city": "Township",
+            "age": "20",
+            "zipcode": "30123"
+          }
+        }
+      },
+      "block_order": [
+        "f199d23e-166e-4ff1-a27a-1c688982bfb0",
+        "597d9284-08e9-410f-b91c-f032fdf41db8",
+        "da2717f9-cbac-4bf6-a052-7a2f8a918542",
+        "b8716ede-9e2a-4e8a-b4ff-5f96d7297c1a",
+        "07fbf412-bfbe-4bb7-9f76-0ea8d6f5134d",
+        "bba81ac7-5a78-40db-9d42-51ce9c485200"
+      ],
       "settings": {
         "json": "{\n\t\"zipcode\": [{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Moody Saint Clair\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35004\n\t\t},\n\t\t{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Adamsville Jefferson\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35005\n\n\t\t},\n\t\t{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Alabaster Shelby\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35006\n\t\t},\n\t\t{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Adger Jefferson\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35006\n\t\t}\n\t]\n}"
       }
