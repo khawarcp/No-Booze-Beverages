@@ -15,7 +15,7 @@
   "zipcode": [
   {%- for state in section.blocks -%}
     {
-    "stateid": "{{ state.id | json }}"    
+    "stateid": "{{ state.id | json }}", 
     "state": "{{ state.settings.state | json }}",
     "city": "{{ state.settings.city | json }}",
     "age": {{ state.settings.age | json }},
