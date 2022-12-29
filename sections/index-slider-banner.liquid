@@ -13,13 +13,13 @@
 <script type="application/json" data-states-json>
   {
   "zipcode": [
-  {%- for state in section.blocks -%}
+  {%- for block in section.blocks -%}
     {
-    "stateid": "{{ state.id | json }}"    
-    "state": "{{ state.settings.state | json }}",
-    "city": "{{ state.settings.city | json }}",
-    "age": {{ state.settings.age | json }},
-    "zipcode": {{ state.settings.zipcode | json }},
+    "stateid": {{- block.id | json -}}, 
+    "state": {{- block.settings.state | json -}},
+    "city": {{- block.settings.city | json -}},
+    "age": {{- block.settings.age | json -}},
+    "zipcode": {{- block.settings.zipcode | json -}}
     }{%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
   ]
