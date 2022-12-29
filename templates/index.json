@@ -212,6 +212,70 @@
     },
     "77fe881e-9bad-4924-bf06-f5e9f95977d4": {
       "type": "index-slider-banner",
+      "blocks": {
+        "a4833ad8-e435-4471-9df5-e43e2f3efd49": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "Alabama",
+            "city": "Abc",
+            "age": "18",
+            "zipcode": "123231"
+          }
+        },
+        "ed4b398c-4d0e-4c86-808a-06f38625ce02": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "Alabama",
+            "city": "dcwe",
+            "age": "18",
+            "zipcode": "43434"
+          }
+        },
+        "6fb2611f-a784-4630-9edf-cf407e9b2b88": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "Washington",
+            "city": "Downtown",
+            "age": "21",
+            "zipcode": "39909"
+          }
+        },
+        "95769bde-71a1-46a7-b69e-00d63dc4a7a3": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "New York",
+            "city": "Township",
+            "age": "14",
+            "zipcode": "00501"
+          }
+        },
+        "3ad2cbc1-b144-46fe-bad3-2040437801f8": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "New York",
+            "city": "Canberra",
+            "age": "14",
+            "zipcode": "42342"
+          }
+        },
+        "cb8c8d4d-9a64-44a3-bc1b-8dea139bbb91": {
+          "type": "zipcodes",
+          "settings": {
+            "state": "California",
+            "city": "Amster",
+            "age": "16",
+            "zipcode": "453244"
+          }
+        }
+      },
+      "block_order": [
+        "a4833ad8-e435-4471-9df5-e43e2f3efd49",
+        "ed4b398c-4d0e-4c86-808a-06f38625ce02",
+        "6fb2611f-a784-4630-9edf-cf407e9b2b88",
+        "95769bde-71a1-46a7-b69e-00d63dc4a7a3",
+        "3ad2cbc1-b144-46fe-bad3-2040437801f8",
+        "cb8c8d4d-9a64-44a3-bc1b-8dea139bbb91"
+      ],
       "settings": {
         "json": "{\n\t\"zipcode\": [{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Moody Saint Clair\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35004\n\t\t},\n\t\t{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Adamsville Jefferson\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35005\n\n\t\t},\n\t\t{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Alabaster Shelby\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35006\n\t\t},\n\t\t{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Adger Jefferson\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35006\n\t\t}\n\t]\n}"
       }
