@@ -213,7 +213,7 @@
     "86a494dc-0e89-416e-881d-ab06bc32a81f": {
       "type": "index-slider-banner",
       "settings": {
-        "json": ""
+        "json": "{\n\t\"zipcode\": [{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Moody Saint Clair\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35004\n\t\t},\n\t\t{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Adamsville Jefferson\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35005\n\n\t\t},\n\t\t{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Alabaster Shelby\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35006\n\t\t},\n\t\t{\n\t\t\t\"state\": \"Alabama\",\n\t\t\t\"city\": \"Adger Jefferson\",\n\t\t\t\"age\": 15,\n\t\t\t\"zipcode\": 35006\n\t\t}\n\t]\n}"
       }
     }
   },
