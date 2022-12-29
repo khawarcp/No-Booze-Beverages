@@ -121,6 +121,9 @@
     "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
+    "checkout_header_image": "shopify:\/\/shop_images\/Rectangle_9638_3.png",
+    "checkout_heading_font": "PT Serif",
+    "checkout_body_font": "Fjalla One",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -215,7 +218,10 @@
           "color_scheme": "background-1"
         }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
