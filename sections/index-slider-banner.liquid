@@ -15,9 +15,9 @@
   "zipcode": [
   {%- for block in section.blocks -%}
     {
-    "stateid": "{{- block.id | json -}}", 
-    "state": "{{- block.settings.state | json -}}",
-    "city": "{{- block.settings.city | json -}}",
+    "stateid": {{- block.id | json -}}, 
+    "state": {{- block.settings.state | json -}},
+    "city": {{- block.settings.city | json -}},
     "age": {{- block.settings.age | json -}},
     "zipcode": {{- block.settings.zipcode | json -}},
     }{%- unless forloop.last -%},{%- endunless -%}
