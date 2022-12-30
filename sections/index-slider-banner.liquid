@@ -1,76 +1,106 @@
-<form action="" method="get">
+<form
+  action="/"
+  id="zipform"
+  method="get">
   <input
     placeholder="Enter Zip Code"
     type="text"
     id="zip"
     name="zip"
-    pattern="[0-9]+" />
-  <button type="submit">
+    pattern="[0-9]+"
+    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+  <button id="zipbtn" type="submit">
     Search
   </button>
 </form>
 
-<script type="application/json" data-states-json>
-  {
-  "zipcode": [
-  {%- for block in section.blocks -%}
-    {
-    "stateid": {{- block.id | json -}}, 
-    "state": {{- block.settings.state | json -}},
-    "city": {{- block.settings.city | json -}},
-    "age": {{- block.settings.age | json -}},
-    "zipcode": {{- block.settings.zipcode | json -}}
-    }{%- unless forloop.last -%},{%- endunless -%}
-  {%- endfor -%}
-  ]
-  }
-</script>
-
-
-
-{% schema %}
-  {
-    "name": "Slider",
-    "settings": [
-      {
-        "type": "html",
-        "id": "json",
-        "label": "Zip Codes JSON"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "Slide",
-        "type": "Slide",
-        "settings": []
-      }, {
-        "name": "Zip Codes",
-        "type": "zipcodes",
-        "settings": [
-          {
-            "type": "text",
-            "id": "state",
-            "label": "State"
-          }, {
-            "type": "text",
-            "id": "city",
-            "label": "City"
-          }, {
-            "type": "text",
-            "id": "age",
-            "label": "Age"
-          }, {
-            "type": "text",
-            "id": "zipcode",
-            "label": "Zip Code"
+<script>/*
+  let url = 'https://cdn.shopify.com/s/files/1/0694/1523/9978/files/zipcodes.json?v=1672315825';
+  let zipbtn = document.getElementById('zipbtn');
+  let zipform = document.getElementById('zipform');
+  let message = document.createElement('p');
+  zipbtn.onclick = (e) => {
+    e.preventDefault();
+    let zipVal = Number(document.getElementById('zip').value);
+    if (zipVal) {
+      message.innerHTML = '';
+      let zipcodes = fetch(url);
+      zipcodes.then((v) => {
+        return v.json();
+      }).then((zipcodeMatch) => {
+        zipcodeMatch.zipcode.forEach((item) => {
+          if (zipVal == + item.zipcode) {
+            console.log(item.state);
+            alert('if')
+            message.innerHTML = 'Hurrah! we sell in your city';
+          } else {
+            alert('else')
+            message.innerHTML = 'Oppss! we do not sell in your city';
           }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Slider"
-      }
-    ]
-  }
+        })
+      })
+
+    } else {
+      alert('outer else')
+      message.innerHTML = 'Please enter the zipcode';
+    } zipform.append(message);
+  }*/
+</script><script type="application/json" data-states-json>
+{
+"zipcode": [
+{%- for block in section.blocks -%}
+  {
+  "stateid": {{- block.id | json -}}, 
+  "state": {{- block.settings.state | json -}},
+  "city": {{- block.settings.city | json -}},
+  "age": {{- block.settings.age | json -}},
+  "zipcode": {{- block.settings.zipcode | json -}}
+  }{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+]
+}</script>{% schema %}
+{
+  "name": "Slider",
+  "settings": [
+    {
+      "type": "html",
+      "id": "json",
+      "label": "Zip Codes JSON"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Slide",
+      "type": "Slide",
+      "settings": []
+    }, {
+      "name": "Zip Codes",
+      "type": "zipcodes",
+      "settings": [
+        {
+          "type": "text",
+          "id": "state",
+          "label": "State"
+        }, {
+          "type": "text",
+          "id": "city",
+          "label": "City"
+        }, {
+          "type": "text",
+          "id": "age",
+          "label": "Age"
+        }, {
+          "type": "text",
+          "id": "zipcode",
+          "label": "Zip Code"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider"
+    }
+  ]
+}
 {% endschema %}
