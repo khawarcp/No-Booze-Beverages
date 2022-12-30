@@ -21,52 +21,45 @@
   let message = document.createElement('p');
   zipbtn.onclick = (e) => {
     e.preventDefault();
-    let zipVal = Number.parseInt(document.getElementById('zip').value);
+    let zipVal = document.getElementById('zip').value;
     if (zipVal) {
       message.innerHTML = '';
       let zipcodes = fetch(url);
-
       zipcodes.then((v) => {
         return v.json();
       }).then((zipcodeMatch) => {
-
         let matchedZip = zipcodeMatch.zipcode.find((item) => {
-          item.zipcode = Number.parseInt(item.zipcode)
           if (zipVal === item.zipcode) {
             return item;
           }
           return false;
         });
-
         if (matchedZip) {
           message.innerHTML = 'found'
         } else {
           message.innerHTML = 'not found'
         }
       })
-
     } else {
       alert('outer else')
       message.innerHTML = 'Please enter the zipcode';
     } zipform.append(message);
   }
-</script>
-
-{% comment %} <script type="application/json" data-states-json>
-{
-"zipcode": [
-{%- for block in section.blocks -%}
-{
-"stateid": {{- block.id | json -}}, 
-"state": {{- block.settings.state | json -}},
-"city": {{- block.settings.city | json -}},
-"age": {{- block.settings.age | json -}},
-"zipcode": {{- block.settings.zipcode | json -}}
-}{%- unless forloop.last -%},{%- endunless -%}
-{%- endfor -%}
-]
-}
-</script> {% endcomment %}{% schema %}
+</script>{% comment %} <script type="application/json" data-states-json>
+  {
+  "zipcode": [
+  {%- for block in section.blocks -%}
+  {
+  "stateid": {{- block.id | json -}}, 
+  "state": {{- block.settings.state | json -}},
+  "city": {{- block.settings.city | json -}},
+  "age": {{- block.settings.age | json -}},
+  "zipcode": {{- block.settings.zipcode | json -}}
+  }{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
+  ]
+  }
+  </script> {% endcomment %}{% schema %}
   {
     "name": "Slider",
     "settings": [
