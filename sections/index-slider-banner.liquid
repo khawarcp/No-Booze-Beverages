@@ -14,7 +14,7 @@ Search
 </button>
 </form> {% endcomment %}
 
-<select name="stateAge" id="stateAge">
+<select name="stateAgeSelect" id="stateAgeSelect">
   <option value="Alabama">Alabama</option>
   <option value="New York">New York</option>
   <option value="Washington DC">Washington DC</option>
@@ -23,6 +23,16 @@ Search
   <option value="Los Angeles">Los Angeles</option>
   <option value="Cost Rica">Cost Rica</option>
 </select>
+
+<div class="stateByAge">
+  <input
+    type="checkbox"
+    value="18"
+    id="stateAge" />
+  <label for="stateAge">I'm
+    <span id="ageSpan">18+</span>
+    Years Old</label>
+</div>
 
 <script>/*
   let url = 'https://cdn.shopify.com/s/files/1/0694/1523/9978/files/zipcodes.json?v=1672315825';
