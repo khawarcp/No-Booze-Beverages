@@ -34,10 +34,12 @@ Search
     Years Old</label>
 </div>
 
-<script>/*
-  let url = 'https://cdn.shopify.com/s/files/1/0694/1523/9978/files/zipcodes.json?v=1672315825';
-  let zipbtn = document.getElementById('zipbtn');
-  let zipform = document.getElementById('zipform');
+<script>
+
+  // Zip Code Search function
+  const url = 'https://cdn.shopify.com/s/files/1/0694/1523/9978/files/zipcodes.json?v=1672315825';
+  const zipbtn = document.getElementById('zipbtn');
+  const zipform = document.getElementById('zipform');
   let message = document.createElement('p');
   zipbtn.onclick = (e) => {
     e.preventDefault();
@@ -63,6 +65,40 @@ Search
     } else {
       message.innerHTML = 'Please enter the zipcode';
     } zipform.append(message);
+  }
+
+// Age Search Function
+
+/* const url = 'https://cdn.shopify.com/s/files/1/0694/1523/9978/files/zipcodes.json?v=1672315825';
+  const stateAgeSelect = document.getElementById('stateAgeSelect');
+  stateAgeSelect.onchange = (e) => {
+    e.preventDefault();
+    let zipVal = document.getElementById('stateAgeSelect').value;
+    if (zipVal) {
+      let zipcodes = fetch(url);
+
+      zipcodes.then((v) => {
+        return v.json();
+      }).then((zipcodeMatch) => {
+
+        let matchedZip = zipcodeMatch.zipcode.find((item) => {
+          if (zipVal === item.state) {
+            return item;
+          }
+          return false;
+        });
+
+        if (matchedZip) {
+          document.getElementById('stateAge').value = matchedZip.age;
+          document.getElementById('ageSpan').textContent = matchedZip.age;
+        } else {
+          alert('State not found');
+        }
+      })
+
+    } else {
+      message.innerHTML = 'Age is not not found';
+    }
   }*/
 </script>{% comment %} <script type="application/json" data-states-json>
   {
@@ -79,48 +115,48 @@ Search
   ]
   }
   </script> {% endcomment %}{% schema %}
-{
-  "name": "Slider",
-  "settings": [
-    {
-      "type": "html",
-      "id": "json",
-      "label": "Zip Codes JSON"
-    }
-  ],
-  "blocks": [
-    {
-      "name": "Slide",
-      "type": "Slide",
-      "settings": []
-    }, {
-      "name": "Zip Codes",
-      "type": "zipcodes",
-      "settings": [
-        {
-          "type": "text",
-          "id": "state",
-          "label": "State"
-        }, {
-          "type": "text",
-          "id": "city",
-          "label": "City"
-        }, {
-          "type": "text",
-          "id": "age",
-          "label": "Age"
-        }, {
-          "type": "text",
-          "id": "zipcode",
-          "label": "Zip Code"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Slider"
-    }
-  ]
-}
+  {
+    "name": "Slider",
+    "settings": [
+      {
+        "type": "html",
+        "id": "json",
+        "label": "Zip Codes JSON"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Slide",
+        "type": "Slide",
+        "settings": []
+      }, {
+        "name": "Zip Codes",
+        "type": "zipcodes",
+        "settings": [
+          {
+            "type": "text",
+            "id": "state",
+            "label": "State"
+          }, {
+            "type": "text",
+            "id": "city",
+            "label": "City"
+          }, {
+            "type": "text",
+            "id": "age",
+            "label": "Age"
+          }, {
+            "type": "text",
+            "id": "zipcode",
+            "label": "Zip Code"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slider"
+      }
+    ]
+  }
 {% endschema %}
