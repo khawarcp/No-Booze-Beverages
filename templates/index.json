@@ -2,8 +2,43 @@
   "sections": {
     "45a9a556-07a9-4c25-877c-67fe4c2c6269": {
       "type": "index-slider-banner",
+      "blocks": {
+        "159618bf-1fc7-48e7-aeba-cd16b50628e5": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/karanium-drink.png"
+          }
+        },
+        "aa6fbec2-3766-4aa6-8e31-706044a7b194": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/karanium-drink.png"
+          }
+        },
+        "0908af30-a56b-4ef6-986a-f7cbb3ff18c7": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/karanium-drink.png"
+          }
+        },
+        "9c08b00b-2d81-435a-8547-f7bd5f4afda0": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/karanium-drink.png"
+          }
+        }
+      },
+      "block_order": [
+        "159618bf-1fc7-48e7-aeba-cd16b50628e5",
+        "aa6fbec2-3766-4aa6-8e31-706044a7b194",
+        "0908af30-a56b-4ef6-986a-f7cbb3ff18c7",
+        "9c08b00b-2d81-435a-8547-f7bd5f4afda0"
+      ],
       "settings": {
-        "json": ""
+        "heading": "Find the Taste Buds",
+        "info": "At some point during the day, you will have to stop and think about yourself.",
+        "marquee_text": "Drinks that taste as good as they make you feel",
+        "background_image": "shopify:\/\/shop_images\/crystals-bg.png"
       }
     }
   },
