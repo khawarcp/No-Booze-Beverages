@@ -1,3 +1,29 @@
+<section class="brands-section">
+  <div class="marquee-wrap flex ai-center">
+    <div class="seenIn">
+      <h4>{{ section.settings.heading }}</h4>
+    </div>
+    <div class="marquee-content marquee-left">
+      {% for block in section.blocks %}
+        {% if block.settings.brand_image != blank %}
+          <div class="singleBrand">
+            {% if block.settings.brand_url != blank %}
+              <a href="{{ block.settings.brand_url }}">
+              {% endif %}
+              <img
+                loading="lazy"
+                src="{{ block.settings.brand_image | img_url: 'master' }}"
+                alt="{{ block.settings.brand_image.alt }}">
+              {% if block.settings.brand_url != blank %}
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 {% schema %}
   {
     "name": "Brands",
