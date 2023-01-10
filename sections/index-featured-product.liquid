@@ -5,7 +5,7 @@
       <div class="shopImage">
         {% if section.settings.image != blank %}
           <img
-            src="{{ section.settings.image | img_url : "master"  }}"
+            src="{{ section.settings.image | img_url : "master" }}"
             alt="{{ section.settings.image.alt  }}"
             loading="lazy">
         {% else %}
@@ -24,16 +24,36 @@
               {{ block.settings.info }}
             </p>
             <ul>
-              {% for i in (1..5) %}
-                {% if condition %}
-                  <li>Highly effective cleaning out your body</li>
-                {% endif %}
-              {% endfor %}
-              <li>Reset your system</li>
-              <li>100% certified organic & cold pressed</li>
+              {% if block.settings.feature_1 != blank %}
+                <li>
+                  {{ block.settings.feature_1 }}
+                </li>
+              {% endif %}
+              {% if block.settings.feature_2 != blank %}
+                <li>
+                  {{ block.settings.feature_2 }}
+                </li>
+              {% endif %}
+              {% if block.settings.feature_3 != blank %}
+                <li>
+                  {{ block.settings.feature_3 }}
+                </li>
+              {% endif %}
+              {% if block.settings.feature_4 != blank %}
+                <li>
+                  {{ block.settings.feature_4 }}
+                </li>
+              {% endif %}
+              {% if block.settings.feature_5 != blank %}
+                <li>
+                  {{ block.settings.feature_5 }}
+                </li>
+              {% endif %}
             </ul>
             {% when 'button' %}
-            <a href="#" class="siteBtn">Shop Now</a>
+            {% if block.settings.button_text != blank %}
+              <a href="{{ block.settings.button_url | default: '#' }}" class="siteBtn">{{ block.settings.button_text }}</a>
+            {% endif %}
           {% endcase %}
         {%- endfor -%}
       </div>
@@ -104,7 +124,8 @@
           {
             "type": "text",
             "id": "button_text",
-            "label": "Button Text"
+            "label": "Button Text",
+            "default": "Shop Now"
           }, {
             "type": "url",
             "id": "button_url",
