@@ -3,25 +3,41 @@
     "45a9a556-07a9-4c25-877c-67fe4c2c6269": {
       "type": "index-slider-banner",
       "blocks": {
+<<<<<<< HEAD
         "159618bf-1fc7-48e7-aeba-cd16b50628e5": {
+=======
+        "b00b3dda-2e27-434c-b7f8-c4b1a3706f50": {
+>>>>>>> 6f622e76d7179ce73e97e98995b7e90e1fb59b7f
           "type": "Slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/karanium-drink.png"
           }
         },
+<<<<<<< HEAD
         "aa6fbec2-3766-4aa6-8e31-706044a7b194": {
+=======
+        "10341608-e774-4508-8eb1-bc1875a25e29": {
+>>>>>>> 6f622e76d7179ce73e97e98995b7e90e1fb59b7f
           "type": "Slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/karanium-drink.png"
           }
         },
+<<<<<<< HEAD
         "0908af30-a56b-4ef6-986a-f7cbb3ff18c7": {
+=======
+        "b1490f79-50ac-4832-992c-2de04258d182": {
+>>>>>>> 6f622e76d7179ce73e97e98995b7e90e1fb59b7f
           "type": "Slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/karanium-drink.png"
           }
         },
+<<<<<<< HEAD
         "9c08b00b-2d81-435a-8547-f7bd5f4afda0": {
+=======
+        "46477e4a-7c9a-4f3a-b729-fd3c53eb5d7f": {
+>>>>>>> 6f622e76d7179ce73e97e98995b7e90e1fb59b7f
           "type": "Slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/karanium-drink.png"
@@ -29,10 +45,17 @@
         }
       },
       "block_order": [
+<<<<<<< HEAD
         "159618bf-1fc7-48e7-aeba-cd16b50628e5",
         "aa6fbec2-3766-4aa6-8e31-706044a7b194",
         "0908af30-a56b-4ef6-986a-f7cbb3ff18c7",
         "9c08b00b-2d81-435a-8547-f7bd5f4afda0"
+=======
+        "b00b3dda-2e27-434c-b7f8-c4b1a3706f50",
+        "10341608-e774-4508-8eb1-bc1875a25e29",
+        "b1490f79-50ac-4832-992c-2de04258d182",
+        "46477e4a-7c9a-4f3a-b729-fd3c53eb5d7f"
+>>>>>>> 6f622e76d7179ce73e97e98995b7e90e1fb59b7f
       ],
       "settings": {
         "heading": "Find the Taste Buds",
