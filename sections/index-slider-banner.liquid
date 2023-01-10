@@ -1,174 +1,57 @@
-    <!-- Mini Banner -->
-    <section class="banner-section">
-        <div class="marquee-wrap">
-            <div class="marquee-content marquee-left">
-                <span>Drinks that taste as good as they make you feel</span>
-            </div>
-        </div>
-    </section>
-    <!-- Find Taste -->
-    <section class="find-section">
-        <div class="container">
-            <div class="find-row flex">
-                <div class="find-taste">
-                    <h2>Find the Taste Buds</h2>
-                    <p>At some point during the day, you will have to stop and think about yourself.</p>
-                    <form action="">
-                        <div class="zipCode">
-                            <input type="text" placeholder="Enter Zip Code">
-                            <button type="submit"><img src="assets/images/right-icon.svg" alt="right arrow"></button>
-                        </div>
-                    </form>
-                    <span class="not-sell"><img src="assets/images/info-icon.svg" alt="info icon">Ops! We do not sell products in your state.</span>
-                    <span class="do-sell"><img src="assets/images/green-marker.svg" alt="info icon">Hurrah! We sell in your state.</span>
-                </div>
-            </div>
-        </div>
-        <div class="crystals">
-            <img src="assets/images/crystals-bg.png" alt="Crystals Image">
-        </div>
-        <div class="drink-options owl-carousel">
-            <div class="item">
-                <div class="single-drink">
-                    <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-drink">
-                    <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-drink">
-                    <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-drink">
-                    <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Mini Banner -->
+<section class="banner-section">
+  <div class="marquee-wrap">
+    <div class="marquee-content marquee-left">
+      <span>Drinks that taste as good as they make you feel</span>
+    </div>
+  </div>
+</section>
+<!-- Find Taste -->
+<section class="find-section">
+  <div class="container">
+    <div class="find-row flex">
+      <div class="find-taste">
+        <h2>Find the Taste Buds</h2>
+        <p>At some point during the day, you will have to stop and think about yourself.</p>
+        <form action="">
+          <div class="zipCode">
+            <input type="text" placeholder="Enter Zip Code">
+            <button type="submit"><img src="assets/images/right-icon.svg" alt="right arrow"></button>
+          </div>
+        </form>
+        <span class="not-sell"><img src="assets/images/info-icon.svg" alt="info icon">Ops! We do not sell products in your state.</span>
+        <span class="do-sell"><img src="assets/images/green-marker.svg" alt="info icon">Hurrah! We sell in your state.</span>
+      </div>
+    </div>
+  </div>
+  <div class="crystals">
+    <img src="assets/images/crystals-bg.png" alt="Crystals Image">
+  </div>
+  <div class="drink-options owl-carousel">
+    <div class="item">
+      <div class="single-drink">
+        <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
+      </div>
+    </div>
+    <div class="item">
+      <div class="single-drink">
+        <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
+      </div>
+    </div>
+    <div class="item">
+      <div class="single-drink">
+        <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
+      </div>
+    </div>
+    <div class="item">
+      <div class="single-drink">
+        <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
+      </div>
+    </div>
+  </div>
+</section>
 
-{% comment %} <form
-action="/"
-id="zipform"
-method="get">
-<input
-placeholder="Enter Zip Code"
-type="text"
-id="zip"
-name="zip"
-pattern="[0-9]+"
-oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
-<button id="zipbtn" type="submit">
-Search
-</button>
-</form> 
-
-<select name="stateAgeSelect" id="stateAgeSelect">
-  <option value="Alabama">Alabama</option>
-  <option value="New York">New York</option>
-  <option value="Washington DC">Washington DC</option>
-  <option value="California">California</option>
-  <option value="Georgia">Georgia</option>
-  <option value="Los Angeles">Los Angeles</option>
-  <option value="Cost Rica">Cost Rica</option>
-</select>
-
-<div class="stateByAge">
-  <input
-    type="checkbox"
-    value="18"
-    id="stateAge" />
-  <label for="stateAge">I'm
-    <span id="ageSpan">18+</span>
-    Years Old</label>
-</div>
-{% endcomment %}
-{% comment %}
-<script>
-
-  // Zip Code Search function
-  const url = 'https://cdn.shopify.com/s/files/1/0694/1523/9978/files/zipcodes.json?v=1672315825';
-  const zipbtn = document.getElementById('zipbtn');
-  const zipform = document.getElementById('zipform');
-  let message = document.createElement('p');
-  zipbtn.onclick = (e) => {
-    e.preventDefault();
-    let zipVal = document.getElementById('zip').value;
-    if (zipVal) {
-      message.innerHTML = '';
-      let zipcodes = fetch(url);
-      zipcodes.then((v) => {
-        return v.json();
-      }).then((zipcodeMatch) => {
-        let matchedZip = zipcodeMatch.zipcode.find((item) => {
-          if (zipVal === item.zipcode) {
-            return item;
-          }
-          return false;
-        });
-        if (matchedZip) {
-          message.innerHTML = 'found'
-        } else {
-          message.innerHTML = 'not found'
-        }
-      })
-    } else {
-      message.innerHTML = 'Please enter the zipcode';
-    } zipform.append(message);
-  }
-
-// Age Search Function
-
-/* const url = 'https://cdn.shopify.com/s/files/1/0694/1523/9978/files/zipcodes.json?v=1672315825';
-  const stateAgeSelect = document.getElementById('stateAgeSelect');
-  stateAgeSelect.onchange = (e) => {
-    e.preventDefault();
-    let zipVal = document.getElementById('stateAgeSelect').value;
-    if (zipVal) {
-      let zipcodes = fetch(url);
-
-      zipcodes.then((v) => {
-        return v.json();
-      }).then((zipcodeMatch) => {
-
-        let matchedZip = zipcodeMatch.zipcode.find((item) => {
-          if (zipVal === item.state) {
-            return item;
-          }
-          return false;
-        });
-
-        if (matchedZip) {
-          document.getElementById('stateAge').value = matchedZip.age;
-          document.getElementById('ageSpan').textContent = matchedZip.age;
-        } else {
-          alert('State not found');
-        }
-      })
-
-    } else {
-      message.innerHTML = 'Age is not not found';
-    }
-  }*/
-</script>{% comment %} <script type="application/json" data-states-json>
-  {
-  "zipcode": [
-  {%- for block in section.blocks -%}
-  {
-  "stateid": {{- block.id | json -}}, 
-  "state": {{- block.settings.state | json -}},
-  "city": {{- block.settings.city | json -}},
-  "age": {{- block.settings.age | json -}},
-  "zipcode": {{- block.settings.zipcode | json -}}
-  }{%- unless forloop.last -%},{%- endunless -%}
-  {%- endfor -%}
-  ]
-  }
-  </script> {% endcomment %}{% schema %}
+{% schema %}
   {
     "name": "Slider",
     "settings": [

@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @font-face {
     font-family: 'Maison Neue Book';
-    src: url('../fonts/maisonNeue/MaisonNeue-Book.woff2') format('woff2'),
-        url('../fonts/maisonNeue/MaisonNeue-Book.woff') format('woff');
+    src: url('MaisonNeue-Book.woff2') format('woff2'),
+        url('MaisonNeue-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maison Neue Book';
-    src: url('../fonts/maisonNeue/MaisonNeueExtended-ExtraBold.woff2') format('woff2'),
-        url('../fonts/maisonNeue/MaisonNeueExtended-ExtraBold.woff') format('woff');
+    src: url('MaisonNeueExtended-ExtraBold.woff2') format('woff2'),
+        url('MaisonNeueExtended-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maison Neue Book';
-    src: url('../fonts/maisonNeue/MaisonNeue-Medium.woff2') format('woff2'),
-        url('../fonts/maisonNeue/MaisonNeue-Medium.woff') format('woff');
+    src: url('MaisonNeue-Medium.woff2') format('woff2'),
+        url('MaisonNeue-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
