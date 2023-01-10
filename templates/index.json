@@ -89,13 +89,18 @@
         "4cffbba0-889f-429e-ade8-35ba6be377f2": {
           "type": "heading",
           "settings": {
-            "heading": ""
+            "heading": "Carefully curated kits offering <br> a healthy serving of savings!"
           }
         },
         "2e651f4d-6e0b-4009-8709-b2452c250223": {
           "type": "text",
           "settings": {
-            "info": ""
+            "info": "",
+            "feature_1": "",
+            "feature_2": "",
+            "feature_3": "",
+            "feature_4": "",
+            "feature_5": ""
           }
         },
         "1e9456b5-fc0f-4500-8bf2-208a98cc0caf": {
