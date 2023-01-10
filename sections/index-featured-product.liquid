@@ -21,7 +21,7 @@
             </h2>
             {% when 'text' %}
             <p>
-              {{ block.settings.info }}
+              {{ block.settings.info | newline_to_br }}
             </p>
             <ul>
               {% if block.settings.feature_1 != blank %}
@@ -77,7 +77,7 @@
         "limit": 1,
         "settings": [
           {
-            "type": "text",
+            "type": "textarea",
             "id": "heading",
             "label": "Heading"
           }
@@ -88,7 +88,7 @@
         "limit": 1,
         "settings": [
           {
-            "type": "inline_richtext",
+            "type": "textarea",
             "id": "info",
             "label": "Text"
           },
