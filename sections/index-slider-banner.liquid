@@ -2,7 +2,8 @@
 <section class="banner-section">
   <div class="marquee-wrap">
     <div class="marquee-content marquee-left">
-      <span>Drinks that taste as good as they make you feel</span>
+      <span>
+        {{ section.settings.marquee_text }}</span>
     </div>
   </div>
 </section>
@@ -11,43 +12,61 @@
   <div class="container">
     <div class="find-row flex">
       <div class="find-taste">
-        <h2>Find the Taste Buds</h2>
-        <p>At some point during the day, you will have to stop and think about yourself.</p>
+        <h2>
+          {{ section.settings.heading }}
+        </h2>
+        <p>
+          {{ section.settings.info }}
+        </p>
         <form action="">
           <div class="zipCode">
             <input type="text" placeholder="Enter Zip Code">
-            <button type="submit"><img src="assets/images/right-icon.svg" alt="right arrow"></button>
+            <button type="submit"><img
+                loading="lazy"
+                src="{{ 'right-icon.svg' | asset_url }}"
+                alt="right arrow"></button>
           </div>
         </form>
-        <span class="not-sell"><img src="assets/images/info-icon.svg" alt="info icon">Ops! We do not sell products in your state.</span>
-        <span class="do-sell"><img src="assets/images/green-marker.svg" alt="info icon">Hurrah! We sell in your state.</span>
+        <span class="not-sell"><img
+            loading="lazy"
+            src="{{ 'info-icon.svg' | asset_url }}"
+            alt="info icon">Ops! We do not sell products in your state.</span>
+        <span class="do-sell"><img
+            loading="lazy"
+            src="{{ 'green-marker.svg' | asset_url }}"
+            alt="info icon">Hurrah! We sell in your state.</span>
       </div>
     </div>
   </div>
   <div class="crystals">
-    <img src="assets/images/crystals-bg.png" alt="Crystals Image">
+    {% if section.settings.background_image != blank %}
+      <img
+        loading="lazy"
+        src="{{ section.settings.background_image | img_url: 'master'  }}"
+        alt="{{ section.settings.background_image.alt }}">
+    {% else %}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+    {% endif %}
   </div>
   <div class="drink-options owl-carousel">
-    <div class="item">
-      <div class="single-drink">
-        <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
-      </div>
-    </div>
-    <div class="item">
-      <div class="single-drink">
-        <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
-      </div>
-    </div>
-    <div class="item">
-      <div class="single-drink">
-        <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
-      </div>
-    </div>
-    <div class="item">
-      <div class="single-drink">
-        <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
-      </div>
-    </div>
+    {% for block in section.blocks %}
+      {% if block.settings.image != blank %}
+        <div class="item">
+          <div class="single-drink">
+            <img
+              src="{{ block.settings.image | img_url : "master"  }}"
+              alt="{{ block.settings.image.alt  }}"
+              loading="lazy">
+          </div>
+        </div>
+      {% else %}
+        <div class="item">
+          <div class="single-drink">
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </section>
 
@@ -56,36 +75,32 @@
     "name": "Slider",
     "settings": [
       {
-        "type": "html",
-        "id": "json",
-        "label": "Zip Codes JSON"
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      }, {
+        "type": "text",
+        "id": "info",
+        "label": "Description"
+      }, {
+        "type": "text",
+        "id": "marquee_text",
+        "label": "Marquee Text"
+      }, {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
       }
     ],
     "blocks": [
       {
         "name": "Slide",
         "type": "Slide",
-        "settings": []
-      }, {
-        "name": "Zip Codes",
-        "type": "zipcodes",
         "settings": [
           {
-            "type": "text",
-            "id": "state",
-            "label": "State"
-          }, {
-            "type": "text",
-            "id": "city",
-            "label": "City"
-          }, {
-            "type": "text",
-            "id": "age",
-            "label": "Age"
-          }, {
-            "type": "text",
-            "id": "zipcode",
-            "label": "Zip Code"
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
           }
         ]
       }
