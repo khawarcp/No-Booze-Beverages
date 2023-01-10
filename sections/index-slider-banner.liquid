@@ -1,3 +1,56 @@
+    <!-- Mini Banner -->
+    <section class="banner-section">
+        <div class="marquee-wrap">
+            <div class="marquee-content marquee-left">
+                <span>Drinks that taste as good as they make you feel</span>
+            </div>
+        </div>
+    </section>
+    <!-- Find Taste -->
+    <section class="find-section">
+        <div class="container">
+            <div class="find-row flex">
+                <div class="find-taste">
+                    <h2>Find the Taste Buds</h2>
+                    <p>At some point during the day, you will have to stop and think about yourself.</p>
+                    <form action="">
+                        <div class="zipCode">
+                            <input type="text" placeholder="Enter Zip Code">
+                            <button type="submit"><img src="assets/images/right-icon.svg" alt="right arrow"></button>
+                        </div>
+                    </form>
+                    <span class="not-sell"><img src="assets/images/info-icon.svg" alt="info icon">Ops! We do not sell products in your state.</span>
+                    <span class="do-sell"><img src="assets/images/green-marker.svg" alt="info icon">Hurrah! We sell in your state.</span>
+                </div>
+            </div>
+        </div>
+        <div class="crystals">
+            <img src="assets/images/crystals-bg.png" alt="Crystals Image">
+        </div>
+        <div class="drink-options owl-carousel">
+            <div class="item">
+                <div class="single-drink">
+                    <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-drink">
+                    <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-drink">
+                    <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-drink">
+                    <img src="assets/images/karanium-drink.png" alt="Kranium Drink">
+                </div>
+            </div>
+        </div>
+    </section>
+
 {% comment %} <form
 action="/"
 id="zipform"
@@ -12,7 +65,7 @@ oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$
 <button id="zipbtn" type="submit">
 Search
 </button>
-</form> {% endcomment %}
+</form> 
 
 <select name="stateAgeSelect" id="stateAgeSelect">
   <option value="Alabama">Alabama</option>
@@ -33,7 +86,8 @@ Search
     <span id="ageSpan">18+</span>
     Years Old</label>
 </div>
-
+{% endcomment %}
+{% comment %}
 <script>
 
   // Zip Code Search function

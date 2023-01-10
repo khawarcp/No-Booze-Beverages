@@ -461,8 +461,7 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% section 'announcement-bar' %}
-    {% section 'header' %}
+    {% section 'custom-header' %}
     <main
       id="MainContent"
       class="content-for-layout focus-none"
@@ -471,7 +470,7 @@
       {{ content_for_layout }}
     </main>
 
-    {% section 'footer' %}
+    {% section 'custom-footer' %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
