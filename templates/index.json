@@ -119,11 +119,64 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/cans-pack.png"
       }
+    },
+    "415d58f5-0f60-4da1-b5c2-1a8e91ffd861": {
+      "type": "index-collection-tabbing",
+      "blocks": {
+        "ec96a6a6-a15c-47f7-92e7-b1b6eb2e43f8": {
+          "type": "soda",
+          "settings": {
+            "soda_collection": "kratom"
+          }
+        },
+        "4eb0d23f-0d88-44aa-8526-e991671ba42c": {
+          "type": "soda",
+          "settings": {
+            "soda_collection": "kava"
+          }
+        },
+        "2327f941-4579-4a6e-a739-a531d66395fa": {
+          "type": "soda",
+          "settings": {
+            "soda_collection": "krakava"
+          }
+        },
+        "c3501c77-764a-480f-81dc-7bba8d5db955": {
+          "type": "seltzer",
+          "settings": {
+            "seltzer_collection": "krakava"
+          }
+        },
+        "bc33243d-70f3-465a-a5ce-fd1d4c62c513": {
+          "type": "seltzer",
+          "settings": {
+            "seltzer_collection": "kratom"
+          }
+        },
+        "4c7ee605-29f1-4c22-b62f-784566f3173c": {
+          "type": "tea",
+          "settings": {
+            "tea_collection": "kava"
+          }
+        }
+      },
+      "block_order": [
+        "ec96a6a6-a15c-47f7-92e7-b1b6eb2e43f8",
+        "4eb0d23f-0d88-44aa-8526-e991671ba42c",
+        "2327f941-4579-4a6e-a739-a531d66395fa",
+        "c3501c77-764a-480f-81dc-7bba8d5db955",
+        "bc33243d-70f3-465a-a5ce-fd1d4c62c513",
+        "4c7ee605-29f1-4c22-b62f-784566f3173c"
+      ],
+      "settings": {
+        "heading": "Kranium Products"
+      }
     }
   },
   "order": [
     "45a9a556-07a9-4c25-877c-67fe4c2c6269",
     "498d8532-c9c6-42c7-921f-f647cd69b7dd",
-    "115f6ef5-9f68-4433-8c76-a4ed932554b7"
+    "115f6ef5-9f68-4433-8c76-a4ed932554b7",
+    "415d58f5-0f60-4da1-b5c2-1a8e91ffd861"
   ]
 }
