@@ -1,7 +1,48 @@
+<!-- Shop Now -->
+<section class="shop-section">
+  <div class="container">
+    <div class="flex jc-sb ai-center">
+      <div class="shopImage">
+        {% if section.settings.image != blank %}
+            <img
+            src="{{ section.settings.image | img_url : "master"  }}"
+            alt="{{ section.settings.image.alt  }}"
+            loading="lazy">
+    </div>
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+        {% endif %}
+      </div>
+      <div class="shop-content">
+        {%- for block in section.blocks -%}
+          {%- case block.type %} 
+            {% when 'heading' %}
+              <h2>Carefully curated kits offering <br> a healthy serving of savings!</h2>
+            {% when 'text' %}
+              <p>We strive for sustainability in every facet of our <br> business. From our plant-based recipes to our <br> glass bottles, it’s central to who we are.</p>
+              <ul>
+                <li>Highly effective cleaning out your body</li>
+                <li>Reset your system</li>
+                <li>100% certified organic & cold pressed</li>
+              </ul>
+            {% when 'button' %}
+              <a href="#" class="siteBtn">Shop Now</a>            
+         {% endcase %}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
 {% schema %}
   {
     "name": "Featured Product",
-    "settings": [],
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ],
     "blocks": [
       {
         "type": "heading",
