@@ -3,41 +3,25 @@
     "45a9a556-07a9-4c25-877c-67fe4c2c6269": {
       "type": "index-slider-banner",
       "blocks": {
-<<<<<<< HEAD
-        "159618bf-1fc7-48e7-aeba-cd16b50628e5": {
-=======
         "b00b3dda-2e27-434c-b7f8-c4b1a3706f50": {
->>>>>>> 6f622e76d7179ce73e97e98995b7e90e1fb59b7f
           "type": "Slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/karanium-drink.png"
           }
         },
-<<<<<<< HEAD
-        "aa6fbec2-3766-4aa6-8e31-706044a7b194": {
-=======
         "10341608-e774-4508-8eb1-bc1875a25e29": {
->>>>>>> 6f622e76d7179ce73e97e98995b7e90e1fb59b7f
           "type": "Slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/karanium-drink.png"
           }
         },
-<<<<<<< HEAD
-        "0908af30-a56b-4ef6-986a-f7cbb3ff18c7": {
-=======
         "b1490f79-50ac-4832-992c-2de04258d182": {
->>>>>>> 6f622e76d7179ce73e97e98995b7e90e1fb59b7f
           "type": "Slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/karanium-drink.png"
           }
         },
-<<<<<<< HEAD
-        "9c08b00b-2d81-435a-8547-f7bd5f4afda0": {
-=======
         "46477e4a-7c9a-4f3a-b729-fd3c53eb5d7f": {
->>>>>>> 6f622e76d7179ce73e97e98995b7e90e1fb59b7f
           "type": "Slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/karanium-drink.png"
@@ -45,17 +29,10 @@
         }
       },
       "block_order": [
-<<<<<<< HEAD
-        "159618bf-1fc7-48e7-aeba-cd16b50628e5",
-        "aa6fbec2-3766-4aa6-8e31-706044a7b194",
-        "0908af30-a56b-4ef6-986a-f7cbb3ff18c7",
-        "9c08b00b-2d81-435a-8547-f7bd5f4afda0"
-=======
         "b00b3dda-2e27-434c-b7f8-c4b1a3706f50",
         "10341608-e774-4508-8eb1-bc1875a25e29",
         "b1490f79-50ac-4832-992c-2de04258d182",
         "46477e4a-7c9a-4f3a-b729-fd3c53eb5d7f"
->>>>>>> 6f622e76d7179ce73e97e98995b7e90e1fb59b7f
       ],
       "settings": {
         "heading": "Find the Taste Buds",
@@ -63,9 +40,52 @@
         "marquee_text": "Drinks that taste as good as they make you feel",
         "background_image": "shopify:\/\/shop_images\/crystals-bg.png"
       }
+    },
+    "498d8532-c9c6-42c7-921f-f647cd69b7dd": {
+      "type": "index-brands",
+      "blocks": {
+        "73c99194-d04c-4d22-b334-f67b14f81a33": {
+          "type": "Brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/Wallpaper.jpg",
+            "brand_url": ""
+          }
+        },
+        "ee8f3f4c-aae4-49eb-b0c0-966969d72c06": {
+          "type": "Brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/Vogue.jpg",
+            "brand_url": ""
+          }
+        },
+        "b3d16961-f2a4-4c28-82bf-5470e90d9ee9": {
+          "type": "Brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/traveler.png",
+            "brand_url": ""
+          }
+        },
+        "4032b2f9-7f95-4a38-98eb-fa70d95702e1": {
+          "type": "Brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/goop.jpg",
+            "brand_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "73c99194-d04c-4d22-b334-f67b14f81a33",
+        "ee8f3f4c-aae4-49eb-b0c0-966969d72c06",
+        "b3d16961-f2a4-4c28-82bf-5470e90d9ee9",
+        "4032b2f9-7f95-4a38-98eb-fa70d95702e1"
+      ],
+      "settings": {
+        "heading": "As Seen In"
+      }
     }
   },
   "order": [
-    "45a9a556-07a9-4c25-877c-67fe4c2c6269"
+    "45a9a556-07a9-4c25-877c-67fe4c2c6269",
+    "498d8532-c9c6-42c7-921f-f647cd69b7dd"
   ]
 }
