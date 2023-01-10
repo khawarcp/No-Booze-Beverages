@@ -82,10 +82,43 @@
       "settings": {
         "heading": "As Seen In"
       }
+    },
+    "115f6ef5-9f68-4433-8c76-a4ed932554b7": {
+      "type": "index-featured-product",
+      "blocks": {
+        "4cffbba0-889f-429e-ade8-35ba6be377f2": {
+          "type": "heading",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "2e651f4d-6e0b-4009-8709-b2452c250223": {
+          "type": "text",
+          "settings": {
+            "info": ""
+          }
+        },
+        "1e9456b5-fc0f-4500-8bf2-208a98cc0caf": {
+          "type": "button",
+          "settings": {
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "4cffbba0-889f-429e-ade8-35ba6be377f2",
+        "2e651f4d-6e0b-4009-8709-b2452c250223",
+        "1e9456b5-fc0f-4500-8bf2-208a98cc0caf"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cans-pack.png"
+      }
     }
   },
   "order": [
     "45a9a556-07a9-4c25-877c-67fe4c2c6269",
-    "498d8532-c9c6-42c7-921f-f647cd69b7dd"
+    "498d8532-c9c6-42c7-921f-f647cd69b7dd",
+    "115f6ef5-9f68-4433-8c76-a4ed932554b7"
   ]
 }
