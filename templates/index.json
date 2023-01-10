@@ -89,16 +89,16 @@
         "4cffbba0-889f-429e-ade8-35ba6be377f2": {
           "type": "heading",
           "settings": {
-            "heading": "Carefully curated kits offering <br> a healthy serving of savings!"
+            "heading": "Carefully curated kits offering\na healthy serving of savings!"
           }
         },
         "2e651f4d-6e0b-4009-8709-b2452c250223": {
           "type": "text",
           "settings": {
-            "info": "",
-            "feature_1": "",
-            "feature_2": "",
-            "feature_3": "",
+            "info": "We strive for sustainability in every facet of our\nbusiness. From our plant-based recipes to our\nglass bottles, it’s central to who we are.",
+            "feature_1": "Highly effective cleaning out your body",
+            "feature_2": "Reset your system",
+            "feature_3": "100% certified organic & cold pressed",
             "feature_4": "",
             "feature_5": ""
           }
