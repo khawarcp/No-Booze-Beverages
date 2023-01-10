@@ -382,7 +382,7 @@ header {
     left: 0;
     height: 21px;
     width: 21px;
-    background: url('../images/list-icon.svg') center/contain no-repeat;
+    background: url('list-icon.svg') center/contain no-repeat;
 }
 .shop-content p:last-child {
     margin-bottom: 0;
