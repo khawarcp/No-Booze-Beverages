@@ -298,6 +298,52 @@
         "image": "shopify:\/\/shop_images\/videoBg.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=9xwazD5SyVg"
       }
+    },
+    "18886608-6f6a-4c90-b0e6-fd4d5ce439f4": {
+      "type": "index-testimonials",
+      "blocks": {
+        "e4998973-cad9-44f7-8048-24eea26558d4": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial1.jpg",
+            "comment": "I did a one day cleanse and felt fantastic afterwards! A true reset for your system!",
+            "name": "@eva.hooft"
+          }
+        },
+        "ad1fb663-431b-4e95-9e5d-ac7ebd7e1e1b": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial2.jpg",
+            "comment": "I love the master cleanse and my guilty pleasure is their kratom watermelon.",
+            "name": "@eva.hooft"
+          }
+        },
+        "d4929fbb-c00a-4a25-8177-b7cd6556e68c": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial3.jpg",
+            "comment": "I did a one day cleanse and felt fantastic afterwards! A true reset for your system!",
+            "name": "@eva.hooft"
+          }
+        },
+        "1b50f56d-a885-4b55-8b12-a420c63f48bf": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial1.jpg",
+            "comment": "I did a one day cleanse and felt fantastic afterwards! A true reset for your system!",
+            "name": "@eva.hooft"
+          }
+        }
+      },
+      "block_order": [
+        "e4998973-cad9-44f7-8048-24eea26558d4",
+        "ad1fb663-431b-4e95-9e5d-ac7ebd7e1e1b",
+        "d4929fbb-c00a-4a25-8177-b7cd6556e68c",
+        "1b50f56d-a885-4b55-8b12-a420c63f48bf"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
@@ -308,6 +354,7 @@
     "8f08de16-e668-4c96-9815-67217a2b4474",
     "b09d790f-fc85-4cc7-bad8-012fc6bfbd6d",
     "8340d906-fc63-4a50-83c8-79ac666f30d7",
-    "172c0916-5b54-4d29-9448-20a2a0df37d8"
+    "172c0916-5b54-4d29-9448-20a2a0df37d8",
+    "18886608-6f6a-4c90-b0e6-fd4d5ce439f4"
   ]
 }
