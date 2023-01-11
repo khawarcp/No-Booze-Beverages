@@ -4,30 +4,29 @@
       <div class="product-descriptions">
         <div class="product-desc-wrap">
           {% for block in section.blocks %}
-            {% case block.type %}
-              {% when 'FAQ' %}
-                <div class="tab_outer">
-                  <div class="accordion_head">
-                    <p> {{ block.settings.quiz }} </p>
-                  </div>
-                  <div class="accordion_body" style="display: none;">
-                    <p>{{ block.settings.answer }}</p>
-                  </div>
+            {% if block.settings.quiz != blank %}
+              <div class="tab_outer">
+                <div class="accordion_head">
+                  <p>
+                    {{ block.settings.quiz }}
+                  </p>
                 </div>
-                {% when 'button' %} 
-                    {% if block.settings.button_text != blank %}                      
-                      <a href="{{ block.settings.button_url | default: '#'  }}" class="siteBtn">{{ block.settings.button_text }}</a>
-                    {% endif %}
-            {% endcase %}
-          {% endfor %}     
+                <div class="accordion_body" style="display: none;">
+                  <p>{{ block.settings.answer }}</p>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% if section.settings.button_text != blank %}
+          <a href="{{ section.settings.button_url | default: '#' }}" class="siteBtn">{{ section.settings.button_text }}</a>
+        {% endif %}
       </div>
       <div class="product-desc-image">
         {% if section.settings.image != blank %}
           <img
-            {{ section.settings.image.width }}
-            {{ section.settings.image.height }}
             loading="lazy"
-            src="{{ section.settings.image | image_url: 'master' }}"
+            src="{{ section.settings.image | image_url: width: section.settings.image.width }}"
             alt="Product Description Image">
         {% else %}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
@@ -44,6 +43,15 @@
         "type": "image_picker",
         "id": "image",
         "label": "image"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Learn More"
+      }, {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
       }
     ],
     "blocks": [
@@ -59,22 +67,6 @@
             "type": "inline_richtext",
             "id": "answer",
             "label": "Answer"
-          }
-        ]
-      }, {
-        "type": "button",
-        "name": "Button",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "button_text",
-            "label": "Button Text",
-            "default": "Learn More"
-          }, {
-            "type": "url",
-            "id": "button_url",
-            "label": "Button URL"
           }
         ]
       }
