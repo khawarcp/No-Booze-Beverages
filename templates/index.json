@@ -348,18 +348,17 @@
     "f9f8e642-0e89-490b-aad2-6cd9c3bad67f": {
       "type": "index-subscriptions",
       "blocks": {
+        "b106f690-21ee-4d82-bc1b-0c1057bc28b4": {
+          "type": "marquee",
+          "settings": {
+            "marquee_text": "Drinks that taste as good as they make you feel"
+          }
+        },
         "df39424b-024f-4435-85fd-543711c8af06": {
           "type": "images",
           "settings": {
             "main_img": "shopify:\/\/shop_images\/subscription-image1.jpg",
             "small_img": "shopify:\/\/shop_images\/subscription-image2.jpg"
-          }
-        },
-        "b106f690-21ee-4d82-bc1b-0c1057bc28b4": {
-          "type": "marquee",
-          "disabled": true,
-          "settings": {
-            "marquee_text": "Drinks that taste as good as they make you feel"
           }
         },
         "6c6c994a-9d31-4212-a92b-ebedda5f9c2b": {
@@ -373,8 +372,8 @@
         }
       },
       "block_order": [
-        "df39424b-024f-4435-85fd-543711c8af06",
         "b106f690-21ee-4d82-bc1b-0c1057bc28b4",
+        "df39424b-024f-4435-85fd-543711c8af06",
         "6c6c994a-9d31-4212-a92b-ebedda5f9c2b"
       ],
       "settings": {
