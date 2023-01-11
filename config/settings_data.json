@@ -230,10 +230,36 @@
               "subtext": "No booze beverages was developed to fill the void where great\ntaste meets function. With bold flavors to help you refresh. We’re\nconfident you’ll love it as much as we do.",
               "show_social": true
             }
+          },
+          "ce268bd4-fdad-4a69-95da-4bdafb352405": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Flavors",
+              "menu": "footer"
+            }
+          },
+          "81e149ce-87d2-4f3a-8104-647368593f2f": {
+            "type": "link_list",
+            "settings": {
+              "heading": "About Us",
+              "menu": "footer"
+            }
+          },
+          "03e034ff-1f47-4946-b0ae-0481a0a18149": {
+            "type": "address",
+            "settings": {
+              "heading": "Contact Us",
+              "address_text": "30 Road, Arsenal, Victoria 5154",
+              "phone": "(01) 123 123 123",
+              "email_address": "nobooze@gmail.com"
+            }
           }
         },
         "block_order": [
-          "c0729c39-25e5-4910-b84d-bec57a877029"
+          "c0729c39-25e5-4910-b84d-bec57a877029",
+          "ce268bd4-fdad-4a69-95da-4bdafb352405",
+          "81e149ce-87d2-4f3a-8104-647368593f2f",
+          "03e034ff-1f47-4946-b0ae-0481a0a18149"
         ],
         "settings": {
           "newsletter_enable": true,
