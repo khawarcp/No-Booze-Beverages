@@ -1,16 +1,18 @@
 <!-- Pair Marquee -->
 <section class="pair-marquee">
-  <div class="marquee-wrap">
-    <div class="marquee-content marquee-left">
-      <span>Drinks that taste as good as they make you feel</span>
+  {% for block in section.blocks %}
+    {% assign mod = forloop.index | modulo: 2 %}
+    <div class="marquee-wrap">
+      <div class="marquee-content {{ forloop.index }} {% if mod == 0 %} marquee-right {%  else %} marquee-left {% endif %}">
+        <span>
+          {{ block.settings.text }}
+        </span>
+      </div>
     </div>
-  </div>
-  <div class="marquee-wrap">
-    <div class="marquee-content marquee-right">
-      <span>Drinks that taste as good as they make you feel</span>
-    </div>
-  </div>
+  {% endfor %}
 </section>
+</section>
+
 {% schema %}
   {
     "name": "Marquee Text",
@@ -19,6 +21,7 @@
       {
         "name": "text",
         "type": "text",
+        "limit": 2,
         "settings": [
           {
             "type": "text",
