@@ -1,17 +1,17 @@
 <!-- Subscription -->
 <section class="subscription-section">
+
+  {% if section.settings.marquee_text != blank %}
+    <div class="marquee-wrap">
+      <div class="marquee-content marquee-left">
+        <span>
+          {{ section.settings.marquee_text }}
+        </span>
+      </div>
+    </div>
+  {% endif %}
   {% for block in section.blocks %}
     {% case block.type %}
-      {% when 'marquee' %}
-      {% if block.settings.marquee_text != blank %}
-        <div class="marquee-wrap">
-          <div class="marquee-content marquee-left">
-            <span>
-              {{ block.settings.marquee_text }}
-            </span>
-          </div>
-        </div>
-      {% endif %}
       {% when 'text' %}
       <div class="container">
         <div class="subscription-content">
@@ -54,20 +54,16 @@
 {% schema %}
   {
     "name": "Subscriptions",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "marquee_text",
+        "label": "Marquee Text",
+        "default": "Drinks that taste as good as they make you feel"
+      }
+    ],
     "blocks": [
       {
-        "type": "marquee",
-        "name": "Marquee Text",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "marquee_text",
-            "label": "Marquee Text"
-          }
-        ]
-      }, {
         "type": "text",
         "name": "Text",
         "limit": 1,
