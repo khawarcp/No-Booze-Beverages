@@ -61,88 +61,35 @@
               <div class="footer-leftCol">
                 <h6> {{ block.settings.heading }} </h6>
                 <p> {{ block.settings.subtext }} </p>
+                {%- if block.settings.show_social -%}
                 <div class="ft-social">
-                  <a href="#" target="_blank"><img src="assets/images/facebook-icon.svg" alt="facebook"></a>
-                  <a href="#" target="_blank"><img src="assets/images/instagram-icon.svg" alt="instagram"></a>
-                  <a href="#" target="_blank"><img src="assets/images/tiktok-icon.svg" alt="tiktok"></a>
-                  <a href="#" target="_blank"><img src="assets/images/pinterest-icon.svg" alt="pinterest"></a>
-                </div>
-                {%- if section.settings.show_social -%}
-          <ul class="footer__list-social list-unstyled list-social" role="list">
-            {%- if settings.social_twitter_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >
-                  {%- render 'icon-twitter' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_facebook_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
-                  {%- render 'icon-facebook' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_pinterest_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_pinterest_link }}" class="link list-social__link" >
-                  {%- render 'icon-pinterest' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_instagram_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
-                  {%- render 'icon-instagram' -%}
+                  {%- if settings.social_facebook_link != blank -%}
+                  <a href="{{ settings.social_facebook_link }}" target="_blank">
+                    {%- render 'icon-facebook' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>      
+                  </a>
+                      {%- endif -%}
+                      {%- if settings.social_instagram_link != blank -%}
+                      <a href="{{ settings.social_facebook_link }}" target="_blank">
+                        {%- render 'icon-instagram' -%}
                   <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_tiktok_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_tiktok_link }}" class="link list-social__link" >
-                  {%- render 'icon-tiktok' -%}
+                        </a>
+                    {%- endif -%}
+                    {%- if settings.social_tiktok_link != blank -%}
+                    <a href="{{ settings.social_tiktok_link }}" target="_blank">
+                      {%- render 'icon-tiktok' -%}
                   <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
-                </a>
-              </li>
+                      </a>
+                  {%- endif -%}
+                  {%- if settings.social_pinterest_link != blank -%}
+                  <a href="{{ settings.social_pinterest_link }}" target="_blank">
+                    {%- render 'icon-pinterest' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                    </a>
+                {%- endif -%}
+                </div>
             {%- endif -%}
-            {%- if settings.social_tumblr_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_tumblr_link }}" class="link list-social__link" >
-                  {%- render 'icon-tumblr' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_snapchat_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_snapchat_link }}" class="link list-social__link" >
-                  {%- render 'icon-snapchat' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_youtube_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_youtube_link }}" class="link list-social__link" >
-                  {%- render 'icon-youtube' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_vimeo_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_vimeo_link }}" class="link list-social__link" >
-                  {%- render 'icon-vimeo' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-          </ul>
-        {%- endif -%}
+                
               </div>
             {% when 'link_list' %}
               <div class="ft-linksCol">
@@ -268,7 +215,7 @@
           }, {
             "type": "checkbox",
             "id": "show_social",
-            "default": false,
+            "default": true,
             "label": "t:sections.footer.settings.show_social.label"
           }
         ]
