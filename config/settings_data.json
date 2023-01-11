@@ -222,6 +222,19 @@
       },
       "custom-footer": {
         "type": "custom-footer",
+        "blocks": {
+          "c0729c39-25e5-4910-b84d-bec57a877029": {
+            "type": "text",
+            "settings": {
+              "heading": "About No booze beverages",
+              "subtext": "No booze beverages was developed to fill the void where great\ntaste meets function. With bold flavors to help you refresh. We’re\nconfident you’ll love it as much as we do.",
+              "show_social": true
+            }
+          }
+        },
+        "block_order": [
+          "c0729c39-25e5-4910-b84d-bec57a877029"
+        ],
         "settings": {
           "newsletter_enable": true,
           "newsletter_heading": "Never miss a drop",
