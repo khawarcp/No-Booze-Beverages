@@ -222,11 +222,25 @@
           "settings": {
             "text": "Drinks that taste as good as they make you feel"
           }
+        },
+        "3477d39e-ad90-49ad-a045-bb7c58f16a04": {
+          "type": "text",
+          "settings": {
+            "text": "Drinks that taste as good as they make you feel"
+          }
+        },
+        "e498082f-a206-4a73-9d99-cddd84fe586a": {
+          "type": "text",
+          "settings": {
+            "text": "Drinks that taste as good as they make you feel"
+          }
         }
       },
       "block_order": [
         "507157f1-03bb-4adf-a670-7eb8ef1cd6e5",
-        "fd597d92-3c65-4e34-876e-2621c4633b28"
+        "fd597d92-3c65-4e34-876e-2621c4633b28",
+        "3477d39e-ad90-49ad-a045-bb7c58f16a04",
+        "e498082f-a206-4a73-9d99-cddd84fe586a"
       ],
       "settings": {
       }
