@@ -1,25 +1,57 @@
-<<<<<<< HEAD
-=======
 <!-- Footer -->
 <footer>
+  {%- if section.settings.newsletter_enable -%}
   <div class="newsletter-wrap">
     <div class="container">
       <div class="newsletter-row flex jc-sb ai-center">
         <div class="newsletter-text">
-          <h3>Never miss a drop</h3>
-          <span>Get a 10% discount on your next order when <br> you sign up to our newsletter.</span>
+          {%- if section.settings.newsletter_heading != blank -%}
+          <h3> {{ section.settings.newsletter_heading }} </h3>
+        {%- endif -%}
+        {%- if section.settings.newsletter_subheading != blank -%}
+          <span> {{ section.settings.newsletter_subheading | newline_to_br }}  </span>
+      {%- endif -%}
         </div>
         <div class="newsletter-form">
-          <form action="">
-            <div class="email-field">
-              <input type="email" placeholder="Enter your email">
-              <button type="submit">Subscribe</button>
+          {%- form 'customer', id: 'ContactFooter' -%}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <div class="email-field">              
+              <input
+                    id="NewsletterForm--{{ section.id }}"
+                    type="email"
+                    name="contact[email]"                    
+                    value="{{ form.email }}"
+                    aria-required="true"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="email"
+                    {% if form.errors %}
+                      autofocus
+                      aria-invalid="true"
+                      aria-describedby="ContactFooter-error"
+                    {% elsif form.posted_successfully? %}
+                      aria-describedby="ContactFooter-success"
+                    {% endif %}
+                    placeholder="{{ 'newsletter.label' | t }}"
+                    required
+                  >
+              <button type="submit" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                {{ 'newsletter.button_label' | t }}
+              </button>
             </div>
-          </form>
+            {%- if form.errors -%}
+                  <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                {%- endif -%}
+              </div>
+              {%- if form.posted_successfully? -%}
+                <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+              {%- endif -%}
+            {%- endform -%}
         </div>
       </div>
     </div>
   </div>
+{%- endif -%}
   <div class="footer-wrap">
     <div class="container">
       <div class="footer-row flex jc-sb">
@@ -147,6 +179,7 @@
       }, {
         "type": "text",
         "name": "t:sections.footer.blocks.text.name",
+        "limit": 1,
         "settings": [
           {
             "type": "text",
@@ -196,4 +229,3 @@
     ]
   }
 {% endschema %}
->>>>>>> 2dc2b9e29acef50e4ab3ec0a7d1a28d86acecd8c
