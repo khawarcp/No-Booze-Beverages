@@ -1,3 +1,15 @@
+<section class="sip-section">
+  <div class="container">
+    <div class="sip-header text-center">
+      <h2>Take a Sip</h2>
+      <p>Sweet, tart, and oh-so-refreshing, our low-sugar, probiotic <br> lemonades taste like summer in a bottle.</p>
+    </div>
+    <div class="sip-content">
+      <img src="assets/images/videoBg.jpg" alt="Vide background">
+      <a href="https://www.youtube.com/watch?v=9xwazD5SyVg" data-fancybox=""><img src="assets/images/play-btn.svg" alt="play icon"></a>
+    </div>
+  </div>
+</section>
 {% schema %}
   {
     "name": "Popup Video",
@@ -7,9 +19,18 @@
         "id": "heading",
         "label": "Heading"
       }, {
-        "type": "inline_richtext",
+        "type": "textarea",
         "id": "text",
         "label": "Text"
+      }, {
+        "type": "image_picker",
+        "id": "text",
+        "label": "Text"
+      }, {
+        "type": "text",
+        "id": "video_url",
+        "label": "Video URL",
+        "info": "Upload the Video in files and paste the url here."
       }
     ],
     "presets": [
