@@ -225,6 +225,7 @@
         "blocks": {
           "2c1aadec-ce9b-43c2-bab2-9691c8ca0c9f": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "heading": "About No booze beverages",
               "subtext": "No booze beverages was developed to fill the void where great\ntaste meets function. With bold flavors to help you refresh. We’re\nconfident you’ll love it as much as we do.",
@@ -233,6 +234,7 @@
           },
           "017a9625-ffc0-4587-8cf7-69b86a44f66a": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "heading": "Flavors",
               "menu": "footer"
@@ -240,6 +242,7 @@
           },
           "bc91f3fc-8b87-478d-b5f8-d35efabbf398": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "heading": "About Us",
               "menu": "about-us"
@@ -247,6 +250,7 @@
           },
           "dcf1072d-480e-4423-925f-34819d1c07a2": {
             "type": "address",
+            "disabled": true,
             "settings": {
               "heading": "Contact Us",
               "address_text": "30 Road, Arsenal, Victoria 5154",
