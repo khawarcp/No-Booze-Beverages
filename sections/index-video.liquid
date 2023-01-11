@@ -1,12 +1,24 @@
 <section class="sip-section">
   <div class="container">
     <div class="sip-header text-center">
-      <h2>Take a Sip</h2>
-      <p>Sweet, tart, and oh-so-refreshing, our low-sugar, probiotic <br> lemonades taste like summer in a bottle.</p>
+      <h2>
+        {{ section.settings.heading }}
+      </h2>
+      <p>
+        {{ section.settings.text | newline_to_br }}
+      </p>
     </div>
     <div class="sip-content">
-      <img src="assets/images/videoBg.jpg" alt="Vide background">
-      <a href="https://www.youtube.com/watch?v=9xwazD5SyVg" data-fancybox=""><img src="assets/images/play-btn.svg" alt="play icon"></a>
+      {% if section.settings.video_url != blank and section.settings.image != blank %}
+        <img
+          loading="lazy"
+          src="{{ section.settings.image | image_url : width : section.settings.image.width }}"
+          alt="Video background">
+        <a href="{{ section.settings.video_url }}" data-fancybox=""><img
+            loading="lazy"
+            src="{{ 'play-btn.svg' | asset_url }}"
+            alt="play icon"></a>
+      {% endif %}
     </div>
   </div>
 </section>
