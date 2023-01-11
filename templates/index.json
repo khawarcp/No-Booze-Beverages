@@ -344,6 +344,41 @@
       "settings": {
         "heading": ""
       }
+    },
+    "f9f8e642-0e89-490b-aad2-6cd9c3bad67f": {
+      "type": "index-subscriptions",
+      "blocks": {
+        "df39424b-024f-4435-85fd-543711c8af06": {
+          "type": "images",
+          "settings": {
+            "main_img": "shopify:\/\/shop_images\/subscription-image1.jpg",
+            "small_img": "shopify:\/\/shop_images\/subscription-image2.jpg"
+          }
+        },
+        "b106f690-21ee-4d82-bc1b-0c1057bc28b4": {
+          "type": "marquee",
+          "disabled": true,
+          "settings": {
+            "marquee_text": "Drinks that taste as good as they make you feel"
+          }
+        },
+        "6c6c994a-9d31-4212-a92b-ebedda5f9c2b": {
+          "type": "text",
+          "settings": {
+            "heading": "18+ Kratom, every day, from\nyour own fridge",
+            "info": "Maximum juice and maximum convenience. Make fresh juice a part of your daily routine with our range of juice subscriptions. Squeeze the most out of every day.",
+            "button_text": "See Subscription",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "df39424b-024f-4435-85fd-543711c8af06",
+        "b106f690-21ee-4d82-bc1b-0c1057bc28b4",
+        "6c6c994a-9d31-4212-a92b-ebedda5f9c2b"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -355,6 +390,7 @@
     "b09d790f-fc85-4cc7-bad8-012fc6bfbd6d",
     "8340d906-fc63-4a50-83c8-79ac666f30d7",
     "172c0916-5b54-4d29-9448-20a2a0df37d8",
-    "18886608-6f6a-4c90-b0e6-fd4d5ce439f4"
+    "18886608-6f6a-4c90-b0e6-fd4d5ce439f4",
+    "f9f8e642-0e89-490b-aad2-6cd9c3bad67f"
   ]
 }
