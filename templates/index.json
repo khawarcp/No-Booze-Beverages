@@ -357,6 +357,7 @@
         },
         "b106f690-21ee-4d82-bc1b-0c1057bc28b4": {
           "type": "marquee",
+          "disabled": true,
           "settings": {
             "marquee_text": "Drinks that taste as good as they make you feel"
           }
