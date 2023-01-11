@@ -2,6 +2,7 @@
 <section class="pair-marquee">
   {% for block in section.blocks %}
     {% assign mod = forloop.index | modulo: 2 %}
+    {% if  block.settings.text != blank %}
     <div class="marquee-wrap">
       <div class="marquee-content {{ forloop.index }} {% if mod == 0 %} marquee-right {%  else %} marquee-left {% endif %}">
         <span>
@@ -9,6 +10,7 @@
         </span>
       </div>
     </div>
+    {% endif %}
   {% endfor %}
 </section>
 </section>
