@@ -171,12 +171,18 @@
       "settings": {
         "heading": "Kranium Products"
       }
+    },
+    "8f08de16-e668-4c96-9815-67217a2b4474": {
+      "type": "index-kratom",
+      "settings": {
+      }
     }
   },
   "order": [
     "45a9a556-07a9-4c25-877c-67fe4c2c6269",
     "498d8532-c9c6-42c7-921f-f647cd69b7dd",
     "115f6ef5-9f68-4433-8c76-a4ed932554b7",
-    "415d58f5-0f60-4da1-b5c2-1a8e91ffd861"
+    "415d58f5-0f60-4da1-b5c2-1a8e91ffd861",
+    "8f08de16-e668-4c96-9815-67217a2b4474"
   ]
 }
