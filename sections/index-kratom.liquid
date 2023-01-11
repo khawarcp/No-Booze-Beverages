@@ -1,3 +1,41 @@
+<section class="product-desc-section">
+  <div class="container">
+    <div class="product-description-row flex ai-center">
+      <div class="product-descriptions">
+        <div class="product-desc-wrap">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'FAQ' %}
+                <div class="tab_outer">
+                  <div class="accordion_head">
+                    <p> {{ block.settings.quiz }} </p>
+                  </div>
+                  <div class="accordion_body" style="display: none;">
+                    <p>{{ block.settings.answer }}</p>
+                  </div>
+                </div>
+                {% when 'button' %} 
+                    {% if block.settings.button_text != blank %}                      
+                      <a href="{{ block.settings.button_url | default: '#'  }}" class="siteBtn">{{ block.settings.button_text }}</a>
+                    {% endif %}
+            {% endcase %}
+          {% endfor %}     
+      </div>
+      <div class="product-desc-image">
+        {% if section.settings.image != blank %}
+          <img
+            {{ section.settings.image.width }}
+            {{ section.settings.image.height }}
+            loading="lazy"
+            src="{{ section.settings.image | image_url: 'master' }}"
+            alt="Product Description Image">
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
 {% schema %}
   {
     "name": "Kratom",
@@ -31,7 +69,8 @@
           {
             "type": "text",
             "id": "button_text",
-            "label": "Button Text"
+            "label": "Button Text",
+            "default": "Learn More"
           }, {
             "type": "url",
             "id": "button_url",
