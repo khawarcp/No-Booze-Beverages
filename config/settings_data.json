@@ -214,8 +214,40 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "custom-header": {
+        "type": "custom-header",
+        "settings": {
+        }
+      },
+      "custom-footer": {
+        "type": "custom-footer",
+        "blocks": {
+          "2c1aadec-ce9b-43c2-bab2-9691c8ca0c9f": {
+            "type": "text",
+            "settings": {
+              "heading": "About No booze beverages",
+              "subtext": "<p>No booze beverages was developed to fill the void where great<\/p><p>taste meets function. With bold flavors to help you refresh. We’re confident you’ll love it as much as we do.<\/p>",
+              "show_social": true
+            }
+          }
+        },
+        "block_order": [
+          "2c1aadec-ce9b-43c2-bab2-9691c8ca0c9f"
+        ],
+        "settings": {
+          "newsletter_enable": true,
+          "newsletter_heading": "Never miss a drop",
+          "newsletter_subheading": "Get a 10% discount on your next order when\nyou sign up to our newsletter.",
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true
+        }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
