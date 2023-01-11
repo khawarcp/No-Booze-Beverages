@@ -55,50 +55,120 @@
   <div class="footer-wrap">
     <div class="container">
       <div class="footer-row flex jc-sb">
-        <div class="footer-leftCol">
-          <h6>About No booze beverages</h6>
-          <p>No booze beverages was developed to fill the void where great <br> taste meets function. With bold flavors to help you refresh. We’re <br> confident you’ll love it as much as we do.</p>
-          <div class="ft-social">
-            <a href="#" target="_blank"><img src="assets/images/facebook-icon.svg" alt="facebook"></a>
-            <a href="#" target="_blank"><img src="assets/images/instagram-icon.svg" alt="instagram"></a>
-            <a href="#" target="_blank"><img src="assets/images/tiktok-icon.svg" alt="tiktok"></a>
-            <a href="#" target="_blank"><img src="assets/images/pinterest-icon.svg" alt="pinterest"></a>
-          </div>
-        </div>
-        <div class="ft-linksCol">
-          <h6>Flavors</h6>
-          <ul>
-            <li>Watermelon Lemonade</li>
-            <li>Tropical</li>
-            <li>Berry</li>
-            <li>Sour Apple</li>
-            <li>Horchata</li>
-            <li>Horchata</li>
-            <li>Horchata</li>
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'text' %}              
+              <div class="footer-leftCol">
+                <h6> {{ block.settings.heading }} </h6>
+                <p> {{ block.settings.subtext }} </p>
+                <div class="ft-social">
+                  <a href="#" target="_blank"><img src="assets/images/facebook-icon.svg" alt="facebook"></a>
+                  <a href="#" target="_blank"><img src="assets/images/instagram-icon.svg" alt="instagram"></a>
+                  <a href="#" target="_blank"><img src="assets/images/tiktok-icon.svg" alt="tiktok"></a>
+                  <a href="#" target="_blank"><img src="assets/images/pinterest-icon.svg" alt="pinterest"></a>
+                </div>
+                {%- if section.settings.show_social -%}
+          <ul class="footer__list-social list-unstyled list-social" role="list">
+            {%- if settings.social_twitter_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >
+                  {%- render 'icon-twitter' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_facebook_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
+                  {%- render 'icon-facebook' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_pinterest_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_pinterest_link }}" class="link list-social__link" >
+                  {%- render 'icon-pinterest' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_instagram_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
+                  {%- render 'icon-instagram' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_tiktok_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_tiktok_link }}" class="link list-social__link" >
+                  {%- render 'icon-tiktok' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_tumblr_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_tumblr_link }}" class="link list-social__link" >
+                  {%- render 'icon-tumblr' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_snapchat_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_snapchat_link }}" class="link list-social__link" >
+                  {%- render 'icon-snapchat' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_youtube_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_youtube_link }}" class="link list-social__link" >
+                  {%- render 'icon-youtube' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_vimeo_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_vimeo_link }}" class="link list-social__link" >
+                  {%- render 'icon-vimeo' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+                </a>
+              </li>
+            {%- endif -%}
           </ul>
-        </div>
-        <div class="ft-linksCol">
-          <h6>About Us</h6>
-          <ul>
-            <li>About No Booze Beverages</li>
-            <li>What Kranium is?</li>
-            <li>What Kratom is?</li>
-            <li>What Krakava is?</li>
-            <li>Blogs</li>
-            <li>FAQ</li>
-          </ul>
-        </div>
-        <div class="ft-linksCol">
-          <h6>Contact Us</h6>
-          <span>30 Road, Arsenal, Victoria 5154</span>
-          <a href="tel:(01) 123 123 123" class="ft-phone">(01) 123 123 123</a>
-          <a href="mailto:nobooze@gmail.com" class="ft-email">nobooze@gmail.com</a>
-        </div>
+        {%- endif -%}
+              </div>
+            {% when 'link_list' %}
+              <div class="ft-linksCol">
+                <h6>{{ block.settings.heading }}</h6>
+                <ul>
+                  {%- for link in block.settings.menu.links -%}                    
+                    <li> 
+                      <a href="{{ link.url }}"> {{ link.title }} </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {% when 'address' %}            
+              <div class="ft-linksCol">
+                <h6>{{ block.settings.heading }}</h6>
+                <span>{{ block.settings.address_text }}</span>
+                <a href="tel:{{ block.settings.phone }}" class="ft-phone">{{ block.settings.phone }}</a>
+                <a href="mailto:{{ block.settings.email_address }}" class="ft-email">{{ block.settings.email_address }}</a>
+              </div>
+          {% endcase %}
+        {% endfor %}
       </div>
     </div>
   </div>
   <div class="ft-copyright">
-    <span>© 2022 No Booze Beverages</span>
+    <span>&copy; {{ 'now' | date: '%Y' }} {{ shop.name | link_to: routes.root_url }} </span>
   </div>
 </footer>
 
