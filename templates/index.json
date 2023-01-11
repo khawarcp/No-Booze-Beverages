@@ -230,6 +230,71 @@
       ],
       "settings": {
       }
+    },
+    "8340d906-fc63-4a50-83c8-79ac666f30d7": {
+      "type": "index-product-features",
+      "blocks": {
+        "5f30b19c-51f1-4de3-9bf5-bcb8eb57a1df": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Beverages are Kratom & Kava"
+          }
+        },
+        "44aebc99-4889-438a-904d-30e78c2a26b1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glass-bottles.png",
+            "text": "Bottled\nin Glass"
+          }
+        },
+        "054dec69-f323-4b76-91e8-0cdc539053c9": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/leaves.png",
+            "text": "100%\nPlant-Based"
+          }
+        },
+        "b3f660cd-47b3-4eb5-8b36-b1c85c836077": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/badge.png",
+            "text": "No Addictives\nNo Nonsense"
+          }
+        },
+        "4e5737e7-7be7-4ee1-b8b2-211c68f7e4be": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/usda-organic.png",
+            "text": "Certified\nOrganic"
+          }
+        },
+        "df8db3c9-0353-4928-ac4d-31ac87bedfce": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sugar-cubes.png",
+            "text": "No Added\nSugar"
+          }
+        },
+        "13cdb5ae-29f1-4dab-8dcb-08f9910b9844": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/corporation-icon.png",
+            "text": "Business\nDone Better"
+          }
+        }
+      },
+      "block_order": [
+        "5f30b19c-51f1-4de3-9bf5-bcb8eb57a1df",
+        "44aebc99-4889-438a-904d-30e78c2a26b1",
+        "054dec69-f323-4b76-91e8-0cdc539053c9",
+        "b3f660cd-47b3-4eb5-8b36-b1c85c836077",
+        "4e5737e7-7be7-4ee1-b8b2-211c68f7e4be",
+        "df8db3c9-0353-4928-ac4d-31ac87bedfce",
+        "13cdb5ae-29f1-4dab-8dcb-08f9910b9844"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bavareges-image.png"
+      }
     }
   },
   "order": [
@@ -238,6 +303,7 @@
     "115f6ef5-9f68-4433-8c76-a4ed932554b7",
     "415d58f5-0f60-4da1-b5c2-1a8e91ffd861",
     "8f08de16-e668-4c96-9815-67217a2b4474",
-    "b09d790f-fc85-4cc7-bad8-012fc6bfbd6d"
+    "b09d790f-fc85-4cc7-bad8-012fc6bfbd6d",
+    "8340d906-fc63-4a50-83c8-79ac666f30d7"
   ]
 }
