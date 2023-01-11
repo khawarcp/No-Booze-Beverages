@@ -1,17 +1,29 @@
+<!-- Subscription -->
+<section class="subscription-section">
+  <div class="marquee-wrap">
+    <div class="marquee-content marquee-left">
+      <span>Drinks that taste as good as they make you feel</span>
+    </div>
+  </div>
+  <div class="container">
+    <div class="subscription-content">
+      <h3>18+ Kratom, every day, from <br> your own fridge</h3>
+      <p>Maximum juice and maximum convenience. Make fresh juice a part of your daily routine with our range of juice subscriptions. Squeeze the most out of every day.</p>
+      <a href="#">See Subscription</a>
+    </div>
+  </div>
+  <div class="subscription-image">
+    <img src="assets/images/subscription-image1.jpg" alt="Subscription Image">
+  </div>
+  <div class="subscription-image img2">
+    <img src="assets/images/subscription-image2.jpg" alt="Subscription Image">
+  </div>
+</section>
+
 {% schema %}
   {
     "name": "Subscriptions",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "main_img",
-        "label": "Main Image"
-      }, {
-        "type": "image_picker",
-        "id": "small_img",
-        "label": "Secondary Image"
-      }
-    ],
+    "settings": [],
     "blocks": [
       {
         "type": "marquee",
@@ -25,33 +37,19 @@
           }
         ]
       }, {
-        "type": "heading",
-        "name": "Heading",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "heading",
-            "label": "Heading"
-          }
-        ]
-      }, {
         "type": "text",
         "name": "Text",
         "limit": 1,
         "settings": [
           {
+            "type": "textarea",
+            "id": "heading",
+            "label": "Heading"
+          }, {
             "type": "inline_richtext",
             "id": "info",
             "label": "Text"
-          }
-        ]
-      }, {
-        "type": "button",
-        "name": "Button",
-        "limit": 1,
-        "settings": [
-          {
+          }, {
             "type": "text",
             "id": "button_text",
             "label": "Button Text"
@@ -59,6 +57,21 @@
             "type": "url",
             "id": "button_url",
             "label": "Button URL"
+          }
+        ]
+      }, {
+        "type": "images",
+        "name": "Images",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "main_img",
+            "label": "Main Image"
+          }, {
+            "type": "image_picker",
+            "id": "small_img",
+            "label": "Secondary Image"
           }
         ]
       }
