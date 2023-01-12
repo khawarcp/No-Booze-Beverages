@@ -3,6 +3,8 @@
     "banner": {
       "type": "about-banner",
       "settings": {
+        "background_image": "shopify:\/\/shop_images\/crystals-bg.png",
+        "banner_image": "shopify:\/\/shop_images\/about-banner-image.png"
       }
     },
     "story": {
