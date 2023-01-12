@@ -203,7 +203,7 @@
       "search_for": "Search for “{{ terms }}”"
     },
     "cart": {
-      "cart": "Cart"
+      "cart": "my cart"
     },
     "contact": {
       "form": {
