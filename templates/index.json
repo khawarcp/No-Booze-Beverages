@@ -169,7 +169,9 @@
         "4c7ee605-29f1-4c22-b62f-784566f3173c"
       ],
       "settings": {
-        "heading": "Kranium Products"
+        "heading": "Kranium Products",
+        "show_rating": false,
+        "enable_quick_add": false
       }
     },
     "8f08de16-e668-4c96-9815-67217a2b4474": {
@@ -342,18 +344,12 @@
         "1b50f56d-a885-4b55-8b12-a420c63f48bf"
       ],
       "settings": {
-        "heading": ""
+        "heading": "Fan Favorites"
       }
     },
     "f9f8e642-0e89-490b-aad2-6cd9c3bad67f": {
       "type": "index-subscriptions",
       "blocks": {
-        "b106f690-21ee-4d82-bc1b-0c1057bc28b4": {
-          "type": "marquee",
-          "settings": {
-            "marquee_text": "Drinks that taste as good as they make you feel"
-          }
-        },
         "df39424b-024f-4435-85fd-543711c8af06": {
           "type": "images",
           "settings": {
@@ -372,11 +368,11 @@
         }
       },
       "block_order": [
-        "b106f690-21ee-4d82-bc1b-0c1057bc28b4",
         "df39424b-024f-4435-85fd-543711c8af06",
         "6c6c994a-9d31-4212-a92b-ebedda5f9c2b"
       ],
       "settings": {
+        "marquee_text": "Drinks that taste as good as they make you feel"
       }
     }
   },
