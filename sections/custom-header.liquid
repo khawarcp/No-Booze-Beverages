@@ -54,7 +54,7 @@
         {% if section.settings.promo_link != blank %}          
         <a href="{{ section.settings.promo_link }}">
         {% endif %}
-          <img loading="lazy" src="{{ 'shoping-bag.svg' | asset_url }}" alt="shop icon"> {{ section.settings.promo }}         
+          <img loading="lazy" height="" width="" src="{{ 'shoping-bag.svg' | asset_url }}" alt="shop icon"> {{ section.settings.promo }}         
         {% if section.settings.promo_link != blank %}          
         </a>
         {% endif %}
@@ -68,12 +68,12 @@
         <div class="site-logo">
           {% if section.settings.show_svg_logo %}
             <a href="{{ routes.root_url }}">
-              <img loading="lazy" width="{{ section.settings.svg_logo.width }}" height="{{ section.settings.svg_logo.height }}" src="{{ section.settings.svg_logo }}" alt="{{ shop.name }}">
+              <img loading="lazy" width="{{ section.settings.svg_logo.width }}" height="" src="{{ section.settings.svg_logo }}" alt="{{ shop.name }}">
               </a>
             {% else %}
               {% if section.settings.logo != blank %}
                 <a href="{{ routes.root_url }}">                  
-                  <img loading="lazy" width="{{ section.settings.logo.width }}" height="{{ section.settings.logo.height }}" src="{{ section.settings.logo | image_url : width : section.settings.logo.width }}" alt="{{ shop.name }}">
+                  <img loading="lazy" width="{{ section.settings.logo.width }}" height="" src="{{ section.settings.logo | image_url : width : section.settings.logo.width }}" alt="{{ shop.name }}">
                 </a>
               {% else %}
               <a href="{{ routes.root_url }}"> <span class="h2">{{ shop.name }}</span> </a>

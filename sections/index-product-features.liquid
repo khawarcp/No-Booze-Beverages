@@ -5,7 +5,9 @@
         {% if section.settings.image != blank %}
           <img
             loading="lazy"
-            src="{{ section.settings.image | image_url : width : section.settings.image.width  }}"
+            src="{{ section.settings.image | image_url : width : section.settings.image.width }}"
+            width="{{ block.settings.image.width }}"
+            height=""
             alt="{{ section.settings.image.alt }}">
         {% else %}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
@@ -14,6 +16,8 @@
       <div class="bavareges-text">
         <div class="bavarages-text">
           <img
+            height=""
+            width=""
             loading="lazy"
             src="{{ 'pluc-icon.svg' | asset_url }}"
             alt="Plus Icon">
@@ -26,8 +30,10 @@
             {% if block.settings.image != blank and block.settings.text != blank %}
               <div class="single-bavarage">
                 <img
-                  loading="lazy"
-                  src="{{ block.settings.image | image_url : width : block.settings.image.width  }}"
+                  loading="lazy"                  
+                  width="{{ block.settings.image.width }}"
+                  height=""
+                  src="{{ block.settings.image | image_url:  width : block.settings.image.width }}"
                   alt="{{ block.settings.image.alt }}">
                 <span>
                   {{ block.settings.text | newline_to_br }}

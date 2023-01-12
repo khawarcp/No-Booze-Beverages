@@ -11,8 +11,10 @@
               <a href="{{ block.settings.brand_url }}">
               {% endif %}
               <img
+                width="{{ block.settings.brand_image.width }}"
+                height="{{ block.settings.brand_image.height }}"
+                src="{{ block.settings.brand_image | image_url: width: block.settings.brand_image.width }}"
                 loading="lazy"
-                src="{{ block.settings.brand_image | img_url: 'master' }}"
                 alt="{{ block.settings.brand_image.alt }}">
               {% if block.settings.brand_url != blank %}
               </a>

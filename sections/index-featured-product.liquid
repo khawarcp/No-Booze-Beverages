@@ -4,9 +4,11 @@
     <div class="flex jc-sb ai-center">
       <div class="shopImage">
         {% if section.settings.image != blank %}
-          <img
-            src="{{ section.settings.image | img_url : "master" }}"
-            alt="{{ section.settings.image.alt  }}"
+          <img            
+            width="{{ section.settings.image.width }}"
+            height=""
+            src="{{ section.settings.image | image_url:  width : section.settings.image.width }}"
+            alt="{{ section.settings.image.alt }}"
             loading="lazy">
         {% else %}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}

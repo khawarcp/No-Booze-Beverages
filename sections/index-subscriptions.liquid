@@ -33,6 +33,8 @@
         {% if block.settings.main_img != blank %}
           <img
             loading="lazy"
+            width="{{ block.settings.main_img.width }}"
+            height=""
             src="{{ block.settings.main_img | image_url : width : block.settings.main_img.width }}"
             alt="{{ block.settings.main_img.alt }}">
         {% else %}
@@ -43,6 +45,8 @@
         <div class="subscription-image img2">
           <img
             loading="lazy"
+            height=""
+            width="{{ block.settings.small_img.width }}"
             src="{{ block.settings.small_img | image_url : width : block.settings.small_img.width }}"
             alt="{{ block.settings.small_img.alt }}">
         </div>

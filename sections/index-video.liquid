@@ -12,10 +12,14 @@
       {% if section.settings.video_url != blank and section.settings.image != blank %}
         <img
           loading="lazy"
+          height=""
+          width="{{ section.settings.image.width }}"
           src="{{ section.settings.image | image_url : width : section.settings.image.width }}"
           alt="Video background">
         <a href="{{ section.settings.video_url }}" data-fancybox=""><img
             loading="lazy"
+            height=""
+            width=""
             src="{{ 'play-btn.svg' | asset_url }}"
             alt="play icon"></a>
       {% endif %}

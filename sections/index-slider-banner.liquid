@@ -18,21 +18,27 @@
         <p>
           {{ section.settings.info }}
         </p>
-        <form action="">
+        <form action="/" id="zipform" method="get">
           <div class="zipCode">
-            <input type="text" placeholder="Enter Zip Code">
-            <button type="submit"><img
+            <input type="text" id="zip" name="zip" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Enter Zip Code">
+            <button type="submit" id="zipbtn"><img
                 loading="lazy"
+                height=""
+                width=""
                 src="{{ 'right-icon.svg' | asset_url }}"
                 alt="right arrow"></button>
           </div>
-        </form>
+        </form>        
         <span class="not-sell"><img
             loading="lazy"
+            height=""
+            width=""
             src="{{ 'info-icon.svg' | asset_url }}"
             alt="info icon">Ops! We do not sell products in your state.</span>
         <span class="do-sell"><img
             loading="lazy"
+            height=""
+            width=""
             src="{{ 'green-marker.svg' | asset_url }}"
             alt="info icon">Hurrah! We sell in your state.</span>
       </div>
@@ -41,8 +47,10 @@
   <div class="crystals">
     {% if section.settings.background_image != blank %}
       <img
-        loading="lazy"
-        src="{{ section.settings.background_image | img_url: 'master'  }}"
+        loading="lazy"        
+        src="{{ section.settings.background_image | image_url : width : section.settings.background_image.width }}"
+            width="{{ section.settings.background_image.width }}"
+            height=""
         alt="{{ section.settings.background_image.alt }}">
     {% else %}
       {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
@@ -54,8 +62,10 @@
         <div class="item">
           <div class="single-drink">
             <img
-              src="{{ block.settings.image | img_url : "master"  }}"
-              alt="{{ block.settings.image.alt  }}"
+            src="{{ block.settings.image | image_url : width : block.settings.image.width }}"
+            width="{{ block.settings.image.width }}"
+            height=""
+              alt="{{ block.settings.image.alt }}"
               loading="lazy">
           </div>
         </div>
@@ -69,6 +79,39 @@
     {% endfor %}
   </div>
 </section>
+
+
+<script>
+  const url = 'https://cdn.shopify.com/s/files/1/0694/1523/9978/files/zipcodes.json?v=1672315825';
+  const zipbtn = document.getElementById('zipbtn');
+  const zipform = document.getElementById('zipform');
+  let message = document.createElement('p');
+  zipbtn.onclick = (e) => {
+    e.preventDefault();
+    let zipVal = document.getElementById('zip').value;
+    if (zipVal) {
+      message.innerHTML = '';
+      let zipcodes = fetch(url);
+      zipcodes.then((v) => {
+        return v.json();
+      }).then((zipcodeMatch) => {
+        let matchedZip = zipcodeMatch.zipcode.find((item) => {
+          if (zipVal === item.zipcode) {
+            return item;
+          }
+          return false;
+        });
+        if (matchedZip) {
+          message.innerHTML = 'found'
+        } else {
+          message.innerHTML = 'not found'
+        }
+      })
+    } else {
+      message.innerHTML = 'Please enter the zipcode';
+    } zipform.append(message);
+  }
+</script>
 
 {% schema %}
   {
