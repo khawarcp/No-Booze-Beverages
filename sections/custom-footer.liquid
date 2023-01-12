@@ -83,9 +83,41 @@
                       </a>
                   {%- endif -%}
                   {%- if settings.social_pinterest_link != blank -%}
-                  <a href="{{ settings.social_pinterest_link }}" target="_blank">
-                    {%- render 'icon-pinterest' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                    <a href="{{ settings.social_pinterest_link }}" target="_blank">
+                      {%- render 'icon-pinterest' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                      </a>
+                  {%- endif -%}
+                  {%- if settings.social_twitter_link != blank -%}
+                    <a href="{{ settings.social_twitter_link }}" target="_blank">
+                      {%- render 'icon-twitter' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                      </a>
+                  {%- endif -%}
+                  {%- if settings.social_tumblr_link != blank -%}
+                    <a href="{{ settings.social_tumblr_link }}" target="_blank">
+                      {%- render 'icon-tumblr' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                      </a>
+                  {%- endif -%}
+
+                  {%- if settings.social_snapchat_link != blank -%}
+                    <a href="{{ settings.social_snapchat_link }}" target="_blank">
+                      {%- render 'icon-snapchat' -%}
+                      <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                      </a>
+                  {%- endif -%}
+
+                  {%- if settings.social_youtube_link != blank -%}
+                    <a href="{{ settings.social_youtube_link }}" target="_blank">
+                      {%- render 'icon-youtube' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                      </a>
+                  {%- endif -%}
+                  {%- if settings.social_vimeo_link != blank -%}
+                  <a href="{{ settings.social_vimeo_link }}" target="_blank">
+                    {%- render 'icon-vimeo' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
                     </a>
                 {%- endif -%}
                 </div>
