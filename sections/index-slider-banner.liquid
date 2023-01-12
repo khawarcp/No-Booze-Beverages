@@ -28,19 +28,7 @@
                 src="{{ 'right-icon.svg' | asset_url }}"
                 alt="right arrow"></button>
           </div>
-        </form>        
-        <span class="not-sell"><img
-            loading="lazy"
-            height=""
-            width=""
-            src="{{ 'info-icon.svg' | asset_url }}"
-            alt="info icon">Ops! We do not sell products in your state.</span>
-        <span class="do-sell"><img
-            loading="lazy"
-            height=""
-            width=""
-            src="{{ 'green-marker.svg' | asset_url }}"
-            alt="info icon">Hurrah! We sell in your state.</span>
+        </form>                
       </div>
     </div>
   </div>
@@ -82,7 +70,7 @@
 
 
 <script>
-  const url = 'https://cdn.shopify.com/s/files/1/0694/1523/9978/files/zipcodes.json?v=1672315825';
+  const url = '{{ settings.store_api_link }}';
   const zipbtn = document.getElementById('zipbtn');
   const zipform = document.getElementById('zipform');
   let message = document.createElement('p');
@@ -102,14 +90,30 @@
           return false;
         });
         if (matchedZip) {
-          message.innerHTML = 'found'
+          message.innerHTML = `<span class="do-sell"><img
+          loading="lazy"
+          height=""
+          width=""
+          src="{{ 'green-marker.svg' | asset_url }}"
+          alt="info icon">Hurrah! We sell in your state.</span>`
         } else {
-          message.innerHTML = 'not found'
+          message.innerHTML = `<span class="not-sell"><img
+          loading="lazy"
+          height=""
+          width=""
+          src="{{ 'info-icon.svg' | asset_url }}"
+          alt="info icon">Ops! We do not sell products in your state.</span>`
         }
       })
     } else {
-      message.innerHTML = 'Please enter the zipcode';
-    } zipform.append(message);
+      message.innerHTML = `<span class="not-sell"><img
+      loading="lazy"
+      height=""
+      width=""
+      src="{{ 'info-icon.svg' | asset_url }}"
+      alt="info icon">Please Enter the Zip Code`;
+    }
+    zipform.append(message);
   }
 </script>
 
