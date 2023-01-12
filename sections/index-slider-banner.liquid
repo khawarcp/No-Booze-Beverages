@@ -69,53 +69,7 @@
 </section>
 
 
-<script>
-  const url = '{{ settings.store_api_link }}';
-  const zipbtn = document.getElementById('zipbtn');
-  const zipform = document.getElementById('zipform');
-  let message = document.createElement('p');
-  zipbtn.onclick = (e) => {
-    e.preventDefault();
-    let zipVal = document.getElementById('zip').value;
-    if (zipVal) {
-      message.innerHTML = '';
-      let zipcodes = fetch(url);
-      zipcodes.then((v) => {
-        return v.json();
-      }).then((zipcodeMatch) => {
-        let matchedZip = zipcodeMatch.zipcode.find((item) => {
-          if (zipVal === item.zipcode) {
-            return item;
-          }
-          return false;
-        });
-        if (matchedZip) {
-          message.innerHTML = `<span class="do-sell"><img
-          loading="lazy"
-          height=""
-          width=""
-          src="{{ 'green-marker.svg' | asset_url }}"
-          alt="info icon">Hurrah! We sell in your state.</span>`
-        } else {
-          message.innerHTML = `<span class="not-sell"><img
-          loading="lazy"
-          height=""
-          width=""
-          src="{{ 'info-icon.svg' | asset_url }}"
-          alt="info icon">Ops! We do not sell products in your state.</span>`
-        }
-      })
-    } else {
-      message.innerHTML = `<span class="not-sell"><img
-      loading="lazy"
-      height=""
-      width=""
-      src="{{ 'info-icon.svg' | asset_url }}"
-      alt="info icon">Please Enter the Zip Code`;
-    }
-    zipform.append(message);
-  }
-</script>
+<script src="{{ 'zipcode.js.liquid' | asset_url }}" ></script>
 
 {% schema %}
   {
