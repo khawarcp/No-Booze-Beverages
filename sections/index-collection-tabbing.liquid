@@ -1,4 +1,17 @@
 <!-- Kranium Products -->
+
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+<link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+{%- if section.settings.enable_quick_add -%}
+  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
 <section class="products-section">
   <div class="container">
     <div class="kranium-content">
@@ -74,62 +87,17 @@
                       </div>
                     {% else %}
                       <div class="products-slider owl-carousel">
-                        <div class="item">
-                          <div class="single-product">
-                            <img src="assets/images/horchata.png" alt="Horhcata can">
-                            <h3>Horchata</h3>
-                            <div class="size-price">
-                              <span>420 ML</span>
-                              <span>$18.45</span>
-                            </div>
-                            <div class="product-footer">
-                              <a href="#">More Info</a>
-                              <a href="#" class="addCart">Add To Cart</a>
-                            </div>
+                        {% for product in collection.products %}                          
+                          <div class="item">
+                            {% render 'custom-card-product',
+                              card_product: product,                                                                                          
+                              show_rating: section.settings.show_rating,
+                              lazy_load: lazy_load,
+                              show_quick_add: section.settings.enable_quick_add,
+                              section_id: section.id
+                            %}
                           </div>
-                        </div>
-                        <div class="item">
-                          <div class="single-product">
-                            <img src="assets/images/horchata.png" alt="Horhcata can">
-                            <h3>Watermelon</h3>
-                            <div class="size-price">
-                              <span>420 ML</span>
-                              <span>$18.45</span>
-                            </div>
-                            <div class="product-footer">
-                              <a href="#">More Info</a>
-                              <a href="#" class="addCart">Add To Cart</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="single-product">
-                            <img src="assets/images/horchata.png" alt="Horhcata can">
-                            <h3>Tropical</h3>
-                            <div class="size-price">
-                              <span>420 ML</span>
-                              <span>$18.45</span>
-                            </div>
-                            <div class="product-footer">
-                              <a href="#">More Info</a>
-                              <a href="#" class="addCart">Add To Cart</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="single-product">
-                            <img src="assets/images/horchata.png" alt="Horhcata can">
-                            <h3>Tropical</h3>
-                            <div class="size-price">
-                              <span>420 ML</span>
-                              <span>$18.45</span>
-                            </div>
-                            <div class="product-footer">
-                              <a href="#">More Info</a>
-                              <a href="#" class="addCart">Add To Cart</a>
-                            </div>
-                          </div>
-                        </div>
+                        {% endfor %}
                       </div>
                     {% endif %}
                   </div>
@@ -185,48 +153,17 @@
                       </div>
                     {% else %}
                       <div class="products-slider owl-carousel">
-                        <div class="item">
-                          <div class="single-product">
-                            <img src="assets/images/horchata.png" alt="Horhcata can">
-                            <h3>Horchata</h3>
-                            <div class="size-price">
-                              <span>420 ML</span>
-                              <span>$18.45</span>
-                            </div>
-                            <div class="product-footer">
-                              <a href="#">More Info</a>
-                              <a href="#" class="addCart">Add To Cart</a>
-                            </div>
+                        {% for product in collection.products %}                          
+                          <div class="item">
+                            {% render 'custom-card-product',
+                              card_product: product,                                                                                          
+                              show_rating: section.settings.show_rating,
+                              lazy_load: lazy_load,
+                              show_quick_add: section.settings.enable_quick_add,
+                              section_id: section.id
+                            %}
                           </div>
-                        </div>
-                        <div class="item">
-                          <div class="single-product">
-                            <img src="assets/images/horchata.png" alt="Horhcata can">
-                            <h3>Watermelon</h3>
-                            <div class="size-price">
-                              <span>420 ML</span>
-                              <span>$18.45</span>
-                            </div>
-                            <div class="product-footer">
-                              <a href="#">More Info</a>
-                              <a href="#" class="addCart">Add To Cart</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="single-product">
-                            <img src="assets/images/horchata.png" alt="Horhcata can">
-                            <h3>Tropical</h3>
-                            <div class="size-price">
-                              <span>420 ML</span>
-                              <span>$18.45</span>
-                            </div>
-                            <div class="product-footer">
-                              <a href="#">More Info</a>
-                              <a href="#" class="addCart">Add To Cart</a>
-                            </div>
-                          </div>
-                        </div>
+                        {% endfor %}
                       </div>
                     {% endif %}
                   </div>
@@ -283,48 +220,17 @@
                       </div>
                     {% else %}
                       <div class="products-slider owl-carousel">
-                        <div class="item">
-                          <div class="single-product">
-                            <img src="assets/images/horchata.png" alt="Horhcata can">
-                            <h3>Horchata</h3>
-                            <div class="size-price">
-                              <span>420 ML</span>
-                              <span>$18.45</span>
-                            </div>
-                            <div class="product-footer">
-                              <a href="#">More Info</a>
-                              <a href="#" class="addCart">Add To Cart</a>
-                            </div>
+                        {% for product in collection.products %}                          
+                          <div class="item">
+                            {% render 'custom-card-product',
+                              card_product: product,                                                                                          
+                              show_rating: section.settings.show_rating,
+                              lazy_load: lazy_load,
+                              show_quick_add: section.settings.enable_quick_add,
+                              section_id: section.id
+                            %}
                           </div>
-                        </div>
-                        <div class="item">
-                          <div class="single-product">
-                            <img src="assets/images/horchata.png" alt="Horhcata can">
-                            <h3>Watermelon</h3>
-                            <div class="size-price">
-                              <span>420 ML</span>
-                              <span>$18.45</span>
-                            </div>
-                            <div class="product-footer">
-                              <a href="#">More Info</a>
-                              <a href="#" class="addCart">Add To Cart</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="single-product">
-                            <img src="assets/images/horchata.png" alt="Horhcata can">
-                            <h3>Tropical</h3>
-                            <div class="size-price">
-                              <span>420 ML</span>
-                              <span>$18.45</span>
-                            </div>
-                            <div class="product-footer">
-                              <a href="#">More Info</a>
-                              <a href="#" class="addCart">Add To Cart</a>
-                            </div>
-                          </div>
-                        </div>
+                        {% endfor %}
                       </div>
                     {% endif %}
                   </div>
@@ -348,7 +254,20 @@
         "id": "heading",
         "label": "Heading",
         "default": "Kranium Products"
-      }
+      },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
+      "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.enable_quick_buy.label"
+    }
     ],
     "blocks": [
       {
