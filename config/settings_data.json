@@ -218,6 +218,13 @@
       "custom-header": {
         "type": "custom-header",
         "settings": {
+          "show_promo": true,
+          "promo": "Free Shipping on All Orders $50+",
+          "promo_link": "",
+          "show_svg_logo": false,
+          "svg_logo": "",
+          "logo_width": 210,
+          "main_menu": "main-menu"
         }
       },
       "custom-footer": {
