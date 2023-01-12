@@ -355,13 +355,14 @@
         "default": 0
       }
     ]
-  },{
-    "name" : "Stores",
+  },
+  {
+    "name": "Stores",
     "settings": [
       {
-        "type" : "text",
-        "id" : "store_api_link",
-        "label" : "Store API"
+        "type": "text",
+        "id": "store_api_link",
+        "label": "Store API"
       }
     ]
   },
