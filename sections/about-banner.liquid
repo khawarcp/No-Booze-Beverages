@@ -1,17 +1,34 @@
-    <!-- Mini Banner -->
-    <section class="aboutUs-banner">
-        <div class="container">
-            <div class="flex ai-center space-between about-banner">
-                <div class="aboutBanner-copy">
-                    <h1>Sustainable access to  <br> delicious kranium & <br> kratom nutrition.</h1>
-                    <p>We strive for sustainability in every facet of our business. <br> From our plant-based recipes to our glass bottles, it’s <br>  central to who we are.</p>
-                </div>
-                <div class="aboutBanner-image">
-                    <img src="assets/images/about-banner-image.png" alt="Kranium Drinks Image">
-                </div>
+<!-- Mini Banner -->
+<section class="aboutUs-banner">
+    <div class="container">
+        <div class="flex ai-center space-between about-banner">
+            <div class="aboutBanner-copy">
+                {{ page.content }}
+            </div>
+            <div class="aboutBanner-image">
+                {%  render 'responsive-image', image : section.settings.banner_image %} 
             </div>
         </div>
-        <div class="crystalImage">
-            <img src="assets/images/crystals-bg.png" alt="crystal image">
-        </div>
-    </section>
+    </div>
+    <div class="crystalImage">
+        {%  render 'responsive-image', image : section.settings.background_image %} 
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Banner",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "background_image",
+                "label": "Background Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "banner_image",
+                "label": "Banner Image"
+            }
+        ]
+    }
+{% endschema %}
