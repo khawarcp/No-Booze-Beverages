@@ -1,27 +1,36 @@
 {
-    "name": "About Us",
-    "sections": {
-        "banner" :{
-            "type": "about-banner"
-        },
-        "story" :{
-            "type": "about-story"
-        },
-        "present" : {
-            "type": "about-present"
-        },
-        "taste" : {
-            "type": "about-taste"
-        },
-        "future" : {
-            "type": "about-future"
-        }
+  "sections": {
+    "banner": {
+      "type": "about-banner",
+      "settings": {
+      }
     },
-    "order": [
-        "banner",
-        "story",
-        "present",
-        "taste",
-        "future"
-    ]
+    "story": {
+      "type": "about-story",
+      "settings": {
+      }
+    },
+    "present": {
+      "type": "about-present",
+      "settings": {
+      }
+    },
+    "taste": {
+      "type": "about-taste",
+      "settings": {
+      }
+    },
+    "future": {
+      "type": "about-future",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "story",
+    "present",
+    "taste",
+    "future"
+  ]
 }
