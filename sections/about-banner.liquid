@@ -6,12 +6,30 @@
                 {{ page.content }}
             </div>
             <div class="aboutBanner-image">
-                {%  render 'responsive-image', image : section.settings.banner_image %} 
+                {% if section.settings.banner_image != blank %}
+                     <img 
+                     loading="lazy"
+                     width="{{ section.settings.banner_image.width }}"
+                     height=""
+                     src="{{ section.settings.banner_image | image_url : width : section.settings.banner_image.width }}" 
+                     alt="{{ section.settings.banner_image.alt }}">
+                {% else %} 
+                    {{ 'image' | placeholder_svg_tag : "placeholder-svg placeholder" }}  
+                {% endif %}                
             </div>
         </div>
     </div>
-    <div class="crystalImage">
-        {%  render 'responsive-image', image : section.settings.background_image %} 
+    <div class="crystalImage">        
+        {% if section.settings.background_image != blank %}
+                     <img 
+                     loading="lazy"
+                     width="{{ section.settings.background_image.width }}"
+                     height=""
+                     src="{{ section.settings.background_image | image_url : width : section.settings.background_image.width }}" 
+                     alt="{{ section.settings.background_image.alt }}">
+                {% else %} 
+                    {{ 'lifestyle-1' | placeholder_svg_tag : "placeholder-svg placeholder" }}  
+                {% endif %}
     </div>
 </section>
 

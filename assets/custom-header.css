@@ -1,0 +1,82 @@
+/*******************
+        HEADER
+********************/
+.tagline {
+    padding: 8px 0;
+    text-align: center;
+    transition: 0.3s ease;
+    background: rgba(164, 55, 114, 0.25);
+}
+.tagline img {
+    display: inline-block;
+    margin-right: 6px;
+    position: relative;
+    top: -2px;
+}
+.tagline span {
+    color: #495057;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+.scroll .tagline {
+    margin-top: -40px;
+}
+.banner-section {
+    background: #DEEBF6;
+    padding-top: 96px;
+}
+.site-menu li {
+    display: inline-block;
+    margin-right: 25px;
+}
+.site-menu li a {
+    color: #495057;
+    font-size: 16px;
+}
+.header-row {
+    padding: 20px 0;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.header-wrap {
+    position: relative;
+}
+.header-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    height: 0;
+    transition: 0.3s ease;
+    z-index: -1;
+}
+.scroll .header-wrap::before {
+    height: 100%;
+}
+.site-menu li:last-child {
+    margin-right: 0;
+}
+.searchBtn {
+    margin-right: 12px;
+}
+.userBtn {
+    margin-right: 14px;
+}
+.cartBtn {
+    color: #F8F9FA;
+    background: #323C45;
+    font-size: 12px;
+    padding: 12px 15px;
+    min-width: 138px;
+}
+.cartBtn img {
+    display: inline-block;
+    margin-right: 8px;
+}
