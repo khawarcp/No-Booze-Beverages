@@ -102,11 +102,12 @@
             {%- endif -%}
     <div class="size-price">
 
-    {% if card_product.selected_or_first_available_variant.size > 0 %}
+    {% if card_product.variants.size > 1 %}      
     <span>         
-            {{ card_product.selected_or_first_available_variant.title }} 
-            </span>
-        {% endif %}
+      {{ card_product.variants.first.title }} 
+      </span>
+    {% endif %}
+    
     <span>{% render 'price', product: card_product, price_class: '' %}</span>
     </div>
     <div class="product-footer">
