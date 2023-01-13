@@ -1,3 +1,7 @@
 .cart-count-bubble{
     position: static;
 }
+
+.form-status.form-status-list.form__message {
+    font-size: 16px;
+}
