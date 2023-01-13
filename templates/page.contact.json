@@ -1,10 +1,18 @@
 {
   "sections": {
     "banner": {
-      "type": "page-banner"
+      "type": "page-banner",
+      "settings": {
+      }
     },
     "details": {
-      "type": "contact-details"
+      "type": "contact-details",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/contact-image.jpg",
+        "heading": "How can we <span>help<\/span> you?",
+        "subheading": "Lorem ipsum dolor sit amet consectetur. Id egestas faucibus est urna mauris urna eu.",
+        "social_heading": "Follow Us"
+      }
     }
   },
   "order": [
