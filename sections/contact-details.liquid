@@ -45,3 +45,39 @@
         </div>
     </div>
 </section>
+
+{% schema %}
+    {
+        "name": "Contact Details",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            },
+            {
+                "type": "header",
+                "content": "Form"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading"
+            },
+            {
+                "type": "text",
+                "id": "subheading",
+                "label": "Subheading"
+            },
+            {
+                "type": "header",
+                "content": "Social Media"
+            },
+            {
+                "type": "text",
+                "id": "social_heading",
+                "label": "Heading"
+            }
+        ]
+    }
+{% endschema %}
