@@ -13,6 +13,9 @@
     "contact": {
       "type": "faq-contact",
       "settings": {
+        "info": "If we did not answer your question, please feel free to connect with us!",
+        "button_text": "Contact Us",
+        "button_url": "shopify:\/\/pages\/contact"
       }
     }
   },
