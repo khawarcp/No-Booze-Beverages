@@ -1,19 +1,24 @@
 {
-    "name": "FAQ",
-    "sections": {
-        "banner" : {
-            "type": "page-banner"
-        },
-        "content" : {
-            "type" : "faq-content"
-        },
-        "contact" : {
-            "type" : "faq-contact"
-        }
+  "sections": {
+    "banner": {
+      "type": "page-banner",
+      "settings": {
+      }
     },
-    "order": [
-        "banner",
-        "content",
-        "contact"
-    ]
+    "content": {
+      "type": "faq-content",
+      "settings": {
+      }
+    },
+    "contact": {
+      "type": "faq-contact",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "contact"
+  ]
 }
