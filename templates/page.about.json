@@ -28,7 +28,44 @@
     },
     "taste": {
       "type": "about-taste",
+      "blocks": {
+        "607e339c-88e8-437c-9630-2508659a110b": {
+          "type": "feature",
+          "settings": {
+            "text": "Bottled\nin Glass",
+            "image": "shopify:\/\/shop_images\/glass-bottles.png"
+          }
+        },
+        "34f239d1-7002-4a37-b5d0-15b3014732bd": {
+          "type": "feature",
+          "settings": {
+            "text": "100%\nPlant-Based",
+            "image": "shopify:\/\/shop_images\/leaves.png"
+          }
+        },
+        "6da30d72-5015-490f-a2be-c4fe28ccab28": {
+          "type": "feature",
+          "settings": {
+            "text": "No Addictives\nNo Nonsense",
+            "image": "shopify:\/\/shop_images\/badge.png"
+          }
+        },
+        "907a5139-b809-47ac-bea0-7ab43a61936e": {
+          "type": "feature",
+          "settings": {
+            "text": "Certified\nOrganic",
+            "image": "shopify:\/\/shop_images\/usda-organic.png"
+          }
+        }
+      },
+      "block_order": [
+        "607e339c-88e8-437c-9630-2508659a110b",
+        "34f239d1-7002-4a37-b5d0-15b3014732bd",
+        "6da30d72-5015-490f-a2be-c4fe28ccab28",
+        "907a5139-b809-47ac-bea0-7ab43a61936e"
+      ],
       "settings": {
+        "marquee_text": "Drinks that taste as good as they make you feel"
       }
     },
     "future": {
