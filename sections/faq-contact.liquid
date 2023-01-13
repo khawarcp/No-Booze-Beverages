@@ -1,0 +1,38 @@
+ <!-- Contact -->
+ <section class="contact-here">
+    <div class="container">
+        <div class="contact-ft flex jc-sb ai-center">
+            {% if section.settings.info != blank %}                
+                <p> {{ section.settings.info }} </p>
+            {% endif %}
+            {% if section.settings.button_text != blank %}                
+                <a href="{{ section.settings.button_url | default: '#'  }}"> {{ section.settings.button_text }} <img width="" height="" loading="lazy" src="{{ 'right-thick-arrow.svg' | asset_url }}" alt="right arrow"></a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Contact",
+        "settings":[
+            {
+                "type": "textarea",
+                "id" : "info",
+                "label" : "Text",
+                "default": "If we did not answer your question, please feel free to connect with us!"
+            },
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button Text",
+                "default": "Contact Us"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "Button Link"
+            }
+        ]
+    }
+{% endschema %}

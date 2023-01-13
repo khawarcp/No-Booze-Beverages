@@ -1,0 +1,19 @@
+{
+    "name": "FAQ",
+    "sections": {
+        "banner" : {
+            "type": "page-banner"
+        },
+        "content" : {
+            "type" : "faq-content"
+        },
+        "contact" : {
+            "type" : "faq-contact"
+        }
+    },
+    "order": [
+        "banner",
+        "content",
+        "contact"
+    ]
+}
