@@ -1,28 +1,59 @@
-    <!-- Taste -->
-    <section class="taste-section">
-        <div class="marquee-wrap">
-            <div class="marquee-content marquee-left">
-                <span>Drinks that taste as good as they make you feel</span>
+<!-- Taste -->
+<section class="taste-section">
+    <div class="marquee-wrap">
+        <div class="marquee-content marquee-left">
+            <span>Drinks that taste as good as they make you feel</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="taste-options flex jc-sb ai-center">
+            <div class="single-bavarage">
+                <img src="assets/images/glass-bottles.svg" alt="Bottled in Glass">
+                <span>Bottled <br> in Glass</span>
+            </div>
+            <div class="single-bavarage">
+                <img src="assets/images/leaves.svg" alt="100% Plant-Based">
+                <span>100% <br> Plant-Based</span>
+            </div>
+            <div class="single-bavarage">
+                <img src="assets/images/badge.svg" alt="No Addictives No Nonsense">
+                <span>No Addictives <br> No Nonsense</span>
+            </div>
+            <div class="single-bavarage">
+                <img src="assets/images/sugar-cubes.svg" alt="No Added Sugar">
+                <span>No Added <br> Sugar</span>
             </div>
         </div>
-        <div class="container">
-            <div class="taste-options flex jc-sb ai-center">
-                <div class="single-bavarage">
-                    <img src="assets/images/glass-bottles.svg" alt="Bottled in Glass">
-                    <span>Bottled <br> in Glass</span>
-                </div>
-                <div class="single-bavarage">
-                    <img src="assets/images/leaves.svg" alt="100% Plant-Based">
-                    <span>100% <br> Plant-Based</span>
-                </div>
-                <div class="single-bavarage">
-                    <img src="assets/images/badge.svg" alt="No Addictives No Nonsense">
-                    <span>No Addictives <br> No Nonsense</span>
-                </div>
-                <div class="single-bavarage">
-                    <img src="assets/images/sugar-cubes.svg" alt="No Added Sugar">
-                    <span>No Added <br> Sugar</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Taste",
+        "settings": [
+            {
+                "type": "text",
+                "id": "marquee_text",
+                "label": "Marquee Text"
+            }
+        ],
+        "blocks": [
+            {
+                "name": "Feature",
+                "type": "feature",
+                "settings": [
+                    {
+                        "type": "textarea",
+                        "id": "text",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}
