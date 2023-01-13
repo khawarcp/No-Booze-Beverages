@@ -10,6 +10,11 @@
     "story": {
       "type": "about-story",
       "settings": {
+        "heading": "Our Story since 2022\nAwesomely Organic",
+        "info": "It’s a massive cliche, because it’s true. Oh and just so you know, that’s not a quote from some vegan, yogi, health guru, it’s from a rock ’n’ roll superstar who pioneered the ‘all or nothing’ rock ’n’ roll lifestyle. It’s a massive cliche, because it’s true. Oh and just so you know, that’s not a quote from some vegan, yogi, health guru, it’s from a rock ’n’ roll superstar who pioneered the ‘all or nothing’ rock ’n’ roll lifestyle.",
+        "quote": "\"You can have all the riches and success in the world, but if you don’t have your health, you have nothing.”",
+        "quotee": "-Steven Adler",
+        "image": "shopify:\/\/shop_images\/story-image.jpg"
       }
     },
     "present": {
