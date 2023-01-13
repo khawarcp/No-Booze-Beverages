@@ -7,6 +7,90 @@
     },
     "content": {
       "type": "faq-content",
+      "blocks": {
+        "be707eff-46a9-41cc-987b-f71fc503c95e": {
+          "type": "general",
+          "settings": {
+            "quiz": "What is Kava Root?",
+            "answer": "Kava root comes from the kava kava plant; a plant that is in the pepper family. It originates from the South Pacific Islands. Kava root is harvested, dried, and ground into a powder that is used to make a kava root tea. Kava is all-natural and has been a popular drink throughout Polynesia and Melanesia for centuries. It is gaining popularity in the US as an all-natural way to ease stress and wind down at the end of the day. In the South Pacific, drinking kava is an integral part of traditional religious and cultural ceremonies and important village social occasions. Historically kava was also prepared and drank for medicinal purposes."
+          }
+        },
+        "045aeecb-574c-4b1a-bfde-260cae36b8a2": {
+          "type": "kratom",
+          "settings": {
+            "quiz": "What is Kava Root?",
+            "answer": "Kava root comes from the kava kava plant; a plant that is in the pepper family. It originates from the South Pacific Islands. Kava root is harvested, dried, and ground into a powder that is used to make a kava root tea. Kava is all-natural and has been a popular drink throughout Polynesia and Melanesia for centuries. It is gaining popularity in the US as an all-natural way to ease stress and wind down at the end of the day. In the South Pacific, drinking kava is an integral part of traditional religious and cultural ceremonies and important village social occasions. Historically kava was also prepared and drank for medicinal purposes."
+          }
+        },
+        "cbd440e1-5457-486b-b75f-2a01c3437fed": {
+          "type": "kava",
+          "settings": {
+            "quiz": "What is Kava Root?",
+            "answer": "Kava root comes from the kava kava plant; a plant that is in the pepper family. It originates from the South Pacific Islands. Kava root is harvested, dried, and ground into a powder that is used to make a kava root tea. Kava is all-natural and has been a popular drink throughout Polynesia and Melanesia for centuries. It is gaining popularity in the US as an all-natural way to ease stress and wind down at the end of the day. In the South Pacific, drinking kava is an integral part of traditional religious and cultural ceremonies and important village social occasions. Historically kava was also prepared and drank for medicinal purposes."
+          }
+        },
+        "fa063ef7-eb6e-4d30-8c1b-5f9a2a857ccc": {
+          "type": "kranium",
+          "settings": {
+            "quiz": "What is Kava Root?",
+            "answer": "Kava root comes from the kava kava plant; a plant that is in the pepper family. It originates from the South Pacific Islands. Kava root is harvested, dried, and ground into a powder that is used to make a kava root tea. Kava is all-natural and has been a popular drink throughout Polynesia and Melanesia for centuries. It is gaining popularity in the US as an all-natural way to ease stress and wind down at the end of the day. In the South Pacific, drinking kava is an integral part of traditional religious and cultural ceremonies and important village social occasions. Historically kava was also prepared and drank for medicinal purposes."
+          }
+        },
+        "c79e0491-154e-400e-96e7-15d644b50a80": {
+          "type": "krakava",
+          "settings": {
+            "quiz": "What is Kava Root?",
+            "answer": "Kava root comes from the kava kava plant; a plant that is in the pepper family. It originates from the South Pacific Islands. Kava root is harvested, dried, and ground into a powder that is used to make a kava root tea. Kava is all-natural and has been a popular drink throughout Polynesia and Melanesia for centuries. It is gaining popularity in the US as an all-natural way to ease stress and wind down at the end of the day. In the South Pacific, drinking kava is an integral part of traditional religious and cultural ceremonies and important village social occasions. Historically kava was also prepared and drank for medicinal purposes."
+          }
+        },
+        "3a77c9d1-c9a0-4496-b7aa-2e1691052d2f": {
+          "type": "sweet-kava",
+          "settings": {
+            "quiz": "What is Kava Root?",
+            "answer": "Kava root comes from the kava kava plant; a plant that is in the pepper family. It originates from the South Pacific Islands. Kava root is harvested, dried, and ground into a powder that is used to make a kava root tea. Kava is all-natural and has been a popular drink throughout Polynesia and Melanesia for centuries. It is gaining popularity in the US as an all-natural way to ease stress and wind down at the end of the day. In the South Pacific, drinking kava is an integral part of traditional religious and cultural ceremonies and important village social occasions. Historically kava was also prepared and drank for medicinal purposes."
+          }
+        },
+        "3cfe63e4-8214-4f41-861c-e192b09a5af4": {
+          "type": "subscription",
+          "settings": {
+            "quiz": "What is Kava Root?",
+            "answer": "Kava root comes from the kava kava plant; a plant that is in the pepper family. It originates from the South Pacific Islands. Kava root is harvested, dried, and ground into a powder that is used to make a kava root tea. Kava is all-natural and has been a popular drink throughout Polynesia and Melanesia for centuries. It is gaining popularity in the US as an all-natural way to ease stress and wind down at the end of the day. In the South Pacific, drinking kava is an integral part of traditional religious and cultural ceremonies and important village social occasions. Historically kava was also prepared and drank for medicinal purposes."
+          }
+        },
+        "e5582db5-bcc2-429e-8241-4d42d63107d9": {
+          "type": "general",
+          "settings": {
+            "quiz": "How does you make kava tea?",
+            "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex voluptatibus commodi debitis atque veniam aut inventore temporibus magni ratione. Nam voluptatem quos similique voluptatum nemo praesentium harum aspernatur nulla."
+          }
+        },
+        "cd1ef98a-d386-4464-b09b-1d0aba7a1842": {
+          "type": "general",
+          "settings": {
+            "quiz": "",
+            "answer": ""
+          }
+        },
+        "e9e5aa7a-259c-4ec3-ab42-2617c3f666ca": {
+          "type": "general",
+          "settings": {
+            "quiz": "How does you make kava tea?",
+            "answer": "Kava root comes from the kava kava plant; a plant that is in the pepper family. It originates from the South Pacific Islands. Kava root is harvested, dried, and ground into a powder that is used to make a kava root tea. Kava is all-natural and has been a popular drink throughout Polynesia and Melanesia for centuries. It is gaining popularity in the US as an all-natural way to ease stress and wind down at the end of the day. In the South Pacific, drinking kava is an integral part of traditional religious and cultural ceremonies and important village social occasions. Historically kava was also prepared and drank for medicinal purposes."
+          }
+        }
+      },
+      "block_order": [
+        "be707eff-46a9-41cc-987b-f71fc503c95e",
+        "045aeecb-574c-4b1a-bfde-260cae36b8a2",
+        "cbd440e1-5457-486b-b75f-2a01c3437fed",
+        "fa063ef7-eb6e-4d30-8c1b-5f9a2a857ccc",
+        "c79e0491-154e-400e-96e7-15d644b50a80",
+        "3a77c9d1-c9a0-4496-b7aa-2e1691052d2f",
+        "3cfe63e4-8214-4f41-861c-e192b09a5af4",
+        "e5582db5-bcc2-429e-8241-4d42d63107d9",
+        "cd1ef98a-d386-4464-b09b-1d0aba7a1842",
+        "e9e5aa7a-259c-4ec3-ab42-2617c3f666ca"
+      ],
       "settings": {
       }
     },
