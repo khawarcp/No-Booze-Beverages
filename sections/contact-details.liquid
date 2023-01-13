@@ -4,42 +4,138 @@
         <div class="contact-row flex jc-sb">
             <div class="contact-col">
                 <div class="contact-image">
-                    <img src="assets/images/contact-image.jpg" alt="contact image">
+                    {% render 'responsive-image', image : section.settings.image %}
                 </div>
             </div>
             <div class="contact-col">
-                <h2>How can we <span>help</span> you?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Id egestas faucibus est urna mauris urna eu.</p>
-                <form action="" class="contact-form">
+                {% if section.settings.heading != blank %}                    
+                <h2> {{ section.settings.heading }} </h2>
+                {% else %}
+                    <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+                {% endif %}
+                {% if section.settings.subheading != blank %}                    
+                <p> {{ section.settings.subheading }} </p>
+                {% endif %}                
+                {%- form 'contact', id: 'ContactForm', class: 'contact-form' -%}  
+                    {%- if form.posted_successfully? -%}
+                    <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</h2>
+                  {%- elsif form.errors -%}
+                    <div class="form__message">
+                      <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+                    </div>
+                    <ul class="form-status-list caption-large" role="list">
+                      <li>
+                        <a href="#ContactForm-email" class="link">
+                          {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+                        </a>
+                      </li>
+                    </ul>
+                  {%- endif -%}      
                     <div class="contact-fields">
                         <div class="field">
-                            <input type="text" placeholder="First Name">
+                            <input type="text" autocomplete="name" placeholder="{{ 'templates.contact.form.name' | t }}" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">                       
+                        </div>
+                        <div class="field">                            
+                        <input type="text" autocomplete="last_name" placeholder="Last Name" id="ContactForm-last_name" name="contact[last_name]" value="{% if form.last_name %}{{ form.last_name }}{% endif %}">                       
+                        </div>
+                        <div class="field">                            
+                            <input
+                                autocomplete="email"
+                                type="email"
+                                id="ContactForm-email"                                
+                                name="contact[email]"
+                                spellcheck="false"
+                                autocapitalize="off"
+                                value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                                aria-required="true"
+                                {% if form.errors contains 'email' %}
+                                aria-invalid="true"
+                                aria-describedby="ContactForm-email-error"
+                                {% endif %}
+                                placeholder="{{ 'templates.contact.form.email' | t }}"
+                            >
+                            {%- if form.errors contains 'email' -%}
+                            <small class="contact__field-error" id="ContactForm-email-error">
+                            <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                            <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
+                            </small>
+                        {%- endif -%}
+                        </div>
+                        <div class="field">                            
+                        <input type="text" id="ContactForm-phone" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Last Name">
-                        </div>
-                        <div class="field">
-                            <input type="email" placeholder="Email Address">
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Phone Number">
-                        </div>
-                        <div class="field">
-                            <textarea name="" id="" cols="30" rows="4" placeholder="Your message"></textarea>
+                            <textarea name="contact[{{ 'templates.contact.form.comment' | t }}]" id="ContactForm-body" cols="30" rows="4" placeholder="{{ 'templates.contact.form.comment' | t }}">{{- form.body -}}</textarea>
                         </div>
                         <div class="field-btn">
-                            <button type="submit">Submit</button>
+                            <button type="submit">{{ 'templates.contact.form.send' | t }}</button>
                         </div>
                     </div>
-                </form>
+                {%- endform -%}
                 <div class="contact-social">
-                    <h3>Follow Us</h3>
+                    {% if section.settings.social_heading != blank %}
+                        <h3> {{ section.settings.social_heading }} </h3>                        
+                    {% endif %}
+                    {% if section.settings.show_social %}                        
                     <div class="social-linkss">
-                        <a href="#" target="_blank"><img src="assets/images/facebook.svg" alt="facebook icon"></a>
-                        <a href="#" target="_blank"><img src="assets/images/instagram.svg" alt="instagram icon"></a>
-                        <a href="#" target="_blank"><img src="assets/images/tiktok.svg" alt="tiktok icon"></a>
-                        <a href="#" target="_blank"><img src="assets/images/pointerest-icon.svg" alt="icon"></a>
+                            {%- if settings.social_facebook_link != blank -%}
+                            <a href="{{ settings.social_facebook_link }}" target="_blank">
+                                {%- render 'icons-facebook-contact' -%}
+                                <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>      
+                            </a>
+                                {%- endif -%}
+                                {%- if settings.social_instagram_link != blank -%}
+                                <a href="{{ settings.social_facebook_link }}" target="_blank">
+                                    {%- render 'icons-instagram-contact' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                                    </a>
+                                {%- endif -%}
+                                {%- if settings.social_tiktok_link != blank -%}
+                                <a href="{{ settings.social_tiktok_link }}" target="_blank">
+                                {%- render 'icons-tiktok-contact' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                                </a>
+                            {%- endif -%}
+                            {%- if settings.social_pinterest_link != blank -%}
+                                <a href="{{ settings.social_pinterest_link }}" target="_blank">
+                                {%- render 'icons-pinterest-contact' -%}
+                                <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                                </a>
+                            {%- endif -%}
+                            {%- if settings.social_twitter_link != blank -%}
+                                <a href="{{ settings.social_twitter_link }}" target="_blank">
+                                {%- render 'icons-twitter-contact' -%}
+                                <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                                </a>
+                            {%- endif -%}
+                            {%- if settings.social_tumblr_link != blank -%}
+                                <a href="{{ settings.social_tumblr_link }}" target="_blank">
+                                {%- render 'icons-tumblr-contact' -%}
+                                    <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                                </a>
+                            {%- endif -%}
+
+                            {%- if settings.social_snapchat_link != blank -%}
+                                <a href="{{ settings.social_snapchat_link }}" target="_blank">
+                                {%- render 'icons-snapchat-contact' -%}
+                                <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                                </a>
+                            {%- endif -%}
+
+                            {%- if settings.social_youtube_link != blank -%}
+                                <a href="{{ settings.social_youtube_link }}" target="_blank">
+                                {%- render 'icons-youtube-contact' -%}
+                                    <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                                </a>
+                            {%- endif -%}
+                            {%- if settings.social_vimeo_link != blank -%}
+                            <a href="{{ settings.social_vimeo_link }}" target="_blank">
+                                {%- render 'icons-vimeo-contact' -%}
+                                    <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+                                </a>
+                            {%- endif -%}
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -77,6 +173,12 @@
                 "type": "text",
                 "id": "social_heading",
                 "label": "Heading"
+            },
+            {
+                "type": "checkbox",
+                "id": "show_social",
+                "label": "Show Social Icons",
+                "default": true
             }
         ]
     }
