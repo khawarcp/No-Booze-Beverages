@@ -1,6 +1,6 @@
 <!-- Story -->
 <section class="story-section space-left">
-    <h3> {{ section.settings.heading }} </h3>
+    <h3> {{ section.settings.heading | newline_to_br }} </h3>
     <div class="story-row flex jc-sb ai-center">
         <div class="story-copy">
             <h4> {{ section.settings.quote }} </h4>
@@ -8,7 +8,7 @@
             <p> {{ section.settings.info }} </p>
         </div>
         <div class="story-image">
-            {% render 'responsive-image', image: image %}
+            {% render 'responsive-image', image: section.settings.image %}
         </div>
     </div>
 </section>
