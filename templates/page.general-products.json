@@ -1,0 +1,19 @@
+{
+    "name": "General Product",
+    "sections": {
+        "banner" : {
+            "type": "general-banner"
+        },
+        "slider" : {
+            "type": "general-slider"
+        },
+        "products" : {
+            "type": "general-products"
+        }
+    },
+    "order": [
+        "banner",
+        "slider",
+        "products"
+    ]
+}
