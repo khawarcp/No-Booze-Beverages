@@ -26,77 +26,148 @@
                           {% render block %}
                         </div>
                     {% when 'content' %}
-                        <div class="blog-desc-col">
+                        <div class="blog-desc-col">  
+                            {% if block.settings.show_social %}                                
                             <div class="blog-social">
-                                <a href="#"><img src="assets/images/facebook.svg" alt="facebook"></a>
-                                <a href="#"><img src="assets/images/pointerest-icon.svg" alt="pinterest"></a>
-                                <a href="#"><img src="assets/images/twitter-icon.svg" alt="twitter"></a>
+                                {%- if settings.social_facebook_link != blank -%}
+                            <a href="{{ settings.social_facebook_link }}" target="_blank">
+                                {%- render 'icons-facebook-contact' -%}
+                                <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>      
+                            </a>
+                                {%- endif -%}
+                                {%- if settings.social_instagram_link != blank -%}
+                                <a href="{{ settings.social_facebook_link }}" target="_blank">
+                                    {%- render 'icons-instagram-contact' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                                    </a>
+                                {%- endif -%}
+                                {%- if settings.social_tiktok_link != blank -%}
+                                <a href="{{ settings.social_tiktok_link }}" target="_blank">
+                                {%- render 'icons-tiktok-contact' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                                </a>
+                            {%- endif -%}
+                            {%- if settings.social_pinterest_link != blank -%}
+                                <a href="{{ settings.social_pinterest_link }}" target="_blank">
+                                {%- render 'icons-pinterest-contact' -%}
+                                <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                                </a>
+                            {%- endif -%}
+                            {%- if settings.social_twitter_link != blank -%}
+                                <a href="{{ settings.social_twitter_link }}" target="_blank">
+                                {%- render 'icons-twitter-contact' -%}
+                                <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                                </a>
+                            {%- endif -%}
+                            {%- if settings.social_tumblr_link != blank -%}
+                                <a href="{{ settings.social_tumblr_link }}" target="_blank">
+                                {%- render 'icons-tumblr-contact' -%}
+                                    <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                                </a>
+                            {%- endif -%}
+
+                            {%- if settings.social_snapchat_link != blank -%}
+                                <a href="{{ settings.social_snapchat_link }}" target="_blank">
+                                {%- render 'icons-snapchat-contact' -%}
+                                <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                                </a>
+                            {%- endif -%}
+
+                            {%- if settings.social_youtube_link != blank -%}
+                                <a href="{{ settings.social_youtube_link }}" target="_blank">
+                                {%- render 'icons-youtube-contact' -%}
+                                    <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                                </a>
+                            {%- endif -%}
+                            {%- if settings.social_vimeo_link != blank -%}
+                            <a href="{{ settings.social_vimeo_link }}" target="_blank">
+                                {%- render 'icons-vimeo-contact' -%}
+                                    <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+                                </a>
+                            {%- endif -%}
+                            </div>                            
+                            {% endif %}                                                         
+                            
+                            
+                            <div class="blog-content">
+                                {{ article.content }}
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit sed ut in urna, sed augue tincidunt. Risus eget egestas mattis egestas dui habitant. Feugiat pellentesque donec odio massa auctor tortor urna non aliquet. Augue eget molestie neque, leo nisl risus porttitor. Cursus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit sed ut in urna, sed augue tincidunt. Risus eget egestas mattis egestas dui habitant. Feugiat pellentesque donec odio massa auctor tortor urna non aliquet. Augue eget molestie neque, leo nisl risus porttitor. Cursus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit sed ut in urna, sed augue tincidunt. Risus eget egestas mattis egestas dui habitant. Feugiat pellentesque donec odio massa auctor tortor urna non aliquet. Augue eget molestie neque, leo nisl risus porttitor. Cursus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu mus viverra imperdiet facilisi. Eget venenatis, ullamcorper placerat nibh. Elementum nulla orci phasellus id. Lorem massa vitae faucibus posuere purus pulvinar urna etiam. Vulputate aliquam suspendisse volutpat non.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu varius suspendisse sodales vel commodo eget scelerisque tempor. Mauris, nulla eu turpis gravida neque pretium. Orci neque.</p>
-                            <div class="quote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere tempor iaculis sed orci. Vulputate nunc cursus enim, sollicitudin amet. Vel enim, felis vulputate malesuada parturient urna, fusce. Egestas amet amet non ac lacus, consequat, enim quam. </p>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada orci sociis magnis neque vitae nullam. Mauris, a dui vulputate dolor. Eu lacus, turpis mi iaculis. Fermentum nulla nunc, egestas enim dignissim diam phasellus. Faucibus aliquam, mattis pharetra arcu molestie. Justo, nisi, dictum nullam elementum, vulputate. Etiam amet morbi nullam vestibulum malesuada.</p>
-                            <div class="blog-suggest flex ai-center">
-                                <div class="suggestImage">
-                                    <img src="assets/images/man-worker.png" alt="image">
-                                </div>
-                                <div class="suggest-text">
-                                    <h4>Iaculis tempor at lacus leo.</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum elit, est sed nisl. Sit feugiat commodo lorem vitae sollicitudin. Nunc diam nibh nam et accumsan, vel vel leo, non. Luctus semper urna, eget sociis placerat in pellentesque magnis tempus. Sem tincidunt sed cursus.</p>
-                                </div>
-                            </div> 
-                            <h4>Key Summary</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem consequat faucibus molestie diam eu tellus risus odio. Sit aliquet nam donec consequat nibh quis. Mattis morbi lectus tempor egestas dui. Ac sem lorem pharetra eget mattis. Sed in in auctor.</p>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra id tincidunt pharetra pellentesque. Bibendum amet egestas eget erat laoreet facilisis. </li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet blandit vulputate.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at nibh ullamcorper ut et nunc euismod. Quis orci pulvinar nullam purus. Nunc fringilla feugiat egestas.</li>
-                            </ul>
-                            <h4>Neque integer pharetra urna.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada orci sociis magnis neque vitae nullam. Mauris, a dui vulputate dolor. Eu lacus, turpis mi iaculis. Fermentum nulla nunc, egestas enim dignissim diam phasellus. Faucibus aliquam, mattis pharetra arcu molestie. Justo, nisi, dictum nullam elementum, vulputate. Etiam amet morbi nullam vestibulum malesuada.</p>
-                            <img src="assets/images/blog-inner.jpg" alt="blogImage">
-                            <h4>Neque integer pharetra urna.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada orci sociis magnis neque vitae nullam. Mauris, a dui vulputate dolor. Eu lacus, turpis mi iaculis. Fermentum nulla nunc, egestas enim dignissim diam phasellus. Faucibus aliquam, mattis pharetra arcu molestie. Justo, nisi, dictum nullam elementum, vulputate. Etiam amet morbi nullam vestibulum malesuada.</p>
         
+                            {% if block.settings.show_sharing %}                                
+                            <div class="article-template__social-sharing container" {{ block.shopify_attributes }}>
+                                <share-button class="share-button" {{ block.shopify_attributes }}>
+                                  <button class="share-button__button hidden">
+                                    {% render 'icon-share' %}
+                                    {{ block.settings.share_label | escape }}
+                                  </button>
+                                  <details id="Details-{{ block.id }}-{{ section.id }}">
+                                    <summary class="share-button__button">
+                                      {% render 'icon-share' %}
+                                      {{ block.settings.share_label | escape }}
+                                    </summary>
+                                    <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
+                                      <div class="field">
+                                        <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
+                                        </span>
+                                        <input type="text"
+                                              class="field__input"
+                                              id="url"
+                                              value="{{ request.origin | append: article.url }}"
+                                              placeholder="{{ 'general.share.share_url' | t }}"
+                                              onclick="this.select();"
+                                              readonly
+                                        >
+                                        <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
+                                      </div>
+                                      <button class="share-button__close hidden no-js-hidden">
+                                        {% render 'icon-close' %}
+                                        <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
+                                      </button>
+                                      <button class="share-button__copy no-js-hidden">
+                                        {% render 'icon-clipboard' %}
+                                        <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
+                                      </button>
+                                    </div>
+                                  </details>
+                                </share-button>
+                                <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+                              </div>
+                            {% endif %}
+
+                            {%- if block.settings.blog_show_previous_and_next_buttons -%}
                             <div class="navigation-wrap flex ai-center jc-sb">
-                                <a href="#" class="prev-post">
-                                    <span><img src="assets/images/arrow-left-long.svg" alt="left arrow"></span>
+                                <a role="link" href="{{ blog.previous_article.url | default: 'javascript:void(0)' }}" class="prev-post">
+                                    <span> {% render 'icon-arrow-left-long' %} </span>
                                     <div class="navPost-desc">
                                         <span>Previous Blog</span>
-                                        <h4>Pharetra leo nibh...</h4>
+                                        <h4> {{ blog.previous_article.title | truncatewords: 3 }} </h4>
                                     </div>
                                 </a>
         
-                                <a href="#" class="next-post">
-                                    <span><img src="assets/images/arrow-right-long.svg" alt="right arrow"></span>
+                                <a role="link" href="{{ blog.next_article.url | default: 'javascript:void(0)' }}" class="next-post">
+                                    <span> {% render 'icon-arrow-right-long' %} </span>
                                     <div class="navPost-desc">
                                         <span>Next Blog</span>
-                                        <h4>Tincidunt nec vitae...</h4>
+                                        <h4> {{ blog.next_article.title | truncatewords: 3 }} </h4>
                                     </div>
                                 </a>
                             </div>
+                            {%- endif -%}
                         </div>
                     {% when 'recent_blog' %}                           
                         <div class="recent-blogs">
-                            <h4>Recent Blogs</h4>
+                            <h4>{{ block.settings.heading }}</h4>
                             <ul>
-                                <li>
-                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque suspendisse at.</a>
-                                    <span>Jan 14, 2022</span>
-                                </li>
-                                <li>
-                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque suspendisse at.</a>
-                                    <span>Jan 21, 2022</span>
-                                </li>
-                                <li>
-                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque suspendisse at.</a>
-                                    <span>Aug 31, 2022 </span>
-                                </li>
+                                {% for articl in blog.articles limit: 3 %}
+                                    {% if articl.handle == article.handle %}
+                                        {% continue %}
+                                    {% else %}
+                                        <li>
+                                            <a href="{{ articl.url }}"> {{ articl.title }} </a>
+                                            <span> {{ articl.published_at | time_tag : format: 'date' }} </span>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}            
                             </ul>
                         </div>
                     {% endcase %}
@@ -170,9 +241,14 @@
             "default": "Share"
           },{
             "type": "checkbox",
+            "id": "show_sharing",
+            "default": false,
+            "label": "Show Social Sharing"
+          },{
+            "type": "checkbox",
             "id": "show_social",
             "default": true,
-            "label": "Show Social"
+            "label": "Show Social Icons"
           }, {
             "type": "paragraph",
             "content": "t:sections.main-article.blocks.share.settings.featured_image_info.content"
@@ -193,7 +269,15 @@
       }, {
         "type": "recent_blog",
         "name": "Recent Blogs",
-        "limit": 1                
+        "limit": 1,
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Recent Blogs"
+            }
+        ]                
       }
     ]
   }
