@@ -387,7 +387,19 @@ header {
 .shop-content p:last-child {
     margin-bottom: 0;
 }
-
+.products-slider .owl-stage{
+  display: flex;
+}
+.products-slider .item {
+     display: flex;
+    flex: 1 0 auto;
+    height: 100%;
+}
+.products-slider .single-product {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 /******************
     Sip Section
 *******************/
