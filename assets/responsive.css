@@ -5,7 +5,19 @@
 }
 
 @media screen and (max-width: 1439px) {
+  h2 {
+    font-size: 30px;
+  }
   .container {
     max-width: 1240px;
+  }
+  .product-desc-wrap .accordion_head p {
+    font-size: 30px;
+  }
+  .product-desc-wrap .tab_outer {
+      margin-bottom: 30px;
+  }
+  .marquee-wrap span {
+      font-size: 60px;
   }
 }
