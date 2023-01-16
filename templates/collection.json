@@ -12,7 +12,59 @@
     },
     "product-grid": {
       "type": "custom-main-collection-product-grid",
+      "blocks": {
+        "cee61d46-9b6b-48d4-90cf-9bcd19a2ee50": {
+          "type": "soda",
+          "settings": {
+            "soda_collection": "kratom"
+          }
+        },
+        "77e9037a-9d6b-438b-8a89-d0fc6cf9d62b": {
+          "type": "soda",
+          "settings": {
+            "soda_collection": "kava"
+          }
+        },
+        "24c72be0-1c67-4db9-af2e-700371d533d2": {
+          "type": "soda",
+          "settings": {
+            "soda_collection": "krakava"
+          }
+        },
+        "6a0a338a-a94d-4987-87ab-6acf08db7948": {
+          "type": "seltzer",
+          "settings": {
+            "seltzer_collection": "krakava"
+          }
+        },
+        "e415eee7-3970-4e74-a08e-0fb9cc5129e0": {
+          "type": "seltzer",
+          "settings": {
+            "seltzer_collection": "kratom"
+          }
+        },
+        "c4d49911-5539-4bb2-9f45-29d58281c98b": {
+          "type": "tea",
+          "settings": {
+            "tea_collection": "kava"
+          }
+        }
+      },
+      "block_order": [
+        "cee61d46-9b6b-48d4-90cf-9bcd19a2ee50",
+        "77e9037a-9d6b-438b-8a89-d0fc6cf9d62b",
+        "24c72be0-1c67-4db9-af2e-700371d533d2",
+        "6a0a338a-a94d-4987-87ab-6acf08db7948",
+        "e415eee7-3970-4e74-a08e-0fb9cc5129e0",
+        "c4d49911-5539-4bb2-9f45-29d58281c98b"
+      ],
       "settings": {
+        "heading": "Kranium Products",
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "enable_sorting": true
       }
     },
     "grab": {
