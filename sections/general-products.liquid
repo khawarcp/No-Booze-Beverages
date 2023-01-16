@@ -7,106 +7,57 @@
       class="kranium-content">
       <div
         class="prodHead flex jc-sb ai-center">
-        <h2>Kranium Products</h2>
+        <h2>
+          Products</h2>
         <span>
           <span>Soda</span>
           Seltzer Tea</span>
       </div>
       <div
         class="products-slider owl-carousel">
-        <div
-          class="item">
+        {% for product in collection.products %}
           <div
-            class="single-product">
-            <img
-              src="assets/images/horchata.png"
-              alt="Horhcata can">
-            <h3>Horchata</h3>
-            <div
-              class="size-price">
-              <span>420 ML</span>
-              <span>$18.45</span>
-            </div>
-            <div
-              class="product-footer">
-              <a
-                href="#">More Info</a>
-              <a
-                href="#"
-                class="addCart">Add To Cart</a>
-            </div>
+            class="item">
+            {% render 'custom-card-product' 
+             , card_product: product,
+             show_rating: section.settings.show_rating,
+             lazy_load: true,
+             show_quick_add: section.settings.enable_quick_add,
+             section_id: section.id %}
           </div>
-        </div>
-        <div
-          class="item">
-          <div
-            class="single-product">
-            <img
-              src="assets/images/horchata.png"
-              alt="Horhcata can">
-            <h3>Watermelon</h3>
-            <div
-              class="size-price">
-              <span>420 ML</span>
-              <span>$18.45</span>
-            </div>
-            <div
-              class="product-footer">
-              <a
-                href="#">More Info</a>
-              <a
-                href="#"
-                class="addCart">Add To Cart</a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="item">
-          <div
-            class="single-product">
-            <img
-              src="assets/images/horchata.png"
-              alt="Horhcata can">
-            <h3>Tropical</h3>
-            <div
-              class="size-price">
-              <span>420 ML</span>
-              <span>$18.45</span>
-            </div>
-            <div
-              class="product-footer">
-              <a
-                href="#">More Info</a>
-              <a
-                href="#"
-                class="addCart">Add To Cart</a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="item">
-          <div
-            class="single-product">
-            <img
-              src="assets/images/horchata.png"
-              alt="Horhcata can">
-            <h3>Tropical</h3>
-            <div
-              class="size-price">
-              <span>420 ML</span>
-              <span>$18.45</span>
-            </div>
-            <div
-              class="product-footer">
-              <a
-                href="#">More Info</a>
-              <a
-                href="#"
-                class="addCart">Add To Cart</a>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
 </section>
+
+{% schema %}
+  {
+    "name": "Products",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection_slider",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "General Products"
+      }
+    ]
+  }
+{% endschema %}
