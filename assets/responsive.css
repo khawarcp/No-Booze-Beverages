@@ -20,4 +20,7 @@
   .marquee-wrap span {
       font-size: 60px;
   }
+  .find-section {
+    padding-bottom: 100px;
+  }
 }
