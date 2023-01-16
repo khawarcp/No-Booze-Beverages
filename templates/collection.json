@@ -18,6 +18,11 @@
     "grab": {
       "type": "collection-grab",
       "settings": {
+        "heading": "Grab Them All",
+        "text": "Don’t know which flavor's to try? Get our variety of each delicious flavor.",
+        "button_text": "Shop Now",
+        "button_url": "",
+        "image": "shopify:\/\/shop_images\/grab-teens.png"
       }
     }
   },
