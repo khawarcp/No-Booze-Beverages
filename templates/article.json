@@ -1,7 +1,9 @@
 {
   "sections": {
     "main": {
-      "type": "custom-main-article"
+      "type": "custom-main-article",
+      "settings": {
+      }
     }
   },
   "order": [
