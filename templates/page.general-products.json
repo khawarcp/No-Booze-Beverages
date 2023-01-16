@@ -1,19 +1,52 @@
 {
-    "name": "General Product",
-    "sections": {
-        "banner" : {
-            "type": "general-banner"
-        },
-        "slider" : {
-            "type": "general-slider"
-        },
-        "products" : {
-            "type": "general-products"
-        }
+  "sections": {
+    "banner": {
+      "type": "general-banner",
+      "settings": {
+      }
     },
-    "order": [
-        "banner",
-        "slider",
-        "products"
-    ]
+    "slider": {
+      "type": "general-slider",
+      "blocks": {
+        "737e624f-f672-4b51-8a01-10afeb341565": {
+          "type": "Slide",
+          "settings": {
+            "heading": "What Kratom is?",
+            "text": "<p>Kratom is another beneficial plant. It is called Mitragyna speciosa in scientific language, and it belongs to the coffee family. Kratom grows naturally in Indonesia, Malaysia and some other parts of Southeast Asia.<\/p><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates. The only high dosage of Kratom can induce these effects. In minor quantity, it initiates analgesic and relaxing effects.<\/p><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra id tincidunt pharetra pellentesque. Bibendum amet egestas eget erat laoreet facilisis.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet blandit vulputate.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at nibh ullamcorper ut et nunc euismod. Quis orci pulvinar nullam purus. Nunc fringilla feugiat egestas.<\/li><\/ul><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates.<\/p>"
+          }
+        },
+        "c3b889ff-5e1a-4b9a-997f-f6ea773e8695": {
+          "type": "Slide",
+          "settings": {
+            "heading": "What Kratom is?",
+            "text": "<p>Kratom is another beneficial plant. It is called Mitragyna speciosa in scientific language, and it belongs to the coffee family. Kratom grows naturally in Indonesia, Malaysia and some other parts of Southeast Asia.<\/p><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates. The only high dosage of Kratom can induce these effects. In minor quantity, it initiates analgesic and relaxing effects.<\/p><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra id tincidunt pharetra pellentesque. Bibendum amet egestas eget erat laoreet facilisis.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet blandit vulputate.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at nibh ullamcorper ut et nunc euismod. Quis orci pulvinar nullam purus. Nunc fringilla feugiat egestas.<\/li><\/ul><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates.<\/p>"
+          }
+        },
+        "c4bff873-7051-42a6-a3b8-de30dc6d23f6": {
+          "type": "Slide",
+          "settings": {
+            "heading": "What Kratom is?",
+            "text": "<p>Kratom is another beneficial plant. It is called Mitragyna speciosa in scientific language, and it belongs to the coffee family. Kratom grows naturally in Indonesia, Malaysia and some other parts of Southeast Asia.<\/p><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates. The only high dosage of Kratom can induce these effects. In minor quantity, it initiates analgesic and relaxing effects.<\/p><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra id tincidunt pharetra pellentesque. Bibendum amet egestas eget erat laoreet facilisis.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet blandit vulputate.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at nibh ullamcorper ut et nunc euismod. Quis orci pulvinar nullam purus. Nunc fringilla feugiat egestas.<\/li><\/ul><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "737e624f-f672-4b51-8a01-10afeb341565",
+        "c3b889ff-5e1a-4b9a-997f-f6ea773e8695",
+        "c4bff873-7051-42a6-a3b8-de30dc6d23f6"
+      ],
+      "settings": {
+      }
+    },
+    "products": {
+      "type": "general-products",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "slider",
+    "products"
+  ]
 }
