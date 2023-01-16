@@ -3,12 +3,24 @@
   <div class="container">
     <div class="cans-content flex jc-sb ai-center">
       <div class="cans-image">
-        <img src="assets/images/grab-teens.png" alt="cans image">
+        {% render 'responsive-image', image: section.settings.image %}
       </div>
       <div class="cans-copy">
-        <h3>Grab Them All</h3>
-        <p>Don’t know which flavor's to try? Get our variety of each delicious flavor.</p>
-        <a href="#" class="siteBtn">Shop Now</a>
+        {% if section.settings.heading != blank %}
+          <h3>
+            {{ section.settings.heading }}
+          </h3>
+        {% endif %}
+        {% if section.settings.text != blank %}
+          <p>
+            {{ section.settings.text }}
+          </p>
+        {% endif %}
+        {% if section.settings.button_text != blank %}
+          <a href="{{ section.settings.button_url | default: '#'  }}" class="siteBtn">
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -34,7 +46,7 @@
         "label": "Button Text"
       },
       {
-        "type": "text",
+        "type": "url",
         "id": "button_url",
         "label": "Button URL"
       }, {
