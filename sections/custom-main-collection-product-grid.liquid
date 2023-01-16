@@ -1,5 +1,4 @@
 <!-- Kranium Products -->
-{{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
@@ -18,7 +17,7 @@
   <section class="products-section shop">
     <div class="container">
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
-    {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
+    {%- if section.settings.enable_sorting -%}
       <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
         <form class="facets-vertical-form" id="FacetSortForm">
           <div class="facet-filters sorting caption">
@@ -102,304 +101,53 @@
                     class="nav nav-tabs nav-fill"
                     id="nav-tab"
                     role="tablist">
-                    <a
-                      class="nav-item nav-link active show"
-                      id="kratom-tab"
-                      data-toggle="tab"
-                      href="#kratom">Kratom</a>
-                    <a
-                      class="nav-item nav-link"
-                      id="kava-tab"
-                      data-toggle="tab"
-                      href="#kava">KAVA</a>
-                    <a
-                      class="nav-item nav-link"
-                      id="krakava-tab"
-                      data-toggle="tab"
-                      href="#krakava">KRAKAVA</a>
+                    {% for block in section.blocks %}
+                      {% if block.type == 'soda' %}
+                        {% assign collection = collections[block.settings.soda_collection] %}
+                        <a
+                          class="nav-item nav-link {% if forloop.first %} active show {% endif %}"
+                          id="{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-tab-{{ block.type }}"
+                          data-toggle="tab"
+                          href="#{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-{{ block.type }}">{{ collection.title }}</a>
+                      {% endif %}
+                    {% endfor %}
                   </div>
                 </nav>
               </div>
               <div class="tab-content px-sm-0" id="nav-tabContent">
-                <!-- Tab1 -->
-                <div
-                  class="tab-pane fade active show"
-                  id="kratom"
-                  role="tabpanel"
-                  aria-labelledby="nav-home-tab">
-                  <div class="products-all flex sb">
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
+                {% for block in section.blocks %}
+                  {% if block.type == 'soda' %}
+                    {% assign collection = collections[block.settings.soda_collection] %}
+                    <div
+                      class="tab-pane fade {% if forloop.first %} active show {% endif %}"
+                      id="{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-{{ block.type }}"
+                      role="tabpanel"
+                      aria-labelledby="nav-home-tab">
+                      {% if collection.products.size == 0 %}
+                        <div class="title-wrapper center">
+                          <h2 class="title title--primary">
+                            {{ 'sections.collection_template.empty' | t }}<br>
+                            {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+                          </h2>
                         </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
+                      {% else %}
+                        <div class="products-slider owl-carousel">
+                          {% for product in collection.products %}
+                            {%- assign lazy_load = true -%}
+                            <div class="item">
+                              {% render 'custom-card-product' 
+                               , card_product: product,
+                               show_rating: section.settings.show_rating,
+                               lazy_load: lazy_load,
+                               show_quick_add: section.settings.enable_quick_add,
+                               section_id: section.id %}
+                            </div>
+                          {% endfor %}
                         </div>
-                      </div>
+                      {% endif %}
                     </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Tab2 -->
-                <div
-                  class="tab-pane fade"
-                  id="kava"
-                  role="tabpanel"
-                  aria-labelledby="nav-home-tab">
-                  <div class="products-all flex sb">
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Tab3 -->
-                <div
-                  class="tab-pane fade"
-                  id="krakava"
-                  role="tabpanel"
-                  aria-labelledby="nav-home-tab">
-                  <div class="products-all flex sb">
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="singleCol-product">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  {% endif %}
+                {% endfor %}
               </div>
             </div>
           </div>
@@ -416,178 +164,57 @@
                     class="nav nav-tabs nav-fill"
                     id="nav-tab"
                     role="tablist">
-                    <a
-                      class="nav-item nav-link active show"
-                      id="kratom-tab"
-                      data-toggle="tab"
-                      href="#kratom2">Kratom</a>
-                    <a
-                      class="nav-item nav-link"
-                      id="kava-tab"
-                      data-toggle="tab"
-                      href="#kava2">KAVA</a>
-                    <a
-                      class="nav-item nav-link"
-                      id="krakava-tab"
-                      data-toggle="tab"
-                      href="#krakava2">KRAKAVA</a>
+                    {% assign seltzerCount = 1 %}
+                    {% for block in section.blocks %}
+                      {% if block.type == 'seltzer' %}
+                        {% assign collection = collections[block.settings.seltzer_collection] %}
+                        <a
+                          class="nav-item nav-link {% if seltzerCount == 1 %} active show {% endif %}"
+                          id="{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-tab-{{ block.type }}"
+                          data-toggle="tab"
+                          href="#{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-{{ block.type }}">{{ collection.title }}</a>
+                        {% assign seltzerCount = seltzerCount | plus: 1 %}
+                      {% endif %}
+                    {% endfor %}
                   </div>
                 </nav>
               </div>
               <div class="tab-content px-sm-0" id="nav-tabContent">
-                <!-- Tab1 -->
-                <div
-                  class="tab-pane fade active show"
-                  id="kratom2"
-                  role="tabpanel"
-                  aria-labelledby="nav-home-tab">
-                  <div class="products-slider owl-carousel">
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
+                {% assign seltzerProductCount = 1 %}
+                {% for block in section.blocks %}
+                  {% if block.type == 'seltzer' %}
+                    {% assign collection = collections[block.settings.seltzer_collection] %}
+                    <div
+                      class="tab-pane fade {% if seltzerProductCount == 1 %} active show {% endif %}"
+                      id="{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-{{ block.type }}"
+                      role="tabpanel"
+                      aria-labelledby="nav-home-tab">
+                      {% if collection.products.size == 0 %}
+                        <div class="title-wrapper center">
+                          <h2 class="title title--primary">
+                            {{ 'sections.collection_template.empty' | t }}<br>
+                            {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+                          </h2>
                         </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
+                      {% else %}
+                        <div class="products-slider owl-carousel">
+                          {% for product in collection.products %}
+                            {%- assign lazy_load = true -%}
+                            <div class="item">
+                              {% render 'custom-card-product' 
+                               , card_product: product,
+                               show_rating: section.settings.show_rating,
+                               lazy_load: lazy_load,
+                               show_quick_add: section.settings.enable_quick_add,
+                               section_id: section.id %}
+                            </div>
+                          {% endfor %}
                         </div>
-                      </div>
+                      {% endif %}
                     </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Watermelon</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Tropical</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Tab2 -->
-                <div
-                  class="tab-pane fade"
-                  id="kava2"
-                  role="tabpanel"
-                  aria-labelledby="nav-home-tab">
-                  <div class="products-slider owl-carousel">
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Watermelon</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Tropical</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Tab3 -->
-                <div
-                  class="tab-pane fade"
-                  id="krakava2"
-                  role="tabpanel"
-                  aria-labelledby="nav-home-tab">
-                  <div class="products-slider owl-carousel">
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Watermelon</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Tropical</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                    {% assign seltzerProductCount = seltzerProductCount | plus: 1 %}
+                  {% endif %}
+                {% endfor %}
               </div>
             </div>
           </div>
@@ -604,178 +231,57 @@
                     class="nav nav-tabs nav-fill"
                     id="nav-tab"
                     role="tablist">
-                    <a
-                      class="nav-item nav-link active show"
-                      id="kratom-tab"
-                      data-toggle="tab"
-                      href="#kratom3">Kratom</a>
-                    <a
-                      class="nav-item nav-link"
-                      id="kava-tab"
-                      data-toggle="tab"
-                      href="#kava3">KAVA</a>
-                    <a
-                      class="nav-item nav-link"
-                      id="krakava-tab"
-                      data-toggle="tab"
-                      href="#krakava3">KRAKAVA</a>
+                    {% assign teaProductCount = 1 %}
+                    {% for block in section.blocks %}
+                      {% if block.type == 'tea' %}
+                        {% assign collection = collections[block.settings.tea_collection] %}
+                        <a
+                          class="nav-item nav-link {% if teaProductCount == 1 %} active show {% endif %}"
+                          id="{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-tab-{{ block.type }}"
+                          data-toggle="tab"
+                          href="#{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-{{ block.type }}">{{ collection.title }}</a>
+                        {% assign teaProductCount = teaProductCount | plus: 1 %}
+                      {% endif %}
+                    {% endfor %}
                   </div>
                 </nav>
               </div>
               <div class="tab-content px-sm-0" id="nav-tabContent">
-                <!-- Tab1 -->
-                <div
-                  class="tab-pane fade active show"
-                  id="kratom3"
-                  role="tabpanel"
-                  aria-labelledby="nav-home-tab">
-                  <div class="products-slider owl-carousel">
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
+                {% assign teaCount = 1 %}
+                {% for block in section.blocks %}
+                  {% if block.type == 'tea' %}
+                    {% assign collection = collections[block.settings.tea_collection] %}
+                    <div
+                      class="tab-pane fade active show"
+                      id="{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-{{ block.type }}"
+                      role="tabpanel"
+                      aria-labelledby="nav-home-tab">
+                      {% if collection.products.size == 0 %}
+                        <div class="title-wrapper center">
+                          <h2 class="title title--primary">
+                            {{ 'sections.collection_template.empty' | t }}<br>
+                            {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+                          </h2>
                         </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
+                      {% else %}
+                        <div class="products-slider owl-carousel">
+                          {% for product in collection.products %}
+                            {%- assign lazy_load = true -%}
+                            <div class="item">
+                              {% render 'custom-card-product' 
+                               , card_product: product,
+                               show_rating: section.settings.show_rating,
+                               lazy_load: lazy_load,
+                               show_quick_add: section.settings.enable_quick_add,
+                               section_id: section.id %}
+                            </div>
+                          {% endfor %}
                         </div>
-                      </div>
+                      {% endif %}
                     </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Watermelon</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Tropical</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Tab2 -->
-                <div
-                  class="tab-pane fade"
-                  id="kava3"
-                  role="tabpanel"
-                  aria-labelledby="nav-home-tab">
-                  <div class="products-slider owl-carousel">
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Watermelon</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Tropical</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Tab3 -->
-                <div
-                  class="tab-pane fade"
-                  id="krakava3"
-                  role="tabpanel"
-                  aria-labelledby="nav-home-tab">
-                  <div class="products-slider owl-carousel">
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Horchata</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Watermelon</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="single-product">
-                        <img src="assets/images/horchata.png" alt="Horhcata can">
-                        <h3>Tropical</h3>
-                        <div class="size-price">
-                          <span>420 ML</span>
-                          <span>$18.45</span>
-                        </div>
-                        <div class="product-footer">
-                          <a href="#">More Info</a>
-                          <a href="#" class="addCart">Add To Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                    {% assign teaCount = teaCount | plus: 1 %}
+                  {% endif %}
+                {% endfor %}
               </div>
             </div>
           </div>
