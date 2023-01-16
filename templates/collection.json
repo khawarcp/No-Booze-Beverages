@@ -1,14 +1,24 @@
 {
-  "name": "Shop",
   "sections": {
     "banner": {
-      "type": "shop-banner"
-      },
+      "type": "shop-banner",
+      "settings": {
+        "heading": "18+ Thirst quenching drink made just for you.",
+        "info": "We strive for sustainability in every facet of our business. From our plant-based recipes to our glass bottles, it’s central to who we are. We strive for sustainability in every facet of our business.",
+        "image_1": "shopify:\/\/shop_images\/left-bottle-crystal.png",
+        "image_2": "shopify:\/\/shop_images\/right-bottle-crystal.png",
+        "text": "Drinks that taste as good as they make you feel"
+      }
+    },
     "product-grid": {
-      "type": "custom-main-collection-product-grid"
+      "type": "custom-main-collection-product-grid",
+      "settings": {
+      }
     },
     "grab": {
-      "type": "collection-grab"
+      "type": "collection-grab",
+      "settings": {
+      }
     }
   },
   "order": [

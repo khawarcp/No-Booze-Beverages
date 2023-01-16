@@ -1,15 +1,18 @@
 {
-    "name": "Subscription Plans",
-    "sections": {
-        "banner" : {
-            "type": "page-banner"
-        },
-        "content" : {
-            "type": "subscription-content"
-        }
+  "sections": {
+    "banner": {
+      "type": "page-banner",
+      "settings": {
+      }
     },
-    "order": [
-        "banner",
-        "content"
-    ]
+    "content": {
+      "type": "subscription-content",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content"
+  ]
 }
