@@ -19,78 +19,88 @@
     <section class="blog-description">
         <div class="container">
             <div class="blog-desc-row flex jc-sb">
-                <div class="blog-desc-col">
-                    <div class="blog-social">
-                        <a href="#"><img src="assets/images/facebook.svg" alt="facebook"></a>
-                        <a href="#"><img src="assets/images/pointerest-icon.svg" alt="pinterest"></a>
-                        <a href="#"><img src="assets/images/twitter-icon.svg" alt="twitter"></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit sed ut in urna, sed augue tincidunt. Risus eget egestas mattis egestas dui habitant. Feugiat pellentesque donec odio massa auctor tortor urna non aliquet. Augue eget molestie neque, leo nisl risus porttitor. Cursus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit sed ut in urna, sed augue tincidunt. Risus eget egestas mattis egestas dui habitant. Feugiat pellentesque donec odio massa auctor tortor urna non aliquet. Augue eget molestie neque, leo nisl risus porttitor. Cursus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit sed ut in urna, sed augue tincidunt. Risus eget egestas mattis egestas dui habitant. Feugiat pellentesque donec odio massa auctor tortor urna non aliquet. Augue eget molestie neque, leo nisl risus porttitor. Cursus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu mus viverra imperdiet facilisi. Eget venenatis, ullamcorper placerat nibh. Elementum nulla orci phasellus id. Lorem massa vitae faucibus posuere purus pulvinar urna etiam. Vulputate aliquam suspendisse volutpat non.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu varius suspendisse sodales vel commodo eget scelerisque tempor. Mauris, nulla eu turpis gravida neque pretium. Orci neque.</p>
-                    <div class="quote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere tempor iaculis sed orci. Vulputate nunc cursus enim, sollicitudin amet. Vel enim, felis vulputate malesuada parturient urna, fusce. Egestas amet amet non ac lacus, consequat, enim quam. </p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada orci sociis magnis neque vitae nullam. Mauris, a dui vulputate dolor. Eu lacus, turpis mi iaculis. Fermentum nulla nunc, egestas enim dignissim diam phasellus. Faucibus aliquam, mattis pharetra arcu molestie. Justo, nisi, dictum nullam elementum, vulputate. Etiam amet morbi nullam vestibulum malesuada.</p>
-                    <div class="blog-suggest flex ai-center">
-                        <div class="suggestImage">
-                            <img src="assets/images/man-worker.png" alt="image">
+                {% for block in section.blocks %}
+                    {% case block.type %}
+                    {%- when '@app' -%}
+                        <div class="container">
+                          {% render block %}
                         </div>
-                        <div class="suggest-text">
-                            <h4>Iaculis tempor at lacus leo.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum elit, est sed nisl. Sit feugiat commodo lorem vitae sollicitudin. Nunc diam nibh nam et accumsan, vel vel leo, non. Luctus semper urna, eget sociis placerat in pellentesque magnis tempus. Sem tincidunt sed cursus.</p>
+                    {% when 'content' %}
+                        <div class="blog-desc-col">
+                            <div class="blog-social">
+                                <a href="#"><img src="assets/images/facebook.svg" alt="facebook"></a>
+                                <a href="#"><img src="assets/images/pointerest-icon.svg" alt="pinterest"></a>
+                                <a href="#"><img src="assets/images/twitter-icon.svg" alt="twitter"></a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit sed ut in urna, sed augue tincidunt. Risus eget egestas mattis egestas dui habitant. Feugiat pellentesque donec odio massa auctor tortor urna non aliquet. Augue eget molestie neque, leo nisl risus porttitor. Cursus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit sed ut in urna, sed augue tincidunt. Risus eget egestas mattis egestas dui habitant. Feugiat pellentesque donec odio massa auctor tortor urna non aliquet. Augue eget molestie neque, leo nisl risus porttitor. Cursus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit sed ut in urna, sed augue tincidunt. Risus eget egestas mattis egestas dui habitant. Feugiat pellentesque donec odio massa auctor tortor urna non aliquet. Augue eget molestie neque, leo nisl risus porttitor. Cursus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu mus viverra imperdiet facilisi. Eget venenatis, ullamcorper placerat nibh. Elementum nulla orci phasellus id. Lorem massa vitae faucibus posuere purus pulvinar urna etiam. Vulputate aliquam suspendisse volutpat non.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu varius suspendisse sodales vel commodo eget scelerisque tempor. Mauris, nulla eu turpis gravida neque pretium. Orci neque.</p>
+                            <div class="quote">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere tempor iaculis sed orci. Vulputate nunc cursus enim, sollicitudin amet. Vel enim, felis vulputate malesuada parturient urna, fusce. Egestas amet amet non ac lacus, consequat, enim quam. </p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada orci sociis magnis neque vitae nullam. Mauris, a dui vulputate dolor. Eu lacus, turpis mi iaculis. Fermentum nulla nunc, egestas enim dignissim diam phasellus. Faucibus aliquam, mattis pharetra arcu molestie. Justo, nisi, dictum nullam elementum, vulputate. Etiam amet morbi nullam vestibulum malesuada.</p>
+                            <div class="blog-suggest flex ai-center">
+                                <div class="suggestImage">
+                                    <img src="assets/images/man-worker.png" alt="image">
+                                </div>
+                                <div class="suggest-text">
+                                    <h4>Iaculis tempor at lacus leo.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum elit, est sed nisl. Sit feugiat commodo lorem vitae sollicitudin. Nunc diam nibh nam et accumsan, vel vel leo, non. Luctus semper urna, eget sociis placerat in pellentesque magnis tempus. Sem tincidunt sed cursus.</p>
+                                </div>
+                            </div> 
+                            <h4>Key Summary</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem consequat faucibus molestie diam eu tellus risus odio. Sit aliquet nam donec consequat nibh quis. Mattis morbi lectus tempor egestas dui. Ac sem lorem pharetra eget mattis. Sed in in auctor.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra id tincidunt pharetra pellentesque. Bibendum amet egestas eget erat laoreet facilisis. </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet blandit vulputate.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at nibh ullamcorper ut et nunc euismod. Quis orci pulvinar nullam purus. Nunc fringilla feugiat egestas.</li>
+                            </ul>
+                            <h4>Neque integer pharetra urna.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada orci sociis magnis neque vitae nullam. Mauris, a dui vulputate dolor. Eu lacus, turpis mi iaculis. Fermentum nulla nunc, egestas enim dignissim diam phasellus. Faucibus aliquam, mattis pharetra arcu molestie. Justo, nisi, dictum nullam elementum, vulputate. Etiam amet morbi nullam vestibulum malesuada.</p>
+                            <img src="assets/images/blog-inner.jpg" alt="blogImage">
+                            <h4>Neque integer pharetra urna.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada orci sociis magnis neque vitae nullam. Mauris, a dui vulputate dolor. Eu lacus, turpis mi iaculis. Fermentum nulla nunc, egestas enim dignissim diam phasellus. Faucibus aliquam, mattis pharetra arcu molestie. Justo, nisi, dictum nullam elementum, vulputate. Etiam amet morbi nullam vestibulum malesuada.</p>
+        
+                            <div class="navigation-wrap flex ai-center jc-sb">
+                                <a href="#" class="prev-post">
+                                    <span><img src="assets/images/arrow-left-long.svg" alt="left arrow"></span>
+                                    <div class="navPost-desc">
+                                        <span>Previous Blog</span>
+                                        <h4>Pharetra leo nibh...</h4>
+                                    </div>
+                                </a>
+        
+                                <a href="#" class="next-post">
+                                    <span><img src="assets/images/arrow-right-long.svg" alt="right arrow"></span>
+                                    <div class="navPost-desc">
+                                        <span>Next Blog</span>
+                                        <h4>Tincidunt nec vitae...</h4>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </div> 
-                    <h4>Key Summary</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem consequat faucibus molestie diam eu tellus risus odio. Sit aliquet nam donec consequat nibh quis. Mattis morbi lectus tempor egestas dui. Ac sem lorem pharetra eget mattis. Sed in in auctor.</p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra id tincidunt pharetra pellentesque. Bibendum amet egestas eget erat laoreet facilisis. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet blandit vulputate.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at nibh ullamcorper ut et nunc euismod. Quis orci pulvinar nullam purus. Nunc fringilla feugiat egestas.</li>
-                    </ul>
-                    <h4>Neque integer pharetra urna.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada orci sociis magnis neque vitae nullam. Mauris, a dui vulputate dolor. Eu lacus, turpis mi iaculis. Fermentum nulla nunc, egestas enim dignissim diam phasellus. Faucibus aliquam, mattis pharetra arcu molestie. Justo, nisi, dictum nullam elementum, vulputate. Etiam amet morbi nullam vestibulum malesuada.</p>
-                    <img src="assets/images/blog-inner.jpg" alt="blogImage">
-                    <h4>Neque integer pharetra urna.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada orci sociis magnis neque vitae nullam. Mauris, a dui vulputate dolor. Eu lacus, turpis mi iaculis. Fermentum nulla nunc, egestas enim dignissim diam phasellus. Faucibus aliquam, mattis pharetra arcu molestie. Justo, nisi, dictum nullam elementum, vulputate. Etiam amet morbi nullam vestibulum malesuada.</p>
-
-                    <div class="navigation-wrap flex ai-center jc-sb">
-                        <a href="#" class="prev-post">
-                            <span><img src="assets/images/arrow-left-long.svg" alt="left arrow"></span>
-                            <div class="navPost-desc">
-                                <span>Previous Blog</span>
-                                <h4>Pharetra leo nibh...</h4>
-                            </div>
-                        </a>
-
-                        <a href="#" class="next-post">
-                            <span><img src="assets/images/arrow-right-long.svg" alt="right arrow"></span>
-                            <div class="navPost-desc">
-                                <span>Next Blog</span>
-                                <h4>Tincidunt nec vitae...</h4>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="recent-blogs">
-                    <h4>Recent Blogs</h4>
-                    <ul>
-                        <li>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque suspendisse at.</a>
-                            <span>Jan 14, 2022</span>
-                        </li>
-                        <li>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque suspendisse at.</a>
-                            <span>Jan 21, 2022</span>
-                        </li>
-                        <li>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque suspendisse at.</a>
-                            <span>Aug 31, 2022 </span>
-                        </li>
-                    </ul>
-                </div>
+                    {% when 'recent_blog' %}                           
+                        <div class="recent-blogs">
+                            <h4>Recent Blogs</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque suspendisse at.</a>
+                                    <span>Jan 14, 2022</span>
+                                </li>
+                                <li>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque suspendisse at.</a>
+                                    <span>Jan 21, 2022</span>
+                                </li>
+                                <li>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque suspendisse at.</a>
+                                    <span>Aug 31, 2022 </span>
+                                </li>
+                            </ul>
+                        </div>
+                    {% endcase %}
+                {% endfor %}
             </div>
         </div>
     </section>    
@@ -169,7 +179,16 @@
           }, {
             "type": "paragraph",
             "content": "t:sections.main-article.blocks.share.settings.title_info.content"
-          }
+          },{
+            "type": "header",
+            "content": "Prev/Next Blogpost"
+          },
+          {
+            "type": "checkbox",
+            "id": "blog_show_previous_and_next_buttons",
+            "label": "Show next/ previous buttons",
+            "default": true
+            }
         ]
       }, {
         "type": "recent_blog",
