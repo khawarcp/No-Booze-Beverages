@@ -2,6 +2,25 @@
   "sections": {
     "main": {
       "type": "custom-main-article",
+      "blocks": {
+        "479261b4-fd63-4d2a-b585-3ca65213dafd": {
+          "type": "content",
+          "settings": {
+            "share_label": "Share",
+            "show_social": true,
+            "blog_show_previous_and_next_buttons": true
+          }
+        },
+        "94394360-a384-448b-b28d-0f101596dc4b": {
+          "type": "recent_blog",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "479261b4-fd63-4d2a-b585-3ca65213dafd",
+        "94394360-a384-448b-b28d-0f101596dc4b"
+      ],
       "settings": {
       }
     }
