@@ -1,10 +1,79 @@
 {
   "sections": {
-    "banner" : {
-      "type": "general-banner"
+    "banner": {
+      "type": "general-banner",
+      "settings": {
+      }
+    },
+    "c9c37f5b-379a-421f-ae42-705d343d1e8e": {
+      "type": "general-slider",
+      "blocks": {
+        "fc9a7587-3f18-4ceb-a222-bd816827f9a3": {
+          "type": "Slide",
+          "settings": {
+            "heading": "What Kratom is?",
+            "text": "<p>Kratom is another beneficial plant. It is called Mitragyna speciosa in scientific language, and it belongs to the coffee family. Kratom grows naturally in Indonesia, Malaysia and some other parts of Southeast Asia.<\/p><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates. The only high dosage of Kratom can induce these effects. In minor quantity, it initiates analgesic and relaxing effects.<\/p><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra id tincidunt pharetra pellentesque. Bibendum amet egestas eget erat laoreet facilisis.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet blandit vulputate.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at nibh ullamcorper ut et nunc euismod. Quis orci pulvinar nullam purus. Nunc fringilla feugiat egestas.<\/li><\/ul><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates.<\/p>"
+          }
+        },
+        "3dc052f5-c16a-493b-9953-2f57aff6ba85": {
+          "type": "Slide",
+          "settings": {
+            "heading": "What Kratom is?",
+            "text": "<p>Kratom is another beneficial plant. It is called Mitragyna speciosa in scientific language, and it belongs to the coffee family. Kratom grows naturally in Indonesia, Malaysia and some other parts of Southeast Asia.<\/p><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates. The only high dosage of Kratom can induce these effects. In minor quantity, it initiates analgesic and relaxing effects.<\/p><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra id tincidunt pharetra pellentesque. Bibendum amet egestas eget erat laoreet facilisis.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet blandit vulputate.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at nibh ullamcorper ut et nunc euismod. Quis orci pulvinar nullam purus. Nunc fringilla feugiat egestas.<\/li><\/ul><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates.<\/p>"
+          }
+        },
+        "f7535821-614b-40c9-8928-b60205181c76": {
+          "type": "Slide",
+          "settings": {
+            "heading": "What Kratom is?",
+            "text": "<p>Kratom is another beneficial plant. It is called Mitragyna speciosa in scientific language, and it belongs to the coffee family. Kratom grows naturally in Indonesia, Malaysia and some other parts of Southeast Asia.<\/p><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates. The only high dosage of Kratom can induce these effects. In minor quantity, it initiates analgesic and relaxing effects.<\/p><ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra id tincidunt pharetra pellentesque. Bibendum amet egestas eget erat laoreet facilisis.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet blandit vulputate.<\/li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at nibh ullamcorper ut et nunc euismod. Quis orci pulvinar nullam purus. Nunc fringilla feugiat egestas.<\/li><\/ul><p>Kratom leaves have a high alkaloid count which makes it potential. It initiates mild calming and euphoric effects. These effects are less than opiates.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fc9a7587-3f18-4ceb-a222-bd816827f9a3",
+        "3dc052f5-c16a-493b-9953-2f57aff6ba85",
+        "f7535821-614b-40c9-8928-b60205181c76"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/krakava.jpg"
+      }
+    },
+    "72ad6677-0d5c-49f4-b860-17de0ee80df2": {
+      "type": "general-products",
+      "blocks": {
+        "1a659561-831e-45aa-8400-2bf6e1e5b59f": {
+          "type": "collection_slider",
+          "settings": {
+            "collection": "soda"
+          }
+        },
+        "ec943f46-0c1a-4e5f-a3a5-4c5ea17a1312": {
+          "type": "collection_slider",
+          "settings": {
+            "collection": "seltzer"
+          }
+        },
+        "d2301deb-76d9-4de6-a7a6-1010432ad5b6": {
+          "type": "collection_slider",
+          "settings": {
+            "collection": "tea"
+          }
+        }
+      },
+      "block_order": [
+        "1a659561-831e-45aa-8400-2bf6e1e5b59f",
+        "ec943f46-0c1a-4e5f-a3a5-4c5ea17a1312",
+        "d2301deb-76d9-4de6-a7a6-1010432ad5b6"
+      ],
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
-    "banner"
+    "banner",
+    "c9c37f5b-379a-421f-ae42-705d343d1e8e",
+    "72ad6677-0d5c-49f4-b860-17de0ee80df2"
   ]
 }
