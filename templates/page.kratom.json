@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "banner": {
+      "type": "kratom-banner"
+    },
+    "slider" : {
+      "type" : "kratom-slider"
+    },
+    "products" : {
+      "type" : "kratom-products"
+    }
+  },
+  "order": [
+    "banner",
+    "slider",
+    "products"
+  ]
+}
