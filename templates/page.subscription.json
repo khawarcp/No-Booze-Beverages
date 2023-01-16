@@ -1,0 +1,15 @@
+{
+    "name": "Subscription Plans",
+    "sections": {
+        "banner" : {
+            "type": "page-banner"
+        },
+        "content" : {
+            "type": "subscription-content"
+        }
+    },
+    "order": [
+        "banner",
+        "content"
+    ]
+}
