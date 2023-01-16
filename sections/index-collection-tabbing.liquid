@@ -97,12 +97,9 @@
                     {% else %}
                       <div class="products-slider owl-carousel">
                         {% for product in collection.products %}
-                          {% assign lazy_load = false %}
-                          {%- if forloop.index > 2 -%}
-                            {%- assign lazy_load = true -%}
-                          {%- endif -%}
+                          {%- assign lazy_load = true -%}
                           <div class="item">
-                            {% render 'custom-card-product'
+                            {% render 'custom-card-product' 
                              , card_product: product,
                              show_rating: section.settings.show_rating,
                              lazy_load: lazy_load,
@@ -166,12 +163,9 @@
                     {% else %}
                       <div class="products-slider owl-carousel">
                         {% for product in collection.products %}
-                          {% assign lazy_load = false %}
-                          {%- if forloop.index > 2 -%}
-                            {%- assign lazy_load = true -%}
-                          {%- endif -%}
+                          {%- assign lazy_load = true -%}
                           <div class="item">
-                            {% render 'custom-card-product'
+                            {% render 'custom-card-product' 
                              , card_product: product,
                              show_rating: section.settings.show_rating,
                              lazy_load: lazy_load,
@@ -236,12 +230,9 @@
                     {% else %}
                       <div class="products-slider owl-carousel">
                         {% for product in collection.products %}
-                          {% assign lazy_load = false %}
-                          {%- if forloop.index > 2 -%}
-                            {%- assign lazy_load = true -%}
-                          {%- endif -%}
+                          {%- assign lazy_load = true -%}
                           <div class="item">
-                            {% render 'custom-card-product'
+                            {% render 'custom-card-product' 
                              , card_product: product,
                              show_rating: section.settings.show_rating,
                              lazy_load: lazy_load,
