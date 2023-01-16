@@ -1,10 +1,17 @@
 {
   "sections": {
     "banner": {
-      "type": "blog-banner"
+      "type": "blog-banner",
+      "settings": {
+        "heading": "From The Blog",
+        "subheading": "ALL THE LATEST NEWS",
+        "text": "Join our family of energy drink lovers and be the first to taste our new releases and attend special events"
+      }
     },
     "main": {
-      "type": "custom-main-blog"
+      "type": "custom-main-blog",
+      "settings": {
+      }
     }
   },
   "order": [
