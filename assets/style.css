@@ -5,3 +5,18 @@
 .form-status.form-status-list.form__message {
     font-size: 16px;
 }
+
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login-image {
+    width: 50%;
+}
+
+.login-form-wrap {
+    width: 50%;
+}
