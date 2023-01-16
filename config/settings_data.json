@@ -276,7 +276,7 @@
           "newsletter_heading": "Never miss a drop",
           "newsletter_subheading": "Get a 10% discount on your next order when\nyou sign up to our newsletter.",
           "enable_country_selector": true,
-          "enable_language_selector": true,
+          "enable_language_selector": false,
           "payment_enable": true
         }
       }
