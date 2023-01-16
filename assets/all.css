@@ -1472,7 +1472,7 @@ header {
     position: absolute;
     top: -18px;
     left: -55px;
-    background: url('../images/coolicon.svg');
+    background: url('coolicon.svg');
     height: 31px;
     width: 44px;
 
