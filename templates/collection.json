@@ -62,7 +62,7 @@
         "heading": "Kranium Products",
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "enable_filtering": true,
         "enable_sorting": true
       }
