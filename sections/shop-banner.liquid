@@ -2,25 +2,45 @@
 <section class="shop-banner">
   <div class="container">
     <div class="shop-banner-content flex jc-sb">
-      <h3>18+ Thirst quenching drink made just for you.</h3>
-      <p>We strive for sustainability in every facet of our business. From our plant-based recipes to our glass bottles, it’s central to who we are. We strive for sustainability in every facet of our business.</p>
+      {% if section.settings.heading != blank %}
+        <h3>
+          {{ section.settings.heading }}
+        </h3>
+      {% endif %}
+      {% if section.settings.info != blank %}
+        <p>
+          {{ section.settings.info }}
+        </p>
+      {% endif %}
     </div>
   </div>
-  <img
-    src="assets/images/left-bottle-crystal.png"
-    alt="crystal image"
-    class="left-image">
-  <img
-    src="assets/images/right-bottle-crystal.png"
-    alt="crystal image"
-    class="right-image">
+  {% if section.settings.image_1 != blank %}
+    <img
+      loading="lazy"
+      height=""
+      width="{{ section.settings.image_1.width }}"
+      src="{{ section.settings.image_1 | image_url : width: section.settings.image_1.width }}"
+      alt="{{ section.settings.image_1.alt }}"
+      class="left-image">
+  {% endif %}
+  {% if section.settings.image_2 != blank %}
+    <img
+      loading="lazy"
+      height=""
+      width="{{ section.settings.image_2.width }}"
+      src="{{ section.settings.image_2 | image_url : width: section.settings.image_2.width }}"
+      alt="{{ section.settings.image_2.alt }}"
+      class="right-image">
+  {% endif %}
 </section>
 
 <!-- Marquee -->
 <section class="shop-marquee">
   <div class="marquee-wrap">
     <div class="marquee-content marquee-left">
-      <span>Drinks that taste as good as they make you feel</span>
+      <span>
+        {{ section.settings.text }}
+      </span>
     </div>
   </div>
 </section>
@@ -41,12 +61,12 @@
       {
         "type": "image_picker",
         "id": "image_1",
-        "label": "Content Image"
+        "label": "Left Image"
       },
       {
         "type": "image_picker",
         "id": "image_2",
-        "label": "Background Image"
+        "label": "Right Image"
       }, {
         "type": "header",
         "content": "Marquee Text"
