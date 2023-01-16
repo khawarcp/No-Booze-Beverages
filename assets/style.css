@@ -20,3 +20,9 @@
 .login-form-wrap {
     width: 50%;
 }
+
+@media screen and (min-width: 750px){
+.customer:not(.account):not(.order) {
+    max-width: 100%;
+}
+}
