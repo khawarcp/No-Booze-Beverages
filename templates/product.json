@@ -146,7 +146,11 @@
       }
     },
     "more_products": {
-        "type": "product-more-slider.liquid"
+      "type": "product-more-slider",
+      "settings": {
+        "heading": "Try these flavour next",
+        "collection": "all-products"
+      }
     },
     "product-recommendations": {
       "type": "product-recommendations",
