@@ -26,7 +26,7 @@ $(document).ready(function(){
             autoplay: false,
             dots: true,
             nav: true,
-            navText: ["<img src='assets/images/angle-left.svg'>","<img src='assets/images/angle-right.svg'>"],
+            navText: ["<img src='https://cdn.shopify.com/s/files/1/0704/2606/7242/files/angle-left.svg?v=1673345099'>","<img src='https://cdn.shopify.com/s/files/1/0704/2606/7242/files/angle-right.svg?v=1673345107'>"],
             onInitialized  : counter,
             onTranslated : counter,
             responsive: {
