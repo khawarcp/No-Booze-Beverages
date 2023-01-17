@@ -440,13 +440,17 @@
       display: none;
   }
   .sip-content a img {
-    max-width: 55px;
+    max-width: 45px;
   }
   .seenIn {
     width: 150px;
   }
   .site-menu li a {
     padding: 0 15px;
+  }
+  .sip-content > img {
+    min-height: 260px;
+    object-fit: cover;
   }
 }
 
