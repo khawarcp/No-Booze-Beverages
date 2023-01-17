@@ -152,19 +152,6 @@
         "collection": "all-products"
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "Try these flavours next",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
-    },
     "cbf9faba-2747-497e-8865-8f157c902744": {
       "type": "index-testimonials",
       "blocks": {
@@ -215,8 +202,7 @@
   "order": [
     "main",
     "features",
-    "more_products",
-    "product-recommendations",
+    "more_products",    
     "cbf9faba-2747-497e-8865-8f157c902744"
   ]
 }
