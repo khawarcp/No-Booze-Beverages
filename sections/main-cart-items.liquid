@@ -61,17 +61,15 @@
             <tbody>
               {%- for item in cart.items -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
-                  <td class="cart-item__media">
-                    <div class="remove-image-wrapper">
-                      <div class="item-remove">
-                        <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
-                        <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
-                          {% render 'icon-remove' %}
-                        </a>
-                      </cart-remove-button>
-                      </div>
-                      <div class="item-image">
-                        {% if item.image %}
+                  <td>
+                    <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                      <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                        {% render 'icon-remove' %}
+                      </a>
+                    </cart-remove-button>
+                  </td>
+                  <td class="cart-item__media">                    
+                    {% if item.image %}
                       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                       <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                         <div class="cart-item__image-container gradient global-media-settings">
@@ -84,8 +82,6 @@
                           >
                         </div>
                     {% endif %}
-                      </div>
-                    </div>                    
                   </td>
 
                   <td class="cart-item__details">
@@ -231,7 +227,7 @@
                         </button>
                       </quantity-input>
 
-                      
+
                     </div>
                     <div class="cart-item__error" id="Line-item-error-{{ item.index | plus: 1 }}" role="alert">
                       <small class="cart-item__error-text"></small>
