@@ -71,6 +71,9 @@
   h2 {
       font-size: 27px;
   }
+  h4 {
+    font-size: 24px;
+  }
   .single-drink img {
       max-width: 300px;
   }
