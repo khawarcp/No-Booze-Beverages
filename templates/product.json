@@ -1,5 +1,4 @@
 {
-  "name": "Product Detail",
   "sections": {
     "main": {
       "type": "custom-main-product",
@@ -95,7 +94,7 @@
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
-        "gallery_layout": "thumbnail",
+        "gallery_layout": "columns",
         "media_size": "small",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
