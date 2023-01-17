@@ -243,6 +243,26 @@ header {
 .cartBtn svg {
     margin-right: 8px;
 }
+.menu-toggler span {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 2px;
+    background: #495057;
+}
+.menu-toggler {
+    height: 18px;
+    width: 25px;
+    margin-left: 15px;
+    position: relative;
+    display: none;
+}
+.menu-toggler span:nth-child(2) {
+    top: 8px;
+}
+.menu-toggler span:last-child {
+    top: 16px;
+}
 /************************
         Find Taste
 *************************/
