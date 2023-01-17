@@ -53,8 +53,7 @@
             {% render 'custom-card-product' 
              , card_product: recommendation,
              show_rating: section.settings.show_rating,
-             lazy_load: lazy_load,
-             show_quick_add: section.settings.enable_quick_add,
+             lazy_load: true,
              section_id: section.id %}
           </li>
         {% endfor %}
