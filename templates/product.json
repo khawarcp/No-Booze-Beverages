@@ -8,24 +8,14 @@
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "0a291526-76e2-477c-a702-88b697a47d86": {
+          "type": "quantity_selector_button",
           "settings": {
             "show_dynamic_checkout": true
           }
@@ -80,10 +70,8 @@
       },
       "block_order": [
         "title",
-        "price",
         "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
+        "0a291526-76e2-477c-a702-88b697a47d86",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
@@ -149,7 +137,9 @@
       "type": "product-more-slider",
       "settings": {
         "heading": "Try these flavors next",
-        "collection": "all-products"
+        "collection": "all-products",
+        "show_rating": false,
+        "enable_quick_add": true
       }
     },
     "cbf9faba-2747-497e-8865-8f157c902744": {
@@ -202,7 +192,7 @@
   "order": [
     "main",
     "features",
-    "more_products",    
+    "more_products",
     "cbf9faba-2747-497e-8865-8f157c902744"
   ]
 }
