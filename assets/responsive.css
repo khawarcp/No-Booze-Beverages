@@ -266,14 +266,14 @@
       justify-content: center;
   }
   .drink-options .owl-nav {
-      bottom: 39px;
+      bottom: 20px;
       left: 0 !important;
       right: 0;
       margin: 0 auto;
       width: 120px;
   }
   .drink-options .owl-dots {
-      bottom: 44px;
+      bottom: 25px;
       margin: 0 auto;
       left: 0 !important;
       justify-content: center;
@@ -308,6 +308,21 @@
   }
   .userBtn {
       margin: 0 10px 0 6px;
+  }
+  .marquee-wrap {
+    padding: 20px 0 28px;
+  }
+  .marquee-wrap span {
+      font-size: 36px;
+  }
+  .find-taste form {
+      margin-top: 10px;
+  }
+  .find-taste h2 {
+      margin-bottom: 5px;
+  }
+  .find-section {
+      padding-bottom: 50px;
   }
 }
 
