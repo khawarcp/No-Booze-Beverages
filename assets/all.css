@@ -1021,6 +1021,7 @@ header {
     background: white;
     position: relative;
     z-index: 99;
+  padding: 15px 0;
 }
 .brands-section .marquee-content {
     width: calc(100% - 280px);
