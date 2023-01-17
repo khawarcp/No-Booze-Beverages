@@ -148,3 +148,40 @@ function wrapSections(section_class) {
   }
   // You can call this function with a specific section class.
   wrapSections("cart-section");
+
+
+// Flavor Slider
+    $(function(){
+        var owlNew = $('.flavorCarousel.owl-carousel');
+        owlNew.owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            autoplay: false,
+            dots: true,
+            nav: true,
+            navText: ["<img src='assets/images/angle-left.svg'>","<img src='assets/images/angle-right.svg'>"],
+            onInitialized  : counter,
+            onTranslated : counter,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+        function counter(event) {
+            var element   = event.target;         // DOM element, in this example .owl-carousel
+            var items     = event.item.count;     // Number of items
+            var item      = event.item.index;     // Position of the current item
+            if(item > items) {
+                item = item - items
+            }
+            $('.slider-counter').html("<span>" + item +"</span>" + " " + "/" + " " +items)
+        }
+    });
