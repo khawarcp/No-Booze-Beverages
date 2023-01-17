@@ -221,6 +221,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .menu-toggler {
+    display: block;
+  }
   .footer-leftCol {
     width: 100%;
     margin-bottom: 30px;
