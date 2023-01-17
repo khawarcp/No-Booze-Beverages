@@ -409,12 +409,24 @@
       margin: 20px 0 40px;
   }
   .subscription-image {
-      max-width: 100%;
-      position: static;
+     max-width: 76%;
   }
   .subscription-image.img2 {
-      left: 100%;
-      top: 0;
+    bottom: unset;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    max-width: 170px;
+    left: unset;
+  }
+  .subscription-content {
+    margin-left: 0;
+  }
+  .subscription-content h3 br {
+      display: none;
+  }
+  .subscription-content {
+      max-width: 100%;
   }
 }
 
