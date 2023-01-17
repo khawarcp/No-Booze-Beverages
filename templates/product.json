@@ -103,8 +103,47 @@
         "padding_bottom": 12
       }
     },
-    "features" : {
-      "type" : "product-features"
+    "features": {
+      "type": "product-features",
+      "blocks": {
+        "c7cd808d-7302-4476-a5fe-791ff58529bd": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glass-bottles.png",
+            "text": "Bottled\nin Glass"
+          }
+        },
+        "9c52bc88-111e-4bf0-9a4b-de768c6822fc": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/leaves.png",
+            "text": "100%\nPlant-Based"
+          }
+        },
+        "a57f7b32-ab4b-486f-b737-37a46e2b15b9": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/badge.png",
+            "text": "No Addictives\nNo Nonsense"
+          }
+        },
+        "62eecd09-336c-4624-a115-988eaf40a61f": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/usda-organic.png",
+            "text": "Certified\nOrganic"
+          }
+        }
+      },
+      "block_order": [
+        "c7cd808d-7302-4476-a5fe-791ff58529bd",
+        "9c52bc88-111e-4bf0-9a4b-de768c6822fc",
+        "a57f7b32-ab4b-486f-b737-37a46e2b15b9",
+        "62eecd09-336c-4624-a115-988eaf40a61f"
+      ],
+      "settings": {
+        "heading": "Our Beverages are Kratom & Kava"
+      }
     },
     "product-recommendations": {
       "type": "product-recommendations",
