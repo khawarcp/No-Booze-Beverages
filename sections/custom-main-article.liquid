@@ -224,7 +224,8 @@
                   {% endpaginate %}
                 {%- endif -%}
 
-          
+              <div class="divider"><hr></div>
+            
                 {% form 'new_comment', article %}
                   {%- liquid
                     assign post_message = 'blogs.article.success'
