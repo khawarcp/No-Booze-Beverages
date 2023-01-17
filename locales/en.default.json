@@ -83,8 +83,8 @@
       "blog": "Blog",
       "read_more_title": "Read more: {{ title }}",
       "comments": {
-        "one": "comment {{ count }} ",
-        "other": "comments {{ count }} "
+        "one": "comment ({{ count }})",
+        "other": "comments ({{ count }})"
       },
       "moderated": "Please note, comments need to be approved before they are published.",
       "comment_form_title": "Leave a comment",
