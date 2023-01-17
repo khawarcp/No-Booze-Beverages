@@ -249,6 +249,7 @@ header {
     width: 25px;
     height: 2px;
     background: #495057;
+    transition: 0.3s ease;
 }
 .menu-toggler {
     height: 18px;
