@@ -187,15 +187,42 @@
             {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
           </span>
         {%- endif -%}
+
+        <div
+          class="terms">
+          <input
+            type="checkbox"
+            name="terms"
+            id="terms">
+          <label
+            for="terms">
+            Agree to terms & conditions</label>
+        </div>
+        <p
+          id="errr"></p>
+
         <button
+          id="signup-btn"
           class="siteBtn">
           {{ 'customer.register.submit' | t }}
         </button>
+        <p
+          class="create-account">
+          <span>Don’t have an account?</span>
+
+          <a
+            href="{{ routes.account_login_url }}">
+            {{ 'customer.login_page.sign_in' | t }}
+          </a>
+        </p>
       {%- endform -%}
     </div>
   </div>
 </div>
 
+<script
+  src="{{ 'termsCondition.js' | asset_url }}"
+  defer></script>
 
 {% schema %}
   {
