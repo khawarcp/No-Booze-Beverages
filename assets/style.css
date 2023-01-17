@@ -54,8 +54,13 @@
     z-index: -1;
 }
 
+div.header-placement {
+    display: block;
+}
 
-
+.bavareges-text.product-bavarages-text {
+    width: 100%;
+}
 @media screen and (min-width: 750px){
 .customer:not(.account):not(.order) {
     max-width: 100% !important;
