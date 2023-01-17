@@ -30,7 +30,7 @@
           "settings": {
             "heading": "Description",
             "icon": "none",
-            "content": "",
+            "content": "<p>{{ product.metafields.custom.short_description | metafield_tag }}<\/p>",
             "page": ""
           }
         },
@@ -39,7 +39,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "none",
-            "content": "",
+            "content": "<p>{{ product.metafields.custom.ingredients | metafield_tag }}<\/p>",
             "page": ""
           }
         },
@@ -48,7 +48,7 @@
           "settings": {
             "heading": "Nutrition Facts",
             "icon": "none",
-            "content": "",
+            "content": "<p>{{ product.metafields.custom.nutrition_facts | metafield_tag }}<\/p>",
             "page": ""
           }
         },
