@@ -324,6 +324,43 @@
   .find-section {
       padding-bottom: 50px;
   }
+  .shopImage {
+      width: 100%;
+      padding: 0 20px;
+      margin-bottom: 50px;
+  }
+  .shop-content {
+      width: 100%;
+  }
+  h2 {
+      font-size: 25px;
+  }
+  .shop-content p br {display: none;}
+  .shop-content p {
+      margin: 12px 0;
+  }
+  .shop-content h2 br {
+      display: none;
+  }
+  .shop-content li {
+      font-size: 16px;
+  }
+  .shop-content ul {
+      margin-bottom: 20px;
+  }
+  .products-inner-tabs .nav-link {
+      min-width: 90px;
+      font-size: 14px;
+      padding: 10px 0 !important;
+      font-size: 12px;
+  }
+  .product-tabs-header .nav-link {
+      font-size: 16px;
+  }
+  .products-inner-tabs {
+      margin-bottom: 40px;
+  }
+
 }
 
 
