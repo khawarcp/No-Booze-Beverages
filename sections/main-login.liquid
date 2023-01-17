@@ -96,7 +96,8 @@
             </small>
           {%- endif -%}
 
-          <button>
+          <button
+            class="siteBtn">
             {{ 'customer.login_page.submit' | t }}
           </button>
 
@@ -223,7 +224,8 @@
             </a>
           {%- endif -%}
 
-          <button>
+          <button
+            class="siteBtn">
             {{ 'customer.login_page.sign_in' | t }}
           </button>
 
@@ -241,7 +243,8 @@
           <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
 
           {%- form 'guest_login' -%}
-            <button>
+            <button
+              class="siteBtn">
               {{ 'customer.login_page.guest_continue' | t }}
             </button>
           {%- endform -%}
