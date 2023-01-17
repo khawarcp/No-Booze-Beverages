@@ -110,7 +110,14 @@
    .site-logo img {
       max-width: 150px;
    }
-  
+  .drink-options {
+      right: 50px;
+      justify-content: flex-end !important;
+      margin-top: -170px;
+  }
+  .drink-options .owl-item {
+    justify-content: end;
+  }
 }
 
 
