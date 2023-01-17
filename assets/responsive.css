@@ -241,6 +241,45 @@
   .footer-wrap {
       padding-top: 40px;
   }
+  .drink-options {
+    position: static;
+  }
+  .find-taste {
+      max-width: 100%;
+      padding: 20px 0 30px;
+      background: #fff;
+      margin-bottom: 150px;
+  }
+  section.find-section > .container {
+      background: #fff;
+  }
+  .single-drink img {
+      max-width: 200px;
+  }
+  .single-drink {
+      left: 0;
+  }
+  .drink-options {
+      justify-content: center !important;
+  }
+  .drink-options .owl-item {
+      justify-content: center;
+  }
+  .drink-options .owl-nav {
+      bottom: 39px;
+      left: 0 !important;
+      right: 0;
+      margin: 0 auto;
+      width: 120px;
+  }
+  .drink-options .owl-dots {
+      bottom: 44px;
+      margin: 0 auto;
+      left: 0 !important;
+      justify-content: center;
+      display: flex;
+      width: 100%;
+  }
 }
 
 
