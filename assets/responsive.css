@@ -410,6 +410,8 @@
   }
   .subscription-section {
       margin: 20px 0 40px;
+    padding-top: 305px;
+    padding-bottom: 30px;
   }
   .subscription-image {
      max-width: 76%;
