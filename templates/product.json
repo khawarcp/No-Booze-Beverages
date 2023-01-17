@@ -161,11 +161,58 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "cbf9faba-2747-497e-8865-8f157c902744": {
+      "type": "index-testimonials",
+      "blocks": {
+        "242a2236-fc15-40f1-851c-bf94acfe6e89": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial1.jpg",
+            "comment": "I did a one day cleanse and felt fantastic afterwards! A true reset for your system!",
+            "name": "@eva.hooft"
+          }
+        },
+        "727620d8-8ebf-4cb2-9b21-513adc6406e9": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial2.jpg",
+            "comment": "I love the master cleanse and my guilty pleasure is their kratom watermelon.",
+            "name": "@eva.hooft"
+          }
+        },
+        "4983c944-6b81-4b05-95c3-b85a9e439fd1": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial3.jpg",
+            "comment": "I did a one day cleanse and felt fantastic afterwards! A true reset for your system!",
+            "name": "@eva.hooft"
+          }
+        },
+        "2c858dca-7f7d-44d5-b7b5-289c9f1a5cd5": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/subscription-image1.jpg",
+            "comment": "I did a one day cleanse and felt fantastic afterwards! A true reset for your system!",
+            "name": "@eva.hooft"
+          }
+        }
+      },
+      "block_order": [
+        "242a2236-fc15-40f1-851c-bf94acfe6e89",
+        "727620d8-8ebf-4cb2-9b21-513adc6406e9",
+        "4983c944-6b81-4b05-95c3-b85a9e439fd1",
+        "2c858dca-7f7d-44d5-b7b5-289c9f1a5cd5"
+      ],
+      "settings": {
+        "heading": "Fan Favorites"
+      }
     }
   },
   "order": [
     "main",
     "features",
-    "product-recommendations"
+    "product-recommendations",
+    "cbf9faba-2747-497e-8865-8f157c902744"
   ]
 }
