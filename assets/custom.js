@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    // Mobile Menu
+    $('.menu-toggler').click(function(){
+      $(this).toggleClass('active');
+      $('.site-menu').slideToggle();
+    });
+  
     // Accordion Tabs
     $(".accordion_head").click(function() {
         $(this).parent('.tab_outer');
