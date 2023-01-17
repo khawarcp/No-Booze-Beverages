@@ -455,10 +455,6 @@
       top: 8px;
       transform: rotate(-45deg);
   }
-  .menu-toggler.active span:first-child {
-      top: 8px;
-      transform: rotate(45deg);
-  }
 }
 
 
