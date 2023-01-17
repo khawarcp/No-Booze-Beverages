@@ -360,7 +360,9 @@
   .products-inner-tabs {
       margin-bottom: 40px;
   }
-
+  .quick-add.no-js-hidden {
+      margin-bottom: 0;
+  }
 }
 
 
