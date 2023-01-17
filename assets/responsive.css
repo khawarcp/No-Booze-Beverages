@@ -437,6 +437,9 @@
   .sip-content a img {
     max-width: 55px;
   }
+  .seenIn {
+    width: 150px;
+  }
 }
 
 
