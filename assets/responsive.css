@@ -64,6 +64,46 @@
   .userBtn {
       margin-right: 6px;
   }
+  .find-taste {
+    max-width: 300px;
+    padding-top: 80px;
+  }
+  h2 {
+      font-size: 27px;
+  }
+  .single-drink img {
+      max-width: 300px;
+  }
+  .drink-options {
+      top: 40px;
+  }
+  .shop-section {
+      margin: 40px 0;
+  }
+  .product-desc-wrap .accordion_head p {
+    font-size: 25px;
+  }
+  .marquee-wrap span {
+    font-size: 50px;
+  }
+  .bavereges-row.flex {
+      align-items: center;
+  }
+  .subscription-image {
+      max-width: 435px;
+      top: -50px;
+  }
+  .subscription-content {
+      max-width: 450px;
+  }
+  .subscription-image.img2 {
+      left: 22%;
+      top: 20px;
+  }
+  .subscription-section {
+      padding-bottom: 60px;
+      margin-top: 80px;
+  }
 }
 
 
