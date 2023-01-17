@@ -145,6 +145,9 @@
         "heading": "Our Beverages are Kratom & Kava"
       }
     },
+    "more_products": {
+        "type": "product-more-slider.liquid"
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -208,6 +211,7 @@
   "order": [
     "main",
     "features",
+    "more_products",
     "product-recommendations",
     "cbf9faba-2747-497e-8865-8f157c902744"
   ]
