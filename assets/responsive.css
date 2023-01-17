@@ -195,6 +195,25 @@
     min-width: 150px;
     max-width: 150px;
 }
+.site-menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #A43772;
+    z-index: 100;
+    padding: 10px 0;
+    display: none;
+}
+.site-menu li {
+    display: block;
+    margin: 10px 0;
+}
+.site-menu li a {
+    color: #fff;
+    display: block;
+    padding: 0 40px;
+}
 }
 
 
