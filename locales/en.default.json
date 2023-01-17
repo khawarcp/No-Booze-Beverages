@@ -345,7 +345,7 @@
     "login_page": {
       "cancel": "Cancel",
       "create_account": "Let’s Join Us",
-      "email": "Email",
+      "email": "Email Address",
       "forgot_password": "Forgot your password?",
       "guest_continue": "Continue",
       "guest_title": "Continue as a guest",
