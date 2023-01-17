@@ -443,6 +443,9 @@
   .seenIn {
     width: 150px;
   }
+  .site-menu li a {
+    padding: 0 15px;
+  }
 }
 
 
