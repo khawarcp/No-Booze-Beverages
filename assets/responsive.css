@@ -125,6 +125,14 @@
     position: relative;
     left: -50px;
   }
+  .single-drink {
+    position: relative;
+    left: -50px;
+  }
+  .brands-section .marquee-wrap {
+      max-width: 100%;
+      margin-left: 20px;
+  }
 }
 
 
