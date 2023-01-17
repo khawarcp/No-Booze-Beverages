@@ -63,7 +63,7 @@ $(document).ready(function(){
                 items: 1
             },
             600: {
-                items: 1
+                items: 2
             },
             1000: {
                 items: 3
@@ -83,7 +83,7 @@ $(document).ready(function(){
                 items: 1
             },
             600: {
-                items: 1
+                items: 1.5
             },
             1000: {
                 items: 2.5
