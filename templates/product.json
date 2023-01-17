@@ -148,7 +148,7 @@
     "more_products": {
       "type": "product-more-slider",
       "settings": {
-        "heading": "Try these flavour next",
+        "heading": "Try these flavors next",
         "collection": "all-products"
       }
     },
