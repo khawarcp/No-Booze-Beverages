@@ -214,10 +214,31 @@ header {
     font-size: 12px;
     padding: 12px 15px;
     min-width: 138px;
+    position: relative;
+    z-index: 2;
+    transition: 0.35s ease;
 }
 .cartBtn img {
     display: inline-block;
     margin-right: 8px;
+}
+.cartBtn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #A43772;
+    transition: 0.15s ease;
+    z-index: -1;
+}
+.cartBtn:hover::before {
+    height: 100%;
+    top: 0;
+}
+.cartBtn:hover {
+    color: #fff;
 }
 
 /************************
