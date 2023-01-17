@@ -50,3 +50,26 @@
     top: -135px;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .site-logo img {
+    max-width: 170px;
+  }
+  .site-menu li {
+      margin-right: 17px;
+  }
+  .searchBtn {
+      margin-right: 6px;
+  }
+  .userBtn {
+      margin-right: 6px;
+  }
+}
+
+
+
+
+
+
+
+
