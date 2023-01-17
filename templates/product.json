@@ -8,6 +8,11 @@
           "settings": {
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -18,11 +23,6 @@
           "type": "quantity_selector_button",
           "settings": {
             "show_dynamic_checkout": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
           }
         },
         "collapsible-row-0": {
@@ -64,9 +64,9 @@
       },
       "block_order": [
         "title",
+        "description",
         "variant_picker",
         "0a291526-76e2-477c-a702-88b697a47d86",
-        "description",
         "collapsible-row-0",
         "collapsible-row-2",
         "collapsible-row-3",
