@@ -1,7 +1,8 @@
 {
+  "name": "Product Detail",
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "custom-main-product",
       "blocks": {
         "title": {
           "type": "title",
