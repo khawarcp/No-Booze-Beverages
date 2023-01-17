@@ -118,6 +118,10 @@
   .drink-options .owl-item {
     justify-content: end;
   }
+  .single-drink {
+    position: relative;
+    left: -50px;
+  }
 }
 
 
