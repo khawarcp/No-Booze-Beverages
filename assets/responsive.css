@@ -111,7 +111,7 @@
       max-width: 150px;
    }
   .drink-options {
-      right: 50px;
+      right: 0;
       justify-content: flex-end !important;
       margin-top: -170px;
   }
