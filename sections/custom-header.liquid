@@ -219,12 +219,12 @@
               </div>
             {%- endif -%}
           </a>
-        </div>
-        <div
-          class="menu-toggler">
-          <span></span>
-          <span></span>
-          <span></span>
+          <div
+            class="menu-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
@@ -239,8 +239,8 @@
   type="application/ld+json">
   {
   "@context": "http://schema.org",
-      "@type": "Organization",
-      "name": {{ shop.name | json }},
+        "@type": "Organization",
+        "name": {{ shop.name | json }},
   {% if section.settings.logo %}
     "logo": {{ section.settings.logo | image_url: width: section.settings.logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -265,14 +265,14 @@
     type="application/ld+json">
     {
     "@context": "http://schema.org",
-          "@type": "WebSite",
-          "name": {{ shop.name | json }},
+              "@type": "WebSite",
+              "name": {{ shop.name | json }},
     "potentialAction": {
-            "@type": "SearchAction",
-            "target": {{ potential_action_target | json }},
+                "@type": "SearchAction",
+                "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-          },
-          "url": {{ request.origin | append: page.url | json }}
+              },
+              "url": {{ request.origin | append: page.url | json }}
     }
   </script>
 {%- endif -%}
