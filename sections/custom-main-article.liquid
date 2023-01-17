@@ -176,6 +176,7 @@
         </div>
         {%- if blog.comments_enabled? -%}
           <div id="comments" class="container">
+          <div class="container-inner">
             {%- if article.comments_count > 0 -%}
                   {%- assign anchorId = '#Comments-' | append: article.id -%}
         
@@ -340,6 +341,7 @@
                   {%- endif -%}                  
                   <button type="submit" class="siteBtn">{{ 'blogs.article.post' | t }}</button>
                 {% endform %}
+          </div>
           </div>
         {%- endif -%}
     </section>    
