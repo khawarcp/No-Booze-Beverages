@@ -63,7 +63,7 @@ $(document).ready(function(){
                 items: 1
             },
             600: {
-                items: 2
+                items: 1.7
             },
             1000: {
                 items: 2
