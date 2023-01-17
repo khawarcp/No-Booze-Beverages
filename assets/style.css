@@ -21,6 +21,13 @@
     width: 50%;
 }
 
+.article-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 @media screen and (min-width: 750px){
 .customer:not(.account):not(.order) {
     max-width: 100% !important;

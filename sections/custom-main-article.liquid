@@ -184,19 +184,39 @@
                     <div class="article-template__comments">
                       {%- if comment.status == 'pending' and comment.content -%}
                         <article id="{{ comment.id }}" class="article-template__comments-comment">
-                          {{ comment.content }}
-                          <footer class="right">
-                            <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span>
-                          </footer>
+                          <div class="article-wrapper">
+                              <div class="article-image-wrap">
+                                  {% render 'icon-article-image' %}
+                              </div>
+                              <div class="article-content-wrap">
+                                <div class="cont-inner">
+                                  <h3>{{ comment.author }}</h3>
+                                  <p> {{ comment.created_at | time_tag: format: 'date' }} </p>
+                                  <div class="comment-content">
+                                    {{ comment.content }}
+                                  </div>
+                                </div>
+                              </div>
+                          </div>                          
                         </article>
                       {%- endif -%}
         
                       {%- for comment in article.comments -%}
                         <article id="{{ comment.id }}" class="article-template__comments-comment">
-                          {{ comment.content }}
-                          <footer class="right">
-                            <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span><span class="caption-with-letter-spacing">{{ comment.created_at | time_tag: format: 'date' }}</span>
-                          </footer>
+                          <div class="article-wrapper">
+                              <div class="article-image-wrap">
+                                  {% render 'icon-article-image' %}
+                              </div>
+                              <div class="article-content-wrap">
+                                <div class="cont-inner">
+                                  <h3>{{ comment.author }}</h3>
+                                  <p> {{ comment.created_at | time_tag: format: 'date' }} </p>
+                                  <div class="comment-content">
+                                    {{ comment.content }}
+                                  </div>
+                                </div>
+                              </div>
+                          </div>                          
                         </article>
                       {%- endfor -%}
                       {% render 'pagination', paginate: paginate, anchor: anchorId %}
