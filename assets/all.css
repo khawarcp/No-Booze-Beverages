@@ -240,7 +240,9 @@ header {
 .cartBtn:hover {
     color: #fff;
 }
-
+.cartBtn svg {
+    margin-right: 8px;
+}
 /************************
         Find Taste
 *************************/
