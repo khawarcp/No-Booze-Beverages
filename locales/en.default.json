@@ -396,8 +396,8 @@
     },
     "register": {
       "title": "Let’s Join Us",
-      "first_name": "First name",
-      "last_name": "Last name",
+      "first_name": "First Name",
+      "last_name": "Last Name",
       "email": "Email Address",
       "password": "Enter Password",
       "submit": "Sign Up"
