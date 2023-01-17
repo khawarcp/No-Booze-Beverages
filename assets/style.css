@@ -54,6 +54,19 @@
     z-index: -1;
 }
 
+.remove-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+        
+}
+
 @media screen and (min-width: 750px){
 .customer:not(.account):not(.order) {
     max-width: 100% !important;

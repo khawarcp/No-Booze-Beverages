@@ -127,3 +127,18 @@ $(window).scroll(function() {
         $('header').removeClass('scroll');
     }
 });
+
+
+//wrap the cart main and cart footer section into the wrapper
+function wrapSections(section_class) {
+    var childSections = document.querySelectorAll("."+section_class);
+    var wrapper = document.createElement('div');
+    wrapper.classList.add(section_class+"-wrapper");
+    childSections.item(0).parentNode.insertBefore(wrapper, childSections.item(0));
+    
+    for ( var i=0; i< childSections.length; i++){
+      wrapper.appendChild(childSections.item(i));
+    }
+  }
+  // You can call this function with a specific section class.
+  wrapSections("cart-section");
