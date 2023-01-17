@@ -54,9 +54,7 @@
     z-index: -1;
 }
 
-.cart-section-wrapper{
-    display: flex;
-}
+
 
 @media screen and (min-width: 750px){
 .customer:not(.account):not(.order) {
