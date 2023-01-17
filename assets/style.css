@@ -61,6 +61,12 @@ div.header-placement {
 .bavareges-text.product-bavarages-text {
     width: 100%;
 }
+
+.product-bavarages-text .single-bavarage {
+    width: calc(100% / 4);
+    margin-top: 45px;
+}
+
 @media screen and (min-width: 750px){
 .customer:not(.account):not(.order) {
     max-width: 100% !important;
