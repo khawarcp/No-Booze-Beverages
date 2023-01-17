@@ -1107,7 +1107,16 @@ header {
 .subscription-content a:hover {
     color: #a43772;
 }
-
+.card__badge.bottom.left {
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+.badge {
+    font-size: 10px;
+    padding: 7px 5px;
+    border-radius: 5px;
+}
 /*******************************
         About Us Banner
 *******************************/
