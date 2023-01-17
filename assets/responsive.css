@@ -280,6 +280,35 @@
       display: flex;
       width: 100%;
   }
+  .site-logo img {
+    max-width: 110px;
+  }
+  .cartBtn span {
+      display: none;
+  }
+  .cartBtn {
+      min-width: unset;
+      padding: 0;
+      background: none;
+  }
+  .cartBtn svg path {
+      fill: #495057;
+  }
+  .cartBtn svg {
+      margin-right: 0;
+  }
+  .header__icon, .header__icon--cart .icon {
+      height: unset;
+      width: unset;
+  }
+  .searchBtn svg {
+      max-width: 18px;
+      position: relative;
+      top: 2px;
+  }
+  .userBtn {
+      margin: 0 10px 0 6px;
+  }
 }
 
 
