@@ -1,74 +1,74 @@
 <!-- Kranium Products -->
-<section
-  class="products-section flavor-products">
-  <div
-    class="container">
-    <div
-      class="kranium-content">
-      <div
-        class="prodHead flex jc-sb ai-center">
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+<link
+  rel="preload"
+  href="{{ 'component-rte.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'">
+
+{%- if section.settings.enable_quick_add -%}
+  <link
+    rel="stylesheet"
+    href="{{ 'quick-add.css' | asset_url }}"
+    media="print"
+    onload="this.media='all'">
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<section class="products-section flavor-products">
+  <div class="container">
+    <div class="kranium-content">
+      <div class="prodHead flex jc-sb ai-center">
         <h2>
           {{ section.settings.heading }}
         </h2>
         <div class="flavor-tabs-header appointment-tabs flex space center">
           <nav>
-              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active show" id="soda-tab" data-toggle="tab" href="#soda">Soda</a>
-                  <a class="nav-item nav-link" id="seltzer-tab" data-toggle="tab" href="#seltzer">Seltzer</a>
-                  <a class="nav-item nav-link" id="tea-tab" data-toggle="tab" href="#tea">Tea</a>
-              </div>        
+            <div
+              class="nav nav-tabs nav-fill"
+              id="nav-tab"
+              role="tablist">
+              {% for block in section.blocks %}
+                {% assign collection = collections[block.settings.collection] %}
+                <a
+                  class="nav-item nav-link {% if forloop.first %}active show{% endif %}"
+                  id="{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-tab-{{ block.type }}"
+                  data-toggle="tab"
+                  href="#{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-{{ block.type }}">
+                  {{ collection.title }}
+                </a>
+              {% endfor %}
+            </div>
           </nav>
         </div>
       </div>
       <div class="tab-content px-sm-0" id="nav-tabContent">
         <!-- Tab1 -->
-        <div class="tab-pane fade active show" id="soda" role="tabpanel" aria-labelledby="nav-home-tab">
-          <div class="products-slider owl-carousel">
-            {% for product in collection.products %}
-              <div
-                class="item">
-                {% render 'custom-card-product' 
-                 , card_product: product,
-                 show_rating: section.settings.show_rating,
-                 lazy_load: true,
-                 show_quick_add: section.settings.enable_quick_add,
-                 section_id: section.id %}
-              </div>
-            {% endfor %}
+        {% for block in section.blocks %}
+          {% assign collection = collections[block.settings.collection] %}
+          <div
+            class="tab-pane fade {% if forloop.first %} active show {% endif %}"
+            id="{{ collection.title | strip_html | escape | downcase | replace: ' ', '-' }}-{{ block.type }}"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab">
+            <div class="products-slider owl-carousel">
+              {% for product in collection.products %}
+                <div class="item">
+                  {% render 'custom-card-product' 
+                   , card_product: product,
+                   show_rating: section.settings.show_rating,
+                   lazy_load: true,
+                   show_quick_add: section.settings.enable_quick_add,
+                   section_id: section.id %}
+                </div>
+              {% endfor %}
+            </div>
           </div>
-        </div>
-        <!-- Tab2 -->
-        <div class="tab-pane fade" id="seltzer" role="tabpanel" aria-labelledby="nav-home-tab">
-          <div class="products-slider owl-carousel">
-            {% for product in collection.products %}
-              <div
-                class="item">
-                {% render 'custom-card-product' 
-                 , card_product: product,
-                 show_rating: section.settings.show_rating,
-                 lazy_load: true,
-                 show_quick_add: section.settings.enable_quick_add,
-                 section_id: section.id %}
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-        <!-- Tab3 -->
-        <div class="tab-pane fade" id="tea" role="tabpanel" aria-labelledby="nav-home-tab">
-          <div class="products-slider owl-carousel">
-            {% for product in collection.products %}
-              <div
-                class="item">
-                {% render 'custom-card-product' 
-                 , card_product: product,
-                 show_rating: section.settings.show_rating,
-                 lazy_load: true,
-                 show_quick_add: section.settings.enable_quick_add,
-                 section_id: section.id %}
-              </div>
-            {% endfor %}
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -82,6 +82,17 @@
         "type": "text",
         "id": "heading",
         "label": "Heading"
+      }, {
+        "type": "checkbox",
+        "id": "show_rating",
+        "default": false,
+        "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
+        "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
+      }, {
+        "type": "checkbox",
+        "id": "enable_quick_add",
+        "default": true,
+        "label": "t:sections.main-collection-product-grid.settings.enable_quick_buy.label"
       }
     ],
     "blocks": [
