@@ -2267,6 +2267,9 @@ Kratom
     margin-bottom: 12px;
     font-size: 16px;
 }
+.size-price span {
+    font-size: 15px;
+}
 .flavor-item li::before {
     content: '';
     position: absolute;
