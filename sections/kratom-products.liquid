@@ -10,23 +10,65 @@
         <h2>
           {{ section.settings.heading }}
         </h2>
-        <span>
-          <span>Soda</span>
-          Seltzer Tea</span>
       </div>
-      <div
-        class="products-slider owl-carousel">
-        {% for product in collection.products %}
-          <div
-            class="item">
-            {% render 'custom-card-product' 
-             , card_product: product,
-             show_rating: section.settings.show_rating,
-             lazy_load: true,
-             show_quick_add: section.settings.enable_quick_add,
-             section_id: section.id %}
+      <div class="product-tabs-header appointment-tabs flex space center">
+          <nav>
+              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active show" id="soda-tab" data-toggle="tab" href="#soda">Soda</a>
+                  <a class="nav-item nav-link" id="seltzer-tab" data-toggle="tab" href="#seltzer">Seltzer</a>
+                  <a class="nav-item nav-link" id="tea-tab" data-toggle="tab" href="#tea">Tea</a>
+              </div>        
+          </nav>
+      </div>
+      <div class="tab-content px-sm-0" id="nav-tabContent">
+        <!-- Tab1 -->
+        <div class="tab-pane fade active show" id="soda" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="products-slider owl-carousel">
+            {% for product in collection.products %}
+              <div
+                class="item">
+                {% render 'custom-card-product' 
+                 , card_product: product,
+                 show_rating: section.settings.show_rating,
+                 lazy_load: true,
+                 show_quick_add: section.settings.enable_quick_add,
+                 section_id: section.id %}
+              </div>
+            {% endfor %}
           </div>
-        {% endfor %}
+        </div>
+        <!-- Tab2 -->
+        <div class="tab-pane fade" id="seltzer" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="products-slider owl-carousel">
+            {% for product in collection.products %}
+              <div
+                class="item">
+                {% render 'custom-card-product' 
+                 , card_product: product,
+                 show_rating: section.settings.show_rating,
+                 lazy_load: true,
+                 show_quick_add: section.settings.enable_quick_add,
+                 section_id: section.id %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <!-- Tab3 -->
+        <div class="tab-pane fade" id="tea" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="products-slider owl-carousel">
+            {% for product in collection.products %}
+              <div
+                class="item">
+                {% render 'custom-card-product' 
+                 , card_product: product,
+                 show_rating: section.settings.show_rating,
+                 lazy_load: true,
+                 show_quick_add: section.settings.enable_quick_add,
+                 section_id: section.id %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
   </div>
