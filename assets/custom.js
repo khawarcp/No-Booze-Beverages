@@ -184,10 +184,4 @@ function wrapSections(section_class) {
   // You can call this function with a specific section class.
   wrapSections("cart-section");
 
-//Initialize Plugin
-$(".owl-carousel.prodSlider").owlCarousel()
- 
-//get carousel instance data and store it in variable owl
-var owl = $(".owl-carousel.prodSlider").data('owlCarousel');
- console.log(owl)
 
