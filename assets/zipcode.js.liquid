@@ -5,33 +5,52 @@
   let message = document.createElement('p');
   zipbtn.onclick = (e) => {
     e.preventDefault();
-    let zipVal = document.getElementById('zip').value;
+    let zipVal = Number(document.getElementById('zip').value);
     if (zipVal) {
       message.innerHTML = '';
       let zipcodes = fetch(url);
       zipcodes.then((v) => {
         return v.json();
-      }).then((zipcodeMatch) => {
-        let matchedZip = zipcodeMatch.zipcode.find((item) => {
-          if (zipVal === item.zipcode) {
+      }).then((zipcodeMatch) => {          
+        let matchedZip = zipcodeMatch.zipcode.find((item) => {                      
+          if (zipVal === item.zip_code) {              
             return item;
           }
           return false;
-        });
+        });          
         if (matchedZip) {
-          message.innerHTML = `<span class="do-sell"><img
-          loading="lazy"
-          height=""
-          width=""
-          src="{{ 'green-marker.svg' | asset_url }}"
-          alt="info icon">Hurrah! We sell in your state.</span>`
-        } else {
-          message.innerHTML = `<span class="not-sell"><img
+        if( matchedZip.state == 'AL' || matchedZip.state == 'AR' || matchedZip.state == 'IN' || matchedZip.state == 'RI' || matchedZip.state == 'GU' || matchedZip.state == 'IA'){
+         message.innerHTML = `<span class="not-sell"><img
           loading="lazy"
           height=""
           width=""
           src="{{ 'info-icon.svg' | asset_url }}"
-          alt="info icon">Ops! We do not sell products in your state.</span>`
+          alt="info icon">Oops! We do not sell products in your state.</span>`;
+      
+    }else if( matchedZip.city == 'San Diego' || matchedZip.city == 'Denver' || matchedZip.city == 'Jerseyville'){
+
+             message.innerHTML = `<span class="not-sell"><img
+          loading="lazy"
+          height=""
+          width=""
+          src="{{ 'info-icon.svg' | asset_url }}"
+          alt="info icon">Oops! We do not sell products in your state.</span>`;
+     }else if( matchedZip.county == 'Sarasota' || matchedZip.county == 'Union'){
+             message.innerHTML = `<span class="not-sell"><img
+          loading="lazy"
+          height=""
+          width=""
+          src="{{ 'info-icon.svg' | asset_url }}"
+          alt="info icon">Oops! We do not sell products in your state.</span>`;        
+            
+    } else{
+            message.innerHTML = `<span class="do-sell"><img
+          loading="lazy"
+          height=""
+          width=""
+          src="{{ 'green-marker.svg' | asset_url }}"
+          alt="info icon">Hurrah! We sell in your state.</span>`;  
+    }    
         }
       })
     } else {
