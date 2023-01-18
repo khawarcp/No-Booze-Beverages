@@ -2265,6 +2265,7 @@ Kratom
     position: relative;
     padding-left: 30px;
     margin-bottom: 12px;
+    font-size: 16px;
 }
 .flavor-item li::before {
     content: '';
