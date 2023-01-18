@@ -80,13 +80,16 @@ $(document).ready(function(){
         dots: true,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                loop :false
             },
             600: {
-                items: 1
+                items: 1,
+                loop :false
             },
             1000: {
-                items: 1
+                items: 1,
+              loop :false
             }
         }
     });
