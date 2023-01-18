@@ -576,6 +576,8 @@ header {
 .single-product img {
     max-width: 226px;
     margin: 0 auto 25px;
+    height: 397px;
+    object-fit: cover;
 }
 
 .single-product::before {
