@@ -3,7 +3,6 @@ $('.owl-carousel.prodSlider').owlCarousel({
     loop: false,
     margin: 0,
     nav: false,
-  pagination : true,
     autoplay: false,
     dots: true,
     responsive: {

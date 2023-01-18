@@ -75,7 +75,6 @@ $(document).ready(function(){
     $('.owl-carousel.prodSlider').owlCarousel({
         loop: false,
         margin: 0,
-        pagination : true,
         nav: false,
         autoplay: false,
         dots: true,
