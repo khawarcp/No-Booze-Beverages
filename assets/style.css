@@ -67,6 +67,10 @@ div.header-placement {
     margin-top: 45px;
 }
 
+.do-sell {
+    margin: 14px 0 8px;
+}
+
 @media screen and (min-width: 750px){
 .customer:not(.account):not(.order) {
     max-width: 100% !important;
