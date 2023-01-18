@@ -517,7 +517,7 @@
                         {%- endfor -%}
                       </fieldset>
                     {%- endfor -%}
-                    <script type="application/json">
+                    <script type="application/json" id="product-variant-json">
                       {{ product.variants | json }}
                     </script>
                   </variant-radios>
@@ -556,7 +556,7 @@
                       </div>
                     {%- endfor -%}
 
-                    <script type="application/json">
+                    <script type="application/json" id="product-variant-json">
                       {{ product.variants | json }}
                     </script>
                   </variant-selects>
@@ -1005,7 +1005,7 @@
 
   {%- if product.media.size > 0 -%}
     <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
+    {% comment %} <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script> {% endcomment %}
     <script src="{{ 'owl-product-slider.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 

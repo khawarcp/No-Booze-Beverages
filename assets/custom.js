@@ -73,7 +73,7 @@ $(document).ready(function(){
     });
     // Product Slider
     $('.owl-carousel.prodSlider').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 0,
         nav: false,
         autoplay: false,
