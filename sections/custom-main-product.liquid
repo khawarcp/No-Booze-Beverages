@@ -67,7 +67,7 @@
             {% for image in product.images %}                            
               <div class="item">
                   <div class="single-product-image">
-                     <img src="{{ image | img_url : "master" }}" alt="">
+                     {% render 'responsive-image', image : product.featured_image %}
                   </div>
               </div>
             {% endfor %}                        
