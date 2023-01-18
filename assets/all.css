@@ -2316,7 +2316,18 @@ Kratom
 .prodHead h2 {
     margin-bottom: 0;
 }
-
+.flavor-tabs-header a {
+    background: none;
+    color: #323C45;
+    font-size: 36px;
+    font-weight: 800;
+    border: none !important;
+}
+.flavor-tabs-header a.active {
+    background: none !important;
+    border: none !important;
+    color: #A43772 !important;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
