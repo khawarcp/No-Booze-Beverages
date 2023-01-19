@@ -1,64 +1,275 @@
-        <!-- plans -->
-        <section class="plans-section">
-            <div class="container">
-                <div class="plans-list flex jc-sb">
-                    <div class="plan-wrap standard">
-                        <div class="single-plan">
-                            <div class="plan-prices">
-                                <h3>$39 <span>/month</span></h3>
-                                <h4>Standard</h4>
-                                <span>06 Packs / Month</span>
-                            </div>
-                            <div class="plan-features">
-                                <ul>
-                                    <li>Lorem Ipsum</li>
-                                    <li>Lorem Ipsum</li>
-                                    <li>Lorem Ipsum dolor sit</li>
-                                </ul>
-                            </div>
-                            <div class="subsBtn">
-                                <a href="#">Subscribe <img src="assets/images/right-arrow-small.svg" alt="arrow icon"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan-wrap standard essentials">
-                        <div class="single-plan">
-                            <div class="plan-prices">
-                                <h3>$99 <span>/month</span></h3>
-                                <h4>Essentials</h4>
-                                <span>12 Packs / Month</span>
-                            </div>
-                            <div class="plan-features">
-                                <ul>
-                                    <li>Lorem Ipsum</li>
-                                    <li>Lorem Ipsum</li>
-                                    <li>Lorem Ipsum dolor sit</li>
-                                </ul>
-                            </div>
-                            <div class="subsBtn">
-                                <a href="#">Subscribe <img src="assets/images/right-arrow-small.svg" alt="arrow icon"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan-wrap premium">
-                        <div class="single-plan">
-                            <div class="plan-prices">
-                                <h3>$109 <span>/month</span></h3>
-                                <h4>Premium</h4>
-                                <span>24 Packs / Month</span>
-                            </div>
-                            <div class="plan-features">
-                                <ul>
-                                    <li>Lorem Ipsum</li>
-                                    <li>Lorem Ipsum</li>
-                                    <li>Lorem Ipsum dolor sit</li>
-                                </ul>
-                            </div>
-                            <div class="subsBtn">
-                                <a href="#">Subscribe <img src="assets/images/right-arrow-small.svg" alt="arrow icon"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- plans -->
+<section class="plans-section">
+  <div class="container">
+    <div class="plans-list flex jc-sb">
+      <div class="plan-wrap standard">
+        <div class="single-plan">
+          <div class="plan-prices">
+            <h3>$39
+              <span>/month</span>
+            </h3>
+            <h4>Standard</h4>
+            <span>06 Packs / Month</span>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum dolor sit</li>
+            </ul>
+          </div>
+          <div class="subsBtn">
+            <a href="#">Subscribe <img src="assets/images/right-arrow-small.svg" alt="arrow icon"></a>
+          </div>
+        </div>
+      </div>
+      <div class="plan-wrap standard essentials">
+        <div class="single-plan">
+          <div class="plan-prices">
+            <h3>$99
+              <span>/month</span>
+            </h3>
+            <h4>Essentials</h4>
+            <span>12 Packs / Month</span>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum dolor sit</li>
+            </ul>
+          </div>
+          <div class="subsBtn">
+            <a href="#">Subscribe <img src="assets/images/right-arrow-small.svg" alt="arrow icon"></a>
+          </div>
+        </div>
+      </div>
+      <div class="plan-wrap premium">
+        <div class="single-plan">
+          <div class="plan-prices">
+            <h3>$109
+              <span>/month</span>
+            </h3>
+            <h4>Premium</h4>
+            <span>24 Packs / Month</span>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum dolor sit</li>
+            </ul>
+          </div>
+          <div class="subsBtn">
+            <a href="#">Subscribe <img src="assets/images/right-arrow-small.svg" alt="arrow icon"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Subscriptions",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "6-pack",
+        "name": "6 Pack",
+        "settings": [
+          {
+            "type": "text",
+            "id": "plan_price",
+            "label": "Plan Price"
+          },
+          {
+            "type": "text",
+            "id": "plan_name",
+            "label": "Plan Name"
+          },
+          {
+            "type": "text",
+            "id": "plan_recurring",
+            "label": "Plan Recurring"
+          },
+          {
+            "type": "text",
+            "id": "plan_product",
+            "label": "Plan Product"
+          }, {
+            "type": "text",
+            "id": "plan_feature_1",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_2",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_3",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_4",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_5",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_6",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_7",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_8",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_9",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_10",
+            "label": "Feature"
+          }
+        ]
+      }, {
+        "type": "12-pack",
+        "name": "12 Pack",
+        "settings": [
+          {
+            "type": "text",
+            "id": "plan_price",
+            "label": "Plan Price"
+          },
+          {
+            "type": "text",
+            "id": "plan_name",
+            "label": "Plan Name"
+          },
+          {
+            "type": "text",
+            "id": "plan_recurring",
+            "label": "Plan Recurring"
+          },
+          {
+            "type": "text",
+            "id": "plan_product",
+            "label": "Plan Product"
+          }, {
+            "type": "text",
+            "id": "plan_feature_1",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_2",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_3",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_4",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_5",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_6",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_7",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_8",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_9",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_10",
+            "label": "Feature"
+          }
+        ]
+      }, {
+        "type": "24-pack",
+        "name": "24 Pack",
+        "settings": [
+          {
+            "type": "text",
+            "id": "plan_price",
+            "label": "Plan Price"
+          },
+          {
+            "type": "text",
+            "id": "plan_name",
+            "label": "Plan Name"
+          },
+          {
+            "type": "text",
+            "id": "plan_recurring",
+            "label": "Plan Recurring"
+          },
+          {
+            "type": "text",
+            "id": "plan_product",
+            "label": "Plan Product"
+          }, {
+            "type": "text",
+            "id": "plan_feature_1",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_2",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_3",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_4",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_5",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_6",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_7",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_8",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_9",
+            "label": "Feature"
+          }, {
+            "type": "text",
+            "id": "plan_feature_10",
+            "label": "Feature"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
