@@ -1,32 +1,24 @@
 <!-- Blog Post -->
 
 {%- paginate blog.articles by 5 -%}
-  <section
-    class="blogs-listing">
-    <div
-      class="container">
+  <section class="blogs-listing">
+    <div class="container">
       {% assign counts = 0 %}
       {%- for article in blog.articles -%}
         {% if forloop.first %}
-          <div
-            class="blog-area full-size">
-            <div
-              class="flex jc-sb blog-row">
-              <div
-                class="blog-image">
+          <div class="blog-area full-size">
+            <div class="flex jc-sb blog-row">
+              <div class="blog-image">
                 {% render 'responsive-image', image: article.image %}
               </div>
-              <div
-                class="blog-copy">
-                <div
-                  class="blogCopy">
+              <div class="blog-copy">
+                <div class="blogCopy">
                   {%- if section.settings.show_date -%}
                     <span>{{ article.published_at | time_tag: format: 'date' }}
                     </span>
                   {%- endif -%}
                   {%- if section.settings.show_author -%}
-                    <span
-                      class="author">Post by {{ article.author }}
+                    <span class="author">Post by {{ article.author }}
                     </span>
                   {%- endif -%}
                   <h4>
@@ -42,16 +34,14 @@
                         {%- endif -%}
                       </p>
                     {%- endif -%}
-                    <div
-                      class="article-card__footer">
+                    <div class="article-card__footer">
                       {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                         <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
                       {%- endif -%}
                     </div>
                   {%- endif -%}
                 </div>
-                <a
-                  href="{{ article.url }}">Read More <img
+                <a href="{{ article.url }}">Read More <img
                     height=""
                     width=""
                     loading="lazy"
@@ -63,27 +53,20 @@
           </div>
         {% else %}
           {% assign count = counts | modulo: 2 %}
-          <div
-            class="blog-row flex jc-sb">
+          <div class="blog-row flex jc-sb">
             {% if count == 0 %}
-              <div
-                class="blogCol-pink flex sb">
-                {%- render 'pink-article-card' 
-                  , article: article,
-                  show_date: section.settings.show_date,
-                  show_author: section.settings.show_author,
-                  show_excerpt: true -%}
-              </div>
+              {%- render 'pink-article-card' 
+                , article: article,
+                show_date: section.settings.show_date,
+                show_author: section.settings.show_author,
+                show_excerpt: true -%}
             {% else %}
-              <div
-                class="blogCol-blue flex sb blogCol">
-                {%- render 'custom-article-card' 
-                  , article: article,
-                  show_image: section.settings.show_image,
-                  show_date: section.settings.show_date,
-                  show_author: section.settings.show_author,
-                  show_excerpt: true -%}
-              </div>
+              {%- render 'custom-article-card' 
+                , article: article,
+                show_image: section.settings.show_image,
+                show_date: section.settings.show_date,
+                show_author: section.settings.show_author,
+                show_excerpt: true -%}
             {% endif %}
 
           </div>

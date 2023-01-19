@@ -1,43 +1,40 @@
-<div
-  class="blogCopy-wrap">
-  <div
-    class="blogCopy">
-    {%- if show_date -%}
-      <span>{{ article.published_at | time_tag: format: 'date' }}
-      </span>
-    {%- endif -%}
-    {%- if show_author -%}
-      <span
-        class="author">Post by {{ article.author }}
-      </span>
-    {%- endif -%}
-    <h4>
-      {{ article.title | truncate: 50 | escape }}
-    </h4>
-    {%- if show_excerpt -%}
-      {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-        <p>
-          {%- if article.excerpt.size > 0 -%}
-            {{ article.excerpt | strip_html | truncatewords: 40 }}
-          {%- else -%}
-            {{ article.content | strip_html | truncatewords: 40 }}
-          {%- endif -%}
-        </p>
+<div class="blogCol-pink flex sb">
+  <div class="blogCopy-wrap">
+    <div class="blogCopy">
+      {%- if show_date -%}
+        <span>{{ article.published_at | time_tag: format: 'date' }}
+        </span>
       {%- endif -%}
-      <div
-        class="article-card__footer">
-        {%- if article.comments_count > 0 and blog.comments_enabled? -%}
-          <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
+      {%- if show_author -%}
+        <span class="author">Post by {{ article.author }}
+        </span>
+      {%- endif -%}
+      <h4>
+        {{ article.title | truncate: 50 | escape }}
+      </h4>
+      {%- if show_excerpt -%}
+        {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+          <p>
+            {%- if article.excerpt.size > 0 -%}
+              {{ article.excerpt | strip_html | truncatewords: 40 }}
+            {%- else -%}
+              {{ article.content | strip_html | truncatewords: 40 }}
+            {%- endif -%}
+          </p>
         {%- endif -%}
-      </div>
-    {%- endif -%}
+        <div class="article-card__footer">
+          {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+            <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+    <a href="{{ article.url }}">Read More <img
+        height=""
+        width=""
+        loading="lazy"
+        src="{{ 'long-arrow-right.svg' | asset_url }}"
+        alt="arrow icon">
+    </a>
   </div>
-  <a
-    href="{{ article.url }}">Read More <img
-      height=""
-      width=""
-      loading="lazy"
-      src="{{ 'long-arrow-right.svg' | asset_url }}"
-      alt="arrow icon">
-  </a>
 </div>
