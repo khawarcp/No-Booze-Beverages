@@ -11,10 +11,10 @@
         "de102d6a-4055-4797-925b-c245435f1e65": {
           "type": "6-pack",
           "settings": {
-            "plan_price": "$39 <span>\/month<\/span>",
+            "plan_price": "$39 \/month",
             "plan_name": "Standard",
             "plan_recurring": "06 Packs \/ Month",
-            "plan_product": "",
+            "plan_product": "kranium-berry-drink-6-pack",
             "plan_feature_1": "Lorem Ipsum",
             "plan_feature_2": "Lorem Ipsum",
             "plan_feature_3": "Lorem Ipsum dolor sit",
@@ -30,10 +30,10 @@
         "b525c064-9e70-4c94-b0c1-3d865aba288a": {
           "type": "12-pack",
           "settings": {
-            "plan_price": "$99 <span>\/month<\/span>",
+            "plan_price": "$99 \/month",
             "plan_name": "Essentials",
             "plan_recurring": "12 Packs \/ Month",
-            "plan_product": "",
+            "plan_product": "kranium-berry-drink-12-pack",
             "plan_feature_1": "Lorem Ipsum",
             "plan_feature_2": "Lorem Ipsum",
             "plan_feature_3": "Lorem Ipsum dolor sit",
@@ -49,10 +49,10 @@
         "00436240-d62f-47a0-8b8c-706814da6726": {
           "type": "24-pack",
           "settings": {
-            "plan_price": "$109 <span>\/month<\/span>",
+            "plan_price": "$109 \/month",
             "plan_name": "Premium",
             "plan_recurring": "24 Packs \/ Month",
-            "plan_product": "",
+            "plan_product": "kranium-berry-drink-24-pack",
             "plan_feature_1": "Lorem Ipsum",
             "plan_feature_2": "Lorem Ipsum",
             "plan_feature_3": "Lorem Ipsum dolor sit",
