@@ -7,6 +7,70 @@
     },
     "content": {
       "type": "subscription-content",
+      "blocks": {
+        "de102d6a-4055-4797-925b-c245435f1e65": {
+          "type": "6-pack",
+          "settings": {
+            "plan_price": "$39 <span>\/month<\/span>",
+            "plan_name": "Standard",
+            "plan_recurring": "06 Packs \/ Month",
+            "plan_product": "",
+            "plan_feature_1": "Lorem Ipsum",
+            "plan_feature_2": "Lorem Ipsum",
+            "plan_feature_3": "Lorem Ipsum dolor sit",
+            "plan_feature_4": "",
+            "plan_feature_5": "",
+            "plan_feature_6": "",
+            "plan_feature_7": "",
+            "plan_feature_8": "",
+            "plan_feature_9": "",
+            "plan_feature_10": ""
+          }
+        },
+        "b525c064-9e70-4c94-b0c1-3d865aba288a": {
+          "type": "12-pack",
+          "settings": {
+            "plan_price": "$99 <span>\/month<\/span>",
+            "plan_name": "Essentials",
+            "plan_recurring": "12 Packs \/ Month",
+            "plan_product": "",
+            "plan_feature_1": "Lorem Ipsum",
+            "plan_feature_2": "Lorem Ipsum",
+            "plan_feature_3": "Lorem Ipsum dolor sit",
+            "plan_feature_4": "",
+            "plan_feature_5": "",
+            "plan_feature_6": "",
+            "plan_feature_7": "",
+            "plan_feature_8": "",
+            "plan_feature_9": "",
+            "plan_feature_10": ""
+          }
+        },
+        "00436240-d62f-47a0-8b8c-706814da6726": {
+          "type": "24-pack",
+          "settings": {
+            "plan_price": "$109 <span>\/month<\/span>",
+            "plan_name": "Premium",
+            "plan_recurring": "24 Packs \/ Month",
+            "plan_product": "",
+            "plan_feature_1": "Lorem Ipsum",
+            "plan_feature_2": "Lorem Ipsum",
+            "plan_feature_3": "Lorem Ipsum dolor sit",
+            "plan_feature_4": "",
+            "plan_feature_5": "",
+            "plan_feature_6": "",
+            "plan_feature_7": "",
+            "plan_feature_8": "",
+            "plan_feature_9": "",
+            "plan_feature_10": ""
+          }
+        }
+      },
+      "block_order": [
+        "de102d6a-4055-4797-925b-c245435f1e65",
+        "b525c064-9e70-4c94-b0c1-3d865aba288a",
+        "00436240-d62f-47a0-8b8c-706814da6726"
+      ],
       "settings": {
       }
     }
