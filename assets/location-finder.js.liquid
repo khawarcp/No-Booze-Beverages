@@ -1,8 +1,8 @@
 function geoFindMe() {
     if (!navigator.geolocation){
-     console.log("Geolocation is not supported by your browser");      
-     return;
-    }
+        console.log("Geolocation is not supported by your browser");
+         return;
+       }
     function success(position) {
       var latitude  = position.coords.latitude;
       var longitude = position.coords.longitude;      
