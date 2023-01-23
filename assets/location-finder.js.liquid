@@ -6,7 +6,8 @@
   }
   function success(position) {
     var latitude  = position.coords.latitude;
-    var longitude = position.coords.longitude;    
+    var longitude = position.coords.longitude;   
+    document.cookie = 'modalshowlat='+ latitude; 
     displayLocation(latitude, longitude)    
   }
   
@@ -19,8 +20,11 @@
 
 function displayLocation(latitude,longitude){
         var request = new XMLHttpRequest();
-
-        $("#location-modal").modal('show');
+        
+        const value = ('; '+document.cookie).split(`; modalshowlat=`).pop().split(';')[0];        
+        if(value == ''){
+            $("#location-modal").modal('show');
+        }
 
         var method = 'GET';
         var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=27.1996,-82.3452&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
@@ -93,7 +97,7 @@ function displayLocation(latitude,longitude){
 
       var successCallback = function(position){
         var x = position.coords.latitude;
-        var y = position.coords.longitude;
+        var y = position.coords.longitude;        
         displayLocation(x,y);
       };
 
