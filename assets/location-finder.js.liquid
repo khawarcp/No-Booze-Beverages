@@ -20,9 +20,10 @@
 
 function displayLocation(latitude,longitude){
         var request = new XMLHttpRequest();
-        
-        const value = ('; '+document.cookie).split(`; modalshowlat=`).pop().split(';')[0];        
-        if(value == ''){
+
+        const valueLat = ('; '+document.cookie).split(`; modalshowlat=`).pop().split(';')[0];        
+        console.log('Cookie Lat: '+ valueLat)
+        if(valueLat == ''){
             $("#location-modal").modal('show');
         }
 
