@@ -54,12 +54,12 @@ function displayLocation(latitude,longitude){
             });
             let city = address.find((element) => {
                 let elements = Object.keys(element.types).map((key) => element.types[key]);                                                
-                if(elements.includes("locality")){
-                    return elements.includes("locality");
-                }else if(elements.includes("sublocality")){
-                    return elements.includes("sublocality");
+                if(elements.includes("administrative_area_level_3")){
+                    return elements.includes("administrative_area_level_3");                    
+                }else if(elements.includes("locality")){
+                    return elements.includes("locality");                    
                 }else{
-                    return elements.includes("administrative_area_level_3");
+                    return elements.includes("sublocality");
                 } 
             });
 
