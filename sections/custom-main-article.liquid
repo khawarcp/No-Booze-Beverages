@@ -211,7 +211,35 @@
                               <div class="article-content-wrap">
                                 <div class="cont-inner">
                                   <h3>{{ comment.author }}</h3>
-                                  <p> {{ comment.created_at | time_tag: format: 'date' }} </p>
+                                  {% liquid 
+                                    assign seconds = comment.created_at | date: '%s'
+                                      assign date_day = 'now' | date: "%s" | minus: seconds                                     
+                                       assign days = date_day | divided_by: 86400 | floor
+                                       assign weeks = days | divided_by: 7 | floor
+                                       assign months = days | divided_by: 30 | floor
+                                       assign years = days | divided_by: 365 | floor
+                                  %}
+                                  <p> {{ comment.created_at | time_tag: format: 'date' }} &#124; 
+                                    {% liquid   
+                                        if days > 730
+                                          echo years | append: ' years ago'                             
+                                        elsif days > 365
+                                          echo years | append: ' year ago'                             
+                                        elsif days > 60
+                                          echo months | append: ' months ago'                             
+                                        elsif days > 30
+                                          echo months | append: ' month ago'                             
+                                        elsif days > 14 
+                                          echo weeks | append: ' weeks ago'
+                                        elsif days > 7 
+                                          echo weeks | append: ' week ago'
+                                       elsif days > 1
+                                          echo days | append: ' days ago'                                       
+                                       else
+                                           echo days | append: ' day ago'                       
+                                       endif
+                                    %}
+                                  </p>                                  
                                   <div class="comment-content">
                                     {{ comment.content }}
                                   </div>
