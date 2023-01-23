@@ -19,7 +19,7 @@ function displayLocation(latitude,longitude){
         var request = new XMLHttpRequest();
 
         var method = 'GET';
-        var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
+        var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=32.3792,-86.3077&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
         var async = true;
 
         request.open(method, url, async);
@@ -65,12 +65,17 @@ function displayLocation(latitude,longitude){
             document.querySelectorAll('#country-state option').forEach((stateValue) => {                                
               stateValue.removeAttribute('selected')
               if(stateValue.value == state.short_name){                                
-                stateValue.setAttribute('selected', 'selected')                
-                if(stateValue.value == 'OR'){
-                  document.querySelector('[for="age"]').innerHTML = `I'm 21+ years old`;
-                }
+                stateValue.setAttribute('selected', 'selected') ;
+                stateChecker(stateValue.value);               
               }                
             })          
+
+            
+            document.getElementById('country-state').onchange = () => {
+                let changedVal = document.getElementById('country-state').value;  
+                stateChecker(changedVal);
+            }
+
             
             
           document.querySelector('.exit-site').addEventListener('click', () => {
@@ -123,5 +128,16 @@ function displayLocation(latitude,longitude){
 
       navigator.geolocation.getCurrentPosition(successCallback,errorCallback,options);
       
+
+let stateChecker = (state) =>{
+    if(state == 'OR' || state == 'TN'){
+        document.querySelector('[for="age"]').innerHTML = `I'm 21+ years old`;
+        document.getElementById('age').value = '21+';
+    }else{
+          document.querySelector('[for="age"]').innerHTML = `I'm 18+ years old`;
+          document.getElementById('age').value = '18+';
+      }
+}
+
       geoFindMe();
       
