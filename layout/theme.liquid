@@ -461,6 +461,9 @@
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
+    
+      {%- render 'location-modal' -%}
+    
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
