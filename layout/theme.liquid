@@ -530,6 +530,13 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="{{ 'custom.js' | asset_url }}"></script>    
     <script src="{{ 'location-finder.js' | asset_url }}"></script>    
+    <script>
+        $(document).ready(function(){
+          setTimeout(()=>{
+            $("#location-modal").modal('show');
+          }, 5000)
+        });
+      </script>
 
   <!-- WPD Start -->
                 {% if customer.tags.size > 0 and template != 'cart' %}
