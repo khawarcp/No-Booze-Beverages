@@ -19,7 +19,7 @@ function displayLocation(latitude,longitude){
         var request = new XMLHttpRequest();
 
         var method = 'GET';
-        var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=32.3792,-86.3077&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
+        var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=27.1996,-82.3452&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
         var async = true;
 
         request.open(method, url, async);
@@ -71,11 +71,11 @@ function displayLocation(latitude,longitude){
             })                  
 
             if( state.short_name == 'AL' || state.short_name == 'AR' || state.short_name == 'IN' || state.short_name == 'RI' || state.short_name == 'GU' || state.short_name == 'IA'){
-          
+                hideAllAddButtons();
             }else if( city.short_name == 'San Diego' || city.short_name == 'Denver' || city.short_name == 'Jerseyville'){
-                      
+                hideAllAddButtons();     
               }else if( county.short_name == 'Sarasota' || county.short_name == 'Union'){
-                              
+                hideAllAddButtons();           
             } else{
                     console.log('Welcome to the store!')
             }  
@@ -134,18 +134,27 @@ let stateChecker = (state) =>{
       }
 }
 
-
-document.getElementsByClassName('enter-site').onclick = (e)=>{
+document.getElementById('enter-site').onclick = function(e){
     e.preventDefault();
-    let ageInput = document.getElementById('age');
-    alert('dfsfas')
+    document.getElementById('age-err').innerHTML = '';        
+    let ageInput = document.getElementById('age');    
     if(ageInput.checked == true){        
-        alert('verified')
-    }else{
-        let err = document.createElement('p');
-        err.innerHTML = 'Please verify the age';
-        document.getElementsByClassName('age-wrapper').apppend(err);
+        $("#location-modal").modal('hide');        
+    }else{        
+        document.getElementById('age-err').innerHTML = 'Please verify the age';        
     }    
+}
+
+let hideAllAddButtons = () => {
+    document.querySelectorAll('.quick-add').forEach((items) => {
+        items.style.display = 'none';
+    })
+    document.querySelectorAll('[name="checkout"]').forEach((items) => {
+        items.style.display = 'none';
+    })
+    document.querySelectorAll('.product-form__buttons').forEach((items) => {
+        items.style.display = 'none';
+    })
 }
 
       geoFindMe();
