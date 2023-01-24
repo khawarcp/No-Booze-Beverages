@@ -531,6 +531,15 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="{{ 'custom.js' | asset_url }}"></script>    
     <script src="{{ 'location-finder.js' | asset_url }}"></script>    
+    <script>
+        let modalshowlat = localStorage.getItem("modalshowlat");
+        if(modalshowlat == ''){
+          $("#location-modal").modal('show');
+          $("#location-modal").modal({ backdrop: "static ", keyboard: false });
+        }else{          
+          localStorage.setItem('modalshowlat', "show");
+        }
+    </script>
 
   <!-- WPD Start -->
                 {% if customer.tags.size > 0 and template != 'cart' %}
