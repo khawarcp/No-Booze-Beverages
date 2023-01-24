@@ -25,13 +25,12 @@ function displayLocation(latitude,longitude){
 
         //gettings the cookies to to check pop for only one time
         
-        // const valueLat = ('; '+document.cookie).split(`; modalshowlat=`).pop().split(';')[0];        
-        // console.log('Cookie Lat: '+ valueLat)
-        // if(valueLat == ''){
-        // }
-        
-        $("#location-modal").modal('show');
-        $("#location-modal").modal({ backdrop: "static ", keyboard: false });
+        const valueLat = ('; '+document.cookie).split(`; modalshowlat=`).pop().split(';')[0];        
+        console.log('Cookie Lat: '+ valueLat)
+        if(valueLat == ''){
+            $("#location-modal").modal('show');
+          $("#location-modal").modal({ backdrop: "static ", keyboard: false });
+        }            
 
         var method = 'GET';
         var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=36.7783,-119.4179&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
