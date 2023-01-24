@@ -365,23 +365,23 @@
         "label": "Store API"
       },
       {
-        "type" : "header",
-        "content" : "Modal"
+        "type": "header",
+        "content": "Modal"
       },
       {
-        "type" : "text",
-        "id" : "google_map_key",
-        "label" : "Google Map Key"
+        "type": "text",
+        "id": "google_map_key",
+        "label": "Google Map Key"
       },
       {
-        "type" : "image_picker",
-        "id" : "modal_background",
-        "label" : "Background Image"
+        "type": "image_picker",
+        "id": "modal_background",
+        "label": "Background Image"
       },
       {
-        "type" : "image_picker",
-        "id" : "modal_logo",
-        "label" : "Logo Image"
+        "type": "image_picker",
+        "id": "modal_logo",
+        "label": "Logo Image"
       }
     ]
   },
