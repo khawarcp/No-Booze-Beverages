@@ -24,12 +24,12 @@ function displayLocation(latitude,longitude){
         var request = new XMLHttpRequest();
 
         //gettings the cookies to to check pop for only one time
-        {% if template contains 'index'%}
-        const valueLat = ('; '+document.cookie).split(`; modalshowlat=`).pop().split(';')[0];        
-        console.log('Cookie Lat: '+ valueLat)
-        if(valueLat == ''){
-        }
-        {% endif %}
+        
+        // const valueLat = ('; '+document.cookie).split(`; modalshowlat=`).pop().split(';')[0];        
+        // console.log('Cookie Lat: '+ valueLat)
+        // if(valueLat == ''){
+        // }
+        
         $("#location-modal").modal('show');
         $("#location-modal").modal({ backdrop: "static ", keyboard: false });
 
