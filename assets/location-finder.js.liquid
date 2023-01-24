@@ -3,18 +3,15 @@
   if (!navigator.geolocation){
    console.log("Geolocation is not supported by your browser");
     return;
-  }
-  
+  }  
   function success(position) {
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;   
     //setting the cookies to to check pop for only one time
     // document.cookie = 'modalshowlat='+ latitude;
-     
+    localStorage.setItem('modalshowlat', 'show'); 
     displayLocation(latitude, longitude)    
   }
-  
-
   function error() {
     console.log("Unable to retrieve your location");
   }
@@ -25,14 +22,11 @@ function displayLocation(latitude,longitude){
         var request = new XMLHttpRequest();
 
         //gettings the cookies to to check pop for only one time
-        
-        // const valueLat = ('; '+document.cookie).split(`; modalshowlat=`).pop().split(';')[0];        
-        // console.log('Cookie Lat: '+ valueLat)
-        // if(valueLat == ''){
-        //     $("#location-modal").modal('show');
-        //   $("#location-modal").modal({ backdrop: "static ", keyboard: false });
-        // }             
-
+        let modalshowlat = localStorage.getItem('modalshowlat');        
+        if (modalshowlat === null) {          
+          $("#location-modal").modal('show');
+          $("#location-modal").modal({ backdrop: "static ", keyboard: false });
+        }
 
         var method = 'GET';
         var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=36.7783,-119.4179&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
@@ -73,8 +67,6 @@ function displayLocation(latitude,longitude){
             console.log("State: " + state.short_name);
             console.log("County: " + county.short_name);
             console.log("City: " + city.short_name);
-            
-            
 
             //if country not US
             if(country.short_name != 'US'){
@@ -106,19 +98,7 @@ function displayLocation(latitude,longitude){
         };
         request.send();
       };
-
-
-      let modalshowlat = localStorage.getItem('modalshowlat');        
-        if (modalshowlat === null) {
-          alert('if')
-          $("#location-modal").modal('show');
-          $("#location-modal").modal({ backdrop: "static ", keyboard: false });
-        }else{
-          alert('elsee')  
-          localStorage.setItem('modalshowlat', 'show');          
-        } 
       
-
       var successCallback = function(position){
         var x = position.coords.latitude;
         var y = position.coords.longitude;  
