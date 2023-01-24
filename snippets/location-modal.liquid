@@ -7,13 +7,15 @@
   aria-labelledby="exampleModalCenterTitle"
   aria-hidden="true" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+    <div class="modal-content" style="background-image: url('//cdn.shopify.com/s/files/1/0704/2606/7242/files/cans-pack.png?v=1673349366&width=755');">
+      <div class="modal-header border-0">
+        <img src="//cdn.shopify.com/s/files/1/0704/2606/7242/files/No_Booze_Beverages.png?v=1673507018&width=208" alt="">
       </div>
-      <div class="modal-body">
+      <div class="modal-body border-0">
         <!--- United States states -->
-        <select id="country-state" name="country-state">
+        <div class="state-wrapper">
+          <label for="country-state">Select Your State</label>
+          <select id="country-state" name="country-state">
           <option value="AL" selected="selected">Alabama</option>
           <option value="AK">Alaska</option>
           <option value="AS">American Samoa</option>
@@ -81,6 +83,7 @@
           <option value="WI">Wisconsin</option>
           <option value="WY">Wyoming</option>
         </select>
+        </div>
         <div class="age-wrapper">
           <input
             type="checkbox"
@@ -90,18 +93,99 @@
           <label for="age">I'm 18+ years old</label>
         </div>
         <p id="age-err"></p>
-      </div>
-      <div class="modal-footer">
-        <button
-          type="button"
-          id="enter-site"
-          class="btn btn-primary enter-site">Enter</button>
-        <button
-          id="exit-site"
-          type="button"
-          class="btn btn-secondary exit-site"
-          data-dismiss="modal">Exit</button>
+        <div class="modal-footer-wrapper">
+          <button
+            type="button"
+            id="enter-site"
+            class="btn btn-primary enter-site">Enter</button>
+          <button
+            id="exit-site"
+            type="button"
+            class="btn btn-secondary exit-site"
+            data-dismiss="modal">Exit</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<style>
+  .modal-content {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0;
+    padding: 30px;
+}
+
+.modal-header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 50px;
+}
+
+.modal-header img{
+  width : 150px;
+}
+
+
+.modal-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,.8);
+}
+
+
+.modal-body {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.state-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.state-wrapper label {
+    font-size: 14px;
+    font-family: 'Maison Neue Book';
+    font-weight: 800;
+}
+
+#country-state {
+    height: 40px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #A43772;
+    font-size: 14px;
+    color: #323C45;
+}
+
+.age-wrapper label {
+    font-size: 14px;
+    margin: 0;
+}
+
+.age-wrapper {
+    margin-top: 20px;
+}
+
+.age-wrapper  input#age {
+    height: 17px;
+    width: 17px;
+}
+
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 700px;    
+}
+
+}
+</style>

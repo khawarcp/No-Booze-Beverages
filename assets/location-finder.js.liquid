@@ -34,7 +34,7 @@ function displayLocation(latitude,longitude){
         $("#location-modal").modal({ backdrop: "static ", keyboard: false });
 
         var method = 'GET';
-        var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
+        var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=36.7783,-119.4179&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
         var async = true;
 
         request.open(method, url, async);
