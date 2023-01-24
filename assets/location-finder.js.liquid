@@ -28,9 +28,9 @@ function displayLocation(latitude,longitude){
         const valueLat = ('; '+document.cookie).split(`; modalshowlat=`).pop().split(';')[0];        
         console.log('Cookie Lat: '+ valueLat)
         if(valueLat == ''){
-            $("#location-modal").modal('show');
         }
         {% endif %}
+        $("#location-modal").modal('show');
 
         var method = 'GET';
         var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
