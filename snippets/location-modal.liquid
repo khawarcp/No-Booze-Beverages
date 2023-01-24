@@ -9,9 +9,9 @@
   aria-labelledby="exampleModalCenterTitle"
   aria-hidden="true" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content" style="background-image: url('//cdn.shopify.com/s/files/1/0704/2606/7242/files/cans-pack.png?v=1673349366&width=755');">
-      <div class="modal-header border-0">
-        <img src="//cdn.shopify.com/s/files/1/0704/2606/7242/files/No_Booze_Beverages.png?v=1673507018&width=208" alt="">
+    <div class="modal-content" loading="lazy" style="background-image: url('{{ settings.modal_background | image_url : width: settings.modal_background.width }}');">
+      <div class="modal-header border-0">        
+        {% render 'responsive-image', image: settings.modal_logo%}
       </div>
       <div class="modal-body border-0">
         <!--- United States states -->

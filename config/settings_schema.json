@@ -363,6 +363,25 @@
         "type": "text",
         "id": "store_api_link",
         "label": "Store API"
+      },
+      {
+        "type" : "header",
+        "content" : "Modal"
+      },
+      {
+        "type" : "text",
+        "id" : "google_map_key",
+        "label" : "Google Map Key"
+      },
+      {
+        "type" : "image_picker",
+        "id" : "modal_background",
+        "label" : "Background Image"
+      },
+      {
+        "type" : "image_picker",
+        "id" : "modal_logo",
+        "label" : "Logo Image"
       }
     ]
   },
