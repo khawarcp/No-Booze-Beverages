@@ -78,6 +78,7 @@ function displayLocation(latitude,longitude){
             //if country not US
             if(country.short_name != 'US'){
               document.querySelector('.enter-site').setAttribute('disabled', 'disabled')
+              document.querySelector('#country-state').setAttribute('disabled', 'disabled')
             }
 
             //settings the attribute in the pop on matched state
