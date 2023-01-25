@@ -71,11 +71,13 @@ function displayLocation(latitude,longitude){
             if(country.short_name != 'US'){
               document.querySelector('.enter-site').setAttribute('disabled', 'disabled');
               document.querySelector('#country-state').setAttribute('disabled', 'disabled');
-              // document.querySelector('.modal-body').innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';
-              const divNotUS = document.createElement('div');
-              divNotUS.classList.add('modal-body-inner');
-              divNotUS.innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';
-              document.querySelector('.modal-body').append(divNotUS)
+              document.querySelector('.modal-body').innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';
+              document.querySelector('.modal-body').classList.add('notus');
+              // document.querySelector('.modal-body').innerHTML = '';
+              // const divNotUS = document.createElement('div');
+              // divNotUS.classList.add('modal-body-inner');
+              // divNotUS.innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';
+              // document.querySelector('.modal-body').append(divNotUS)
             }
 
             //settings the attribute in the pop on matched state
