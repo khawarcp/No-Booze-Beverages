@@ -382,6 +382,11 @@
         "type": "image_picker",
         "id": "modal_logo",
         "label": "Logo Image"
+      },
+      {
+        "type": "url",
+        "id": "collection_url",
+        "label": "Collection All URL"
       }
     ]
   },
