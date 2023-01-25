@@ -19,11 +19,11 @@ function displayLocation(latitude,longitude){
         var request = new XMLHttpRequest();
 
         //gettings the cookies to to check pop for only one time
-        let modalshowlat = localStorage.getItem('modalshowlat');        
-        if (modalshowlat === null) {          
-          $("#location-modal").modal('show');
-          $("#location-modal").modal({ backdrop: "static ", keyboard: false });
-        }
+        // let modalshowlat = localStorage.getItem('modalshowlat');        
+        // if (modalshowlat === null) {          
+        //   $("#location-modal").modal('show');
+        //   $("#location-modal").modal({ backdrop: "static ", keyboard: false });
+        // }
   $("#location-modal").modal('show');
           $("#location-modal").modal({ backdrop: "static ", keyboard: false });
 
@@ -161,7 +161,7 @@ document.getElementById('enter-site').onclick = function(e){
     let ageInput = document.getElementById('age');    
     if(ageInput.checked == true){        
         $("#location-modal").modal('hide');        
-        localStorage.setItem('modalshowlat', 'show'); 
+        localStorage.setItem('modalshowlat', 'showed'); 
     }else{        
         document.getElementById('age-err').innerHTML = 'Please verify the age';        
     }    
