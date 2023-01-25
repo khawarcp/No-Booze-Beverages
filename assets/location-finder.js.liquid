@@ -26,8 +26,9 @@ function displayLocation(latitude,longitude){
           $("#location-modal").modal({ backdrop: "static ", keyboard: false });
         }
 
+        // lat 32.318230 lang -86.902298
         var method = 'GET';
-        var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=32.318230,-86.902298&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
+        var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
         var async = true;
 
         request.open(method, url, async);
@@ -70,7 +71,11 @@ function displayLocation(latitude,longitude){
             if(country.short_name != 'US'){
               document.querySelector('.enter-site').setAttribute('disabled', 'disabled');
               document.querySelector('#country-state').setAttribute('disabled', 'disabled');
-              document.querySelector('.modal-body').innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';
+              // document.querySelector('.modal-body').innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';
+              const divNotUS = document.createElement('div');
+              divNotUS.classList.add('modal-body-inner');
+              divNotUS.innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';
+              document.querySelector('.modal-body').append(divNotUS)
             }
 
             //settings the attribute in the pop on matched state

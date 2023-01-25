@@ -33,7 +33,7 @@
 .modal-body {
     width: 350px;
     margin: 0 auto;
-    padding: 0;
+    padding: 50px 0 0;
 }
 
 .state-wrapper {
@@ -142,11 +142,11 @@ body.gradient.modal-open::before {
     min-height: 450px;
 }
 
-body.gradient.modal-open .modal-body {
+/* body.gradient.modal-open .modal-body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 @media (min-width: 576px){
 .modal-dialog {
