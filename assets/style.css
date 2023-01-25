@@ -1,5 +1,11 @@
 .cart-count-bubble{
     position: static;
+    background-color: transparent;
+    font-size: 10px;
+}
+
+.cart-count-bubble span:first-child {
+    margin-right: -7px;
 }
 
 .form-status.form-status-list.form__message {
@@ -69,6 +75,14 @@ div.header-placement {
 
 .do-sell {
     margin: 14px 0 8px;
+}
+
+.countyMessage{
+    color:#A43772;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 750px){

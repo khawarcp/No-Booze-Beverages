@@ -11,10 +11,9 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content" loading="lazy" style="background-image: url('{{ settings.modal_background | image_url : width: settings.modal_background.width }}');">
       <div class="modal-header border-0">        
-        {% render 'responsive-image', image: settings.modal_logo%}
+        {% render 'responsive-image', image: settings.modal_logo %}
       </div>
-      <div class="modal-body border-0">
-        <!--- United States states -->
+      <div class="modal-body border-0">        
         <div class="state-wrapper">
           <label for="country-state">Select Your State</label>
           <select id="country-state" name="country-state">

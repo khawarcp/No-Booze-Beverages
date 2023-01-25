@@ -7,8 +7,6 @@
   function success(position) {
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;   
-    //setting the cookies to to check pop for only one time
-    // document.cookie = 'modalshowlat='+ latitude;
     localStorage.setItem('modalshowlat', 'show'); 
     displayLocation(latitude, longitude)    
   }
@@ -29,7 +27,7 @@ function displayLocation(latitude,longitude){
         }
 
         var method = 'GET';
-        var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=36.7783,-119.4179&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
+        var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyD_4I_Q6nztL1PbEYFj-4b6U8bagvNBexU`;
         var async = true;
 
         request.open(method, url, async);
@@ -72,6 +70,9 @@ function displayLocation(latitude,longitude){
             if(country.short_name != 'US'){
               document.querySelector('.enter-site').setAttribute('disabled', 'disabled')
               document.querySelector('#country-state').setAttribute('disabled', 'disabled')
+              let countyMessage = document.createElement('div');
+              countyMessage.classList.add('countyMessage')
+              document.querySelector('.modal-body').innerHTML = countyMessage
             }
 
             //settings the attribute in the pop on matched state
