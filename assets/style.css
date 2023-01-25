@@ -77,13 +77,6 @@ div.header-placement {
     margin: 14px 0 8px;
 }
 
-.countyMessage{
-    color:#A43772;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 @media screen and (min-width: 750px){
 .customer:not(.account):not(.order) {

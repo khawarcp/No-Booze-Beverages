@@ -169,7 +169,6 @@ $(window).scroll(function() {
     }
 });
 
-
 //wrap the cart main and cart footer section into the wrapper
 function wrapSections(section_class) {
     var childSections = document.querySelectorAll("."+section_class);
