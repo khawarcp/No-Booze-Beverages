@@ -21,9 +21,9 @@ function displayLocation(latitude,longitude){
         //gettings the cookies to to check pop for only one time
         let modalshowlat = localStorage.getItem('modalshowlat');        
         if (modalshowlat === null) {          
+        }
           $("#location-modal").modal('show');
           $("#location-modal").modal({ backdrop: "static ", keyboard: false });
-        }
 
         // lat 36.7783 lang -119.4179
         var method = 'GET';
