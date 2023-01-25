@@ -68,11 +68,11 @@ function displayLocation(latitude,longitude){
 
             //if country not US
             if(country.short_name != 'US'){              
-              document.querySelector('.modal-body').innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';
               notUSstate();
+              document.querySelector('.modal-body').innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';              
             }else if (state.short_name == 'AL' || state.short_name == 'AR' || state.short_name == 'IN' || state.short_name == 'RI' || state.short_name == 'GU' || state.short_name == 'IA'){
-              document.querySelector('.modal-body').innerHTML = '<p class="countyMessage"> We don not sell products in your state</p>';
               notUSstate();
+              document.querySelector('.modal-body').innerHTML = '<p class="countyMessage"> We don not sell products in your state</p>';              
             }
 
             //settings the attribute in the pop on matched state
