@@ -19,13 +19,11 @@ function displayLocation(latitude,longitude){
         var request = new XMLHttpRequest();
 
         //gettings the cookies to to check pop for only one time
-        // let modalshowlat = localStorage.getItem('modalshowlat');        
-        // if (modalshowlat === null) {          
-        //   $("#location-modal").modal('show');
-        //   $("#location-modal").modal({ backdrop: "static ", keyboard: false });
-        // }
-  $("#location-modal").modal('show');
+        let modalshowlat = localStorage.getItem('modalshowlat');        
+        if (modalshowlat === null) {          
+          $("#location-modal").modal('show');
           $("#location-modal").modal({ backdrop: "static ", keyboard: false });
+        }
 
         // lat 32.318230 lang -86.902298
         var method = 'GET';
@@ -72,7 +70,7 @@ function displayLocation(latitude,longitude){
             if(country.short_name != 'US'){              
               document.querySelector('.modal-body').innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';
               notUSstate();
-            }else if state.short_name == 'AL' || state.short_name == 'AR' || state.short_name == 'IN' || state.short_name == 'RI' || state.short_name == 'GU' || state.short_name == 'IA'{
+            }else if (state.short_name == 'AL' || state.short_name == 'AR' || state.short_name == 'IN' || state.short_name == 'RI' || state.short_name == 'GU' || state.short_name == 'IA'{
               document.querySelector('.modal-body').innerHTML = '<p class="countyMessage"> We don not sell products in your state</p>';
               notUSstate();
             }
