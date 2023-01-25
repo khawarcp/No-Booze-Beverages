@@ -6,8 +6,7 @@
   }  
   function success(position) {
     var latitude  = position.coords.latitude;
-    var longitude = position.coords.longitude;   
-    localStorage.setItem('modalshowlat', 'show'); 
+    var longitude = position.coords.longitude;       
     displayLocation(latitude, longitude)    
   }
   function error() {
@@ -20,11 +19,14 @@ function displayLocation(latitude,longitude){
         var request = new XMLHttpRequest();
 
         //gettings the cookies to to check pop for only one time
-        let modalshowlat = localStorage.getItem('modalshowlat');        
-        if (modalshowlat === null) {          
-          $("#location-modal").modal('show');
-          $("#location-modal").modal({ backdrop: "static ", keyboard: false });
-        }
+        // let modalshowlat = localStorage.getItem('modalshowlat');        
+        // if (modalshowlat === null) {          
+        //   $("#location-modal").modal('show');
+        //   $("#location-modal").modal({ backdrop: "static ", keyboard: false });
+        // }
+
+        $("#location-modal").modal('show');
+        $("#location-modal").modal({ backdrop: "static ", keyboard: false });
 
         // lat 32.318230 lang -86.902298
         var method = 'GET';
@@ -73,11 +75,6 @@ function displayLocation(latitude,longitude){
               document.querySelector('#country-state').setAttribute('disabled', 'disabled');
               document.querySelector('.modal-body').innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';
               document.querySelector('.modal-body').classList.add('notus');
-              // document.querySelector('.modal-body').innerHTML = '';
-              // const divNotUS = document.createElement('div');
-              // divNotUS.classList.add('modal-body-inner');
-              // divNotUS.innerHTML = '<p class="countyMessage"> The products are only served in USA</p>';
-              // document.querySelector('.modal-body').append(divNotUS)
             }
 
             //settings the attribute in the pop on matched state
@@ -164,6 +161,7 @@ document.getElementById('enter-site').onclick = function(e){
     let ageInput = document.getElementById('age');    
     if(ageInput.checked == true){        
         $("#location-modal").modal('hide');        
+        localStorage.setItem('modalshowlat', 'show'); 
     }else{        
         document.getElementById('age-err').innerHTML = 'Please verify the age';        
     }    
