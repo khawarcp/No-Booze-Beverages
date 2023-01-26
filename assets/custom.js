@@ -4,6 +4,10 @@ $(document).ready(function(){
       $(this).toggleClass('active');
       $('.site-menu').slideToggle();
     });
+  // Submenu
+  $('.submenu-tog').click(function(){
+    $(this).siblings('ul').slideToddle();
+  });
   
     // Accordion Tabs
     $(".accordion_head").click(function() {
