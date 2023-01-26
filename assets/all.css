@@ -340,6 +340,24 @@ form.search.search-modal__form input {
     opacity: 1;
     left: 0;
 }
+.modal__close-button.link {
+    margin-top: -13px;
+}
+.search-modal__form {
+    max-width: 480px;
+}
+.predictive-search-results {
+    max-width: 480px;
+}
+div#predictive-search-results {
+    width: 560px;
+    display: unset;
+}
+.predictive-search.predictive-search--header {
+    display: flex !important;
+    justify-content: center;
+    width: 100% !important;
+}
 /************************
         Find Taste
 *************************/
@@ -352,7 +370,7 @@ form.search.search-modal__form input {
     max-width: 385px;
     padding-top: 120px;
     position: relative;
-    z-index: 10;
+    z-index: 2;
 }
 .find-taste h2 {
     font-weight: bold;
@@ -900,6 +918,7 @@ form.search.search-modal__form input {
     padding: 118px 0;
     margin-top: 280px;
     position: relative;
+    z-index: 2;
 }
 
 .subscription-content h3 {
@@ -1124,8 +1143,8 @@ form.search.search-modal__form input {
     width: 280px;
     background: white;
     position: relative;
-    z-index: 99;
-  padding: 15px 0;
+    z-index: 2;
+    padding: 15px 0;
 }
 .brands-section .marquee-content {
     width: calc(100% - 280px);
