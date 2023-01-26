@@ -340,6 +340,24 @@ form.search.search-modal__form input {
     opacity: 1;
     left: 0;
 }
+.modal__close-button.link {
+    margin-top: -13px;
+}
+.search-modal__form {
+    max-width: 480px;
+}
+.predictive-search-results {
+    max-width: 480px;
+}
+div#predictive-search-results {
+    width: 560px;
+    display: unset;
+}
+.predictive-search.predictive-search--header {
+    display: flex !important;
+    justify-content: center;
+    width: 100% !important;
+}
 /************************
         Find Taste
 *************************/
