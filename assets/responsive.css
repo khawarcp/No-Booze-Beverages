@@ -113,6 +113,15 @@
   .shop-content h2 br {
     display: none;
   }
+  .contactPage-section {
+    padding: 65px 0;
+  }
+  .contact-form {
+      margin-top: 35px;
+  }
+  .contact-social {
+      margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 991px) {
