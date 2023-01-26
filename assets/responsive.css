@@ -506,6 +506,48 @@ form.search.search-modal__form input {
     min-height: 260px;
     object-fit: cover;
   }
+  .faq-content h1 {
+    font-size: 32px;
+}
+.faq-banner {
+    padding: 150px 0 50px;
+}
+
+p {
+    line-height: 1.4;
+}
+.contactPage-section {
+    padding: 40px 0;
+}
+.contact-col {
+    width: 100%;
+}
+.contact-row {
+    flex-direction: column-reverse;
+}
+.contact-image {
+    margin-top: 40px;
+}
+.contact-col h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.field input, .field textarea {
+    padding: 14px 12px;
+}
+.field {
+    margin-bottom: 8px;
+}
+.field-btn {
+    margin-top: 20px;
+}
+.field-btn button {
+    padding: 15px;
+}
+.contact-social h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 }
 
 
