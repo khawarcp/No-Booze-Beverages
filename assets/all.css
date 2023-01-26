@@ -367,6 +367,7 @@ div#predictive-search-results {
     border: 1px solid #fff;
     border-radius: 3px;
     display: none;
+    z-index: 999;
 }
 .submenu-tog::before {
     content: '';
