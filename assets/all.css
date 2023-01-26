@@ -358,6 +358,28 @@ div#predictive-search-results {
     justify-content: center;
     width: 100% !important;
 }
+.submenu-tog {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    display: none;
+}
+.submenu-tog::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0 2px 2px 0;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    left: 7px;
+    top: 4px;
+}
 /************************
         Find Taste
 *************************/
