@@ -230,6 +230,13 @@
   .submenu-tog {
     display: block;
   }
+  .has-submenu>ul {
+    position: relative;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    display: none;
+}
   .footer-leftCol {
     width: 100%;
     margin-bottom: 30px;
