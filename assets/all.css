@@ -2334,6 +2334,52 @@ Kratom
     border: none !important;
     color: #A43772 !important;
 }
+/** Footer Additionals **/
+.footer__content-bottom-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.list.list-payment li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+ul.list.list-payment li:last-child {
+    margin-right: 0;
+}
+
+.disclosure button {display: flex;align-items: center;color: #f8f9fa;}
+
+.disclosure svg {
+    width: 18px;
+    margin-left: 10px;
+}
+
+.disclosure svg path {
+    fill: #f8f9fa;
+}
+
+.disclosure__list-wrapper li a {
+    color: #ffffffcc;
+}
+
+.disclosure__list-wrapper li {margin-bottom: 4px;}
+
+.disclosure__list-wrapper li:last-child {
+    margin-bottom: 0;
+}
+
+.disclosure__list-wrapper {
+    background: rgba(255,255,255,0.6);
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 4px;
+}
+.footer__column.footer__localization h2#FooterLanguageLabel {
+    display: none;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
