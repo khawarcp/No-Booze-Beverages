@@ -276,6 +276,26 @@ header {
       top: 8px;
       transform: rotate(45deg);
   }
+form.search.search-modal__form .field {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+form.search.search-modal__form input {
+    width: calc(100% - 50px);
+    padding: 9px 20px !important;
+    border-right: none;
+    height: unset !important;
+    border-color: #A43772;
+}
+.field__button {
+    position: unset;
+    background: #A43772 !important;
+    border: 1px solid #A43772;
+}
+.field__button svg path {
+    fill: #fff;
+}
 /************************
         Find Taste
 *************************/
