@@ -6,7 +6,7 @@ $(document).ready(function(){
     });
   // Submenu
   $('.submenu-tog').click(function(){
-    $(this).siblings('ul').slideToddle();
+    $(this).siblings('ul').slideToggle();
   });
   
     // Accordion Tabs
