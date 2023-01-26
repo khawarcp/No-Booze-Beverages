@@ -370,7 +370,7 @@ div#predictive-search-results {
     max-width: 385px;
     padding-top: 120px;
     position: relative;
-    z-index: 10;
+    z-index: 2;
 }
 .find-taste h2 {
     font-weight: bold;
@@ -918,6 +918,7 @@ div#predictive-search-results {
     padding: 118px 0;
     margin-top: 280px;
     position: relative;
+    z-index: 2;
 }
 
 .subscription-content h3 {
