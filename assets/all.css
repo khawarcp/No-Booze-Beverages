@@ -2383,6 +2383,9 @@ ul.list.list-payment li:last-child {
 .disclosure button:hover {
     color: #f8f9fa;
 }
+.footer__content-bottom {
+    margin-top: 20px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
