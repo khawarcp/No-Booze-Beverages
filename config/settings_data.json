@@ -122,7 +122,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "drawer",
+    "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
     "sections": {
@@ -214,20 +214,6 @@
         "type": "main-password-footer",
         "settings": {
           "color_scheme": "background-1"
-        }
-      },
-      "custom-header": {
-        "type": "custom-header",
-        "settings": {
-          "color_scheme": "background-1",
-          "show_promo": true,
-          "promo": "Free Shipping on All Orders $50+",
-          "promo_link": "",
-          "logo": "shopify:\/\/shop_images\/No_Booze_Beverages.png",
-          "show_svg_logo": false,
-          "svg_logo": "",
-          "logo_width": 210,
-          "main_menu": "main-menu"
         }
       },
       "custom-footer": {
