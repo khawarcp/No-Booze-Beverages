@@ -2380,6 +2380,9 @@ ul.list.list-payment li:last-child {
 .footer__column.footer__localization h2#FooterLanguageLabel {
     display: none;
 }
+.disclosure button:hover {
+    color: #f8f9fa;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
