@@ -227,27 +227,14 @@
 }
 
 @media screen and (max-width: 767px) {
-.footer-leftCol {
+  .footer-leftCol {
     width: 100%;
     margin-bottom: 30px;
-}
+  }
 .search-modal__content.search-modal__content-bottom {
     padding: 0 10px;
 }
-.predictive-wrapper {
-    position: relative;
-    top: 15px;
-}
-  predictive-search.search-modal__form {
-    max-width: 100%;
-    width: 100%;
-}
 
-.modal__close-button.link {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 form.search.search-modal__form input {
     padding: 9px 10px !important;
 }
