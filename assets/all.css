@@ -254,7 +254,6 @@ header {
 .menu-toggler {
     height: 18px;
     width: 25px;
-    margin-left: 15px;
     position: relative;
     display: none;
 }
