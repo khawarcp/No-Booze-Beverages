@@ -234,7 +234,16 @@
 .search-modal__content.search-modal__content-bottom {
     padding: 0 10px;
 }
+.predictive-wrapper {
+    margin-top: 25px;
+}
 
+.modal__close-button.link {
+    height: unset;
+    width: unset;
+    margin-left: 7px;
+    margin-top: 4px;
+}
 form.search.search-modal__form input {
     padding: 9px 10px !important;
 }
