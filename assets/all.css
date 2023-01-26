@@ -296,6 +296,50 @@ form.search.search-modal__form input {
 .field__button svg path {
     fill: #fff;
 }
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.has-submenu > ul li {
+    display: block;
+    margin-right: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.has-submenu > ul li a {
+    display: block;
+    color: #495057;
+    padding: 10px 12px;
+    line-height: 1;
+    transition: 0.2s ease;
+}
+
+.has-submenu > ul li:last-child {
+    margin-bottom: 0;
+}
+
+.has-submenu > ul li a:hover {
+    background: #A43772;
+    color: #fff;
+}
+
+.has-submenu:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+}
 /************************
         Find Taste
 *************************/
