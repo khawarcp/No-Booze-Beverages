@@ -256,6 +256,7 @@ header {
     width: 25px;
     position: relative;
     display: none;
+  margin-left: 15px;
 }
 .menu-toggler span:nth-child(2) {
     top: 8px;
