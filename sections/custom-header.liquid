@@ -160,7 +160,7 @@
           <nav>
             <ul>
               {% for link in section.settings.main_menu.links %}
-                <li class="has-submenu">
+              <li class="{% if link.links != blank %}has-submenu{% endif %}">
                   <a href="{{ link.url  }}">{{ link.title }}</a>
                   {% if link.links != blank %}
                   <ul>
