@@ -231,6 +231,13 @@
     width: 100%;
     margin-bottom: 30px;
   }
+  .search-modal__content.search-modal__content-bottom {
+    padding: 40px 30px 10px;
+}
+
+form.search.search-modal__form input {
+    padding: 9px 10px !important;
+}
   .ft-linksCol {
       width: 48%;
       margin-top: 20px;
