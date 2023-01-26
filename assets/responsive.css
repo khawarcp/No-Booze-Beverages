@@ -227,6 +227,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .submenu-tog {
+    display: block;
+  }
   .footer-leftCol {
     width: 100%;
     margin-bottom: 30px;
