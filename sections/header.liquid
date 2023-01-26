@@ -160,9 +160,15 @@
           <nav>
             <ul>
               {% for link in section.settings.main_menu.links %}
-                <li>
-                  <a
-                    href="{{ link.url  }}">{{ link.title }}</a>
+              <li class="{% if link.links != blank %}has-submenu{% endif %}">
+                  <a href="{{ link.url  }}">{{ link.title }}</a>
+                  {% if link.links != blank %}
+                  <ul>
+                    {% for childlink in link.links %}
+                      <li> <a href="{{ childlink.url }}">{{ childlink.title }}</a> </li>
+                    {% endfor %}
+                  </ul>
+                  {%endif%}
                 </li>
               {% endfor %}
             </ul>
@@ -221,9 +227,8 @@
                               autocapitalize="off"
                               spellcheck="false"
                             {%- endif -%}
-                          >
-                          <label class="field__label" for="Search-In-Modal-1">{{ 'general.search.search' | t }}</label>
-                          <input type="hidden" name="options[prefix]" value="last">
+                          >                         
+                          <input type="hidden" name="options[prefix]" value="last" placeholder="{{ 'general.search.search' | t }}">
                           <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
                             {% render 'icon-search' %}
                           </button>
