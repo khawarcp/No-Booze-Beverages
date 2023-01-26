@@ -1143,8 +1143,8 @@ div#predictive-search-results {
     width: 280px;
     background: white;
     position: relative;
-    z-index: 99;
-  padding: 15px 0;
+    z-index: 2;
+    padding: 15px 0;
 }
 .brands-section .marquee-content {
     width: calc(100% - 280px);
