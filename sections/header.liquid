@@ -161,7 +161,7 @@
             <ul>
               {% for link in section.settings.main_menu.links %}
               <li class="{% if link.links != blank %}has-submenu{% endif %}">
-                  <a href="{{ link.url  }}">{{ link.title }}</a>
+                  <a href="{{ link.url  }}">{{ link.title }}</a><span class="submenu-tog"></span>
                   {% if link.links != blank %}
                   <ul>
                     {% for childlink in link.links %}
