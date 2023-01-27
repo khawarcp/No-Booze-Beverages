@@ -125,6 +125,14 @@
   .faq-banner {
     padding: 170px 0 70px;
   }
+  .aboutBanner-copy p br {
+    display: none;
+  }
+  .aboutUs-banner {
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 991px) {
