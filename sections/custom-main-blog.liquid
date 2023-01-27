@@ -53,7 +53,7 @@
           </div>
         {% else %}
           {% assign count = counts | modulo: 2 %}
-          <div class="blog-row flex jc-sb">
+<!--            create a script to wrap 2 card in a wrapper div in theme.liquid -->
             {% if count == 0 %}
               {%- render 'pink-article-card' 
                 , article: article,
@@ -69,7 +69,6 @@
                 show_excerpt: true -%}
             {% endif %}
 
-          </div>
         {% endif %}
         {% assign counts = counts | plus: 1 %}
       {%- endfor -%}
