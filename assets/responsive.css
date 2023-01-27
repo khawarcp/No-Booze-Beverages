@@ -667,6 +667,35 @@ form.search.search-modal__form input {
     max-height: 350px;
     object-fit: cover;
   }
+  .flavor-item {
+      padding: 15px;
+  }
+  .flavor-item h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  .flavor-item p {
+      margin-bottom: 10px;
+  }
+  .flavor-item li {
+      margin-bottom: 6px;
+  }
+  .slider-counter {
+      margin-left: 0;
+  }
+  .flavor-tabs-header a {
+      font-size: 20px;
+  }
+  .flavor-tabs-header.appointment-tabs {
+      margin-top: 20px;
+      width: 100%;
+  }
+  .prodHead.flex {
+      margin-bottom: 40px;
+  }
+  .flavor-tabs-header.appointment-tabs nav {
+      width: 100%;
+  }
 }
 
 
