@@ -743,6 +743,29 @@ form.search.search-modal__form input {
   .flavor-tabs-header.appointment-tabs nav {
       width: 100%;
   }
+  .blog-area.full-size {
+    padding: 20px;
+  }
+  .blog-row {
+      margin-top: 0;
+  }
+  .blog-image {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .blog-copy {
+      width: 100%;
+  }
+  .blogCopy h4 {
+      font-size: 18px;
+  }
+  .blog-copy a, .blogCopy-wrap a {
+      font-size: 16px;
+      margin-top: 12px;
+  }
+  .blogCol-blue, .blogCol-pink {
+      padding: 14px;
+  }
 }
 
 
