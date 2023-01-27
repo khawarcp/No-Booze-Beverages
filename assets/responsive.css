@@ -154,6 +154,16 @@
   .slider-counter {
       margin-left: 20px;
   }
+  .newsCopy h1 {
+    font-size: 40px;
+  }
+  .blog-headings {
+      margin-top: 70px;
+  }
+  .pagination-wrapper {
+      padding: 30px 0;
+      margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
