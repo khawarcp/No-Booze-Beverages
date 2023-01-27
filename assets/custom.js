@@ -186,5 +186,6 @@ function wrapSections(section_class) {
   }
   // You can call this function with a specific section class.
   wrapSections("cart-section");
+  wrapSections("blgcolss");
 
 
