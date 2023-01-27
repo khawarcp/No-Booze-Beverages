@@ -142,6 +142,9 @@
   .present-copy h2 {
       margin-bottom: 20px;
   }
+  .story-section.future-section {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
