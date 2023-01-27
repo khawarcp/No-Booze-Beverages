@@ -2495,6 +2495,9 @@ ul.list.list-payment li:last-child {
 div#cart-notification {
     z-index: 99;
 }
+.present-copy {
+    padding: 60px 0;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
