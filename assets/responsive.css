@@ -561,46 +561,90 @@ form.search.search-modal__form input {
   }
   .faq-content h1 {
     font-size: 32px;
-}
-.faq-banner {
-    padding: 150px 0 50px;
-}
-
-p {
-    line-height: 1.4;
-}
-.contactPage-section {
-    padding: 40px 0;
-}
-.contact-col {
+  }
+  .faq-banner {
+      padding: 150px 0 50px;
+  }
+  p {
+      line-height: 1.4;
+  }
+  .contactPage-section {
+      padding: 40px 0;
+  }
+  .contact-col {
+      width: 100%;
+  }
+  .contact-row {
+      flex-direction: column-reverse;
+  }
+  .contact-image {
+      margin-top: 40px;
+  }
+  .contact-col h2 {
+      font-size: 22px;
+      margin-bottom: 5px;
+  }
+  .field input, .field textarea {
+      padding: 14px 12px;
+  }
+  .field {
+      margin-bottom: 8px;
+  }
+  .field-btn {
+      margin-top: 20px;
+  }
+  .field-btn button {
+      padding: 15px;
+  }
+  .contact-social h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+  .aboutBanner-copy, .aboutBanner-image {
     width: 100%;
-}
-.contact-row {
-    flex-direction: column-reverse;
-}
-.contact-image {
-    margin-top: 40px;
-}
-.contact-col h2 {
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-.field input, .field textarea {
-    padding: 14px 12px;
-}
-.field {
-    margin-bottom: 8px;
-}
-.field-btn {
-    margin-top: 20px;
-}
-.field-btn button {
-    padding: 15px;
-}
-.contact-social h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+  }
+  .aboutUs-banner {
+      padding-top: 80px;
+  }
+  .aboutBanner-copy h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+  }
+  .aboutBanner-copy h1 br {
+      display: none;
+  }
+  .aboutBanner-copy p {
+      font-size: 16px;
+  }
+  .story-section.space-left {
+      margin: 40px 0;
+  }
+  h4 {
+      font-size: 20px;
+  }
+  .story-copy span {
+      font-size: 18px;
+  }
+  .story-copy p {
+      margin-top: 10px;
+      font-size: 16px;
+  }
+  .present-copy span {
+      font-size: 20px;
+  }
+  .present-copy h2 {
+      margin-bottom: 10px;
+  }
+  .present-image {
+      margin: 10px 0 20px;
+  }
+  .taste-options .single-bavarage {
+      width: 50%;
+  }
+  .taste-section {
+      padding: 40px 0;
+  }
+
 }
 
 
