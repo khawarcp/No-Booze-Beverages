@@ -133,6 +133,15 @@
     overflow: hidden;
     position: relative;
   }
+  .present-copy span {
+    font-size: 30px;
+  }
+  .present-copy p {
+      font-size: 16px;
+  }
+  .present-copy h2 {
+      margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 991px) {
