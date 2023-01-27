@@ -766,6 +766,13 @@ form.search.search-modal__form input {
   .blogCol-blue, .blogCol-pink {
       padding: 14px;
   }
+  .newsCopy h1 {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  .blog-headings {
+      margin-top: 20px;
+  }
 }
 
 
