@@ -2495,7 +2495,7 @@ ul.list.list-payment li:last-child {
 div#cart-notification {
     z-index: 99;
 }
-.present-copy {
+.future-section .present-copy {
     padding: 60px 0;
 }
 
