@@ -656,6 +656,13 @@ form.search.search-modal__form input {
   .future-section .present-copy {
       padding-top: 0;
   }
+  .flavor-iamge {
+    width: 60%;
+  }
+  .flavor-details {
+      width: 100%;
+      margin-left: 0;
+  }
 }
 
 
