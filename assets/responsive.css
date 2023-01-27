@@ -145,6 +145,15 @@
   .story-section.future-section {
     margin-bottom: 0;
   }
+  .flavor-tabs-header a {
+    font-size: 27px;
+  }
+  .flavour-section {
+      padding: 45px 0;
+  }
+  .slider-counter {
+      margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 991px) {
