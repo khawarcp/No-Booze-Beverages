@@ -644,7 +644,9 @@ form.search.search-modal__form input {
   .taste-section {
       padding: 40px 0;
   }
-
+  .future-section .present-copy {
+      padding-top: 0;
+  }
 }
 
 
