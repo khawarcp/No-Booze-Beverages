@@ -529,22 +529,9 @@
     <script src="{{ 'marquee.min.js' | asset_url }}"></script>
     <script src="{{ 'owl.carousel.min.js' | asset_url }}"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="{{ 'custom.js' | asset_url }}"></script>    
     <script src="{{ 'location-finder.js' | asset_url }}"></script>    
-    <script>
-      (function () {
-      //   let modalshowlat = localStorage.getItem('modalshowlat');        
-      //   if (modalshowlat === null) {          
-      //     $("#location-modal").modal('show');
-      //     $("#location-modal").modal({ backdrop: "static ", keyboard: false });
-      //   }
-
-        $('.blogCol-blue').each(function() {
-          $(this).add($(this).next('.blogCol-pink')).wrapAll('<div class="blog-row flex jc-sb"></div>')
-        });
-        
-      })();      
-    </script>
+    <script src="{{ 'custom.js' | asset_url }}"></script>    
+    
 
   <!-- WPD Start -->
                 {% if customer.tags.size > 0 and template != 'cart' %}
