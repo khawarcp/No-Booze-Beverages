@@ -173,6 +173,19 @@ $(window).scroll(function() {
     }
 });
 
+ (function () {
+      //   let modalshowlat = localStorage.getItem('modalshowlat');        
+      //   if (modalshowlat === null) {          
+      //     $("#location-modal").modal('show');
+      //     $("#location-modal").modal({ backdrop: "static ", keyboard: false });
+      //   }
+
+        $('.blogCol-blue').each(function() {
+          $(this).add($(this).next('.blogCol-pink')).wrapAll('<div class="blog-row flex jc-sb"></div>')
+        });
+        
+})();  
+
 //wrap the cart main and cart footer section into the wrapper
 function wrapSections(section_class) {
     var childSections = document.querySelectorAll("."+section_class);
