@@ -2499,6 +2499,10 @@ div#cart-notification {
     padding: 60px 0;
 }
 
+.aboutBanner-image img {
+    position: relative;
+    z-index: 10;
+}
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
