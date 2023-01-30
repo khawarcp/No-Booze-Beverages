@@ -2743,7 +2743,7 @@ fieldset.js.product-form__input label {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 100%;
+    max-width: 100% !important;
 }
 button.product-form__submit.button.button--full-width.button--secondary {
     width: 300px;
