@@ -2699,6 +2699,7 @@ form#create_customer .create-account {
 .grid__item.product__media-wrapper.productSlider-col {
     width: 400px !important;
     flex-grow: unset;
+     height: 100%;
 }
 .product__info-wrapper.grid__item.productSlider-detail {
     width: calc(100% - 450px) !important;
