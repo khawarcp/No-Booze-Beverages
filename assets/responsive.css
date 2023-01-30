@@ -415,6 +415,19 @@
   .pagination-wrapper {
       margin-top: 0 !important;
   }
+  .login-image, .login-form-wrap {
+    width: 100%;
+  }
+  .login-wrapper {
+      flex-wrap: wrap;
+  }
+  .login-image {
+      order: 2;
+      max-height: 400px;
+  }
+  .login-form-wrap {
+      padding-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
