@@ -220,6 +220,15 @@
   .detailCopy span {
       font-size: 14px;
   }
+  .login-wrapper {
+    height: auto;
+  }
+  .login-form-wrap {
+      padding: 60px 0;
+  }
+  form#customer_login {
+      max-width: 420px;
+  }
 }
 
 @media screen and (max-width: 991px) {
