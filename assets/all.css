@@ -2613,7 +2613,7 @@ h1#login,
     font-size: 28px;
     margin-bottom: 20px;
 }
-form#customer_login .field label {
+.login-form-wrap .field label {
     position: static;
     order: 1;
     color: #12141d;
@@ -2624,7 +2624,7 @@ form#customer_login .field label {
 .customer .field {
     flex-wrap: wrap;
 }
-form#customer_login .field input {
+.login-form-wrap .field input {
     order: 2;
     background: #FFFFFF;
     border: 1px solid #DDE1E0;
