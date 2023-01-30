@@ -211,6 +211,9 @@
   .blog-description {
     margin-bottom: 70px;
   }
+  .blog-detail-banner {
+    padding-top: 50px;
+  }
 }
 
 @media screen and (max-width: 991px) {
