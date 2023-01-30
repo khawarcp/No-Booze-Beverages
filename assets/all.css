@@ -2707,7 +2707,6 @@ form#create_customer .create-account {
     flex-grow: unset;
     padding: 30px;
 }
-.product.product--small.product--left.product--columns.product--mobile-hide.grid.grid--1-col.grid--2-col-tablet.shop-mainRow.flex.jc-sb {max-width: 80%;margin: 0 auto;}
 .grid__item.product__media-wrapper.productSlider-col slider-component#GalleryViewer-template--17556679786794__main {
     display: flex;
     justify-content: center;
