@@ -2661,6 +2661,11 @@ div#rc_login h5 {
 div#rc_login p {
     margin: 0 0 0 5px;
 }
+div#rc_login {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
