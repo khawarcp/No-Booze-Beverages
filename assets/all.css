@@ -2738,7 +2738,7 @@ quantity-input.quantity button {
     opacity: 1;
 }
 fieldset.js.product-form__input label {
-    border: 1px solid rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.15) !important;
 }
 .product-form__buttons {
     display: flex;
