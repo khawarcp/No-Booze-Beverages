@@ -983,4 +983,31 @@ form.search.search-modal__form input {
   .login-image {
       margin-bottom: 30px;
   }
+  .faq-sidebar {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .faq-tab-content {
+      width: 100%;
+  }
+  .faq-list .accordion_head {
+      padding: 10px 15px;
+  }
+  .faq-list .accordion_body {
+      padding: 0 15px 15px 15px;
+  }
+  .contact-ft {
+      padding: 20px;
+  }
+  .contact-ft p {
+      font-size: 14px;
+      margin-bottom: 20px;
+  }
+  .contact-ft a {
+      width: 100%;
+      padding: 12px;
+  }
+  .contact-here {
+      padding-bottom: 30px;
+  }
 }
