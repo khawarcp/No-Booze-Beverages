@@ -1883,8 +1883,7 @@ div#predictive-search-results {
     background: #fff;
 }
 .faq-list .accordion_body {
-    padding-bottom: 20px;
-    padding-left: 40px;
+    padding: 0 20px 20px 40px;
 }
 .faq-list .tab_outer {
     position: relative;
