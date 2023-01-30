@@ -172,6 +172,33 @@
       font-size: 20px;
       margin-bottom: 12px;
   }
+  .navigation-wrap a h4 {
+    font-size: 15px;
+  }
+  .navPost-desc span {
+      font-size: 13px;
+  }
+  .navigation-wrap a>span {
+      width: 55px;
+      height: 50px;
+  }
+  .navPost-desc {
+      width: calc(100% - 55px);
+      padding-left: 12px;
+  }
+  .next-post .navPost-desc {
+      padding-right: 12px;
+  }
+  .article-image-wrap>svg, .article-image-wrap>img {
+      height: 60px;
+      width: 60px;
+  }
+  .cont-inner h3 {
+      font-size: 18px;
+  }
+  .comment-content p {
+      font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 991px) {
