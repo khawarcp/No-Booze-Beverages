@@ -2703,7 +2703,7 @@ form#create_customer .create-account {
 }
 .product__info-wrapper.grid__item.productSlider-detail {
     width: calc(100% - 450px) !important;
-    max-width: unset;
+    max-width: unset !important;
     flex-grow: unset;
     padding: 30px;
 }
