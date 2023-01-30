@@ -1587,6 +1587,7 @@ div#predictive-search-results {
 }
 .blog-description {
     background: #f6f6f6;
+    margin-bottom: 120px;
 }
 .blog-desc-col {
     width: 60%;
