@@ -2503,6 +2503,58 @@ div#cart-notification {
     position: relative;
     z-index: 10;
 }
+/* Blog detail Comment Section */
+.blog-description hr {border-color: rgb(29 38 58 / 13%);}
+form#comment_form {
+    margin-top: 50px;
+}
+form#comment_form h2 {
+    color: #1D263A;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+form#comment_form field__label {
+    position: static !important;
+}
+form#comment_form .field__label {
+    position: static;
+    order: 1;
+    color: #12141D;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+form#comment_form .field > input,form#comment_form .field > textarea {
+    order: 2;
+    background: #FFFFFF;
+    border: 1px solid #DDE1E0;
+    height: 50px;
+}
+.article-template__comment-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.article-template__comment-fields .field {
+    width: 49%;
+}
+form#comment_form .field > input {
+}
+form#comment_form .siteBtn {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #A43772;
+    padding: 17px 45px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
