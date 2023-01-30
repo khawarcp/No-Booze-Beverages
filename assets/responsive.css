@@ -915,4 +915,7 @@ form.search.search-modal__form input {
   .blog-description {
       margin-bottom: 40px;
   }
+  .blog-detail-banner {
+    padding-top: 0;
+  }
 }
