@@ -2670,6 +2670,10 @@ div#rc_login {
 .login-wrapper {
   height: calc(100vh - 124px);
 }
+.h_google_button {
+    background: #A43772;
+    height: 50px !important;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
