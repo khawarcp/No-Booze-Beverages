@@ -2693,6 +2693,9 @@ div#rc_login {
     margin-top: -2px;
     margin-right: 8px;
 }
+form#create_customer .create-account {
+    margin-top: 20px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
