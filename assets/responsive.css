@@ -1039,4 +1039,28 @@ form.search.search-modal__form input {
   .contact-here {
       padding-bottom: 30px;
   }
+  .faq-banner.subscription {
+    padding: 140px 0 50px;
+  }
+  .faq-content h1 {
+      font-size: 27px;
+  }
+  .plan-wrap {
+      width: 100%;
+  }
+  .plan-wrap.standard.essentials {
+      margin: 20px 0;
+  }
+  .plans-section {
+      padding: 40px 0;
+  }
+  .plan-prices h3 {
+      font-size: 20px;
+  }
+  .plan-prices h4 {
+      font-size: 14px;
+  }
+  .plan-features li {
+      font-size: 14px;
+  }
 }
