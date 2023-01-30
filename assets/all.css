@@ -2736,6 +2736,54 @@ quantity-input.quantity button {
     fill: #fff;
     opacity: 1;
 }
+fieldset.js.product-form__input label {
+    border: 1px solid rgba(0,0,0,0.15);
+}
+.product-form__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+}
+button.product-form__submit.button.button--full-width.button--secondary {
+    width: 300px;
+    margin-bottom: 0;
+    border: 1px solid rgba(0,0,0,0.15);
+    margin-right: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.summary__title h2.h4 {
+    font-size: 24px;
+}
+.quantity-add__wrapper {
+    margin-bottom: 50px;
+}
+section#shopify-section-template--17556679786794__1673978878a8072004 {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.spr-summary-caption {
+    display: block;
+    font-size: 14px;
+}
+
+.spr-header-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #323C45;
+}
+.spr-summary-actions-newreview {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+.spr-summary.rte {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
