@@ -226,7 +226,8 @@
   .login-form-wrap {
       padding: 60px 0;
   }
-  form#customer_login {
+  form#customer_login,
+  #create_customer {
       max-width: 420px;
   }
 }
