@@ -943,4 +943,27 @@ form.search.search-modal__form input {
   .recent-blogs h4 {
     font-size: 20px;
   }
+  .login-form-wrap {
+    padding: 20px 0 20px;
+  }
+  h1#login {
+      font-size: 22px;
+      margin-bottom: 20px;
+  }
+  .h_google_button {
+      height: 42px !important;
+  }
+  form#customer_login .field input {
+      padding: 10px !important;
+  }
+  #customer_login .siteBtn {
+      padding: 15px 45px;
+  }
+  div#rc_login h5 {
+      font-size: 12px;
+  }
+  div#rc_login p a {font-size: 13px;}
+  .login-image {
+      margin-bottom: 30px;
+  }
 }
