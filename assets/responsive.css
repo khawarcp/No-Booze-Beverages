@@ -230,6 +230,16 @@
   form#create_customer {
       max-width: 420px;
   }
+  .faq-sidebar {
+    width: 240px;
+  }
+  .faq-tab-content {
+      width: calc(100% - 270px);
+  }
+  .faq-list .accordion_head {
+      padding: 15px 20px;
+  }
+  .faq-list .accordion_body {padding: 0 15px 15px 20px;}
 }
 
 @media screen and (max-width: 991px) {
