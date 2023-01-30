@@ -2654,7 +2654,8 @@ p.create-account {
 div#rc_login h5 {
     font-size: 14px;
 }
-#customer_login .siteBtn {
+#customer_login .siteBtn,
+#signup-btn {
     width: 100%;
     text-transform: uppercase;
     margin: 25px 0 0;
