@@ -2580,6 +2580,7 @@ div#comments .article-template__comments-comment {
 .cont-inner h3 {
     color: #1D263A;
     font-size: 21px;
+    text-transform: capitalize;
 }
 .cont-inner > p {
     color: #1D263A;
