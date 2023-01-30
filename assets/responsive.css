@@ -246,6 +246,35 @@
   .faq-section {
     padding: 45px 0;
   }
+  .faq-content h1 {
+    font-size: 36px;
+  }
+  .plans-section {
+      padding: 130px 0 70px;
+  }
+  .single-plan {
+      padding: 0 20px 20px;
+  }
+  .plan-prices h3 {
+      font-size: 24px;
+  }
+  .plan-prices {
+      padding: 25px 0 10px;
+  }
+  .plan-prices h4 {
+      font-size: 18px;
+      margin: 7px 0;
+  }
+  .plan-features li {
+      padding-left: 0;
+      margin-bottom: 6px;
+  }
+  .plan-features {
+      padding: 20px 0 20px;
+  }
+  .subsBtn a {
+      padding: 12px;
+  }
 }
 
 @media screen and (max-width: 991px) {
