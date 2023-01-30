@@ -2663,7 +2663,7 @@ div#rc_login p {
     margin: 0 0 0 5px;
 }
 div#rc_login {
-      display: flex;
+      display: flex !important;
     align-items: center;
     justify-content: center;
 }
