@@ -918,4 +918,7 @@ form.search.search-modal__form input {
   .blog-detail-banner {
     padding-top: 0;
   }
+  .recent-blogs h4 {
+    font-size: 20px;
+  }
 }
