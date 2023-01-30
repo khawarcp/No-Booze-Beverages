@@ -2531,16 +2531,17 @@ form#comment_form .field > input,form#comment_form .field > textarea {
     border: 1px solid #DDE1E0;
     height: 50px;
 }
-.article-template__comment-fields {
+form#comment_form  .article-template__comment-fields {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.article-template__comment-fields .field {
+form#comment_form  .article-template__comment-fields .field {
     width: 49%;
 }
 form#comment_form .field > input {
+    padding: 17px 20px !important;
 }
 form#comment_form .siteBtn {
     margin-top: 30px;
