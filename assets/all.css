@@ -2658,6 +2658,9 @@ div#rc_login h5 {
 #customer_login .siteBtn::before {
     background-color: #000;
 }
+div#rc_login p {
+    margin: 0 0 0 5px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
