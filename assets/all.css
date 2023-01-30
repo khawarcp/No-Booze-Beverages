@@ -2669,7 +2669,7 @@ div#rc_login {
     justify-content: center;
 }
 .login-wrapper {
-  gap: 0;
+  gap: 0 !important;
   height: calc(100vh - 124px);
 }
 .h_google_button {
