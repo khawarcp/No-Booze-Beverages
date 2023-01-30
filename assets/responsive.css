@@ -240,7 +240,12 @@
   .faq-list .accordion_head {
       padding: 15px 20px;
   }
-  .faq-list .accordion_body {padding: 0 15px 15px 20px;}
+  .faq-list .accordion_body {
+    padding: 0 15px 15px 20px;
+  }
+  .faq-section {
+    padding: 45px 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
