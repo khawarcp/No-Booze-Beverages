@@ -208,6 +208,9 @@
   form#comment_form .siteBtn {
       margin-top: 15px;
   }
+  .blog-description {
+    margin-bottom: 70px;
+  }
 }
 
 @media screen and (max-width: 991px) {
