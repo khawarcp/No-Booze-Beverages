@@ -227,7 +227,7 @@
       padding: 60px 0;
   }
   form#customer_login,
-  #create_customer {
+  form#create_customer {
       max-width: 420px;
   }
 }
