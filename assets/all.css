@@ -2695,6 +2695,47 @@ div#rc_login {
 form#create_customer .create-account {
     margin-top: 20px;
 }
+/* Product Page */
+.grid__item.product__media-wrapper.productSlider-col {
+    width: 400px !important;
+    flex-grow: unset;
+}
+.product__info-wrapper.grid__item.productSlider-detail {
+    width: calc(100% - 450px) !important;
+    max-width: unset;
+    flex-grow: unset;
+    padding: 30px;
+}
+.product.product--small.product--left.product--columns.product--mobile-hide.grid.grid--1-col.grid--2-col-tablet.shop-mainRow.flex.jc-sb {max-width: 80%;margin: 0 auto;}
+.grid__item.product__media-wrapper.productSlider-col slider-component#GalleryViewer-template--17556679786794__main {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.product__info-container {
+    max-width: 100%;
+}
+.product__title h1 {
+    color: #323C45;
+    font-weight: 800;
+    font-size: 30px;
+}
+.product__description.rte.quick-add-hidden p {
+    font-size: 16px;
+}
+input#Quantity-template--17556679786794__main {
+    padding: 10px 0;
+    border-top: 1px solid rgba(0,0,0,0.15);
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+quantity-input.quantity button {
+    border: 1px solid rgba(0,0,0,0.15);
+    background: #000 !important;
+}
+.quantity button svg path {
+    fill: #fff;
+    opacity: 1;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
