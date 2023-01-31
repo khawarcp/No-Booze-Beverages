@@ -80,8 +80,10 @@
                       </a>
                     </cart-remove-button>
                   </td>
-                  <td class="cart-item__media">                    
-                    {% if item.image %}
+
+                  <td class="cart-item__details">
+                    <div class="cart_media">
+                        {% if item.image %}
                       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                       <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                         <div class="cart-item__image-container gradient global-media-settings">
@@ -94,9 +96,8 @@
                           >
                         </div>
                     {% endif %}
-                  </td>
-
-                  <td class="cart-item__details">
+                    </div>
+                    <div class="cart_detail">
                     {%- if settings.show_vendor -%}
                       <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
                     {%- endif -%}
@@ -165,6 +166,7 @@
                         </li>
                       {%- endfor -%}
                     </ul>
+                    </div>
                   </td>
 
                   <td class="cart-item__totals right medium-hide large-up-hide">
