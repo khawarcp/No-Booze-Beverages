@@ -2884,6 +2884,13 @@ fieldset.spr-form-contact label, .spr-form-review-title label, .spr-form-review-
 }
 fieldset.spr-form-actions input {background: #A43772;border: 1px solid #A43772;padding: 10px 20px;border-radius: 0;color: #fff;font-size: 14px;}
 fieldset.spr-form-actions input:hover {background: #000;border-color: #000;}
+.spr-form .spr-form-contact:before,
+.spr-form .spr-form-contact:after {
+    display: none;
+}
+
+
+
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
