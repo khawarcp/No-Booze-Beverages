@@ -3139,8 +3139,13 @@ small.tax-note.caption-large.rte {
     justify-content: space-between;
 }
 
-.shopify-section.cart-main-wrapper {width: 70%;}
-
+.shopify-section.cart-main-wrapper {
+    width: 70%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(18, 20, 29, 0.1);
+}
 .shopify-section.cart__footer-wrapper {
     width: 30%;
 }
