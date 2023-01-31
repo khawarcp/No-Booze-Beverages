@@ -2768,6 +2768,9 @@ section#shopify-section-template--17556679786794__1673978878a8072004 {
     max-width: 80%;
     margin: 0 auto;
 }
+.accordion summary {
+    padding: 10px 0;
+}
 .spr-summary-caption {
     display: block;
     font-size: 14px;
