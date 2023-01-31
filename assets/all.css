@@ -2769,7 +2769,7 @@ section#shopify-section-template--17556679786794__1673978878a8072004 {
     margin: 0 auto;
 }
 .accordion summary {
-    padding: 10px 0;
+    padding: 10px 0 !important;
 }
 .spr-summary-caption {
     display: block;
