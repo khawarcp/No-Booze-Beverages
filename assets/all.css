@@ -2913,6 +2913,21 @@ section.products-section.flavor-products.products-more {
 .testimonials-section.product-testimonials {
     margin-bottom: 70px;
 }
+.testimonials-section.product-testimonials {
+    margin-bottom: 70px;
+}
+div#shopify-product-reviews {
+    background: #fff;
+}
+#shopify-product-reviews .spr-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#shopify-product-reviews .spr-header h2 {
+    margin-bottom: 0;
+}
+
 
 @media screen and (min-width: 1600px) {
     .container {
