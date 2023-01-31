@@ -318,6 +318,13 @@
   .cans-section {
       padding: 40px 0 20px;
   }
+  .cans-image {
+    width: 48%;
+  }
+  .cans-copy {
+      width: 48%;
+      max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 991px) {
