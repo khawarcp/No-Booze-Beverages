@@ -2888,7 +2888,10 @@ fieldset.spr-form-actions input:hover {background: #000;border-color: #000;}
 .spr-form .spr-form-contact:after {
     display: none;
 }
-
+.spr-container {
+    padding: 0;
+    border: none;
+}
 
 
 @media screen and (min-width: 1600px) {
