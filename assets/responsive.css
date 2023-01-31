@@ -524,6 +524,9 @@
   .product__info-container .title-price__wrapper {
     flex-direction: column;
   }
+  .our-bavareges.product-featuress {
+    padding-top: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1157,5 +1160,4 @@ form.search.search-modal__form input {
   .spr-summary-caption {
       font-size: 13px;
   }
-
 }
