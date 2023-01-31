@@ -1120,7 +1120,8 @@ form.search.search-modal__form input {
       font-size: 18px;
   }
   .product__description.rte.quick-add-hidden {
-      margin: 15px 0;
+        margin: 5px 0 15px;
+      font-size: 16px;
   }
   .product__info-wrapper.grid__item.productSlider-detail {
       padding: 15px;
