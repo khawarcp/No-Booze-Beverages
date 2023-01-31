@@ -2901,7 +2901,12 @@ fieldset.spr-form-actions input:hover {background: #000;border-color: #000;}
 .spr-form-review-rating label {
     display: none;
 }
-
+.our-bavareges.product-featuress {
+    background: #DEEBF6;
+}
+section.products-section.flavor-products.products-more {
+    background: #f6f6f6;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
