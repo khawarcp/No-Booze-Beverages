@@ -3195,6 +3195,7 @@ a.button.button--tertiary svg path {
 .cart-item__image-container.gradient.global-media-settings img {
     max-width: 35px;
 }
+.cart-items .price.price--end {margin-top: 0;}
 .cart-items th {
     color: #404040;
     opacity: 0.8;
