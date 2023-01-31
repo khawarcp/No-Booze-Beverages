@@ -3168,7 +3168,7 @@ cart-items.container.section-template--17556680048938__cart-items-padding {
     border-radius: 4px;
 }
 .cart-items thead th {
-    text-transform: capitalize;
+    text-transform: capitalize !important;
 }
 .cart-section-wrapper .title.title--primary {
     color: #1A1B3B;
