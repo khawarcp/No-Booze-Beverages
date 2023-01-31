@@ -2745,12 +2745,16 @@ fieldset.js.product-form__input label {
     max-width: 100% !important;
 }
 button.product-form__submit.button.button--full-width.button--secondary {
-    width: 300px;
+       width: 100%;
     margin-bottom: 0;
-    border: 1px solid rgba(0,0,0,0.15);
+    border: 1px solid #A43772;
     margin-right: 10px;
     font-weight: 500;
     text-transform: capitalize;
+    background: #A43772;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
 }
 .summary__title h2.h4 {
     font-size: 24px;
@@ -2816,6 +2820,7 @@ section#shopify-section-template--17556679786794__1673978878a8072004 {
 .quantity-add__wrapper .product-form__input {
     max-width: 130px;
     min-width: unset;
+    margin-bottom: 0;
 }
 quantity-input.quantity {
     border: 1px solid #000;
