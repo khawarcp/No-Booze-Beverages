@@ -540,6 +540,14 @@
   .our-bavareges.product-featuress {
     padding-top: 50px;
   }
+  .left-image {
+    max-width: 200px;
+    top: 80px;
+  }
+  .right-image {
+      max-width: 200px;
+      top: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
