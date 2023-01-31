@@ -291,6 +291,12 @@
   .single-bavarage span {
       font-size: 14px;
   }
+  .product__title h1 {
+    font-size: 22px;
+  }
+  .product__info-container .price__container span {
+      font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 991px) {
