@@ -3070,7 +3070,11 @@ div#wpd-create-customer {
     margin-bottom: 15px;
     font-size: 20px;
 }
-#wpd-create-customer input,#wpd-create-customer select {border-radius: 0;border: 1px solid #ADB5BD;background: #FFFFFF;}
+#wpd-create-customer input,#wpd-create-customer select {
+  border-radius: 0;border: 1px solid #ADB5BD;background: #FFFFFF;
+   font-size: 14px;
+    padding: 10px 15px;
+}
 #wpd-create-customer .wpd_clearfix label {
     font-size: 14px;
     color: #000;
