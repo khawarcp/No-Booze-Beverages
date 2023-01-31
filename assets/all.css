@@ -2793,6 +2793,37 @@ section#shopify-section-template--17556679786794__1673978878a8072004 {
     border-color: #A43772 !important;
     font-weight: 800;
 }
+.product__info-container .title-price__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product__info-container .product__title {
+    margin-bottom: 0;
+}
+.product__info-container .price__container {
+    margin: 2px 0 0 14px;
+}
+.product__info-container .price__container span {color: #A43772;font-weight: 800;font-size: 28px;line-height: 1;}
+.product__info-container.product__info-container--sticky {
+    max-width: 100%;
+}
+.variant_radios {
+    padding: 20px 0;
+    border-top: 1px solid #D2D2D2;
+    border-bottom: 1px solid #D2D2D2;
+}
+.variant_radios legend {
+    color: #323C45;
+    font-size: 24px;
+    font-weight: 800;
+}
+.quantity-add__wrapper .product-form__input {
+    max-width: 130px;
+    min-width: unset;
+}
+quantity-input.quantity {
+    border: 1px solid #000;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
