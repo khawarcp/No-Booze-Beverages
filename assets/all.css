@@ -2988,6 +2988,29 @@ h2.form__message {
     padding-left: 0 !important;
     margin-bottom: 20px !important;
 }
+p#errr {
+    margin-top: 5px;
+    text-align: left;
+}
+p#errr P {
+    font-size: 12px;
+}
+.shopify-challenge__container {
+    padding-top: 80px;
+}
+p.shopify-challenge__message {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 18px !important;
+}
+input.shopify-challenge__button.btn {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+    background: #A43772;
+    padding: 10px 40px;
+    border-radius: 0;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
