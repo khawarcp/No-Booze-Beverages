@@ -300,6 +300,9 @@
   .spr-header-title {
     font-size: 22px;
   }
+  section.products-section.flavor-products.products-more {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
