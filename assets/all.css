@@ -3149,23 +3149,18 @@ small.tax-note.caption-large.rte {
 .shopify-section.cart__footer-wrapper {
     width: 30%;
 }
-
 .title-wrapper-with-link {
     margin-top: 0;
 }
-
 cart-items.container.section-template--17556680048938__cart-items-padding {
-    padding-top: 0;
+    padding: 0;
 }
-
 .cart_contents .quantity__button {
     width: 30px !important;
 }
-
 .cart-section-wrapper.container .quantity__button {
     width: 40px;
 }
-
 .cart-section-wrapper.container .quantity__input {
     width: 110px;
 }
