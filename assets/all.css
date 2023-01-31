@@ -2840,9 +2840,6 @@ section#shopify-section-template--17556679786794__1673978878a8072004 {
 quantity-input.quantity {
     border: 1px solid #000;
 }
-.shopify-payment-button__button {
-    display: none;
-}
 .quantity-add__wrapper {
     display: flex;
     align-items: center;
