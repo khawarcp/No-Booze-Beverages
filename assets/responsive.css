@@ -297,6 +297,9 @@
   .product__info-container .price__container span {
       font-size: 22px;
   }
+  .spr-header-title {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 991px) {
