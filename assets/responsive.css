@@ -275,6 +275,22 @@
   .subsBtn a {
       padding: 12px;
   }
+  input#Quantity-template--17556679786794__main {
+    font-size: 20px;
+    padding: 3px 0;
+  }
+  .accordion .summary__title h2.h4 {
+      font-size: 16px;
+  }
+  .accordion__content {
+      font-size: 14px;
+  }
+  .productSlider-detail p {
+      font-size: 14px;
+  }
+  .single-bavarage span {
+      font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 991px) {
