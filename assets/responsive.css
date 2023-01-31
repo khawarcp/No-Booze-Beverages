@@ -511,6 +511,13 @@
   .login-form-wrap {
       padding-bottom: 20px;
   }
+  .grid__item.product__media-wrapper.productSlider-col {
+    width: 100% !important;
+  }
+  .product__info-wrapper.grid__item.productSlider-detail {
+      width: 100% !important;
+      margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
