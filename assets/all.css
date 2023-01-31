@@ -2892,6 +2892,15 @@ fieldset.spr-form-actions input:hover {background: #000;border-color: #000;}
     padding: 0;
     border: none;
 }
+.spr-icon-star-empty:before {
+    font-size: 23px;
+}
+.spr-icon.spr-icon-star-empty {
+    font-size: 2em;
+}
+.spr-form-review-rating label {
+    display: none;
+}
 
 
 @media screen and (min-width: 1600px) {
