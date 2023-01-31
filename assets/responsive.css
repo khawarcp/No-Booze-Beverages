@@ -1282,4 +1282,26 @@ form.search.search-modal__form input {
   .wpd_company_info h4, .wpd_pri_cont h4 {
       font-size: 18px;
   }
+  .cart-section-wrapper {
+    padding-top: 120px;
+  }
+  .cart__footer {
+      background: #DEEBF6;
+      border-radius: 8px;
+      padding: 20px !important;
+  }
+  .totals {
+      align-items: flex-start;
+      justify-content: space-between;
+  }
+  h2.totals__subtotal {
+      font-weight: 600;
+  }
+  .totals__subtotal-value {
+      font-size: 16px;
+  }
+  small.tax-note.caption-large.rte {
+      text-align: left;
+      margin: 20px 0 10px;
+  }
 }
