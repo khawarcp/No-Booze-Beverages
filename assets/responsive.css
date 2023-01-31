@@ -1217,4 +1217,24 @@ form.search.search-modal__form input {
   .shop-banner-content p {
       font-size: 15px;
   }
+  .customer.addresses.section-template--17556679721258__main-padding ul li {
+    margin-top: 20px;
+  }
+  .addresses li h2 {
+      color: #000;
+      font-weight: 800;
+      font-size: 20px;
+  }
+  .customer:not(.account):not(.order) {
+      padding: 0;
+  }
+  .customer.addresses.section-template--17556679721258__main-padding {
+      padding: 0;
+  }
+  .customer.addresses.section-template--17556679721258__main-padding ul {
+      padding: 0;
+  }
+  .customer.addresses.section-template--17556679721258__main-padding .field {
+      margin-top: 12px;
+  }
 }
