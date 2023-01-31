@@ -2779,10 +2779,13 @@ section#shopify-section-template--17556679786794__1673978878a8072004 {
     color: #323C45;
 }
 .spr-summary-actions-newreview {
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: underline;
+        font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
     margin-left: 20px;
+    background: #A43772;
+    color: #fff !important;
+    padding: 8px 20px;
 }
 .spr-summary.rte {
     display: flex;
