@@ -2907,6 +2907,9 @@ fieldset.spr-form-actions input:hover {background: #000;border-color: #000;}
 section.products-section.flavor-products.products-more {
     background: #f6f6f6;
 }
+.testimonials-section.product-testimonials {
+    margin-bottom: 70px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
