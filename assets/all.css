@@ -3011,6 +3011,9 @@ input.shopify-challenge__button.btn {
     padding: 10px 40px;
     border-radius: 0;
 }
+.customer.account.section-template--17556680147242__main-padding {
+    padding-top: 130px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
