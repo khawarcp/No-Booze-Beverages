@@ -2757,8 +2757,9 @@ button.product-form__submit.button.button--full-width.button--secondary {
     padding: 10px 0;
     line-height: 1;
 }
-.summary__title h2.h4 {
-    font-size: 24px;
+.accordion .summary__title h2.h4 {
+    font-size: 18px;
+    font-weight: 500;
 }
 .quantity-add__wrapper {
     margin-bottom: 50px;
