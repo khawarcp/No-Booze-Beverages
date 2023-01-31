@@ -312,6 +312,12 @@
   .product__info-wrapper.grid__item.productSlider-detail {
       width: calc(100% - 330px) !important;
   }
+  .cans-image img {
+    max-width: 100%;
+  }
+  .cans-section {
+      padding: 40px 0 20px;
+  }
 }
 
 @media screen and (max-width: 991px) {
