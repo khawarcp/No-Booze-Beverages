@@ -2844,6 +2844,9 @@ product-form.product-form {margin: 0 !important;}
 .accordion .summary__title {
     align-items: center;
 }
+.accordion summary {
+    padding: 12px 0;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
