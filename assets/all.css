@@ -3209,6 +3209,9 @@ a.button.button--tertiary svg path {
 .cart-items .quantity-input.quantity {
     border: none !important;
 }
+.cart-items quantity-input.quantity {
+    border: none;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
