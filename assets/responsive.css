@@ -303,6 +303,9 @@
   section.products-section.flavor-products.products-more {
     padding-bottom: 0;
   }
+  .product__info-container .price__container {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
