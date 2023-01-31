@@ -1183,4 +1183,11 @@ form.search.search-modal__form input {
   .bavareges-text.product-bavarages-text {
       margin-top: 0;
   }
+  .cans-image {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .cans-copy {
+      width: 100%;
+  }
 }
