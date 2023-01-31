@@ -306,6 +306,12 @@
   .product__info-container .price__container {
     margin-left: 0;
   }
+  .grid__item.product__media-wrapper.productSlider-col {
+    width: 300px !important;
+  }
+  .product__info-wrapper.grid__item.productSlider-detail {
+      width: calc(100% - 330px) !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
