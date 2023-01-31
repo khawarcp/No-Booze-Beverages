@@ -521,6 +521,9 @@
   .prodSlider .single-product-image {
     padding-top: 0;
   }
+  .product__info-container .title-price__wrapper {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 767px) {
