@@ -2917,7 +2917,7 @@ section.products-section.flavor-products.products-more {
     margin-bottom: 70px;
 }
 div#shopify-product-reviews {
-    background: #fff;
+    margin: 30px 0 40px;
 }
 #shopify-product-reviews .spr-header {
     display: flex;
