@@ -1251,4 +1251,34 @@ form.search.search-modal__form input {
   .customer.addresses.section-template--17556679721258__main-padding .field {
       margin-top: 12px;
   }
+  #wpd-create-customer .wpd_clearfix {
+    width: 100%;
+  }
+  .wpd_half {
+      width: 100% !important;
+      margin-top: 15px;
+  }
+  .wpd_full_with {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .wpd_half.Second {
+      margin-bottom: 40px;
+  
+  .wpd_create_account h2.title {
+      font-size: 28px;
+  }
+  .wpd_headermsg h2 {
+      font-size: 14px;
+  }
+  #wpd-create-customer form#create_customer {
+      margin-top: 0;
+  }
+  div#wpd-create-customer {
+      width: 100%;
+      padding: 0 15px;
+  }
+  .wpd_company_info h4, .wpd_pri_cont h4 {
+      font-size: 18px;
+  }
 }
