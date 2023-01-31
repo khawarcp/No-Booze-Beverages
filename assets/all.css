@@ -867,6 +867,7 @@ div#predictive-search-results {
 .testimonials-content h2 {
     color: #323C45;
     font-weight: 800;
+    margin-bottom: 30px;
 }
 
 .testimonials-single {
@@ -901,6 +902,7 @@ div#predictive-search-results {
 }
 .testimonials-slider .item {
     display: flex;
+  
     flex: 1 0 auto;
     height: 100%;
 }
