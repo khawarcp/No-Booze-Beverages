@@ -3042,6 +3042,8 @@ input.shopify-challenge__button.btn {
 .customer.addresses.section-template--17556679721258__main-padding form input {
     order: 2;
     padding: 12px 20px;
+  font-size: 14px;
+    padding: 10px 15px;
 }
 .customer.addresses.section-template--17556679721258__main-padding .select svg {
     right: 20px;
