@@ -1126,4 +1126,36 @@ form.search.search-modal__form input {
   .product__info-wrapper.grid__item.productSlider-detail {
       padding: 15px;
   }
+  .quantity-add__wrapper .product-form__input {
+    max-width: 100%;
+  }
+  .quantity-add__wrapper {
+      flex-wrap: wrap;
+  }
+  .add_wrapper {
+      width: 100%;
+      margin-top: 10px;
+  }
+  #shopify-product-reviews .spr-header h2 {
+      font-size: 18px;
+      width: 100%;
+      margin-bottom: 14px;
+  }
+  #shopify-product-reviews .spr-header {
+      flex-wrap: wrap;
+  }
+  .spr-summary.rte {
+      width: 100%;
+      justify-content: space-between;
+  }
+  .spr-container {
+      padding: 12px;
+  }
+  .spr-summary-actions-newreview {
+      font-size: 14px;
+  }
+  .spr-summary-caption {
+      font-size: 13px;
+  }
+
 }
