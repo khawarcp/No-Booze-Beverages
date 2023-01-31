@@ -1160,4 +1160,14 @@ form.search.search-modal__form input {
   .spr-summary-caption {
       font-size: 13px;
   }
+  .our-bavareges.product-featuress {
+    padding: 30px 0;
+  }
+  .product-bavarages-text .single-bavarage {
+      width: 50%;
+      margin-top: 25px;
+  }
+  .bavareges-text.product-bavarages-text {
+      margin-top: 0;
+  }
 }
