@@ -1211,4 +1211,10 @@ form.search.search-modal__form input {
       max-width: 120px;
       top: 80px;
   }
+  .shop-banner-content h3 {
+    font-size: 26px;
+  }
+  .shop-banner-content p {
+      font-size: 15px;
+  }
 }
