@@ -1190,4 +1190,8 @@ form.search.search-modal__form input {
   .cans-copy {
       width: 100%;
   }
+  .cans-section {
+      background: linear-gradient(to bottom,#DEEBF6 100%,#F6F6F6 0);
+      margin-bottom: 1px;
+  }
 }
