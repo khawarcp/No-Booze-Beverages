@@ -2728,12 +2728,8 @@ input#Quantity-template--17556679786794__main {
     border-top: 1px solid rgba(0,0,0,0.15);
     border-bottom: 1px solid rgba(0,0,0,0.15);
 }
-quantity-input.quantity button {
-    border: 1px solid rgba(0,0,0,0.15);
-    background: #000 !important;
-}
 .quantity button svg path {
-    fill: #fff;
+    fill: #000;
     opacity: 1;
 }
 fieldset.js.product-form__input label {
