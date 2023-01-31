@@ -2724,10 +2724,9 @@ form#create_customer .create-account {
     font-size: 16px;
 }
 input#Quantity-template--17556679786794__main {
-    padding: 2px 0;
-    color: #A43772;
-    font-weight: 800;
-    font-size: 24px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0,0,0,0.15);
+    border-bottom: 1px solid rgba(0,0,0,0.15);
 }
 .quantity button svg path {
     fill: #000;
@@ -2820,6 +2819,24 @@ section#shopify-section-template--17556679786794__1673978878a8072004 {
 }
 quantity-input.quantity {
     border: 1px solid #000;
+}
+.shopify-payment-button__button {
+    display: none;
+}
+.quantity-add__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add_wrapper {
+    width: calc(100% - 140px);
+}
+product-form.product-form {margin: 0 !important;}
+.product__accordion.accordion.quick-add-hidden {
+    border-top: none;
+}
+.accordion .summary__title {
+    align-items: center;
 }
 
 @media screen and (min-width: 1600px) {
