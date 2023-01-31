@@ -1823,7 +1823,14 @@ div#predictive-search-results {
     color: rgba(0, 0, 0, 0.7);
     margin: 25px 0;
 }
-
+.cans-image {
+    width: calc(100% - 500px);
+    display: flex;
+    justify-content: center;
+}
+.cans-image img {
+    max-width: 600px
+}
 /*********************
         Faq Page
 **********************/
