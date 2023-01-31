@@ -1113,4 +1113,16 @@ form.search.search-modal__form input {
   .plan-features li {
       font-size: 14px;
   }
+  .product__info-container .title-price__wrapper {
+    flex-direction: column;
+  }
+  .product__title h1, .product__info-container .price__container span, .spr-header-title {
+      font-size: 18px;
+  }
+  .product__description.rte.quick-add-hidden {
+      margin: 15px 0;
+  }
+  .product__info-wrapper.grid__item.productSlider-detail {
+      padding: 15px;
+  }
 }
