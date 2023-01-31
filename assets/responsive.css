@@ -1193,5 +1193,6 @@ form.search.search-modal__form input {
   .cans-section {
       background: linear-gradient(to bottom,#DEEBF6 100%,#F6F6F6 0);
       margin-bottom: 1px;
+      padding: 10px 0 20px;
   }
 }
