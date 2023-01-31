@@ -2739,6 +2739,8 @@ quantity-input.quantity button {
 fieldset.js.product-form__input label {
         border: 1px solid #000!important;
     color: #000 !important;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 .product-form__buttons {
     display: flex;
@@ -2784,6 +2786,12 @@ section#shopify-section-template--17556679786794__1673978878a8072004 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+.product-form__input input[type=radio]:checked + label {
+    color: #A43772 !important;
+    background: none !important;
+    border-color: #A43772 !important;
+    font-weight: 800;
 }
 
 @media screen and (min-width: 1600px) {
