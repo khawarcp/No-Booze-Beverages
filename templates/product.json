@@ -22,7 +22,7 @@
         "0a291526-76e2-477c-a702-88b697a47d86": {
           "type": "quantity_selector_button",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": false
           }
         },
         "collapsible-row-0": {
