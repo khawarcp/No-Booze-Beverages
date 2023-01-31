@@ -2853,6 +2853,37 @@ product-form.product-form {margin: 0 !important;}
     font-size: 18px;
     padding-left: 0 !important;
 }
+h3.spr-form-title {
+    color: #323C45;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+fieldset.spr-form-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+fieldset.spr-form-contact .spr-form-contact-name {
+    width: 49%;
+}
+fieldset.spr-form-contact .spr-form-contact-email {
+    width: 49%;
+}
+fieldset.spr-form-contact input, .spr-form-review-title input,.spr-form-input textarea {
+    background: #FFFFFF;
+    border: 1px solid #ADB5BD;
+    padding: 12px 15px;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(37 37 37 / 70%);
+    resize: none;
+}
+fieldset.spr-form-contact label, .spr-form-review-title label, .spr-form-review-body label {
+    display: none;
+}
+fieldset.spr-form-actions input {background: #A43772;border: 1px solid #A43772;padding: 10px 20px;border-radius: 0;color: #fff;font-size: 14px;}
+fieldset.spr-form-actions input:hover {background: #000;border-color: #000;}
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
