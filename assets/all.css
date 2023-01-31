@@ -3222,6 +3222,9 @@ a.button.button--tertiary svg path {
 .cart__footer .totals {
     justify-content: space-between;
 }
+.cart-section-wrapper.container {
+    margin-bottom: 50px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
