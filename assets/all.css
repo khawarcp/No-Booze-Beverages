@@ -2975,6 +2975,19 @@ div#shopify-product-reviews {
     font-size: 18px;
     color: rgba(0,0,0,0.7);
 }
+h2.form__message {
+    font-size: 18px !important;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.errors li {
+    color: #ff0000;
+    font-size: 14px;
+}
+.errors ul {
+    padding-left: 0 !important;
+    margin-bottom: 20px !important;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
