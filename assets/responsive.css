@@ -1276,7 +1276,8 @@ form.search.search-modal__form input {
   }
   div#wpd-create-customer {
       width: 100%;
-      padding: 0 15px;
+      padding-left: 15px;
+    padding-right: 15px;
   }
   .wpd_company_info h4, .wpd_pri_cont h4 {
       font-size: 18px;
