@@ -2761,6 +2761,7 @@ button.product-form__submit.button.button--full-width.button--secondary {
     font-size: 16px;
     padding: 10px 0;
     line-height: 1;
+  margin-right: 0;
 }
 .shopify-payment-button {
     width: 49%;
