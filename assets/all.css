@@ -2847,7 +2847,11 @@ product-form.product-form {margin: 0 !important;}
 .accordion summary {
     padding: 12px 0;
 }
-
+.accordion__content {
+    color: rgba(0,0,0,0.5);
+    font-size: 18px;
+    padding-left: 0 !important;
+}
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
