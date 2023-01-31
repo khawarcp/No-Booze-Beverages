@@ -518,6 +518,9 @@
       width: 100% !important;
       margin-top: 20px;
   }
+  .prodSlider .single-product-image {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
