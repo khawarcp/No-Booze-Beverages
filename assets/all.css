@@ -2724,9 +2724,10 @@ form#create_customer .create-account {
     font-size: 16px;
 }
 input#Quantity-template--17556679786794__main {
-    padding: 10px 0;
-    border-top: 1px solid rgba(0,0,0,0.15);
-    border-bottom: 1px solid rgba(0,0,0,0.15);
+    padding: 2px 0;
+    color: #A43772;
+    font-weight: 800;
+    font-size: 24px;
 }
 .quantity button svg path {
     fill: #000;
