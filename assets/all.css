@@ -3093,6 +3093,47 @@ div#wpd-create-customer {
     font-size: 14px;
     border-radius: 0;
 }
+.cart-items thead th:first-child {
+    width: 40px;
+}
+.cart_media {
+    max-width: 100px;
+}
+td.cart-item__details {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart_detail {
+    width: calc(100% - 160px);
+    padding-left: 15px;
+}
+th.cart-items__heading--wide {
+    width: 200px !important;
+}
+.cart-section-wrapper {
+    padding-top: 130px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cart__footer {
+    background: #cee8fd;
+    padding: 20px !important;
+    border-radius: 3px;
+}
+.totals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+h2.totals__subtotal {
+    color: #000;
+    font-weight: 500;
+}
+small.tax-note.caption-large.rte {
+    text-align: left;
+    margin: 20px 0 0px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
