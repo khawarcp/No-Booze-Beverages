@@ -3014,6 +3014,38 @@ input.shopify-challenge__button.btn {
 .customer.account.section-template--17556680147242__main-padding {
     padding-top: 130px;
 }
+.customer.addresses.section-template--17556679721258__main-padding {
+    padding-top: 150px;
+}
+.customer.addresses.section-template--17556679721258__main-padding h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.customer button {
+    margin: 12px 0;
+    padding: 10px 25px;
+}
+.customer.addresses.section-template--17556679721258__main-padding ul {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.customer.addresses.section-template--17556679721258__main-padding form label {
+    position: static;
+    order: 1;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.customer.addresses.section-template--17556679721258__main-padding form input {
+    order: 2;
+    padding: 12px 20px;
+}
+.customer.addresses.section-template--17556679721258__main-padding .select svg {
+    right: 20px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
