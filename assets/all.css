@@ -2932,7 +2932,21 @@ div#shopify-product-reviews {
 #shopify-product-reviews .spr-header h2 {
     margin-bottom: 0;
 }
-
+.prodSlider .owl-dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #A43772 !important;
+    opacity: 0.6;
+    margin: 0 3px;
+}
+.prodSlider .owl-dots {
+    display: flex;
+    justify-content: center;
+}
+.prodSlider .owl-dot.active {
+    opacity: 1;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
