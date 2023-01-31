@@ -2794,6 +2794,8 @@ section#shopify-section-template--17556679786794__1673978878a8072004 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    width: calc(100% - 270px);
+    justify-content: flex-end;
 }
 .product-form__input input[type=radio]:checked + label {
     color: #A43772 !important;
