@@ -97,8 +97,8 @@ class CartItems extends HTMLElement {
         }        
         
         document.querySelector('#cart_total_count span.quant').innerHTML = parsedState.item_count > 1 ? parsedState.item_count + ' ' +"Items" : parsedState.item_count + ' ' +"item" ;        
-        if(parsedState.item_count == 0){
-          document.querySelector('.continue_items').classList.add('hidden')
+        if(parsedState.item_count != 0){
+          alert('working')
         }
 
         this.disableLoading();
