@@ -37,7 +37,7 @@
 <cart-items class="container{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="title-wrapper-with-link">
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-   <div id="cart_totla_count"> {{ cart.item_count | pluralize: 'item', 'items' }}
+   <div id="cart_total_count"> {{ cart.item_count | pluralize: 'item', 'items' }}
  </div>
   </div>
 
