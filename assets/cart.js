@@ -97,6 +97,11 @@ class CartItems extends HTMLElement {
         }        
         
         document.querySelector('#cart_total_count span.quant').innerHTML = parsedState.item_count > 1 ? parsedState.item_count + ' ' +"Items" : parsedState.item_count + ' ' +"item" ;
+        
+        this.disableLoading();
+      }).catch(() => {
+        this.querySelectorAll('.loading-overlay').forEach((overlay) => overlay.classList.add('hidden'));
+        const errors = document.getElementById('cart-errors') || document.getElementById('CartDrawer-CartErrors');
         if(parsedState.item_count == 0){
           document.querySelector('.cart-main-wrapper').classList.add('cart-no-item')
           document.querySelector('.continue_items').classList.add('hidden')
@@ -104,11 +109,6 @@ class CartItems extends HTMLElement {
           document.querySelector('.cart-main-wrapper').classList.remove('cart-no-item')
           document.querySelector('.continue_items').classList.remove('hidden')
         }
-        
-        this.disableLoading();
-      }).catch(() => {
-        this.querySelectorAll('.loading-overlay').forEach((overlay) => overlay.classList.add('hidden'));
-        const errors = document.getElementById('cart-errors') || document.getElementById('CartDrawer-CartErrors');
         errors.textContent = window.cartStrings.error;
         this.disableLoading();
       });

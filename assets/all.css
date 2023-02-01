@@ -1264,6 +1264,8 @@ div#predictive-search-results {
     font-size: 10px;
     padding: 7px 5px;
     border-radius: 5px;
+    position: relative;
+    z-index: 2;
 }
 /*******************************
         About Us Banner
