@@ -577,6 +577,11 @@
   .cart__footer {
       padding: 10px !important;
   }
+  cart-remove-button .button {
+    min-height: 34px !important;
+    min-width: 30px !important;
+    height: 34px !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
