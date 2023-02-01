@@ -95,7 +95,7 @@ class CartItems extends HTMLElement {
         } else if (document.querySelector('.cart-item') && cartDrawerWrapper) {
           trapFocus(cartDrawerWrapper, document.querySelector('.cart-item__name'))
         }        
-        document.querySelector('#cart_total_count span').innerHTML = parsedState.item_count;
+        document.querySelector('#cart_total_count span.quant').innerHTML = parsedState.item_count;
         this.disableLoading();
       }).catch(() => {
         this.querySelectorAll('.loading-overlay').forEach((overlay) => overlay.classList.add('hidden'));
