@@ -20,12 +20,12 @@ class CartItems extends HTMLElement {
     this.currentItemCount = Array.from(this.querySelectorAll('[name="updates[]"]'))
       .reduce((total, quantityInput) => total + parseInt(quantityInput.value), 0);    
 
-    // if(this.currentItemCount == 0){
-    //      let child = document.querySelector('.cart-n-empty')
-    //     if(child.classList.contains('is-empty')){
-    //         child.parentElement.classList.add('cart-no-item')
-    //     }
-    // }
+    if(this.currentItemCount == 0){
+         let child = document.querySelector('.cart-n-empty')
+        if(child.classList.contains('is-empty')){
+            child.parentElement.classList.add('cart-no-item')
+        }
+    }
     
     this.debouncedOnChange = debounce((event) => {
       this.onChange(event);
