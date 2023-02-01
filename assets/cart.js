@@ -113,6 +113,7 @@ class CartItems extends HTMLElement {
                 child.parentElement.classList.add('cart-no-item')                
                 document.querySelector('.cart-main-wrapper').style.width= '100%';
                 document.querySelector('.cart-n-empty').style.backgroundColor= 'transparent';
+                document.querySelector('.cart-n-empty').style.border= 'none';
             }
         }
         
