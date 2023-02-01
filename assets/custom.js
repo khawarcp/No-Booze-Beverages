@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+    // Remove page from search
+    $('.article-card-wrapper').parent('.grid__item').addClass('removeMe');
+  
     // Mobile Menu
     $('.menu-toggler').click(function(){
       $(this).toggleClass('active');
