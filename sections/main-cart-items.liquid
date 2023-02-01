@@ -37,7 +37,7 @@
 <cart-items class="container{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="title-wrapper-with-link">
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-    <p> {{ cart.item_count  }} </p>
+    <div class="cart-count-bubble"> <span> {{ cart.item_count }} </span> </div>
   </div>
 
   <div class="cart__warnings">
