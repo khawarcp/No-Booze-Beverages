@@ -3261,6 +3261,29 @@ td.cart-item__remove > cart {
 .cart-items tr:first-child td {
     padding-top: 1rem;
 }
+.shopify-section.cart-main-wrapper form {
+    background: #fff;
+    padding: 45px;
+    border-radius: 8px;
+    border: 1px solid rgba(18,20,29,.1);
+    margin-bottom: 30px;
+}
+div#main-cart-items {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.cart-section-wrapper .underlined-link {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    color: #323C45 !important;
+    font-size: 16px !important;
+    font-weight: 500;
+}
+.cart-section-wrapper .underlined-link span {
+    margin-right: 8px;
+    margin-top: -4px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
