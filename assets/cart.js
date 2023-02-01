@@ -19,7 +19,11 @@ class CartItems extends HTMLElement {
 
     this.currentItemCount = Array.from(this.querySelectorAll('[name="updates[]"]'))
       .reduce((total, quantityInput) => total + parseInt(quantityInput.value), 0);    
-
+  
+    if(this.currentItemCount == 0){
+      document.querySelector('.cart-main-wrapper').classList.add('cart-no-item')
+    }
+    
     this.debouncedOnChange = debounce((event) => {
       this.onChange(event);
     }, 300);
@@ -29,7 +33,6 @@ class CartItems extends HTMLElement {
 
   onChange(event) {
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
-    console.log(event.target.value)
   }
 
   getSectionsToRender() {
