@@ -3145,9 +3145,6 @@ small.tax-note.caption-large.rte {
 .title-wrapper-with-link {
     margin-top: 0;
 }
-cart-items.container.section-template--17556680048938__cart-items-padding {
-    padding: 0;
-}
 .cart_contents .quantity__button {
     width: 30px !important;
 }
@@ -3257,7 +3254,7 @@ td.cart-item__remove > cart {
 .cart-items tr:first-child td {
     padding-top: 1rem;
 }
-.shopify-section.cart-main-wrapper form {
+cart-items.container.section-template--17556680048938__cart-items-padding {
     background: #fff;
     padding: 45px;
     border-radius: 8px;
