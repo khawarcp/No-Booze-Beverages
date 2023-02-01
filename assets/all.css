@@ -3225,7 +3225,7 @@ a.button.button--tertiary svg path {
     margin-bottom: 50px;
 }
 .cart-items th {
-    border: none;
+    border: none !important;
 }
 .cart-items thead th:first-child {
     padding-left: 0 !important;
