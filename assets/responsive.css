@@ -1372,4 +1372,7 @@ form.search.search-modal__form input {
   div#main-cart-footer {
       padding-left: 0;
   }
+  .cart-items td {
+    padding-top: 1rem !important;
+  }
 }
