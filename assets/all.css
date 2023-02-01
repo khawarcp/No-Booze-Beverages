@@ -3314,6 +3314,12 @@ div#cart_total_count {
     position: relative;
     z-index: 2;
 }
+.product-grid-container .single-product::before {
+    width: calc(100% - 20px);
+    z-index: 1;
+    right: 0;
+    margin: 0 auto;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
