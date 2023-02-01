@@ -3357,6 +3357,7 @@ li.grid__item.removeMe {
 }
 .template-search__results .grid__item {
     width: calc(100% / 4) !important;
+    flex-grow: unset !important;
 }
 
 @media screen and (min-width: 1600px) {
