@@ -3095,6 +3095,7 @@ div#wpd-create-customer {
 }
 .cart_media {
     max-width: 100px;
+  position: relative;
 }
 td.cart-item__details {
     display: flex;
