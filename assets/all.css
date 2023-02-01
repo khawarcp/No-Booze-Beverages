@@ -3355,6 +3355,9 @@ form.search .search__button svg {
 li.grid__item.removeMe {
     display: none;
 }
+.template-search__results .grid__item {
+    width: calc(100% / 4) !important;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
