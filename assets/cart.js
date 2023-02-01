@@ -96,15 +96,8 @@ class CartItems extends HTMLElement {
           trapFocus(cartDrawerWrapper, document.querySelector('.cart-item__name'))
         }        
         
-        document.querySelector('#cart_total_count span.quant').innerHTML = parsedState.item_count > 1 ? parsedState.item_count + ' ' +"Items" : parsedState.item_count + ' ' +"item" ;        
-        if(parsedState.item_count == 0){
-          document.querySelector('.cart-main-wrapper').classList.add('cart-no-item');
-          document.querySelector('.continue_items').style.display = 'none';
-        }else{
-          document.querySelector('.cart-main-wrapper').classList.remove('cart-no-item');
-          document.querySelector('.continue_items').style.display = 'block';
-        }
-       
+        document.querySelector('#cart_total_count span.quant').innerHTML = parsedState.item_count > 1 ? parsedState.item_count + ' ' +"Items" : parsedState.item_count + ' ' +"item" ;
+        parsedState.item_count == 0 ? document.querySelector('.cart-main-wrapper').classList.add('cart-no-item') : document.querySelector('.cart-main-wrapper').classList.remove('cart-no-item') ;
         
         this.disableLoading();
       }).catch(() => {
