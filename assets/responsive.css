@@ -1400,4 +1400,13 @@ form.search.search-modal__form input {
   .cart-item__image-container.gradient.global-media-settings {
       width: 100%;
   }
+  .template-search__results .grid__item {
+    width: 100% !important;
+  }
+  .single-product h3 {
+      font-size: 18px !important;
+  }
+  .product-footer a {
+      font-size: 14px !important;
+  }
 }
