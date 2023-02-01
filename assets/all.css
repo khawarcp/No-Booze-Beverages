@@ -3093,9 +3093,6 @@ div#wpd-create-customer {
     font-size: 14px;
     border-radius: 0;
 }
-.cart-items thead th:first-child {
-    width: 40px;
-}
 .cart_media {
     max-width: 100px;
 }
