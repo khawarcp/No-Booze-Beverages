@@ -104,9 +104,6 @@ class CartItems extends HTMLElement {
           document.querySelector('.cart-main-wrapper').classList.remove('cart-no-item')
           document.querySelector('.continue_items').classList.remove('hidden')
         }
-
-        
-        
         
         this.disableLoading();
       }).catch(() => {
