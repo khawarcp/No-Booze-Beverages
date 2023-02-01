@@ -19,11 +19,7 @@ class CartItems extends HTMLElement {
 
     this.currentItemCount = Array.from(this.querySelectorAll('[name="updates[]"]'))
       .reduce((total, quantityInput) => total + parseInt(quantityInput.value), 0);    
-  
-    if(this.currentItemCount == 0){
-      document.querySelector('.cart-main-wrapper').classList.add('cart-no-item')
-    }
-    
+
     this.debouncedOnChange = debounce((event) => {
       this.onChange(event);
     }, 300);
@@ -76,8 +72,7 @@ class CartItems extends HTMLElement {
       })
       .then((state) => {
         const parsedState = JSON.parse(state);
-        this.classList.toggle('is-empty', parsedState.item_count === 0);
-        console.log(this)
+        this.classList.toggle('is-empty', parsedState.item_count === 0);        
         const cartDrawerWrapper = document.querySelector('cart-drawer');
         const cartFooter = document.getElementById('main-cart-footer');
 
