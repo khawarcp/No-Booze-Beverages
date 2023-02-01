@@ -3156,13 +3156,18 @@ cart-items.container.section-template--17556680048938__cart-items-padding {
     width: 30px !important;
 }
 .cart-section-wrapper.container .quantity__button {
-    width: 40px;
+    width: unset;
 }
 .cart-section-wrapper.container .quantity__input {
     width: 42px;
     background: #FFFFFF;
     border: 0.5px solid rgba(18, 20, 29, 0.2);
     border-radius: 4px;
+    margin: 0 12px;
+    color: #1A1B3B;
+    font-weight: 500;
+    line-height: 1.6;
+    min-height: 32px;
 }
 .cart-items thead th {
     text-transform: capitalize !important;
