@@ -38,15 +38,18 @@
   <div class="title-wrapper-with-link">
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
    <div id="cart_total_count"> 
-     <span> 
+     <span class="quant"> 
+        {{ cart.item_count }}
+     </span> 
+     <span class="text_quant">
        {%- liquid
            if cart.item_count > 1
-              echo cart.item_count | append: 'items'
+              echo 'items'
           else
-             echo cart.item_count | append: 'item'
+             echo 'item'
           endif
-       -%}     
-     </span> 
+       -%} 
+     </span>
    </div>
   </div>
 
