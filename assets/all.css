@@ -3130,7 +3130,7 @@ h2.totals__subtotal {
 }
 .totals__subtotal-value {
     color: #1A1B3B;
-    font-size: 14px;
+    font-size: 14px !important;
     font-weight: 500;
 }
 small.tax-note.caption-large.rte {
