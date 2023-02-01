@@ -3256,10 +3256,10 @@ td.cart-item__remove > cart {
     font-size: 14px;
 }
 .cart-items td {
-    padding-top: 3rem;
+    padding-top: 3rem !important;
 }
 .cart-items tr:first-child td {
-    padding-top: 1rem;
+    padding-top: 1rem !important;
 }
 cart-items.container.section-template--17556680048938__cart-items-padding {
     background: #fff;
@@ -3280,7 +3280,7 @@ div#main-cart-items {
     font-size: 16px !important;
     font-weight: 500;
 }
-.cart-section-wrapper .underlined-link span {
+.cart-section-wrapper .underlined-link span {sive
     margin-right: 8px;
     margin-top: -4px;
 }
