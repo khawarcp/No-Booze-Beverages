@@ -3299,7 +3299,10 @@ div#cart_total_count {
 .cart-no-item .cart__login-paragraph a {
     margin-right: 10px;
 }
-
+.cart-no-item .cart__login-title {
+    font-weight: 600;
+    font-size: 26px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
