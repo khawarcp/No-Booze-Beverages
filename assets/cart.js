@@ -96,7 +96,7 @@ class CartItems extends HTMLElement {
           trapFocus(cartDrawerWrapper, document.querySelector('.cart-item__name'))
         }        
         
-        document.querySelector('#cart_total_count span.quant').innerHTML = parsedState.item_count > 1 ? "Items" : "item" ;
+        document.querySelector('#cart_total_count span.quant').innerHTML = parsedState.item_count > 1 ? parsedState.item_count + ' ' +"Items" : parsedState.item_count + ' ' +"item" ;
 
        
         
