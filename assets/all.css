@@ -3113,9 +3113,9 @@ th.cart-items__heading--wide {
     justify-content: space-between;
 }
 .cart__footer {
-    background: #cee8fd;
-    padding: 20px !important;
-    border-radius: 3px;
+        background: #dbefff;
+    padding: 20px!important;
+    border-radius: 8px;
 }
 .totals {
     display: flex;
