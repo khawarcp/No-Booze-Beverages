@@ -1,7 +1,4 @@
 $(document).ready(function(){
-
-  $('.article-card-wrapper').parent('.grid__item').addClass('removeMe');
-  
     // Mobile Menu
     $('.menu-toggler').click(function(){
       $(this).toggleClass('active');
@@ -203,4 +200,6 @@ function wrapSections(section_class) {
   // You can call this function with a specific section class.
   wrapSections("cart-section");
 document.querySelector('.cart-section-wrapper').classList.add('container')
+ document.querySelector('.cart-main-wrapper').classList.add('cart-no-item')
+
 
