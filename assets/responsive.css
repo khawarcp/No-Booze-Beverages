@@ -562,6 +562,21 @@
   .wpd_half.Second {
       margin-bottom: 40px;
   }
+  cart-items.container.section-template--17556680048938__cart-items-padding {
+    padding: 15px;
+  }
+  .cart-section-wrapper .title.title--primary {
+      font-size: 18px;
+  }
+  .cart-item__image-container.gradient.global-media-settings {
+      width: 80px;
+  }
+  div#main-cart-footer {
+      padding-right: 0;
+  }
+  .cart__footer {
+      padding: 10px !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
