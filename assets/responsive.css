@@ -1362,4 +1362,14 @@ form.search.search-modal__form input {
       padding-left: 0 !important;
       padding-top: 0 !important;
   }
+  cart-items.container.section-template--17556680048938__cart-items-padding {
+    margin-bottom: 15px;
+  }
+  .shopify-section.cart__footer-wrapper {
+      width: 100%;
+      margin-top: 30px;
+  }
+  div#main-cart-footer {
+      padding-left: 0;
+  }
 }
