@@ -3210,8 +3210,7 @@ a.button.button--tertiary svg path {
 .cart-items td {
     padding-left: 30px !important;
 }
-.cart-item .cart-item__quantity {
-    width: 160px !important;
+.cart-item .cart-item__quantity {    width: 160px !important;
 }
 .cart-items .quantity-input.quantity {
     border: none !important;
@@ -3224,6 +3223,26 @@ a.button.button--tertiary svg path {
 }
 .cart-section-wrapper.container {
     margin-bottom: 50px;
+}
+.cart-items th {
+    border: none;
+}
+.cart-items thead th:first-child {
+    padding-left: 0 !important;
+    width: 50px;
+    max-width: 40px !important;
+}
+.cart-items td:first-child {
+    padding-left: 0 !important;
+    width: 40px !important;
+    min-width: unset;
+    max-width: 40px !important;
+}
+td.cart-item__remove > cart {
+    margin-left: 0 !important;
+}
+.cart-items cart-remove-button {
+    margin-left: 0;
 }
 
 @media screen and (min-width: 1600px) {
