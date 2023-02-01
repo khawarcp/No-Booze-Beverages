@@ -1378,4 +1378,11 @@ form.search.search-modal__form input {
   .cart-section-wrapper.container {
     margin-bottom: 30px;
   }
+  .cart_media {
+    width: 100%;
+    max-width: 100%;
+  }
+  .cart-item__image-container.gradient.global-media-settings {
+      width: 100%;
+  }
 }
