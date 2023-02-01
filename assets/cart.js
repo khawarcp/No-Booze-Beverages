@@ -110,7 +110,7 @@ class CartItems extends HTMLElement {
           if(this.currentItemCount == 0){
              let child = document.querySelector('.cart-n-empty')
             if(child.classList.contains('is-empty')){
-                child.parentElement.classList.add('cart-no-item')                
+                child.parentNode.classList.add('cart-no-item')                
                 document.querySelector('.cart-main-wrapper').style.width= '100%';
                 document.querySelector('.cart-n-empty').setAttribute("style", "background-color: transparent; border: none;");
             }
