@@ -41,6 +41,15 @@
      <span class="quant"> 
         {{ cart.item_count }}
      </span> 
+     <span class="text_quant">
+       {%- liquid
+           if cart.item_count > 1
+              echo 'items'
+          else
+             echo 'item'
+          endif
+       -%} 
+     </span>
    </div>
   </div>
 
