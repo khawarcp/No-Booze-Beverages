@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  $('.article-card-wrapper').parent('.grid__item').addClass('removeMe');
+  
     // Mobile Menu
     $('.menu-toggler').click(function(){
       $(this).toggleClass('active');
@@ -201,9 +204,3 @@ function wrapSections(section_class) {
   wrapSections("cart-section");
 document.querySelector('.cart-section-wrapper').classList.add('container')
 
-
-$(window).load(function() {
-    // page is fully loaded, including all frames, objects and images
-    alert("window is loaded");
-  $('.article-card-wrapper').parent('.grid__item').addClass('removeMe');
-});
