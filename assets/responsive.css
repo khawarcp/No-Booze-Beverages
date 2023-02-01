@@ -325,6 +325,12 @@
       width: 48%;
       max-width: 100%;
   }
+  .template-search__results .grid__item {
+    width: calc(100% / 3) !important;
+  }
+  .template-search__results .single-product img {
+      object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 991px) {
