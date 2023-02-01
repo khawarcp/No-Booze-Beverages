@@ -1337,4 +1337,11 @@ form.search.search-modal__form input {
   div#cart_total_count {
       font-size: 14px;
   }
+  td.cart-item__details {
+    padding-left: 0 !important;
+  }
+  th.caption-with-letter-spacing {
+      padding-left: 0 !important;
+      width: 40% !important;
+  }
 }
