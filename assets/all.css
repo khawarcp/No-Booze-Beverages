@@ -3372,6 +3372,17 @@ li.grid__item.removeMe {
 .quick-add-modal .single-product-image img {
     max-width: 210px;
 }
+.quick-add-modal .single-product-image img {
+    max-width: 210px;
+}
+.quick-add-modal .grid__item.product__media-wrapper.productSlider-col {
+    width: 300px !important;
+    max-width: 300px !important;
+}
+.quick-add-modal .product__info-wrapper.grid__item.productSlider-detail {
+    width: calc(100% - 300px)!important;
+    max-width: unset!important;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
