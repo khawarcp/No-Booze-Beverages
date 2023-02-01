@@ -588,6 +588,15 @@
     min-width: 30px !important;
     height: 34px !important;
   }
+  .template-search__results .grid__item {
+    width: 50% !important;
+  }
+  .single-product h3 {
+      font-size: 20px !important;
+  }
+  .size-price {
+      margin: 10px 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
