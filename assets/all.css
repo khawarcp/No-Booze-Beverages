@@ -3124,7 +3124,13 @@ th.cart-items__heading--wide {
     align-items: center;
 }
 h2.totals__subtotal {
-    color: #000;
+    font-weight: 500;
+    color: #1A1B3B;
+    font-size: 14px !important;
+}
+.totals__subtotal-value {
+    color: #1A1B3B;
+    font-size: 14px;
     font-weight: 500;
 }
 small.tax-note.caption-large.rte {
