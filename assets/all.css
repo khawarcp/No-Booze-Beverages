@@ -3175,6 +3175,7 @@ small.tax-note.caption-large.rte {
     color: #1A1B3B;
     font-size: 24px;
     font-weight: 800;
+    text-transform: capitalize;
 }
 a.button.button--tertiary {
     background: rgba(255, 0, 0, 0.1);
