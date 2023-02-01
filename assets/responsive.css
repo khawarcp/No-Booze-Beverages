@@ -1375,4 +1375,7 @@ form.search.search-modal__form input {
   .cart-items td {
     padding-top: 1rem !important;
   }
+  .cart-section-wrapper.container {
+    margin-bottom: 30px;
+  }
 }
