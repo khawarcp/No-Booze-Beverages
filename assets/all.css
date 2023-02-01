@@ -3322,6 +3322,37 @@ div#cart_total_count {
     right: 0;
     margin: 0 auto;
 }
+.template-search__header.page-width.center {
+    padding-top: 100px;
+}
+.template-search__search label {
+    position: static;
+    order: 1;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 14px !important;
+    color: #323C45;
+    font-weight: 500;
+}
+.template-search__search .field {
+    flex-wrap: wrap;
+}
+form.search .search__input.field__input {
+    width: calc(100% - 44px);
+    line-height: 1.5;
+    padding: 10px 14px 8px !important;
+    order: 2;
+    min-height: unset !important;
+    height: unset !important;
+}
+form.search .search__button {
+    order: 3;
+}
+form.search .search__button svg {
+    filter: brightness(0) invert(1);
+}
+
 
 @media screen and (min-width: 1600px) {
     .container {
