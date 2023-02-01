@@ -18,8 +18,10 @@ class CartItems extends HTMLElement {
     this.lineItemStatusElement = document.getElementById('shopping-cart-line-item-status') || document.getElementById('CartDrawer-LineItemStatus');
 
     this.currentItemCount = Array.from(this.querySelectorAll('[name="updates[]"]'))
-      .reduce((total, quantityInput) => total + parseInt(quantityInput.value), 0);
-    alert(this.currentItemCount);
+      .reduce((total, quantityInput) => total + parseInt(quantityInput.value), 0);    
+    if(this.currentItemCount == 0){
+      document.querySelector('.cart-main-wrapper').classList.add('cart-no-item')
+    }
     this.debouncedOnChange = debounce((event) => {
       this.onChange(event);
     }, 300);
