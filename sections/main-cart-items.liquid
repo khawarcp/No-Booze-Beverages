@@ -324,7 +324,7 @@
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
   </form>
 </cart-items>
-<a href="{{ routes.all_products_collection_url }}" class="underlined-link {% if cart.item_count == 0 %}hidden{% endif %}"> <span>{{ 'continue_arrow.svg' | asset_url | img_tag }}</span> {{ 'general.continue_shopping' | t }}</a>
+<a href="{{ routes.all_products_collection_url }}" class="underlined-link continue_items {% if cart.item_count == 0 %}hidden{% endif %}"> <span>{{ 'continue_arrow.svg' | asset_url | img_tag }}</span> {{ 'general.continue_shopping' | t }}</a>
 
 {% schema %}
 {
