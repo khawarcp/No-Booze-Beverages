@@ -3255,6 +3255,12 @@ td.cart-item__remove > cart {
     font-weight: 500;
     font-size: 14px;
 }
+.cart-items td {
+    padding-top: 3rem;
+}
+.cart-items tr:first-child td {
+    padding-top: 1rem;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
