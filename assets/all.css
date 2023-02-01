@@ -3352,7 +3352,9 @@ form.search .search__button {
 form.search .search__button svg {
     filter: brightness(0) invert(1);
 }
-
+li.grid__item.removeMe {
+    display: none;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
