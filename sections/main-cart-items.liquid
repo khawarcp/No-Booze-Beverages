@@ -37,7 +37,17 @@
 <cart-items class="container{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="title-wrapper-with-link">
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-   <div id="cart_total_count"> <span> {{ cart.item_count }} </span> </div>
+   <div id="cart_total_count"> 
+     <span> 
+       {%- liquid
+           if cart.item_count > 1
+              echo cart.item_count | append: 'items'
+          else
+             echo cart.item_count | append: 'item'
+          endif
+       -%}     
+     </span> 
+   </div>
   </div>
 
   <div class="cart__warnings">
