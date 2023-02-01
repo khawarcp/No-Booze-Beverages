@@ -19,7 +19,7 @@ class CartItems extends HTMLElement {
 
     this.currentItemCount = Array.from(this.querySelectorAll('[name="updates[]"]'))
       .reduce((total, quantityInput) => total + parseInt(quantityInput.value), 0);
-
+    alert(this.currentItemCount);
     this.debouncedOnChange = debounce((event) => {
       this.onChange(event);
     }, 300);
@@ -106,9 +106,6 @@ class CartItems extends HTMLElement {
       }).catch(() => {
         this.querySelectorAll('.loading-overlay').forEach((overlay) => overlay.classList.add('hidden'));
         const errors = document.getElementById('cart-errors') || document.getElementById('CartDrawer-CartErrors');
-        if(parsedState.item_count != 0){
-          alert('not-zero')
-        }
         errors.textContent = window.cartStrings.error;
         this.disableLoading();
       });
