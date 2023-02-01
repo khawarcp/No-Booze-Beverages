@@ -3277,6 +3277,15 @@ div#main-cart-items {
     margin-right: 8px;
     margin-top: -4px;
 }
+.title-wrapper-with-link {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #EDEDED;
+}
+div#cart_total_count {
+    color: #1A1B3B;
+    font-size: 16px;
+    font-weight: 500;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
