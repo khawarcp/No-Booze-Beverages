@@ -3303,6 +3303,17 @@ div#cart_total_count {
     font-weight: 600;
     font-size: 26px;
 }
+.product-grid-container .grid__item {
+    margin-bottom: 50px;
+}
+.single-product img {
+    z-index: 2;
+    position: relative;
+}
+.single-product h3,.size-price, .product-footer {
+    position: relative;
+    z-index: 2;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
