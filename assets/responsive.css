@@ -1344,4 +1344,22 @@ form.search.search-modal__form input {
       padding-left: 0 !important;
       width: 40% !important;
   }
+  .cart_detail {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  .cart-item__name {
+      font-size: 13px;
+  }
+  .product-option {
+      font-size: 13px;
+  }
+  td.cart-item__totals.right.medium-hide.large-up-hide {
+      padding-left: 0 !important;
+  }
+  td.cart-item__quantity {
+      padding-left: 0 !important;
+      padding-top: 0 !important;
+  }
 }
