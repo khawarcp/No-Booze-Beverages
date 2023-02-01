@@ -3369,6 +3369,9 @@ li.grid__item.removeMe {
 .template-search__results .single-product img {
     max-width: 100% !important;
 }
+.quick-add-modal .single-product-image img {
+    max-width: 210px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
