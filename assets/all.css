@@ -3246,6 +3246,15 @@ td.cart-item__remove > cart {
 .cart-items cart-remove-button {
     margin-left: 0;
 }
+.cart-item__name {
+    color: #1A1B3B;
+    font-size: 16px;
+}
+.price.price--end {
+    color: #1A1B3B;
+    font-weight: 500;
+    font-size: 14px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
