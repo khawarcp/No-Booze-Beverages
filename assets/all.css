@@ -3244,7 +3244,7 @@ td.cart-item__remove > cart {
     margin-left: 0 !important;
 }
 .cart-items cart-remove-button {
-    margin-left: 0;
+    margin-left: 0 !important;
 }
 .cart-item__name {
     color: #1A1B3B;
@@ -3293,21 +3293,7 @@ div#cart_total_count {
     font-size: 16px;
     font-weight: 500;
 }
-cart-items.container.section-template--17556680048938__cart-items-padding {
-    padding: 15px;
-}
-.cart-section-wrapper .title.title--primary {
-    font-size: 18px;
-}
-.cart-item__image-container.gradient.global-media-settings {
-    width: 80px;
-}
-div#main-cart-footer {
-    padding-right: 0;
-}
-.cart__footer {
-    padding: 10px !important;
-}
+
 
 @media screen and (min-width: 1600px) {
     .container {
