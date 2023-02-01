@@ -1324,4 +1324,17 @@ form.search.search-modal__form input {
       text-align: left;
       margin: 20px 0 10px;
   }
+  .shopify-section.cart-main-wrapper {
+    width: 100%;
+  }
+  .title-wrapper-with-link {
+      padding-bottom: 15px;
+      margin-bottom: 18px;
+  }
+  .cart-section-wrapper .title.title--primary {
+      font-size: 16px;
+  }
+  div#cart_total_count {
+      font-size: 14px;
+  }
 }
