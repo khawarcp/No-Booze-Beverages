@@ -3294,6 +3294,11 @@ div#cart_total_count {
     font-size: 16px;
     font-weight: 500;
 }
+.cart-no-item {margin: 0 auto;}
+.cart-no-item .cart__login-paragraph {display: flex;justify-content: center;}
+.cart-no-item .cart__login-paragraph a {
+    margin-right: 10px;
+}
 
 
 @media screen and (min-width: 1600px) {
