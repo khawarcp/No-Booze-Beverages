@@ -3367,6 +3367,7 @@ li.grid__item.removeMe {
   padding: 0 30px 20px !important;
 }
 .template-search__results .single-product img {
+    object-fit: contain;
     max-width: 100% !important;
 }
 .quick-add-modal .single-product-image img {
