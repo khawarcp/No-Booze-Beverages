@@ -3448,6 +3448,18 @@ li.grid__item.removeMe {
     color: #323C45;
     font-weight: 500;
 }
+.collage .card__heading a {
+    font-size: 14px;
+}
+.collage .full-unstyled-link {
+    padding: 0 !important;
+}
+.collage .card__information {
+    padding: 0;
+}
+.collage .card__heading a svg {
+    margin-left: 0px;
+}
 
 
 @media screen and (min-width: 1600px) {
