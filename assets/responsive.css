@@ -331,6 +331,13 @@
   .template-search__results .single-product img {
       object-fit: contain;
   }
+  .container.list-coll .title--primary {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .collection-list__item.grid__item {
+    width: 33% !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1439,5 +1446,4 @@ form.search.search-modal__form input {
   .quick-add-modal__content-info {
     padding: 20px 0 !important;
   }
- 
 }
