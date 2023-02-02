@@ -375,51 +375,47 @@
         "marquee_text": "Drinks that taste as good as they make you feel"
       }
     },
-    "60939b5c-d835-4d24-96db-d4d88dc15265": {
-      "type": "image-banner",
+    "cb3dc5bf-c1b3-4e06-b412-843c31152134": {
+      "type": "image-with-text",
       "blocks": {
-        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-0": {
+        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Image with text",
             "heading_size": "h1"
           }
         },
-        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-1": {
+        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text_style": "body"
           }
         },
-        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-2": {
-          "type": "buttons",
+        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-2": {
+          "type": "button",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label": "Button label",
+            "button_link": "shopify:\/\/pages\/about-us"
           }
         }
       },
       "block_order": [
-        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-0",
-        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-1",
-        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-2"
+        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-0",
+        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-1",
+        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-2"
       ],
       "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -434,6 +430,6 @@
     "172c0916-5b54-4d29-9448-20a2a0df37d8",
     "18886608-6f6a-4c90-b0e6-fd4d5ce439f4",
     "f9f8e642-0e89-490b-aad2-6cd9c3bad67f",
-    "60939b5c-d835-4d24-96db-d4d88dc15265"
+    "cb3dc5bf-c1b3-4e06-b412-843c31152134"
   ]
 }
