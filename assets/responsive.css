@@ -1436,4 +1436,7 @@ form.search.search-modal__form input {
   .quantity__input {
       font-size: 20px;
   }
+  .quick-add-modal__content-info {
+    padding: 20px 0;
+  }
 }
