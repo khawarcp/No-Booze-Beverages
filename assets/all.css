@@ -3471,6 +3471,16 @@ li.grid__item.removeMe {
     font-size: unset;
 }
 
+.page-section .page-title {
+    font-weight: 800;
+}
+
+
+.page-section .rte p {
+        color: #000000b3;
+    font-size: 16px;
+    }
+
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
