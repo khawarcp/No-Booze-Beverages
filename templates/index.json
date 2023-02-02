@@ -374,6 +374,16 @@
       "settings": {
         "marquee_text": "Drinks that taste as good as they make you feel"
       }
+    },
+    "a0f5ad6f-a704-4c7a-b054-a207c3913143": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -386,6 +396,7 @@
     "8340d906-fc63-4a50-83c8-79ac666f30d7",
     "172c0916-5b54-4d29-9448-20a2a0df37d8",
     "18886608-6f6a-4c90-b0e6-fd4d5ce439f4",
-    "f9f8e642-0e89-490b-aad2-6cd9c3bad67f"
+    "f9f8e642-0e89-490b-aad2-6cd9c3bad67f",
+    "a0f5ad6f-a704-4c7a-b054-a207c3913143"
   ]
 }
