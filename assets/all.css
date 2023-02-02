@@ -3395,6 +3395,16 @@ li.grid__item.removeMe {
     width: 25% !important;
     max-width: unset !important;
 }
+.container.list-coll {
+    padding-top: 130px;
+}
+.container.list-coll .title--primary {
+    color: #323C45;
+    font-weight: 600;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
