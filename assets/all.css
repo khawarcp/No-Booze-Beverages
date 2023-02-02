@@ -3465,6 +3465,12 @@ li.grid__item.removeMe {
     font-weight: 500;
 }
 
+.slideshow__controls .slider-counter {
+    margin-top: unset;
+    margin-left: unset;
+    font-size: unset;
+}
+
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
