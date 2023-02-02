@@ -391,19 +391,11 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text_style": "body"
           }
-        },
-        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "shopify:\/\/pages\/about-us"
-          }
         }
       },
       "block_order": [
         "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-0",
-        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-1",
-        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-2"
+        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-1"
       ],
       "settings": {
         "height": "adapt",
