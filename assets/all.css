@@ -3460,7 +3460,10 @@ li.grid__item.removeMe {
 .collage .card__heading a svg {
     margin-left: 0px;
 }
-
+.collapsible-content .h3.accordion__title.h4 {
+    color: #323C45;
+    font-weight: 500;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
