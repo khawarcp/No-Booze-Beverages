@@ -374,6 +374,67 @@
       "settings": {
         "marquee_text": "Drinks that taste as good as they make you feel"
       }
+    },
+    "744d247f-16f9-4777-b866-3b8ada112d9f": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--17556680966442__744d247f-16f9-4777-b866-3b8ada112d9f-1675323407cde90c20-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--17556680966442__744d247f-16f9-4777-b866-3b8ada112d9f-1675323407cde90c20-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--17556680966442__744d247f-16f9-4777-b866-3b8ada112d9f-1675323407cde90c20-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--17556680966442__744d247f-16f9-4777-b866-3b8ada112d9f-1675323407cde90c20-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17556680966442__744d247f-16f9-4777-b866-3b8ada112d9f-1675323407cde90c20-0",
+        "template--17556680966442__744d247f-16f9-4777-b866-3b8ada112d9f-1675323407cde90c20-1",
+        "template--17556680966442__744d247f-16f9-4777-b866-3b8ada112d9f-1675323407cde90c20-2",
+        "template--17556680966442__744d247f-16f9-4777-b866-3b8ada112d9f-1675323407cde90c20-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -386,6 +447,7 @@
     "8340d906-fc63-4a50-83c8-79ac666f30d7",
     "172c0916-5b54-4d29-9448-20a2a0df37d8",
     "18886608-6f6a-4c90-b0e6-fd4d5ce439f4",
-    "f9f8e642-0e89-490b-aad2-6cd9c3bad67f"
+    "f9f8e642-0e89-490b-aad2-6cd9c3bad67f",
+    "744d247f-16f9-4777-b866-3b8ada112d9f"
   ]
 }
