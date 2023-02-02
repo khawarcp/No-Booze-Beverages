@@ -1415,4 +1415,25 @@ form.search.search-modal__form input {
   .product-footer a {
       font-size: 14px !important;
   }
+  .quick-add-modal .grid__item.product__media-wrapper.productSlider-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: unset;
+  }
+  .quick-add-modal .product__info-wrapper.grid__item.productSlider-detail {
+      width: 100% !important;
+  }
+  .product__info-wrapper.grid__item.productSlider-detail .productSlider-detail h2 {
+      font-size: 20px !important;
+  }
+  .product__info-wrapper .product__title h2.h1 {font-size: 20px;}
+  .product__info-container .price__container span {
+      font-size: 16px;
+  }
+  .variant_radios legend {
+      font-size: 18px;
+  }
+  .quantity__input {
+      font-size: 20px;
+  }
 }
