@@ -32,7 +32,7 @@
           {{ section.settings.title | escape }}
         </h2>
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
-          <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
+          <a href="{{ section.settings.button_link }}" class="link large-up-hide siteBtn">{{ section.settings.button_label | escape }}</a>
         {%- endif -%}
       </div>
     {%- endunless -%}
