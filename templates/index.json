@@ -374,94 +374,6 @@
       "settings": {
         "marquee_text": "Drinks that taste as good as they make you feel"
       }
-    },
-    "cb3dc5bf-c1b3-4e06-b412-843c31152134": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-0",
-        "template--17556680966442__cb3dc5bf-c1b3-4e06-b412-843c31152134-1675338084e827757d-1"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "83877929-ec7b-4c41-a8ef-2f1d1edbcb6b": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--17556680966442__83877929-ec7b-4c41-a8ef-2f1d1edbcb6b-16753405601a7b0df9-0": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--17556680966442__83877929-ec7b-4c41-a8ef-2f1d1edbcb6b-16753405601a7b0df9-1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--17556680966442__83877929-ec7b-4c41-a8ef-2f1d1edbcb6b-16753405601a7b0df9-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17556680966442__83877929-ec7b-4c41-a8ef-2f1d1edbcb6b-16753405601a7b0df9-0",
-        "template--17556680966442__83877929-ec7b-4c41-a8ef-2f1d1edbcb6b-16753405601a7b0df9-1",
-        "template--17556680966442__83877929-ec7b-4c41-a8ef-2f1d1edbcb6b-16753405601a7b0df9-2"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -474,8 +386,6 @@
     "8340d906-fc63-4a50-83c8-79ac666f30d7",
     "172c0916-5b54-4d29-9448-20a2a0df37d8",
     "18886608-6f6a-4c90-b0e6-fd4d5ce439f4",
-    "f9f8e642-0e89-490b-aad2-6cd9c3bad67f",
-    "cb3dc5bf-c1b3-4e06-b412-843c31152134",
-    "83877929-ec7b-4c41-a8ef-2f1d1edbcb6b"
+    "f9f8e642-0e89-490b-aad2-6cd9c3bad67f"
   ]
 }
