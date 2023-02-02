@@ -375,69 +375,38 @@
         "marquee_text": "Drinks that taste as good as they make you feel"
       }
     },
-    "99098ca1-8da7-481f-a3ca-a21bf2bccb20": {
-      "type": "featured-product",
+    "1891b081-cfd6-447f-bd15-892b140f926d": {
+      "type": "newsletter",
       "blocks": {
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-0": {
-          "type": "text",
+        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-0": {
+          "type": "heading",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-1": {
-          "type": "title",
-          "settings": {
+            "heading": "Subscribe to our emails",
             "heading_size": "h1"
           }
         },
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-2": {
-          "type": "price",
+        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-1": {
+          "type": "paragraph",
           "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
           }
         },
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-3": {
-          "type": "variant_picker",
+        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-2": {
+          "type": "email_form",
           "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-4": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-5": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-6": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
           }
         }
       },
       "block_order": [
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-0",
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-1",
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-2",
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-3",
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-4",
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-5",
-        "template--17556680966442__99098ca1-8da7-481f-a3ca-a21bf2bccb20-16753375773eac3d93-6"
+        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-0",
+        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-1",
+        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-2"
       ],
       "settings": {
-        "product": "horchata",
         "color_scheme": "background-1",
-        "secondary_background": false,
-        "media_position": "left",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -452,6 +421,6 @@
     "172c0916-5b54-4d29-9448-20a2a0df37d8",
     "18886608-6f6a-4c90-b0e6-fd4d5ce439f4",
     "f9f8e642-0e89-490b-aad2-6cd9c3bad67f",
-    "99098ca1-8da7-481f-a3ca-a21bf2bccb20"
+    "1891b081-cfd6-447f-bd15-892b140f926d"
   ]
 }
