@@ -597,6 +597,12 @@
   .size-price {
       margin: 10px 0;
   }
+  .quick-add-modal__content {
+    width: 95%;
+  }
+  .quick-add-modal__content-info {
+      padding: 25px 0 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
