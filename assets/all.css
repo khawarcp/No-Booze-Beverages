@@ -3394,6 +3394,7 @@ li.grid__item.removeMe {
 .collection-list__item.grid__item {
     width: 25% !important;
     max-width: unset !important;
+      margin-bottom: 30px;
 }
 .container.list-coll {
     padding-top: 130px;
