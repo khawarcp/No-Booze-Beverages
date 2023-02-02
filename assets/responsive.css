@@ -1465,4 +1465,16 @@ form.search.search-modal__form input {
   .container.list-coll {
     padding-top: 100px;
   }
+  .collage .card__heading a {
+    font-size: 14px;
+  }
+  .collage .full-unstyled-link {
+      padding: 0 !important;
+  }
+  .collage .card__information {
+      padding: 0;
+  }
+  .collage .card__heading a svg {
+      margin-left: 0px;
+  }
 }
