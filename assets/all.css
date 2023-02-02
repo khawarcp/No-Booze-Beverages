@@ -3391,6 +3391,10 @@ li.grid__item.removeMe {
     line-height: 1;
     min-height: 46px;
 }
+.collection-list__item.grid__item {
+    width: 25% !important;
+    max-width: unset !important;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
