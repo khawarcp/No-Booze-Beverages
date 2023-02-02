@@ -964,6 +964,7 @@ div#predictive-search-results {
     padding: 16px 30px;
     min-width: 170px;
     text-align: center;
+    position: relative;
 }
 .subscription-image {
     position: absolute;
