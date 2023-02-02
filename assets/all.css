@@ -3415,6 +3415,15 @@ li.grid__item.removeMe {
     font-size: 42px;
     letter-spacing: 2px;
 }
+.collection-list__item h3.card__heading a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    color: #323C45;
+    font-weight: 600;
+    font-size: 20px;
+}
 
 
 @media screen and (min-width: 1600px) {
