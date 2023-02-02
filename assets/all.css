@@ -3423,6 +3423,31 @@ li.grid__item.removeMe {
     font-weight: 600;
     font-size: 20px;
 }
+.collage-wrapper-title.h1 {color: #323C45;font-weight: 800;}
+.collage.collage--mobile {
+    gap: 16px;
+}
+.collage .card__heading a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #323C45;
+    font-weight: 500;
+}
+.collage .card__heading a svg {
+    margin-left: 10px;
+}
+.collage .card__heading .price.price-- sold-out {
+    text-align: center;
+}
+.collage .price.price--sold-out {
+    display: flex;
+    justify-content: center;
+}
+.collage .price.price--sold-out .price__container {
+    color: #323C45;
+    font-weight: 500;
+}
 
 
 @media screen and (min-width: 1600px) {
