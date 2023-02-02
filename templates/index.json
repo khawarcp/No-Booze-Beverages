@@ -375,38 +375,51 @@
         "marquee_text": "Drinks that taste as good as they make you feel"
       }
     },
-    "1891b081-cfd6-447f-bd15-892b140f926d": {
-      "type": "newsletter",
+    "60939b5c-d835-4d24-96db-d4d88dc15265": {
+      "type": "image-banner",
       "blocks": {
-        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-0": {
+        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-0": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our emails",
+            "heading": "Image banner",
             "heading_size": "h1"
           }
         },
-        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-1": {
-          "type": "paragraph",
+        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-1": {
+          "type": "text",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
           }
         },
-        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-2": {
-          "type": "email_form",
+        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-2": {
+          "type": "buttons",
           "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-0",
-        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-1",
-        "template--17556680966442__1891b081-cfd6-447f-bd15-892b140f926d-16753377101523b403-2"
+        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-0",
+        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-1",
+        "template--17556680966442__60939b5c-d835-4d24-96db-d4d88dc15265-16753378752c4b26e9-2"
       ],
       "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
@@ -421,6 +434,6 @@
     "172c0916-5b54-4d29-9448-20a2a0df37d8",
     "18886608-6f6a-4c90-b0e6-fd4d5ce439f4",
     "f9f8e642-0e89-490b-aad2-6cd9c3bad67f",
-    "1891b081-cfd6-447f-bd15-892b140f926d"
+    "60939b5c-d835-4d24-96db-d4d88dc15265"
   ]
 }
