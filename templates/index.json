@@ -374,47 +374,6 @@
       "settings": {
         "marquee_text": "Drinks that taste as good as they make you feel"
       }
-    },
-    "a51ad4f3-fb12-43d1-9526-16dd9849f4d6": {
-      "type": "collage",
-      "blocks": {
-        "template--17556680966442__a51ad4f3-fb12-43d1-9526-16dd9849f4d6-16753200233396396f-0": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video",
-            "image_padding": false
-          }
-        },
-        "template--17556680966442__a51ad4f3-fb12-43d1-9526-16dd9849f4d6-16753200233396396f-1": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "template--17556680966442__a51ad4f3-fb12-43d1-9526-16dd9849f4d6-16753200233396396f-2": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17556680966442__a51ad4f3-fb12-43d1-9526-16dd9849f4d6-16753200233396396f-0",
-        "template--17556680966442__a51ad4f3-fb12-43d1-9526-16dd9849f4d6-16753200233396396f-1",
-        "template--17556680966442__a51ad4f3-fb12-43d1-9526-16dd9849f4d6-16753200233396396f-2"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -427,7 +386,6 @@
     "8340d906-fc63-4a50-83c8-79ac666f30d7",
     "172c0916-5b54-4d29-9448-20a2a0df37d8",
     "18886608-6f6a-4c90-b0e6-fd4d5ce439f4",
-    "f9f8e642-0e89-490b-aad2-6cd9c3bad67f",
-    "a51ad4f3-fb12-43d1-9526-16dd9849f4d6"
+    "f9f8e642-0e89-490b-aad2-6cd9c3bad67f"
   ]
 }
