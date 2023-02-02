@@ -375,46 +375,56 @@
         "marquee_text": "Drinks that taste as good as they make you feel"
       }
     },
-    "4aa6e74b-0f62-41ca-884d-1920ef2caf71": {
-      "type": "rich-text",
+    "90d39644-6e74-4975-a5ab-fe11b3d9e5bb": {
+      "type": "slideshow",
       "blocks": {
-        "template--17556680966442__4aa6e74b-0f62-41ca-884d-1920ef2caf71-16753411781942c226-0": {
-          "type": "heading",
+        "template--17556680966442__90d39644-6e74-4975-a5ab-fe11b3d9e5bb-1675341364d7fdcc7f-0": {
+          "type": "slide",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "template--17556680966442__4aa6e74b-0f62-41ca-884d-1920ef2caf71-16753411781942c226-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--17556680966442__4aa6e74b-0f62-41ca-884d-1920ef2caf71-16753411781942c226-2": {
-          "type": "button",
-          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
-            "button_link": "shopify:\/\/pages\/about-us",
+            "link": "",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--17556680966442__90d39644-6e74-4975-a5ab-fe11b3d9e5bb-1675341364d7fdcc7f-1": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "shopify:\/\/pages\/stores",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "template--17556680966442__4aa6e74b-0f62-41ca-884d-1920ef2caf71-16753411781942c226-0",
-        "template--17556680966442__4aa6e74b-0f62-41ca-884d-1920ef2caf71-16753411781942c226-1",
-        "template--17556680966442__4aa6e74b-0f62-41ca-884d-1920ef2caf71-16753411781942c226-2"
+        "template--17556680966442__90d39644-6e74-4975-a5ab-fe11b3d9e5bb-1675341364d7fdcc7f-0",
+        "template--17556680966442__90d39644-6e74-4975-a5ab-fe11b3d9e5bb-1675341364d7fdcc7f-1"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     }
   },
@@ -429,6 +439,6 @@
     "172c0916-5b54-4d29-9448-20a2a0df37d8",
     "18886608-6f6a-4c90-b0e6-fd4d5ce439f4",
     "f9f8e642-0e89-490b-aad2-6cd9c3bad67f",
-    "4aa6e74b-0f62-41ca-884d-1920ef2caf71"
+    "90d39644-6e74-4975-a5ab-fe11b3d9e5bb"
   ]
 }
