@@ -1462,4 +1462,7 @@ form.search.search-modal__form input {
   .card--standard>.card__content .card__information {
       padding: 10px 0;
   }
+  .container.list-coll {
+    padding-top: 100px;
+  }
 }
