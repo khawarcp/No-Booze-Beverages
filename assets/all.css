@@ -3394,7 +3394,7 @@ li.grid__item.removeMe {
 .collection-list__item.grid__item {
     width: 25% !important;
     max-width: unset !important;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     padding: 0 10px;
 }
  ul.collection-list.grid.grid--4-col-desktop.grid--2-col-tablet-down {
