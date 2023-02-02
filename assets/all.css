@@ -3398,7 +3398,7 @@ li.grid__item.removeMe {
     padding: 0 10px;
 }
  ul.collection-list.grid.grid--4-col-desktop.grid--2-col-tablet-down {
-    margin: 0 -10px;
+    margin: 0 -10px 40px;
 }
 .container.list-coll {
     padding-top: 130px;
