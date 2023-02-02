@@ -126,6 +126,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "checkout_header_image": "shopify:\/\/shop_images\/subscription-image2.jpg",
+    "checkout_logo_position": "center",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
