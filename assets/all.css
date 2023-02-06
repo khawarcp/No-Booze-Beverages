@@ -3469,22 +3469,21 @@ li.grid__item.removeMe {
     color: #323C45;
     font-weight: 500;
 }
-
 .slideshow__controls .slider-counter {
     margin-top: unset;
     margin-left: unset;
     font-size: unset;
 }
-
 .page-section .page-title {
     font-weight: 800;
 }
-
-
 .page-section .rte {
-        color: #000000b3;
+    color: #000000b3;
     font-size: 16px;
-    }
+}
+.singleBrand img {
+    opacity: 0.7;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
