@@ -1175,7 +1175,9 @@ div#predictive-search-results {
     color: #323C45;
     font-weight: 800;
 }
-
+.seenIn h4 {
+  font-size: 24px;
+}
 .drink-options {
     position: absolute;
     top: -5px;
