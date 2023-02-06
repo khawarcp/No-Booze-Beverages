@@ -1178,7 +1178,7 @@ div#predictive-search-results {
 
 .drink-options {
     position: absolute;
-    top: -20px;
+    top: -5px;
     display: flex !important;
     width: 100%;
     justify-content: center !important;
