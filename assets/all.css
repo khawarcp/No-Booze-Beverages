@@ -703,8 +703,9 @@ div#predictive-search-results {
 .single-product h3 {
     color: #323C45;
     font-weight: 800;
+    font-size: 24px !important;
+    margin: 40px 0 10px !important;
 }
-
 .size-price {
     margin: 12px 0 25px;
     display: flex;
@@ -3357,10 +3358,6 @@ li.grid__item.removeMe {
 .template-search__results .grid__item {
     width: calc(100% / 4) !important;
     flex-grow: unset !important;
-}
-.single-product h3 {
-    font-size: 24px !important;
-    margin: 40px 0 10px !important;
 }
 .template-search__results .single-product {
   padding: 0 30px 20px !important;
