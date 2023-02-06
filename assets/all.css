@@ -381,6 +381,9 @@ div#predictive-search-results {
     left: 7px;
     top: 4px;
 }
+.header-rightBar .cartBtn {
+    font-size: 14px;
+}
 /************************
         Find Taste
 *************************/
