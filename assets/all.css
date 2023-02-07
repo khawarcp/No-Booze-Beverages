@@ -3538,6 +3538,9 @@ li.grid__item.removeMe {
 .contact-fields .field input {
     font-size: 12px;
 }
+.spr-form-message.spr-form-message-success {
+    font-size: 14px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
