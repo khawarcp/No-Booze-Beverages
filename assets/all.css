@@ -1906,7 +1906,7 @@ div#predictive-search-results {
     left: 0;
     height: 0;
     width: 2px;
-    background: red;
+    background: #a43772;
     transition: 0.6s cubic-bezier(0.28, -0.29, 0.74, 1.38);
 }
 .faq-list .tab_outer.active::before {
