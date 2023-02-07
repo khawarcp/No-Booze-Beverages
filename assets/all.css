@@ -3535,6 +3535,9 @@ li.grid__item.removeMe {
     background: #f8f8f8;
     transform: rotate(180deg);
 }
+.contact-fields .field input {
+    font-size: 12px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
