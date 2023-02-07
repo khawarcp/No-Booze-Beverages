@@ -30,7 +30,7 @@
         "b525c064-9e70-4c94-b0c1-3d865aba288a": {
           "type": "12-pack",
           "settings": {
-            "plan_price": "$99 \/month",
+            "plan_price": "$99 <span>\/month<\/span>",
             "plan_name": "Essentials",
             "plan_recurring": "12 Packs \/ Month",
             "plan_product": "kranium-berry-drink-12-pack",
