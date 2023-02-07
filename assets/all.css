@@ -2096,7 +2096,7 @@ div#predictive-search-results {
     top: 0;
     width: 24px;
     height: 24px;
-    background: url('../images/list-icon2.svg') center left/contain no-repeat;
+    background: url('list-icon2.svg') center left/contain no-repeat;
 }
 .plan-features li:last-child {
     margin-bottom: 0;
