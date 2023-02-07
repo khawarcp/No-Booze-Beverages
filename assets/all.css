@@ -3542,7 +3542,9 @@ li.grid__item.removeMe {
 .spr-form-message.spr-form-message-success {
     font-size: 14px;
 }
-
+.product__accordion p {
+  color: rgba(0,0,0,0.5);
+}
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
