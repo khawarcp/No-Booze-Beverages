@@ -3492,6 +3492,7 @@ li.grid__item.removeMe {
     width: 82px;
     background: #A43772;
     border-radius: 50%;
+    z-index: 99;
 }
 .sticky-arrow {
     position: absolute;
