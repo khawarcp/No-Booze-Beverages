@@ -347,6 +347,9 @@
   .flavour-section .flavor-row {
     padding: 0 60px;
   }
+  .products-slider .single-product h3 {
+    font-size: 20px!important;
+  }
 }
 
 @media screen and (max-width: 991px) {
