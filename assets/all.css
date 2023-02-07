@@ -3484,6 +3484,38 @@ li.grid__item.removeMe {
     max-width: 503px;
     margin: 0 auto;
 }
+.products-sticky-link {
+    position: fixed;
+    top: 80vh;
+    right: 50px;
+    height: 82px;
+    width: 82px;
+    background: #A43772;
+    border-radius: 50%;
+}
+.sticky-arrow {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+.sticky-rounded-text {
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    animation: rotateMe 20s linear infinite;
+}
+@keyframes rotateMe {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
