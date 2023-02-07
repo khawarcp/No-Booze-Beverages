@@ -3508,6 +3508,11 @@ li.grid__item.removeMe {
     left: 4px;
     animation: rotateMe 20s linear infinite;
 }
+.faq-list .accordion_head p {
+    color: #0A233C;
+    font-weight: 500;
+    font-size: 14px;
+}
 @keyframes rotateMe {
     from {
         transform: rotate(0deg);
