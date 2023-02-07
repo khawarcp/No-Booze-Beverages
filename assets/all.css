@@ -1224,6 +1224,11 @@ div#predictive-search-results {
     border: 1px solid #EAE9F2 !important;
   transition: 0.2s ease;
 }
+.products-section button:hover,
+.flavorCarousel button:hover {
+    background: #A43772 !important;
+    border: 1px solid #EAE9F2 !important;
+}
 
 
 .products-section .owl-nav .owl-next img,
