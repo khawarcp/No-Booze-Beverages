@@ -631,6 +631,9 @@
   .flavour-section .flavor-row {
     padding: 0 30px;
   }
+  .aboutBanner-copy h1 br {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1500,5 +1503,8 @@ form.search.search-modal__form input {
   }
   .flavour-section .flavor-row {
     padding: 0;
+  }
+  .aboutBanner-copy h1 br {
+    display: none;
   }
 }
