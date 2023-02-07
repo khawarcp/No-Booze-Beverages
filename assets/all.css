@@ -1218,17 +1218,13 @@ div#predictive-search-results {
     justify-content: center;
 }
 
-.products-section .owl-prev,
-.flavorCarousel .owl-prev {
+.products-section button,
+.flavorCarousel button {
     background: #FFFFFF !important;
     border: 1px solid #EAE9F2 !important;
+  transition: 0.2s ease;
 }
 
-.products-section .owl-next,
-.flavorCarousel .owl-next {
-    background: #A43772 !important;
-    border: 1px solid #EAE9F2 !important;
-}
 
 .products-section .owl-nav .owl-next img,
 .flavorCarousel .owl-next img {
