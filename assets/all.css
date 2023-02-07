@@ -3548,6 +3548,9 @@ li.grid__item.removeMe {
 .products-slider .single-product h3 {
     font-size: 28px !important;
 }
+.flavour-section .flavor-row {
+    padding: 0 120px;
+}
   
 @media screen and (min-width: 1600px) {
     .container {
