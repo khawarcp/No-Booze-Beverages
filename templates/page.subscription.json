@@ -11,7 +11,7 @@
         "de102d6a-4055-4797-925b-c245435f1e65": {
           "type": "6-pack",
           "settings": {
-            "plan_price": "$39 \/month",
+            "plan_price": "$39 <span>\/month<\/span>",
             "plan_name": "Standard",
             "plan_recurring": "06 Packs \/ Month",
             "plan_product": "kranium-berry-drink-6-pack",
