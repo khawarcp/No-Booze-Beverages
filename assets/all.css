@@ -3169,6 +3169,7 @@ small.tax-note.caption-large.rte {
     font-weight: 500;
     line-height: 1.6;
     min-height: 32px;
+    font-size: 16px;
 }
 .cart-items thead th {
     text-transform: capitalize !important;
