@@ -49,7 +49,7 @@
         "00436240-d62f-47a0-8b8c-706814da6726": {
           "type": "24-pack",
           "settings": {
-            "plan_price": "$109 \/month",
+            "plan_price": "$109 <span>\/month<\/span>",
             "plan_name": "Premium",
             "plan_recurring": "24 Packs \/ Month",
             "plan_product": "kranium-berry-drink-24-pack",
