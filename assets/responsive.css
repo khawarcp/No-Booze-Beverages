@@ -338,6 +338,9 @@
   .collection-list__item.grid__item {
     width: 33% !important;
   }
+  .products-sticky-link {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 991px) {
