@@ -341,6 +341,9 @@
   .products-sticky-link {
     display: none;
   }
+  .flavour-section .flavor-row {
+    padding: 0 60px;
+  }
 }
 
 @media screen and (max-width: 991px) {
