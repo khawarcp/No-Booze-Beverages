@@ -1229,10 +1229,8 @@ div#predictive-search-results {
     background: #A43772 !important;
     border: 1px solid #EAE9F2 !important;
 }
-
-
-.products-section .owl-nav .owl-next img,
-.flavorCarousel .owl-next img {
+.products-section button:hover img,
+.flavorCarousel button:hover img {
     filter: brightness(0) invert(1);
 }
 
