@@ -2618,6 +2618,7 @@ div#comments .article-template__comments-comment {
 .login-image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 form#customer_login,
 form#create_customer {
