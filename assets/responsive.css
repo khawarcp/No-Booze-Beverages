@@ -366,6 +366,9 @@
   .blogs-listing {
     margin-bottom: 50px;
   }
+  .blog-detail-banner .detailCopy {
+    padding-top: 100px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -652,6 +655,9 @@
   }
   .story-copy h4 {
     font-size: 18px;
+  }
+  .blog-detail-banner .detailCopy {
+    padding-top: 70px;
   }
 }
 
@@ -1531,5 +1537,8 @@ form.search.search-modal__form input {
   }
   .blogs-listing {
     margin-bottom: 30px;
+  }
+  .blog-detail-banner .detailCopy {
+    padding-top: 20px;
   }
 }
