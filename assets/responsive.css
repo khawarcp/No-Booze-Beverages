@@ -1539,6 +1539,6 @@ form.search.search-modal__form input {
     margin-bottom: 30px;
   }
   .blog-detail-banner .detailCopy {
-    padding-top: 20px;
+    padding-top: 0;
   }
 }
