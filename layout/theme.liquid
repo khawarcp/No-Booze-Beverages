@@ -456,12 +456,12 @@
       href="{{ 'responsive.css' | asset_url }}">
   </head>
 
-  <body class="gradient" onload="geoFindMe()">
+  <body class="gradient loader-active" onload="geoFindMe()">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
-    
+    {%- render 'loader' -%}
       {%- render 'location-modal' -%}
     
     {%- if settings.cart_type == 'drawer' -%}
