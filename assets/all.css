@@ -3594,6 +3594,15 @@ div#comments .divider,
 div#comments form{
     max-width: 855px;
 }
+.suggestImage {
+    width: 100%;
+    height: auto;
+}
+.suggest-text {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
+}
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
