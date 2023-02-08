@@ -1714,6 +1714,10 @@ div#predictive-search-results {
     display: flex;
     align-items: center;
     justify-content: center;
+  transition: 0.3s ease;
+}
+.navigation-wrap a>span:hover {
+    background: #A43772;
 }
 .prev-post {
     display: flex;
@@ -1744,9 +1748,6 @@ div#predictive-search-results {
     color: #1D263A;
     font-weight: 500;
     font-size: 21px;
-}
-.navigation-wrap .next-post>span {
-    background: #A43772;
 }
 .navigation-wrap .next-post {
     flex-direction: row-reverse;
