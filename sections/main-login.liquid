@@ -218,10 +218,16 @@
               </label>
             </div>
 
-            <a
+            <div>
+              <div class="remember">
+                <input type="checkbox" name="remember" id="remember" value="remember">
+                <label>Keep me sign in</label>
+              </div>
+              <a
               href="#recover" class="forgetPass">
               {{ 'customer.login_page.forgot_password' | t }}
             </a>
+            </div>
           {%- endif -%}
 
           <button
