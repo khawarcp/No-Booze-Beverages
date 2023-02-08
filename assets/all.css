@@ -2627,10 +2627,11 @@ form#create_customer {
 }
 h1#login,
 .login-form-wrap h1 {
-    color: #323C45;
-    font-weight: 800;
-    font-size: 28px;
-    margin-bottom: 20px;
+  color: #183B56;
+  font-size: 28px;
+  max-width: 500px;
+  margin:0 auto 20px;
+  text-align: left;
 }
 .login-form-wrap .field label {
     position: static;
@@ -3593,13 +3594,6 @@ a.pagination__item.pagination__item--current.light::after {
 div#comments .divider,
 div#comments form{
     max-width: 855px;
-}
-.login-form-wrap > h1 {
-  color: #183B56;
-  font-size: 28px;
-  max-width: 500px;
-  margin:0 auto 20px;
-  text-align: left;
 }
 .suggestImage {
     width: 100%;
