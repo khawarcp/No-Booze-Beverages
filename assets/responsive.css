@@ -1520,4 +1520,10 @@ form.search.search-modal__form input {
   .flavour-section .flavor-row {
     padding: 0;
   }
+  .blogCopy span {
+    width: 100%;
+  }
+  .postDate::before {
+      display: none;
+  }
 }
