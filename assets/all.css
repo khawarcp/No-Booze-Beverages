@@ -2632,6 +2632,7 @@ h1#login,
   max-width: 500px;
   margin:0 auto 20px;
   text-align: left;
+  font-weight: 800;
 }
 .login-form-wrap .field label {
     position: static;
