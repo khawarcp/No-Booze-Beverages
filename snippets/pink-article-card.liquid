@@ -1,7 +1,8 @@
 <div class="blogCol-pink flex sb blgcolss">
   <div class="blogCopy-wrap">
     <div class="blogCopy">
-      {%- if show_date -%}
+      <div class="author-date">
+        {%- if show_date -%}
         <span class="postDate">{{ article.published_at | time_tag: format: 'date' }}
         </span>
       {%- endif -%}
@@ -9,6 +10,7 @@
         <span class="author">Post by {{ article.author }}
         </span>
       {%- endif -%}
+      </div>
       <h4>
         {{ article.title | truncate: 50 | escape }}
       </h4>
