@@ -2513,11 +2513,9 @@ div#cart-notification {
 .future-section .present-copy {
     padding: 60px 0;
 }
-
-/* .aboutBanner-image img {
-    position: relative;
-    z-index: 10;
-} */
+.aboutBanner-image {
+    z-index: 1;
+}
 /* Blog detail Comment Section */
 .blog-description hr {border-color: rgb(29 38 58 / 13%);}
 form#comment_form {
