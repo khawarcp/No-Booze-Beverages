@@ -2683,6 +2683,8 @@ div#rc_login h5 {
     margin: 25px 0 0;
     padding: 17px 45px;
     border-radius: 4px;
+      font-size: 18px;
+    font-weight: 800;
 }
 #customer_login .siteBtn::before {
     background-color: #000;
