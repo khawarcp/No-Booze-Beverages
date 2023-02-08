@@ -3631,6 +3631,27 @@ div#comments form{
     font-size: 14px !important;
     font-weight: 500;
 }
+.remember-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.remember label {
+    margin: 0;
+    color: #5A7184;
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+}
+.remember {
+    display: flex;
+    align-items: center;
+}
+.remember input {
+    accent-color: #A43772;
+}
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
