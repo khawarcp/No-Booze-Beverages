@@ -3575,6 +3575,13 @@ li.grid__item.removeMe {
 .blogs-listing {
     margin-bottom: 80px;
 }
+.blgcolss .blogCopy h4 {
+    font-size: 16px;
+}
+
+
+
+
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
