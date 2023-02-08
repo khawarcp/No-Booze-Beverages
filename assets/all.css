@@ -3594,6 +3594,13 @@ div#comments .divider,
 div#comments form{
     max-width: 855px;
 }
+.login-form-wrap > h1 {
+  color: #183B56;
+  font-size: 28px;
+  max-width: 500px;
+  margin:0 auto 20px;
+  text-align: left;
+}
 .suggestImage {
     width: 100%;
     height: auto;
