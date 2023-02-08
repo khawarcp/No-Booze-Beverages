@@ -1317,6 +1317,8 @@ div#predictive-search-results {
     color: #323C45;
     font-weight: 800;
     margin-bottom: 5px;
+      font-size: 26px;
+    max-width: 640px;
 }
 .story-copy {
     width: 43%;
