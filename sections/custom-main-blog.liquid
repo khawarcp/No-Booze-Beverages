@@ -13,6 +13,7 @@
               </div>
               <div class="blog-copy">
                 <div class="blogCopy">
+                  <div class="author-date">
                   {%- if section.settings.show_date -%}
                     <span class="postDate">{{ article.published_at | time_tag: format: 'date' }}
                     </span>
@@ -21,6 +22,7 @@
                     <span class="author">Post by {{ article.author }}
                     </span>
                   {%- endif -%}
+                  </div>
                   <h4>
                     {{ article.title | truncate: 50 | escape }}
                   </h4>
