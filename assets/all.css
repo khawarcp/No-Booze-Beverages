@@ -3585,7 +3585,9 @@ a.pagination__item.pagination__item--current.light::after {
 .blog-detail-banner .detailCopy {
     padding-top: 122px;
 }
-
+.blog-content > img {
+    margin-bottom: 30px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
