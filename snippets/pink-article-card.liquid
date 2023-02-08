@@ -2,7 +2,7 @@
   <div class="blogCopy-wrap">
     <div class="blogCopy">
       {%- if show_date -%}
-        <span>{{ article.published_at | time_tag: format: 'date' }}
+        <span class="postDate">{{ article.published_at | time_tag: format: 'date' }}
         </span>
       {%- endif -%}
       {%- if show_author -%}
