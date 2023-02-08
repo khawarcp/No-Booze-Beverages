@@ -2514,10 +2514,10 @@ div#cart-notification {
     padding: 60px 0;
 }
 
-.aboutBanner-image img {
+/* .aboutBanner-image img {
     position: relative;
     z-index: 10;
-}
+} */
 /* Blog detail Comment Section */
 .blog-description hr {border-color: rgb(29 38 58 / 13%);}
 form#comment_form {
