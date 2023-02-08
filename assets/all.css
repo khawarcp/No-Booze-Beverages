@@ -3562,7 +3562,13 @@ li.grid__item.removeMe {
 .postDate {
     color: #000;
 }
-
+.author-date {
+    display: flex;
+    flex-wrap: wrap;
+}
+.author {
+    width: calc(100% - 175px);
+}
 
 @media screen and (min-width: 1600px) {
     .container {
