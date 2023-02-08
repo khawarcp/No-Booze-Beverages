@@ -1532,7 +1532,7 @@ div#predictive-search-results {
     justify-content: space-between;
 }
 .blog-navigation {
-    padding: 48px 0 70px;
+    padding: 48px 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
