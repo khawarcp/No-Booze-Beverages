@@ -1276,6 +1276,7 @@ div#predictive-search-results {
     align-items: center;
     justify-content: center;
     padding-top: 130px;
+    overflow: hidden;
 }
 .crystalImage {
     position: absolute;
