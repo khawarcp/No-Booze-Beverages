@@ -390,7 +390,7 @@ div#predictive-search-results {
 .find-section {
     background-image: linear-gradient(to right, #fff 50%, #DEEBF6 50%);
     position: relative;
-    padding-bottom: 65px;
+    padding-bottom: 120px;
 }
 .find-taste {
     max-width: 395px;
