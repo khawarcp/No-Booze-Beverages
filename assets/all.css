@@ -2671,6 +2671,8 @@ p.create-account {
 }
 .create-account span {
     font-size: 14px;
+    color: #5A7184;
+    font-weight: 500;
 }
 .login-image {
     height: 100%;
