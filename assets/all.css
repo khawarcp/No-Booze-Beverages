@@ -3582,7 +3582,9 @@ a.pagination__item.pagination__item--current.light {background: #a43772;opacity:
 a.pagination__item.pagination__item--current.light::after {
     display: none;
 }
-
+.blog-detail-banner .detailCopy {
+    padding-top: 122px;
+}
 
 
 @media screen and (min-width: 1600px) {
