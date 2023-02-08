@@ -3622,8 +3622,8 @@ div#comments form{
     font-size: 14px;
 }
 .customer .field label {
-    color: #5A7184;
-    font-size: 16px;
+    color: #5A7184 !important;
+    font-size: 16px !important;
     font-weight: 500;
 }
 @media screen and (min-width: 1600px) {
