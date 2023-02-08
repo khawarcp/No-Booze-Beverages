@@ -363,6 +363,9 @@
   .story-section h3 {
     font-size: 28px;
   }
+  .story-copy h4 {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 991px) {
