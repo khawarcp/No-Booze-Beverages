@@ -3609,6 +3609,11 @@ div#comments form{
 .terms input {
     accent-color: #a43772;
 }
+.terms label {
+    color: #5A7184;
+    font-weight: 500;
+    font-size: 14px;
+}
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
