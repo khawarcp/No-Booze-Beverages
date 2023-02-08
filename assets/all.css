@@ -2682,6 +2682,7 @@ div#rc_login h5 {
     text-transform: uppercase;
     margin: 25px 0 0;
     padding: 17px 45px;
+    border-radius: 4px;
 }
 #customer_login .siteBtn::before {
     background-color: #000;
