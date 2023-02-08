@@ -363,6 +363,9 @@
   .story-section h3 {
     font-size: 28px;
   }
+  .blogs-listing {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 991px) {
