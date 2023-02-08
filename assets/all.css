@@ -2651,6 +2651,7 @@ h1#login,
     border: 1px solid #DDE1E0;
     height: unset;
     padding: 12px 20px!important;
+    border-radius: 8px;
 }
 .forgetPass {
     margin: 10px 0 0 auto !important;
