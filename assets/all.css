@@ -2666,6 +2666,8 @@ p.create-account {
     margin: 0 10px !important;
     font-weight: 500;
     color: #A43772;
+    font-size: 14px;
+    font-weight: 800;
 }
 .create-account span {
     font-size: 14px;
