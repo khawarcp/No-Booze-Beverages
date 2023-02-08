@@ -1529,4 +1529,7 @@ form.search.search-modal__form input {
   .postDate::before {
       display: none;
   }
+  .blogs-listing {
+    margin-bottom: 30px;
+  }
 }
