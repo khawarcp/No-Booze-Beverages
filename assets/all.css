@@ -3569,6 +3569,9 @@ li.grid__item.removeMe {
 .author {
     width: calc(100% - 175px);
 }
+.blgcolss p {
+    font-size: 14px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
