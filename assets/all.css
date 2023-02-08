@@ -3578,7 +3578,10 @@ li.grid__item.removeMe {
 .blgcolss .blogCopy h4 {
     font-size: 16px;
 }
-
+a.pagination__item.pagination__item--current.light {background: #a43772;opacity: 1;color: #fff;line-height: 2.5;}
+a.pagination__item.pagination__item--current.light::after {
+    display: none;
+}
 
 
 
