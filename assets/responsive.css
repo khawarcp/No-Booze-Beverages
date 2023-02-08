@@ -138,7 +138,6 @@
   .aboutUs-banner {
     min-height: 700px;
     overflow: hidden;
-    position: relative;
   }
   .present-copy span {
     font-size: 30px;
