@@ -14,7 +14,7 @@
               <div class="blog-copy">
                 <div class="blogCopy">
                   {%- if section.settings.show_date -%}
-                    <span>{{ article.published_at | time_tag: format: 'date' }}
+                    <span class="postDate">{{ article.published_at | time_tag: format: 'date' }}
                     </span>
                   {%- endif -%}
                   {%- if section.settings.show_author -%}
