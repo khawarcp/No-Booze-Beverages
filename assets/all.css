@@ -3589,7 +3589,10 @@ a.pagination__item.pagination__item--current.light::after {
 .blog-content > img {
     margin-bottom: 30px;
 }
-
+div#comments .divider,
+div#comments form{
+    max-width: 855px;
+}
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
