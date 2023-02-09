@@ -32,7 +32,7 @@ $(document).ready(function(){
             margin: 0,
             nav: false,
             autoplay: false,
-            dots: true,
+            dots: false,
             nav: true,
             navText: ["<img src='https://cdn.shopify.com/s/files/1/0704/2606/7242/files/angle-left.svg?v=1673345099'>","<img src='https://cdn.shopify.com/s/files/1/0704/2606/7242/files/angle-right.svg?v=1673345107'>"],
             onInitialized  : counter,
