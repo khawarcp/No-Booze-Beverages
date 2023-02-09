@@ -3511,6 +3511,7 @@ li.grid__item.removeMe {
 .shopImage img {
     max-width: 503px;
     margin: 0 auto;
+  width: 100%;
 }
 .products-sticky-link {
     position: fixed;
