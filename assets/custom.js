@@ -158,16 +158,7 @@ $(document).ready(function(){
           $('.slideState span').html(sldPercent + "%")
         }
     });
-  function mediaSize() {
-        if (window.matchMedia('(max-width: 991px)').matches) {
-            var item = event.item.index + 2;
-        } else {
-            console.log('changed');
-        }
-    }
-    mediaSize();
-    window.addEventListener('resize', mediaSize, false);  
-    
+
     // Marquee Plugin
     $('.marquee-left').marquee({
         direction: 'left',
