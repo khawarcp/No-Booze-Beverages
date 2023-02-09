@@ -399,6 +399,9 @@
   .newsletter-text h3 {
     font-size: 28px;
   }
+  .testimonials-single {
+    padding: 18px;
+  }
 }
 
 @media screen and (max-width: 991px) {
