@@ -28,7 +28,7 @@ $(document).ready(function(){
     $(function(){
         var owlNew = $('.flavorCarousel.owl-carousel');
         owlNew.owlCarousel({
-            loop: true,
+            loop: false,
             margin: 0,
             nav: false,
             autoplay: false,
