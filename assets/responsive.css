@@ -372,6 +372,9 @@
   .cans-copy p {
     margin: 8px 0 16px;
   }
+  .cans-copy {
+    padding-top: 70px;
+  }
 }
 
 @media screen and (max-width: 991px) {
