@@ -236,6 +236,7 @@ $(document).ready(function(){
                 }
             });
         }
+      }
     mediaSize();
     window.addEventListener('resize', mediaSize, false);
     
