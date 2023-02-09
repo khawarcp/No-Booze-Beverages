@@ -1562,4 +1562,7 @@ form.search.search-modal__form input {
   .cans-copy {
     padding-top: 0;
   }
+  .cans-copy h3 {
+    font-size: 24px;
+  }
 }
