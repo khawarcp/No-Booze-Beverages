@@ -381,6 +381,9 @@
   .cans-copy p {
     font-size: 18px;
   }
+  .bavarages-text h3 {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 991px) {
