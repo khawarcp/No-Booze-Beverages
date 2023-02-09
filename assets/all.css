@@ -3689,6 +3689,10 @@ div#comments form{
     z-index: -1;
     transform: translateY(-50%);
 }
+.testimonials-single > span {
+    color: #000000;
+    font-size: 19px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
