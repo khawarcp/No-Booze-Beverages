@@ -1063,6 +1063,8 @@ div#predictive-search-results {
 .footer-leftCol p {
     color: rgba(248, 249, 250, 0.8);
     margin-bottom: 30px;
+    font-size: 14px;
+    max-width: 450px;
 }
 .ft-social a {
     margin-right: 15px;
