@@ -1092,9 +1092,9 @@ div#predictive-search-results {
     align-items: center;
 }
 .singleBrand {
-    min-width: 180px;
     display: flex;
     justify-content: center;
+    min-width: 130px;
 }
 .brands-section .marquee-wrap {
     padding: 20px 0;
@@ -3502,6 +3502,7 @@ li.grid__item.removeMe {
     font-size: 16px;
 }
 .singleBrand img {
+    max-width: 100px;
     opacity: 0.7;
 }
 .shopImage img {
