@@ -111,6 +111,9 @@
   .marquee-wrap span {
     font-size: 50px;
   }
+  .subscription-content h3 {
+    font-size: 28px;
+  }
   .bavereges-row.flex {
       align-items: center;
   }
