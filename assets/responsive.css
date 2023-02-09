@@ -1582,4 +1582,7 @@ form.search.search-modal__form input {
   .bavarages-text h3 {
     font-size: 24px;
   }
+  .testimonials-single p {
+    font-size: 18px;
+  }
 }
