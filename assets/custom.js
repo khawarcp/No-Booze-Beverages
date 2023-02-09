@@ -123,41 +123,83 @@ $(document).ready(function(){
         }
     });
     // Testimonial slider
-    $(function(){
-        $('.testimonials-slider.owl-carousel').owlCarousel({
-            loop: false,
-            margin: 25,
-            nav: false,
-            navText: ["<img src='assets/images/angle-left.svg'>","<img src='assets/images/angle-right.svg'>"],
-            autoplay: false,
-            dots: true,
-            onInitialized:counter,
-            onTranslated:counter,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
+    function mediaSize() {
+        if (window.matchMedia('(max-width: 991px)').matches) {
+            $(function(){
+                $('.testimonials-slider.owl-carousel').owlCarousel({
+                    loop: false,
+                    margin: 25,
+                    nav: false,
+                    navText: ["<img src='assets/images/angle-left.svg'>","<img src='assets/images/angle-right.svg'>"],
+                    autoplay: false,
+                    dots: true,
+                    onInitialized:counter,
+                    onTranslated:counter,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                });
+                function counter(event) {
+                  var element = event.target;
+                  var items = event.item.count;
+                  var item = event.item.index + 2;
+                  var sldtxt = $('.active .ivySlideTxt').html();
+                  var sldWidth = 100;
+                  var sldPercent = sldWidth * item / items;
+                  $('#counter').html("0"+item+" / 0"+items);
+                  $('.slTxt').html(sldtxt);
+                  $('.slideState span').css("width", sldPercent + "%");
+                  $('.slideState span').html(sldPercent + "%")
                 }
-            }
-        });
-        function counter(event) {
-          var element = event.target;
-          var items = event.item.count;
-          var item = event.item.index + 3;
-          var sldtxt = $('.active .ivySlideTxt').html();
-          var sldWidth = 100;
-          var sldPercent = sldWidth * item / items;
-          $('#counter').html("0"+item+" / 0"+items);
-          $('.slTxt').html(sldtxt);
-          $('.slideState span').css("width", sldPercent + "%");
-          $('.slideState span').html(sldPercent + "%")
+            });
+        } else {
+            $(function(){
+                $('.testimonials-slider.owl-carousel').owlCarousel({
+                    loop: false,
+                    margin: 25,
+                    nav: false,
+                    navText: ["<img src='assets/images/angle-left.svg'>","<img src='assets/images/angle-right.svg'>"],
+                    autoplay: false,
+                    dots: true,
+                    onInitialized:counter,
+                    onTranslated:counter,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                });
+                function counter(event) {
+                  var element = event.target;
+                  var items = event.item.count;
+                  var item = event.item.index + 3;
+                  var sldtxt = $('.active .ivySlideTxt').html();
+                  var sldWidth = 100;
+                  var sldPercent = sldWidth * item / items;
+                  $('#counter').html("0"+item+" / 0"+items);
+                  $('.slTxt').html(sldtxt);
+                  $('.slideState span').css("width", sldPercent + "%");
+                  $('.slideState span').html(sldPercent + "%")
+                }
+            });
         }
-    });
+    }
+    mediaSize();
+    window.addEventListener('resize', mediaSize, false);
     
     // Marquee Plugin
     $('.marquee-left').marquee({
