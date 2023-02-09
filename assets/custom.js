@@ -152,6 +152,8 @@ $(document).ready(function(){
           var sldtxt = $('.active .ivySlideTxt').html();
           var sldWidth = 100;
           var sldPercent = sldWidth * item / items;
+          $('.slideState span').css("width", sldPercent + "%");
+          $('.slideState span').html(sldPercent + "%")
         }
     });
   function mediaSize() {
