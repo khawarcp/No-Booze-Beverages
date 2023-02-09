@@ -3694,6 +3694,9 @@ div#comments form{
     color: #000000;
     font-size: 19px;
 }
+.newsletter-form .contact-form {
+    margin-top: 0;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
