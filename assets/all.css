@@ -1772,7 +1772,7 @@ div#predictive-search-results {
 }
 
 .shop-banner-content {
-    max-width: 460px;
+    max-width: 501px;
     margin: 0 auto;
     text-align: center;
 }
@@ -1784,7 +1784,7 @@ div#predictive-search-results {
     margin-bottom: 20px;
 }
 .shop-banner-content p {
-    font-size: 17px;
+    font-size: 18px;
     color: rgba(0, 0, 0, 0.7);
 }
 .left-image {
