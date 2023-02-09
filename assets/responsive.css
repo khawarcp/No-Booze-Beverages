@@ -1571,4 +1571,10 @@ form.search.search-modal__form input {
   .cans-copy p {
     font-size: 16px;
   }
+  .shop-banner {
+    padding-bottom: 80px;
+  }
+  .shop-marquee {
+      margin-top: -25px;
+  }
 }
