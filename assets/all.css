@@ -3669,7 +3669,19 @@ div#comments form{
     -webkit-text-stroke-color: #a43772;
     text-shadow: unset;
 }
-
+.flavorCarousel .owl-item.active {
+  position: relative;
+}
+.flavorCarousel .owl-item.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  right: -15px;
+  background-color: #fff;
+  border-radius: 8px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
