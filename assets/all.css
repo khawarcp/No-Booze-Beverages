@@ -3709,6 +3709,7 @@ div#comments form{
     background: #CED4DA;
     position: relative;
     width: 285px;
+  margin-top: 20px;
 }
 .slideState span {
     position: absolute;
