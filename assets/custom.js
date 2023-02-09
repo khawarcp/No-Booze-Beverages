@@ -152,12 +152,17 @@ $(document).ready(function(){
           var sldtxt = $('.active .ivySlideTxt').html();
           var sldWidth = 100;
           var sldPercent = sldWidth * item / items;
-          $('#counter').html("0"+item+" / 0"+items);
-          $('.slTxt').html(sldtxt);
-          $('.slideState span').css("width", sldPercent + "%");
-          $('.slideState span').html(sldPercent + "%")
         }
     });
+  function mediaSize() {
+        if (window.matchMedia('(max-width: 991px)').matches) {
+            var item = event.item.index + 2;
+        } else {
+            console.log('changed');
+        }
+    }
+    mediaSize();
+    window.addEventListener('resize', mediaSize, false);  
     
     // Marquee Plugin
     $('.marquee-left').marquee({
