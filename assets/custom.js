@@ -136,17 +136,7 @@ $(document).ready(function(){
                     dots: true,
                     onInitialized:counter,
                     onTranslated:counter,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 2
-                        },
-                        1000: {
-                            items: 3
-                        }
-                    }
+                    items: 2
                 });
                 function counter(event) {
                   var element = event.target;
@@ -173,17 +163,7 @@ $(document).ready(function(){
                     dots: true,
                     onInitialized:counter,
                     onTranslated:counter,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 2
-                        },
-                        1000: {
-                            items: 3
-                        }
-                    }
+                    items: 1
                 });
                 function counter(event) {
                   var element = event.target;
