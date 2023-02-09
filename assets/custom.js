@@ -188,7 +188,7 @@ $(document).ready(function(){
                 function counter(event) {
                   var element = event.target;
                   var items = event.item.count;
-                  var item = event.item.index;
+                  var item = event.item.index - 1;
                   var sldtxt = $('.active .ivySlideTxt').html();
                   var sldWidth = 100;
                   var sldPercent = sldWidth * item / items;
