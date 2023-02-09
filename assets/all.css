@@ -1831,9 +1831,9 @@ div#predictive-search-results {
   font-size: 36px;
 }
 .cans-copy p {
-    color: rgba(0, 0, 0, 0.7);
-    margin: 25px 0;
-  font-size: 21px;
+        color: #000000b3;
+    margin: 15px 0 20px;
+    font-size: 21px;
 }
 .cans-image {
     width: calc(100% - 500px);
