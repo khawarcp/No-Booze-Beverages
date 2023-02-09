@@ -3704,6 +3704,22 @@ div#comments form{
 .products-slider .single-product {
     padding-bottom: 50px;
 }
+.slideState {
+    height: 2px;
+    background: #CED4DA;
+    position: relative;
+    width: 285px;
+}
+.slideState span {
+    position: absolute;
+    height: 100%;
+    background: #A43772;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease;
+    color: #FFF;
+    padding-left: 15px;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
