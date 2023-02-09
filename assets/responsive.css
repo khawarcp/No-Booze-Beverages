@@ -1576,4 +1576,7 @@ form.search.search-modal__form input {
   .shop-marquee {
       margin-top: -25px;
   }
+  .bavarages-text h3 {
+    font-size: 24px;
+  }
 }
