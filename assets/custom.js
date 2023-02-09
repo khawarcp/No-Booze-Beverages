@@ -122,24 +122,40 @@ $(document).ready(function(){
             }
         }
     });
-    // Home products slider
-    $('.testimonials-slider.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 25,
-        nav: false,
-        navText: ["<img src='https://cdn.shopify.com/s/files/1/0704/2606/7242/files/angle-left.svg?v=1673345099'>","<img src='https://cdn.shopify.com/s/files/1/0704/2606/7242/files/angle-right.svg?v=1673345107'>"],
-        autoplay: true,
-        dots: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1.5
-            },
-            1000: {
-                items: 2.5
+    // Testimonial slider
+    $(function(){
+        $('.testimonials-slider.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 25,
+            nav: false,
+            navText: ["<img src='assets/images/angle-left.svg'>","<img src='assets/images/angle-right.svg'>"],
+            autoplay: false,
+            dots: true,
+            onInitialized:counter,
+            onTranslated:counter,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
             }
+        });
+        function counter(event) {
+          var element = event.target;
+          var items = event.item.count;
+          var item = event.item.index + 3;
+          var sldtxt = $('.active .ivySlideTxt').html();
+          var sldWidth = 100;
+          var sldPercent = sldWidth * item / items;
+          $('#counter').html("0"+item+" / 0"+items);
+          $('.slTxt').html(sldtxt);
+          $('.slideState span').css("width", sldPercent + "%");
+          $('.slideState span').html(sldPercent + "%")
         }
     });
     
