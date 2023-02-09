@@ -1594,4 +1594,7 @@ form.search.search-modal__form input {
   .testimonials-single p {
     font-size: 18px;
   }
+  .subscription-content h3 {
+    font-size: 24px;
+  }
 }
