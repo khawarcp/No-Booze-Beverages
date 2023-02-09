@@ -1833,6 +1833,7 @@ div#predictive-search-results {
 .cans-copy p {
     color: rgba(0, 0, 0, 0.7);
     margin: 25px 0;
+  font-size: 21px;
 }
 .cans-image {
     width: calc(100% - 500px);
