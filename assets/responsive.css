@@ -375,6 +375,9 @@
   .cans-copy {
     padding-top: 70px;
   }
+  .cans-copy h3 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1554,6 +1557,9 @@ form.search.search-modal__form input {
     margin-bottom: 30px;
   }
   .blog-detail-banner .detailCopy {
+    padding-top: 0;
+  }
+  .cans-copy {
     padding-top: 0;
   }
 }
