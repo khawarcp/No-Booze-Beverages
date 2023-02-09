@@ -369,6 +369,9 @@
   .blog-detail-banner .detailCopy {
     padding-top: 100px;
   }
+  .cans-copy p {
+    margin: 8px 0 16px;
+  }
 }
 
 @media screen and (max-width: 991px) {
