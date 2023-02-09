@@ -125,7 +125,34 @@ $(document).ready(function(){
     // Testimonial slider
     
     function mediaSize() {
-        if (window.matchMedia('(max-width: 991px)').matches) {
+        if (window.matchMedia('(min-width: 991px)').matches) {
+            $(function(){
+                $('.testimonials-slider.owl-carousel').owlCarousel({
+                    loop: false,
+                    margin: 25,
+                    nav: false,
+                    navText: ["<img src='assets/images/angle-left.svg'>","<img src='assets/images/angle-right.svg'>"],
+                    autoplay: false,
+                    dots: true,
+                    onInitialized:counter,
+                    onTranslated:counter,
+                    items: 3
+                });
+                function counter(event) {
+                  var element = event.target;
+                  var items = event.item.count;
+                  var item = event.item.index + 3;
+                  var sldtxt = $('.active .ivySlideTxt').html();
+                  var sldWidth = 100;
+                  var sldPercent = sldWidth * item / items;
+                  $('#counter').html("0"+item+" / 0"+items);
+                  $('.slTxt').html(sldtxt);
+                  $('.slideState span').css("width", sldPercent + "%");
+                  $('.slideState span').html(sldPercent + "%")
+                }
+            });
+        }
+        else if (window.matchMedia('(min-width: 767px)').matches) {
             $(function(){
                 $('.testimonials-slider.owl-carousel').owlCarousel({
                     loop: false,
@@ -152,7 +179,7 @@ $(document).ready(function(){
                 }
             });
         }
-        else if (window.matchMedia('(max-width: 767px)').matches) {
+        else {
             $(function(){
                 $('.testimonials-slider.owl-carousel').owlCarousel({
                     loop: false,
@@ -166,36 +193,9 @@ $(document).ready(function(){
                     items: 1
                 });
                 function counter(event) {
-                  var element = event.target;
-                  var items = event.item.count;
-                  var item = event.item.index + 1;
-                  var sldtxt = $('.active .ivySlideTxt').html();
-                  var sldWidth = 100;
-                  var sldPercent = sldWidth * item / items;
-                  $('#counter').html("0"+item+" / 0"+items);
-                  $('.slTxt').html(sldtxt);
-                  $('.slideState span').css("width", sldPercent + "%");
-                  $('.slideState span').html(sldPercent + "%")
-                }
-            });
-        }
-        else {
-            $(function(){
-                $('.testimonials-slider.owl-carousel').owlCarousel({
-                    loop: false,
-                    margin: 25,
-                    nav: false,
-                    navText: ["<img src='assets/images/angle-left.svg'>","<img src='assets/images/angle-right.svg'>"],
-                    autoplay: false,
-                    dots: true,
-                    onInitialized:counter,
-                    onTranslated:counter,
-                    items: 3
-                });
-                function counter(event) {
                     var element = event.target;
                     var items = event.item.count;
-                    var item = event.item.index + 3;
+                    var item = event.item.index + 1;
                     var sldtxt = $('.active .ivySlideTxt').html();
                     var sldWidth = 100;
                     var sldPercent = sldWidth * item / items;
