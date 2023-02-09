@@ -152,6 +152,8 @@ $(document).ready(function(){
           var sldtxt = $('.active .ivySlideTxt').html();
           var sldWidth = 100;
           var sldPercent = sldWidth * item / items;
+          $('#counter').html("0"+item+" / 0"+items);
+          $('.slTxt').html(sldtxt);
           $('.slideState span').css("width", sldPercent + "%");
           $('.slideState span').html(sldPercent + "%")
         }
