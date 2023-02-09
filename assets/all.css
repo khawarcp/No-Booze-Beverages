@@ -1818,11 +1818,12 @@ div#predictive-search-results {
     z-index: -1;
 }
 .cans-section {
-    padding: 80px 0;
-    background: linear-gradient(to bottom, #DEEBF6 70%, #F6F6F6 30%);
+        padding: 50px 0 70px;
+    background: linear-gradient(to bottom,#DEEBF6 75%,#F6F6F6 25%);
 }
 .cans-copy {
     max-width: 460px;
+    padding-top: 105px;
 }
 .cans-copy h3 {
     color: #323C45;
