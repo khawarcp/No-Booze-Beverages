@@ -1115,18 +1115,12 @@ div#predictive-search-results {
 .pair-marquee .marquee-wrap span {
     color: #f6f6f6;
 }
-
-
 .bavarages-text h3 {
     color: #323C45;
     font-weight: 800;
     margin: 15px 0 0;
   font-size: 33px;
 }
-
-
-
-
 .testimonials-section {
     margin-top: 50px;
 }
@@ -3699,6 +3693,16 @@ div#comments form{
 }
 .newsletter-form .contact-form {
     margin-top: 0;
+}
+.product-footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+}
+.products-slider .single-product {
+    padding-bottom: 50px;
 }
 
 @media screen and (min-width: 1600px) {
