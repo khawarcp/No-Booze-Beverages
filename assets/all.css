@@ -3505,6 +3505,9 @@ li.grid__item.removeMe {
     max-width: 100px;
     opacity: 0.7;
 }
+.brands-section .js-marquee {
+    margin-right: 0 !important;
+}
 .shopImage img {
     max-width: 503px;
     margin: 0 auto;
