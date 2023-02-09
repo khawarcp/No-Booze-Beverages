@@ -3671,16 +3671,20 @@ div#comments form{
 }
 .flavorCarousel .owl-item.active {
   position: relative;
+  padding-right: 15px;
 }
 .flavorCarousel .owl-item.active::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  right: -15px;
-  background-color: #fff;
-  border-radius: 8px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    right: -15px;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 92%;
+    z-index: -1;
+    transform: translateY(-50%);
 }
 
 @media screen and (min-width: 1600px) {
