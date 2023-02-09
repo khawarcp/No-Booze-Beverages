@@ -145,35 +145,7 @@ $(document).ready(function(){
                 }
             }
         });
-        function mediaSize() {
-            if (window.matchMedia('(max-width: 991px)').matches) {
-                function counter(event) {
-                    var element = event.target;
-                    var items = event.item.count;
-                    var item = event.item.index + 2;
-                    var sldtxt = $('.active .ivySlideTxt').html();
-                    var sldWidth = 100;
-                    var sldPercent = sldWidth * item / items;
-                    $('#counter').html("0"+item+" / 0"+items);
-                    $('.slTxt').html(sldtxt);
-                    $('.slideState span').css("width", sldPercent + "%");
-                    $('.slideState span').html(sldPercent + "%")
-                }
-            } else {
-                function counter(event) {
-                    var element = event.target;
-                    var items = event.item.count;
-                    var item = event.item.index + 3;
-                    var sldtxt = $('.active .ivySlideTxt').html();
-                    var sldWidth = 100;
-                    var sldPercent = sldWidth * item / items;
-                    $('#counter').html("0"+item+" / 0"+items);
-                    $('.slTxt').html(sldtxt);
-                    $('.slideState span').css("width", sldPercent + "%");
-                    $('.slideState span').html(sldPercent + "%")
-                }
-            }
-        }
+        
     });
 
     // Marquee Plugin
