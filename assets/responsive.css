@@ -50,6 +50,9 @@
   .story-copy h4 {
     font-size: 22px;
   }
+  .testimonials-single p {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
