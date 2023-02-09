@@ -1828,6 +1828,7 @@ div#predictive-search-results {
 .cans-copy h3 {
     color: #323C45;
     font-weight: 800;
+  font-size: 36px;
 }
 .cans-copy p {
     color: rgba(0, 0, 0, 0.7);
