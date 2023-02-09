@@ -3655,12 +3655,14 @@ div#comments form{
 .shop-banner-content h3 span {
     color: #A43772;
 }
-
-section.shop-marquee .marquee-wrap span {
+.shop-marquee .marquee-wrap span {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #a43772;
+    text-shadow: unset;
 }
+
+
 @media screen and (min-width: 1600px) {
     .container {
         max-width: 1460px;
