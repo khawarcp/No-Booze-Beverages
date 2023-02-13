@@ -10,6 +10,15 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .subscription-image {
+    max-width: 520px;
+}
+.subscription-image.img2 {
+    max-width: 340px;
+}
+}
+
 @media screen and (max-width: 1439px) {
   h2 {
     font-size: 30px;
