@@ -41,6 +41,9 @@
   .drink-options {
       top: 12px;
   }
+  .shop-marquee {
+    margin-top: -41px;
+  }
   .drink-options .owl-nav {
       bottom: 20px;
   }
