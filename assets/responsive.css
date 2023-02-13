@@ -968,7 +968,7 @@ form.search.search-modal__form input {
     position: absolute;
     top: 120px;
     right: 0;
-    max-width: 170px;
+    max-width: 140px;
     left: unset;
   }
   .subscription-content {
