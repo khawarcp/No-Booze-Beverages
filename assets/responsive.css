@@ -403,6 +403,10 @@
   .testimonials-single {
     padding: 18px;
   }
+  .plan-features li:before {
+    height: 15px;
+    width: 15px;
+  }
 }
 
 @media screen and (max-width: 991px) {
