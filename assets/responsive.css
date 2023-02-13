@@ -62,8 +62,9 @@
   .testimonials-single p {
     font-size: 20px;
   }
-  .subscription-image {
-    max-width: 600px;
+  .subscription-image.img2 {
+    top: -240px;
+    left: 36%;
   }
 }
 
