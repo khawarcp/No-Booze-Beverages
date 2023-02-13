@@ -425,6 +425,9 @@
   .shop-marquee {
     margin-top: -35px;
   }
+  h1#login, .login-form-wrap h1 {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 991px) {
