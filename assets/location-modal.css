@@ -51,8 +51,12 @@
     color: #323C45;
     appearance: none;
     -webkit-appearance: none;
+    cursor: pointer;
 }
-
+#country-state:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
 
 .age-wrapper label {
     font-size: 14px;
