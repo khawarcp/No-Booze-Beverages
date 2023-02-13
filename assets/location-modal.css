@@ -155,3 +155,9 @@ body.gradient.modal-open::before {
 }
 
 }
+
+@media screen and (max-width: 767px) {
+  .modal-body.border-0 {
+    max-width: 100%;
+  }
+}
