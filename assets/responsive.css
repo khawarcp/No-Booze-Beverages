@@ -714,6 +714,7 @@
   }
   .cans-section {
     padding: 10px 0 20px;
+    background: linear-gradient(to bottom,#DEEBF5 80%,#F6F6F6 20%);
   }
   .cans-copy {
       padding-top: 45px;
