@@ -1672,3 +1672,12 @@ form.search.search-modal__form input {
       max-width: 430px;
   }
 }
+
+@media screen and (max-height: 900px) {
+  .login-form-wrap {
+    padding: 40px 0;
+  }
+  .login-wrapper {
+    height: unset;
+  }
+}
