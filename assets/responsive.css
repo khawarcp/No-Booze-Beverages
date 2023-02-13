@@ -700,6 +700,13 @@
   .newsletter-text {
     margin-bottom: 20px;
   }
+  #wpd-create-customer input, #wpd-create-customer select {
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+  #wpd-create-customer .wpd_clearfix {
+      width: 96% !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
