@@ -3721,6 +3721,9 @@ div#comments form{
     color: #FFF;
     padding-left: 15px;
 }
+.action_bottom {
+    text-align: center;
+}
 
 @media screen and (min-width: 1600px) {
     .container {
