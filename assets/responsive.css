@@ -1655,6 +1655,7 @@ form.search.search-modal__form input {
   .newsletter-text h3,
   h1#login, .login-form-wrap h1 {
     font-size: 24px;
+    margin-bottom: 10px;
   }
 }
 
