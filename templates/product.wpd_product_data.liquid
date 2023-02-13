@@ -80,7 +80,7 @@
 
             {% endunless %}  
 
-            {% assign variantThumbURL = variant.image.src | product_img_url: 'medium' %}
+            {% assign variantThumbURL = variant.image.src | product_img_url: 'master' %}
 
             "variantId":"{{variant.id}}"
             ,"variantOption1":{{ variant.option1 | json }}
