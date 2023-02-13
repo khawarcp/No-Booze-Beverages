@@ -481,8 +481,9 @@
       max-width: 300px;
   }
   .subscription-image.img2 {
-      left: 17%;
-      top: 50px;
+      left: 0;
+      top: 170px;
+      max-width: 200px;
   }
   .marquee-wrap span {
       font-size: 42px;
