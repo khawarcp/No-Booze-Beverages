@@ -712,6 +712,19 @@
   #wpd-create-customer .wpd_clearfix {
       width: 96% !important;
   }
+  .cans-section {
+    padding: 10px 0 20px;
+  }
+  .cans-copy {
+      padding-top: 45px;
+  }
+  .cans-copy h3 {
+      font-size: 27px;
+  }
+  .cans-copy p {
+      font-size: 16px;
+      margin: 7px 0 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
