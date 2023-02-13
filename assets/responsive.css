@@ -407,6 +407,9 @@
     height: 15px;
     width: 15px;
   }
+  .shop-marquee {
+    margin-top: -35px;
+  }
 }
 
 @media screen and (max-width: 991px) {
