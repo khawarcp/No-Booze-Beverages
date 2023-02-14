@@ -591,9 +591,11 @@ var fnCalled = false;
     }
 //     ensureStock();
     $('body').on('change', "input[name='updates[]'], input[id^='updates_'], input[id^='Updates_']", function(e) {
-   	  e.preventDefault();  
-       ensureStock();
-       setTimeout(function(){$("form[action$='cart']").submit();},500);      
+       if(window.wpd_bypass_quantity_reload != true) {
+          e.preventDefault();  
+          ensureStock();
+          setTimeout(function(){$("form[action$='cart']").submit();},500);   
+       }   
     });
     
     $('[max]').change(function() {
