@@ -427,6 +427,7 @@
   }
   h1#login, .login-form-wrap h1 {
     font-size: 28px;
+    max-width: 420px;
   }
 }
 
