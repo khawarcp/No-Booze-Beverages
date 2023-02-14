@@ -752,6 +752,10 @@
       font-size: 16px;
       margin: 7px 0 10px;
   }
+  h1#login, .login-form-wrap h1,
+  form#customer_login, form#create_customer {
+    max-width: 80%;
+  }
 }
 
 @media screen and (max-width: 767px) {
