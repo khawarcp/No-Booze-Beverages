@@ -1667,7 +1667,7 @@ form.search.search-modal__form input {
   }
   h1#login, .login-form-wrap h1,
   form#customer_login, form#create_customer {
-    max-width: 90%;
+    max-width: 95%;
   }
 }
 
