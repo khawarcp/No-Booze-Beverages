@@ -245,11 +245,11 @@ $(window).scroll(function() {
 });
 
  (function () {
-        let modalshowlat = localStorage.getItem('modalshowlat');        
-        if (modalshowlat === null) {          
-          $("#location-modal").modal('show');
-          $("#location-modal").modal({ backdrop: "static ", keyboard: false });
-        }
+        // let modalshowlat = localStorage.getItem('modalshowlat');        
+        // if (modalshowlat === null) {          
+        //   $("#location-modal").modal('show');
+        //   $("#location-modal").modal({ backdrop: "static ", keyboard: false });
+        // }
 
         $('.blogCol-blue').each(function() {
           $(this).add($(this).next('.blogCol-pink')).wrapAll('<div class="blog-row flex jc-sb"></div>')
